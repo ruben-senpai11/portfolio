@@ -2,32 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+:root{
+  --bborder-width : 1px;
+  --bborder-padding : 1rem
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.bborder-left{
+  min-width: 100%;
+  width: 100%;
+  border-left: var(--bborder-width) solid black;  
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.bborder{
+  padding-right: var(--bborder-padding);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.bborder-top{
+  width: 100%;
+  padding-left: var(--bborder-padding);
+  border-top: var(--bborder-width) solid black;
+}
+.bborder-right{
+  padding-top: var(--bborder-padding);
+  border-right: var(--bborder-width) solid black;
+}
+.bborder-bottom{
+  min-width: calc(100% + var(--bborder-padding));
+  min-height: var(--bborder-padding);
+  background-color: white;
+  padding-bottom: var(--bborder-padding);
+  border-top: var(--bborder-width) solid black;
+  overflow: hidden;
 }
