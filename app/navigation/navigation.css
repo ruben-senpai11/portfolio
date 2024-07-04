@@ -11,15 +11,26 @@
   /* padding: 0.8rem 2rem; */
   z-index: 999999;
   width: 100%;
-  box-sizing: border-box;
+  padding-bottom: 4px;
+  /* border-bottom: 1px solid silver; */
 }
 
 .desktop-menu {
-  width: 72%;
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
 }
 
-.navlinks {
-  width: 60%;
+.navlinks li{
+  font-size: 16px;
+}
+
+.navlinks li::before{
+  content: "../ ";
+  font-size: 14px;
+}
+.navlinks li.active::before{
+  content: "./ ";
 }
 
 .search-box {
@@ -82,6 +93,7 @@
 .desktop-menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .menu-icons {

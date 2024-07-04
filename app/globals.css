@@ -5,13 +5,28 @@
 
 :root{
   --bborder-width : 1px;
-  --bborder-padding : 1rem
+  --bborder-padding : 1rem;
+  --foreground-color : black;
+  --background-color : #fafafa;
+
 }
+
+body{
+  background-color: var(--background-color);
+}
+h1{
+  font-size: 2rem;
+}
+
+h2{
+  font-size: 1.5rem;
+}
+/*** Custom Document Border   ***/
 
 .bborder-left{
   min-width: 100%;
   width: 100%;
-  border-left: var(--bborder-width) solid black;  
+  border-left: var(--bborder-width) solid var(--foreground-color);  
 }
 
 .bborder{
@@ -21,17 +36,83 @@
 .bborder-top{
   width: 100%;
   padding-left: var(--bborder-padding);
-  border-top: var(--bborder-width) solid black;
+  border-top: var(--bborder-width) solid var(--foreground-color);
 }
 .bborder-right{
   padding-top: var(--bborder-padding);
-  border-right: var(--bborder-width) solid black;
+  /* border-right: var(--bborder-width) solid var(--foreground-color); */
 }
 .bborder-bottom{
   min-width: calc(100% + var(--bborder-padding));
   min-height: var(--bborder-padding);
   background-color: white;
   padding-bottom: var(--bborder-padding);
-  border-top: var(--bborder-width) solid black;
+  /* border-top: var(--bborder-width) solid var(--foreground-color); */
   overflow: hidden;
+}
+
+
+/* Scroll Bar ----------------------------------------- */
+
+::-webkit-scrollbar {
+  width: 0px; 
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color);   
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--foreground-color); 
+  border-radius: 6px; 
+}
+
+::-webkit-scrollbar-track:hover {
+  background: var(--light-primary);   
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-primary); 
+}
+
+
+.cta{
+  padding: 4px 12px;
+  border-radius: 5px;
+  color: var(--background-color);
+  background-color: var(--foreground-color);
+}
+.cta:hover{
+  transform: scale(1.02);
+}
+
+
+/*****  Main   ***/
+.main{
+  /* padding: 100px 0; */
+  gap: 50px;
+}
+
+section{
+  padding: 2rem 4rem;
+}
+
+.hero{
+  height: 90vh;
+  min-height: 500px;
+
+}
+.description{
+  height: 100%;
+}
+
+.picture{
+
+}
+.picture img{
+  border-radius: 400px;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
 }
