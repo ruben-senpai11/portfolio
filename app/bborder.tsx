@@ -8,13 +8,29 @@ interface Props {
 
 export default function BBorder({ children }: Props) {
 /*
-  const [scrollPosition, setScrollPosition] = useState(100)
+  const [scrollPercent, setScrollPercent] = useState(0);
 
-  useEffect(() => {
-    const currentScroll:any =  setupScrollListener();
-    setScrollPosition(currentScroll)
-    console.log("current : " +scrollPosition)
-  }, []);
+    const handleScroll = () => {
+        const scrollTop = window.scrollY;
+        const documentHeight = document.documentElement.scrollHeight;
+        const viewportHeight = window.innerHeight;
+        const scrollableHeight = documentHeight - viewportHeight;
+
+        const scrollPercent = (scrollTop / scrollableHeight) * 100;
+        const scrollPixels = window.scrollY
+        setScrollPercent(scrollPixels);
+        console.log(scrollPixels)
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+
+        // Clean up the event listener on component unmount
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+      <div className="bborder-right" style={{height: `${(scrollPercent.toFixed(0))}px`}} >          
 */
 
 return (

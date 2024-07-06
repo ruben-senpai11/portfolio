@@ -5,7 +5,8 @@
 
 :root{
   --bborder-width : 1px;
-  --bborder-padding : 1rem;
+  --bborder-padding-y : 1.2rem;
+  --bborder-padding-x : 1.5rem;
   --foreground-color : black;
   --background-color : #fafafa;
 
@@ -21,35 +22,17 @@ h1{
 h2{
   font-size: 1.5rem;
 }
-/*** Custom Document Border   ***/
 
-.bborder-left{
-  min-width: 100%;
-  width: 100%;
-  border-left: var(--bborder-width) solid var(--foreground-color);  
+.cta{
+  padding: 4px 12px;
+  border-radius: 5px;
+  color: var(--background-color);
+  background-color: var(--foreground-color);
+}
+.cta:hover{
+  transform: scale(1.02);
 }
 
-.bborder{
-  padding-right: var(--bborder-padding);
-}
-
-.bborder-top{
-  width: 100%;
-  padding-left: var(--bborder-padding);
-  border-top: var(--bborder-width) solid var(--foreground-color);
-}
-.bborder-right{
-  padding-top: var(--bborder-padding);
-  /* border-right: var(--bborder-width) solid var(--foreground-color); */
-}
-.bborder-bottom{
-  min-width: calc(100% + var(--bborder-padding));
-  min-height: var(--bborder-padding);
-  background-color: white;
-  padding-bottom: var(--bborder-padding);
-  /* border-top: var(--bborder-width) solid var(--foreground-color); */
-  overflow: hidden;
-}
 
 
 /* Scroll Bar ----------------------------------------- */
@@ -70,28 +53,48 @@ h2{
 }
 
 ::-webkit-scrollbar-track:hover {
-  background: var(--light-primary);   
+  background: var(--background-color); 
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--dark-primary); 
+  background: var(--foreground-color);   
 }
 
 
-.cta{
-  padding: 4px 12px;
-  border-radius: 5px;
-  color: var(--background-color);
-  background-color: var(--foreground-color);
+/*** Custom Document Border   ***/
+
+.bborder-left{
+  min-width: 100%;
+  width: 100%;
+  border-left: var(--bborder-width) solid var(--foreground-color);  
 }
-.cta:hover{
-  transform: scale(1.02);
+
+.bborder{
+  padding-right: var(--bborder-padding-x);
+}
+
+.bborder-top{
+  width: 100%;
+  padding-left: var(--bborder-padding-x);
+  border-top: var(--bborder-width) solid var(--foreground-color);
+}
+.bborder-right{
+  padding-top: var(--bborder-padding-y);
+  border-right: var(--bborder-width) solid var(--foreground-color);
+}
+.bborder-bottom{
+  min-width: calc(100% + var(--bborder-padding-y));
+  min-height: var(--bborder-padding-y);
+  background-color: white;
+  padding-bottom: var(--bborder-padding-y);
+  border-top: var(--bborder-width) solid var(--foreground-color);
+  overflow: hidden;
 }
 
 
 /*****  Main   ***/
 .main{
-  /* padding: 100px 0; */
-  gap: 50px;
+  padding-bottom: 100px;
+  gap: 100px;
 }
 
 section{
@@ -115,4 +118,87 @@ section{
   width: 400px;
   height: 400px;
   object-fit: cover;
+}
+
+
+/****** Skills ***/
+
+.skill, .tech{
+  width: 30%;
+  display: flex; 
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px 15px;
+  border: 1px solid var(--foreground-color);
+  /* border-radius: 4px;  */
+}
+.skill ul, .tech ul{
+  display: flex; 
+  flex-direction: column;
+  gap: 2px;
+}
+.skill h4, .tech h4{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+li.purple{
+  color: purple;
+}
+li.blue{
+  color: blue;
+}
+li.gray{
+  color: gray;
+}
+
+.tech.w-100{
+  width: 100%;
+}
+
+
+
+/*** Works ****/
+.project{
+  display: flex;
+  height: 300px;
+  padding: 10px;
+  border: 1px solid;
+  
+}
+
+.project-70{
+  width: 70%;
+  gap: 20px;
+}
+.project-30{
+  width: 30%;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.p-title{
+  font-size: 1.4rem;
+}
+
+.project-70 .project-img{
+  width: 40%;
+  min-width: 500px;
+}
+.project-30 .project-img{
+  width: 100%;
+}
+
+.project-img{
+  height: 100%;
+  overflow: hidden;
+  /* border:  2px solid black; */
+  box-shadow: 0 0 4px #00000055;
+  border-radius: 4px;
+}
+.project-img img, .project-img video{
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+  /* display: none; */
 }
