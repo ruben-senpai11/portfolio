@@ -1,4 +1,5 @@
-
+import Image from "next/image"
+import nextLogo from "../assets/logos/next.svg"
 
 export default function Tech() {
 
@@ -10,8 +11,8 @@ export default function Tech() {
           Among all the technologies we learn for studies, training and work in enterprises, the ones we love and are familiar with ; here are the the ones I acctually use. From the most mastered to those I'm still discovering
         </p>
         <div className="flex justify-between gap-4 ">
-          <div className="tech">
-            <h4>Basic Websites</h4>
+          <div className="tech r-card">
+            <h4>Programming Languages</h4>
             <ul>
               <li className="purple" >HTML & CSS</li>
               <li className="purple" >Typescript, Javascript</li>
@@ -24,10 +25,13 @@ export default function Tech() {
               <li className="gray" ></li>
             </ul>
           </div>
-          <div className="tech">
+          <div className="tech r-card">
             <h4>Libraires & Frameworks</h4>
             <ul>
-              <li className="purple" >Next.js</li>
+              <li className="purple" >
+                <Image src={nextLogo} width={100} height={100} alt="NextLogo" />
+                Next.js
+              </li>
               <li className="purple" >React</li>
               <li className="purple" >Laravel </li>
               <li className="purple" >GSAP</li>
@@ -39,20 +43,21 @@ export default function Tech() {
               <li className="gray" ></li>
             </ul>
           </div>
-          <div className="flex flex-col gap-4 ">
-            <div className="tech w-100">
-              <h4>Web Application</h4>
+          <div className="r-card flex flex-col gap-[8px] justify-betweden">
+            <div className="">
+              <h4>Content Management System</h4>
               <ul>
                 <li className="purple" >Shopify</li>
                 <li className="blue" >WordPress</li>
                 <li className="blue" >Webflow</li>
               </ul>
             </div>
-            <div className="tech w-100">
-              <h4>Tools</h4>
+            <div className="pt-8 ">
+              <h4>Other Tools</h4>
               <ul>
                 <li className="purple" >Figma</li>
                 <li className="blue" >Photoshop</li>
+                <li className="gray" >Jest</li>
               </ul>
             </div>
           </div>

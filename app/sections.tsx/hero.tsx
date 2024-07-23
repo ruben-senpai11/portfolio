@@ -5,8 +5,8 @@ export default function Hero (){
 
   return(
     <>
-      <section className="hero">
-        <div className="flex justify-between align-center gap-16 h-[100%] ">
+      <section className="hero flex justify-between align-center gap-16 h-[100%] ">
+        {/* <div className=""> */}
           <div className="description flex flex-col gap-8 justify-center align-center ">
             <h1 className="flex flex-col " >
               <span className="text-[48px] " >Hi, I'm Alban</span>
@@ -21,7 +21,7 @@ export default function Hero (){
           <div className="picture flex items-center ">
             <Image src={Smiling_dev} width={400} height={400} alt="smiling_white_dev" />
           </div>
-        </div>
+        {/* </div> */}
       </section>
     </>
   )

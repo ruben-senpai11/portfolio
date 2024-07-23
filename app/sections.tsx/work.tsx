@@ -17,10 +17,9 @@ export default function Works() {
             <div className="project project-70 ">
               <div className="project-img">
                 {/* <Image src={mangaverseImg} width={500} height={100} alt="" /> */}
-                <video width="600" height="400" autoPlay poster="/img/mangaverse.png" >
-                  <source src="/video/mangaverse-short.webm" type="video/webm" />
+                <video width="600" height="400" autoPlay controls>
+                  <source src="/video/mangaverse-long.webm" type="video/webm" />
                   <track
-                    src="/path/to/captions.vtt"
                     kind="subtitles"
                     srcLang="en"
                     label="English"
@@ -56,10 +55,9 @@ export default function Works() {
             <div className="project project-70 ">
               <div className="project-img">
                 {/* <Image src={bunny} width={500} height={100} alt="" /> */}
-                <video width="600" height="400" autoPlay poster="/img/bunny.png" >
+                <video width="600" height="400" autoPlay controls>
                   <source src="/video/bunny.webm" type="video/webm" />
                   <track
-                    src="/path/to/captions.vtt"
                     kind="subtitles"
                     srcLang="en"
                     label="English"

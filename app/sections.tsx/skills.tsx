@@ -8,7 +8,7 @@ export default function Skills() {
         <h2 className="text-4xl " >Skills</h2>
         <p>I hava a great experience in building websites and implenting functionnnalities while using no or low-code solutions like CMS and development technologies as well</p>
         <div className="flex justify-between gap-4 ">
-          <div className="skill">
+          <div className="skill r-card">
             <h4>Basic Websites</h4>
             <ul>
               <li className="purple" >Authentication</li>
@@ -32,7 +32,7 @@ export default function Skills() {
               <li className="" ></li>
             </ul>
           </div>
-          <div className="skill">
+          <div className="skill r-card">
             <h4>E-commerce</h4>
             <ul>
               <li className="purple" >Store settings</li>
@@ -57,7 +57,7 @@ export default function Skills() {
               <li className="gray" >Performance Optimisation for large catalogs</li>
             </ul>
           </div>
-          <div className="skill">
+          <div className="skill r-card">
             <h4>Web Application</h4>
             <ul>
               <li className="purple" >APIs</li>
