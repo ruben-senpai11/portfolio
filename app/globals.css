@@ -109,7 +109,7 @@ section{
 .description{
   height: 100%;
 }
-.description{
+/* .description{
   margin-left: 40px;
   padding-left: 4px;
   border-left: 1px solid #ccc;
@@ -118,12 +118,12 @@ section{
   margin-right: 40px;
   padding-right: 4px;
   border-right: 1px solid #ccc
-}
+} */
 
 .picture img{
-  border-radius: 220px;
-  width: 380px;
-  height: 460px;
+  border-radius: 400px;
+  width: 400px;
+  height: 400px;
   object-fit: cover;
   border: 1px solid var(--foreground-color);
 }
