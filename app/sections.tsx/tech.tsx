@@ -1,5 +1,6 @@
 import Image from "next/image"
-import nextLogo from "../assets/logos/next.svg"
+import nextLogo from "../assets/logos/next.png"
+import reactLogo from "../assets/logos/react.png"
 
 export default function Tech() {
 
@@ -27,12 +28,12 @@ export default function Tech() {
           </div>
           <div className="tech r-card">
             <h4>Libraires & Frameworks</h4>
-            <ul>
+            <ul className="">
               <li className="purple" >
-                <Image src={nextLogo} width={100} height={100} alt="NextLogo" />
+                {/* <Image src={nextLogo} width={100} height={100} alt="NextLogo" /> */}
                 Next.js
               </li>
-              <li className="purple" >React</li>
+              {/* <li className="purple" ><Image src={reactLogo} width={100} height={100} alt="reactLogo" />React</li> */}
               <li className="purple" >Laravel </li>
               <li className="purple" >GSAP</li>
               <li className="blue" >Remix</li>
@@ -43,7 +44,7 @@ export default function Tech() {
               <li className="gray" ></li>
             </ul>
           </div>
-          <div className="r-card flex flex-col gap-[8px] justify-betweden">
+          <div className="tech r-card flex flex-col gap-[8px] justify-betweden">
             <div className="">
               <h4>Content Management System</h4>
               <ul>

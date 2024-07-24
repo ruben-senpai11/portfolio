@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Smiling_dev from "../assets/img/smiling_white_dev.jpg"
+import Smiling_dev from "../assets/img/white_dev.jpg"
 
 export default function Hero (){
 
@@ -15,7 +15,7 @@ export default function Hero (){
             </h1>
             <p>
               white_dev is high a skilled  
-              <span>Frontend developer</span> 
+              <span> Frontend developer</span> 
             </p>
           </div>
           <div className="picture flex items-center ">

@@ -1,6 +1,9 @@
 .navbar, .footer{
   padding: .5rem 1rem;
 }
+.footer{
+  padding-top: 50px;
+}
 
 .navbar {
   position: relative;

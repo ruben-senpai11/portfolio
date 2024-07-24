@@ -39,23 +39,25 @@ function Header({ title }: Props) {
       <div className="navbar">
         <div className="logo">
           <Link href="/">
-            w_dev
+            {title}
           </Link>
         </div>
         <div className={(mobileNav == true ? 'mobile-menu' : 'desktop-menu') + " "}>
           <ul className="navlinks flex gap-12 navlinks justify-between align-center ">
-            <li className="active">home</li>
+            <li className="active">
+              <Link href="/">home</Link>
+              </li>
             <li>
-              <Link href="">skills</Link>
+              <Link href="/">skills</Link>
             </li>
             <li>
-              <Link href="">works</Link>
+              <Link href="/">works</Link>
             </li>
             <li>
-              <Link href="">techs</Link>
+              <Link href="/">techs</Link>
             </li>
             <li>
-              <Link href="">about</Link>
+              <Link href="/about">about</Link>
             </li>
           </ul>
         </div>
