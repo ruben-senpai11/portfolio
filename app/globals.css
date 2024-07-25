@@ -394,12 +394,18 @@ li.gray {
 
   .project-img video {
     width: 100% !important;
-    /* height: auto!important; */
+    /* height: 400px; */
   }
 
 }
 
 @media screen and (max-width: 650px) {
+
+
+  section {
+    padding: 1rem 1rem;
+  }
+
 
   .skills,
   .techs {
