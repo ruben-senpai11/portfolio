@@ -45,16 +45,16 @@ function Header({ title }: Props) {
         <div className={(mobileNav == true ? 'mobile-menu' : 'desktop-menu') + " "}>
           <ul className="navlinks flex gap-12 navlinks justify-between align-center ">
             <li className="active">
-              <Link href="/">home</Link>
+              <Link href="/#hero">home</Link>
               </li>
             <li>
-              <Link href="/">skills</Link>
+              <Link href="/#skills">skills</Link>
             </li>
             <li>
-              <Link href="/">works</Link>
+              <Link href="/#works">works</Link>
             </li>
             <li>
-              <Link href="/">techs</Link>
+              <Link href="/#techs">techs</Link>
             </li>
             <li>
               <Link href="/about">about</Link>

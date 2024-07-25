@@ -429,11 +429,12 @@ li.gray {
   .skills,
   .techs {
     flex-direction: column;
-    gap: 30px;
+    padding-top: 15px;
+    gap: 20px;
   }
 
   .r-card {
-    width: 85%;
+    width: 90%;
     height: 330px;
   }
 

@@ -6,7 +6,7 @@ export default function Tech() {
 
   return (
     <>
-      <section className="flex flex-col gap-4 ">
+      <section id="techs" className="flex flex-col gap-4 ">
         <h2 className="text-4xl " >Techs</h2>
         <p>
           Among all the technologies we learn for studies, training and work in enterprises, the ones we love and are familiar with ; here are the the ones I acctually use. From the most mastered to those I'm still discovering

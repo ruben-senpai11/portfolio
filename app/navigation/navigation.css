@@ -117,7 +117,12 @@
   }
 
   .footer{
-    flex-direction: column;
+    flex-direction: column-reverse;
+    border-top: 1px solid #ccc;
+    margin-top: 35px;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .socials{
     /* flex-direction: column; */
@@ -207,7 +212,7 @@
     position: absolute;
     height: 32px;
     top: 360px;
-    left: 58px;
+    left: 50px;
     bottom: 0;
   }
 

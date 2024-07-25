@@ -7,7 +7,7 @@ import mangaverseImg from "../assets/img/mangaverse.png"
 export default function Works() {
   return (
     <>
-      <section className="flex flex-col gap-4 ">
+      <section id="works" className="flex flex-col gap-4 ">
         <h2 className="text-4xl " >Works</h2>
         <p>
           Here are some Freelance missions, Personal & Side Projects

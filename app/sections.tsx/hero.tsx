@@ -5,7 +5,7 @@ export default function Hero (){
 
   return(
     <>
-      <section className="hero flex justify-between align-center gap-16 h-[100%] ">
+      <section id="hero" className="hero flex justify-between align-center gap-16 h-[100%] ">
         {/* <div className=""> */}
           <div className="description flex flex-col gap-8 justify-center align-center ">
             <h1 className="flex flex-col " >
