@@ -12,8 +12,8 @@ export default function Works() {
         <p>
           Here are some Freelance missions, Personal & Side Projects
         </p>
-        <div className="projects flex flex-col gap-8">
-          <div className="flex justify-between gap-4 ">
+        <div className="flex flex-col gap-8">
+          <div className="projects flex justify-between gap-4 ">
             <div className="project project-70 ">
               <div className="project-img">
                 {/* <Image src={mangaverseImg} width={500} height={100} alt="" /> */}
@@ -42,7 +42,7 @@ export default function Works() {
               </div>
             </div>
           </div>
-          <div className="flex justify-between gap-4 ">
+          <div className="projects flex justify-between gap-4 ">
             <div className="project project-30  ">
               <div className="project-img">
                 <Image src={stratosedi} width={500} height={100} alt="" />

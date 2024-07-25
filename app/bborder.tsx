@@ -35,6 +35,7 @@ export default function BBorder({ children }: Props) {
 
 return (
   <>
+  <div className="flex justify-center">    
     <div className="bborder">
       <div className="bborder-right">
         <div className="bborder-top">
@@ -50,6 +51,7 @@ return (
         </div>
       </div>
     </div>
+  </div>
   </>
 )
 }

@@ -16,10 +16,10 @@ export default function Page() {
     <>
       <BBorder >
         <Header title="white_dev" />
-        <div className="main flex flex-col gap-16 ">
-          <section className="about flex flex-col gap-5">
+        <div className="main my-8 mb-16">
+          <section className="about flex flex-col gap-16">
             <h1 className="text-[48px] " >About me</h1>
-            <div className="flex flex-col gap-8 ">
+            <div className="flex flex-col gap-24   ">
               <div className="flex justify-center px-[5%]  ">
                 <div className="flex justify-between story-1 ">
                   <div className="a-description w-[60%] ">
@@ -38,14 +38,14 @@ export default function Page() {
 
               <div className="flex flex-col items-center story-2 gap-8 pt-4 ">
                 <div className="a-description ">
-                  <h2>2. Between front & full stack</h2>
+                  <h2>2. Transition</h2>
                   {/* <p>You may have noticed, even though I claim to be a frontend dev, I have a full's stack.</p> */}
                   <p>As most of devs, I've started this work looking to have geographic liberty and a way to use creativity,
                     but I had to throw myself in professionnal life to see what it really is</p>
                   <p>Even though I have experience in building applications from A to Z, the most expectative the project is about
                     creativity, User Interface & Experience, the more comfortable I am</p>
 
-                  <p>Then, since my last job, I decided to specialize myself as frontend.</p>
+                  <p>Then, since my 2 last jobs, I decided to specialize myself as frontend.</p>
                   <p> This is the perfect job ror me, it enhance my productivity and I enjoy it like a kid</p>
                 </div>
                 <div className="picture a-picture flex items-center ">
@@ -54,15 +54,24 @@ export default function Page() {
               </div>
 
               <div className="flex justify-center px-[5%]  ">
-                <div className="flex justify-between story-1 ">
+                <div className="flex justify-between story-1 story-3 ">
                   <div className="">
                     <h2>3. My Stack</h2>
-                    
-                      <Stack />
-                    <div className="w-[100%]">
-                    </div>
-
+                    <Stack />
                   </div>
+                </div>
+              </div>
+
+
+              <div className="flex flex-col items-center story-2 gap-8 pt-4 ">
+                <div className="a-description ">
+                  <h2>4. Waiting for you !</h2>
+                  <p>All I need now is use all these skills and learn more with you
+                    Programming is all I love and honnestly, I can't wait to work with you.</p>
+                  <p>I may be your goldmine, promised 😇</p>           
+                </div>
+                <div className="picture a-picture flex items-center ">
+                  {/* <Image src={smilingDev} width={400} height={400} alt="Young hite_dev" /> */}
                 </div>
               </div>
             </div>
