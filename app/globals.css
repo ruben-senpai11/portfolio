@@ -7,8 +7,8 @@
   --bborder-width: 1px;
   --bborder-padding-y: 1.2rem;
   --bborder-padding-x: 1.5rem;
-  --bborder-padding-y-sm: .7rem;
-  --bborder-padding-x-sm: .5rem;
+  --bborder-padding-y-sm: 1rem;
+  --bborder-padding-x-sm: .7rem;
   --foreground-color: black;
   --background-color: #fafafa;
 }
