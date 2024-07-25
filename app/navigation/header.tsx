@@ -62,7 +62,7 @@ function Header({ title }: Props) {
           </ul>
         </div>
         <div className="flex justify-center align-center ">
-          <button type="button" className="button cta">Hire me</button>
+          <button type="button" className={(mobileNav == true ? 'm-hire' : '') + " hire-me cta"}>Hire me</button>
         </div>
         <div className={(mobileNav === true ? "opened " : "") + "menu-icons relative"} onClick={toogleMenu}>
           <div className="burger"></div>

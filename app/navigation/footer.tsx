@@ -8,7 +8,7 @@ function Footer(){
     <>
       <div className="footer flex justify-between gap-10 ">
         <div className="">
-          <p>© 2024 · All Rights Reserved</p>
+          <p>© 2024 · <span className="desktop"> All Rights Reserved</span></p>
         </div>
         <div className="">
           <p>Made with 🤍 by the white_dev</p>

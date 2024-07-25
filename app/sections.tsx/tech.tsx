@@ -11,7 +11,7 @@ export default function Tech() {
         <p>
           Among all the technologies we learn for studies, training and work in enterprises, the ones we love and are familiar with ; here are the the ones I acctually use. From the most mastered to those I'm still discovering
         </p>
-        <div className="flex justify-between gap-4 ">
+        <div className="techs flex justify-between gap-4 ">
           <div className="tech r-card">
             <h4>Programming Languages</h4>
             <ul>

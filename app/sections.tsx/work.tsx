@@ -12,7 +12,7 @@ export default function Works() {
         <p>
           Here are some Freelance missions, Personal & Side Projects
         </p>
-        <div className="flex flex-col gap-8">
+        <div className="p-grid flex flex-col gap-8">
           <div className="projects flex justify-between gap-4 ">
             <div className="project project-70 ">
               <div className="project-img">

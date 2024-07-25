@@ -7,7 +7,7 @@ export default function Skills() {
       <section className="flex flex-col gap-4 ">
         <h2 className="text-4xl " >Skills</h2>
         <p>I hava a great experience in building websites and implenting functionnnalities while using no or low-code solutions like CMS and development technologies as well</p>
-        <div className="flex justify-between gap-4 ">
+        <div className="skills flex justify-between gap-4 ">
           <div className="skill r-card">
             <h4>Basic Websites</h4>
             <ul>
