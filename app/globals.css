@@ -7,10 +7,12 @@
   --bborder-width: 1px;
   --bborder-padding-y: 1.2rem;
   --bborder-padding-x: 1.5rem;
+  --bborder-padding-y-sm: .7rem;
+  --bborder-padding-x-sm: .5rem;
   --foreground-color: black;
   --background-color: #fafafa;
-
 }
+
 
 body {
   background-color: var(--background-color);
@@ -394,26 +396,44 @@ li.gray {
 
   .project-img video {
     width: 100% !important;
-    /* height: 400px; */
+    /* height: auto!important; */
   }
 
 }
 
 @media screen and (max-width: 650px) {
 
+  .bborder {
+    padding-right: var(--bborder-padding-x-sm);
+  }
+  
+  .bborder-top {
+    padding-left: var(--bborder-padding-x-sm);
+  }
+  
+  .bborder-right {
+    padding-top: var(--bborder-padding-y-sm);
+  }
+  
+  .bborder-bottom {
+    min-width: calc(100% + var(--bborder-padding-y-sm));
+    min-height: var(--bborder-padding-y-sm);
+    padding-bottom: var(--bborder-padding-y-sm);
+  }
 
   section {
     padding: 1rem 1rem;
   }
-
+  
 
   .skills,
   .techs {
     flex-direction: column;
+    gap: 30px;
   }
 
   .r-card {
-    width: 100%;
+    width: 85%;
     height: 330px;
   }
 
@@ -421,5 +441,16 @@ li.gray {
     height: 300px;
   }
 
+  .description{
+    gap: 8px;
+  }
+  .text-\[48px\] {
+    font-size: 34px;
+}
+
+  h1, h1 span{
+    font-size: 24px;
+    font-weight: 400;
+  }
 
 }
