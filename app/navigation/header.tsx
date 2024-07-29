@@ -59,6 +59,9 @@ function Header({ title }: Props) {
             <li>
               <Link href="/about">about</Link>
             </li>
+            <li>
+              <Link href="/resume">resume</Link>
+            </li>
           </ul>
         </div>
         <div className="flex justify-center align-center ">
