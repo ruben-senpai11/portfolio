@@ -10,7 +10,7 @@ const Page = () => {
           height="100%"
           style={{ border: 'none' }}
           allow="autoplay"
-          title="PDF Viewer"
+          title="White dev's Resume "
         />
       </div>
     </div>

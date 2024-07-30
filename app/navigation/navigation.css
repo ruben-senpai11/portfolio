@@ -1,7 +1,9 @@
-.navbar, .footer{
+.navbar,
+.footer {
   padding: .5rem 1rem;
 }
-.footer{
+
+.footer {
   padding-top: 50px;
 }
 
@@ -24,15 +26,16 @@
   justify-content: space-between;
 }
 
-.navlinks li{
+.navlinks li {
   font-size: 16px;
 }
 
-.navlinks li::before{
+.navlinks li::before {
   content: "../ ";
   font-size: 14px;
 }
-.navlinks li.active::before{
+
+.navlinks li.active::before {
   content: "./ ";
 }
 
@@ -108,24 +111,25 @@
 @media screen and (max-width: 924px) {
 
 
-  .navbar{
+  .nav-container{
+    position: fixed;
+    top: calc(1rem + 4px);
+    width: calc(100% - 51px);
+    z-index: 999;
+  }
+  .nav-scrolled.nav-container{
+    top: 0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
+  }
+  .navbar {
+    background-color: var(--background-color);
+    /* border-top: 1px solid var(--foreground-color); */
     border-bottom: 1px solid #ccc;
   }
 
-  .desktopp, .desktop-menu, .hire-me {
+  .desktopp,
+  .desktop-menu,
+  .hire-me {
     display: none;
-  }
-
-  .footer{
-    flex-direction: column-reverse;
-    border-top: 1px solid #ccc;
-    margin-top: 35px;
-    gap: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .socials{
-    /* flex-direction: column; */
   }
 
   .menu-icons {
@@ -133,13 +137,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 7px; 
-    width: 40px;
-    min-width: 40px;
+    gap: 7px;
+    /* width: 40px;
+    min-width: 40px; */
     height: 35px;
     border-radius: 7px;
     color: var(--foreground-color);
     background-color: var(--dark-primary);
+
+    /* position: fixed;
+    right: 35px; */
   }
 
   .burger {
@@ -178,7 +185,8 @@
     flex-direction: column;
     /* align-items: center; */
     gap: 4vh;
-    width: 80%;
+    width: 100%;
+    padding-left: 40px;
     margin: 0 auto;
   }
 
@@ -207,15 +215,33 @@
     transition: all .7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 
-  .m-hire{
+  .navlinks li {
+    display: flex;
+    justify-content: start;
+  }
+
+  .navlinks li a {
+    width: 100%;
+  }
+
+  .m-hire {
     display: flex;
     position: absolute;
     height: 32px;
-    top: 360px;
+    top: 410px;
     left: 50px;
     bottom: 0;
   }
 
+
+  .footer {
+    flex-direction: column-reverse;
+    border-top: 1px solid #ccc;
+    margin-top: 35px;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 
@@ -223,11 +249,23 @@
   .logo h1 {
     font-size: 30px;
   }
+  .nav-container{
+    top: calc(1rem +1px);
+    width: calc(100% - 30px);
+  }
+  .nav-scrolled.nav-container{
+    top: 0px;
+  }
+  .navbar {
+    background-color: var(--background-color);
+    /* border-top: 1px solid var(--foreground-color); */
+    border-bottom: 1px solid #ccc;
+  }
 }
 
 @media screen and (max-width: 580px) {
   .search-input {
-    padding: 0!important;
+    padding: 0 !important;
     /* padding-left: 2px!important; */
   }
 }

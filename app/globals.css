@@ -327,6 +327,17 @@ li.gray {
 
 @media screen and (max-width: 924px) {
 
+  .bborder-top {
+    /* border-top: 0; */
+    /* margin-top: var(--bborder-padding-y-sm); */
+  }
+
+  .bborder-top::before {
+    position: fixed;
+    width: 150px;
+    border-top: 5px solid black;
+  }
+
   .main {
     gap: 50px;
   }
@@ -366,6 +377,7 @@ li.gray {
     margin-bottom: 2px;
     border-bottom: 1px solid #ccc;
   }
+
   .r-card ul {
     display: flex;
     flex-direction: column;
@@ -374,20 +386,26 @@ li.gray {
     font-weight: 500;
   }
 
-  .p-grid, .projects{
+  .p-grid,
+  .projects {
     gap: 20px;
   }
+
   .project {
     flex-direction: column;
   }
 
-  .project-70, .project-30{
+  .project-70,
+  .project-30 {
     width: 100%;
-  } 
-  .project-img, .project-img video {
+  }
+
+  .project-img,
+  .project-img video {
     width: 100%;
     min-width: 100% !important;
     max-width: 100px !important;
+    /* height: 400px; */
   }
 
   .project-img {
@@ -406,15 +424,15 @@ li.gray {
   .bborder {
     padding-right: var(--bborder-padding-x-sm);
   }
-  
+
   .bborder-top {
     padding-left: var(--bborder-padding-x-sm);
   }
-  
+
   .bborder-right {
     padding-top: var(--bborder-padding-y-sm);
   }
-  
+
   .bborder-bottom {
     min-width: calc(100% + var(--bborder-padding-y-sm));
     min-height: var(--bborder-padding-y-sm);
@@ -424,7 +442,7 @@ li.gray {
   section {
     padding: 1rem 1rem;
   }
-  
+
 
   .skills,
   .techs {
@@ -435,21 +453,23 @@ li.gray {
 
   .r-card {
     width: 90%;
-    height: 330px;
+    height: 100%;
   }
 
-  .tech{
+  .tech {
     height: 300px;
   }
 
-  .description{
+  .description {
     gap: 8px;
   }
+
   .text-\[48px\] {
     font-size: 34px;
-}
+  }
 
-  h1, h1 span{
+  h1,
+  h1 span {
     font-size: 24px;
     font-weight: 400;
   }

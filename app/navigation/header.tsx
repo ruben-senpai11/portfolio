@@ -20,7 +20,6 @@ function Header({ title }: Props) {
   </svg>);
 
 
-
   //Mobile Nav
   const [mobileNav, setmobileNav] = useState(false);
 
@@ -32,44 +31,66 @@ function Header({ title }: Props) {
     }
   }
 
+  //  Scroll Trigger
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 5) {
+        setIsScrolled(true)
+      } else {
+        setIsScrolled(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
+
 
 
   return (
     <>
-      <div className="navbar">
-        <div className="logo">
-          <Link href="/">
-            {title}
-          </Link>
-        </div>
-        <div className={(mobileNav == true ? 'mobile-menu' : 'desktop-menu') + " "}>
-          <ul className="navlinks flex gap-12 navlinks justify-between align-center ">
-            <li className="active">
-              <Link href="/#hero">home</Link>
+      <div className={ (isScrolled ? "nav-scrolled" : "") + " nav-container" }>
+        <div className="navbar">
+          <div className="logo">
+            <Link href="/">
+              {title}
+            </Link>
+          </div>
+          <div className={(mobileNav == true ? 'mobile-menu' : 'desktop-menu') + " "}>
+            <ul className="navlinks flex gap-12 navlinks justify-between align-center ">
+              <li className="active">
+                <Link href="/#hero">home</Link>
               </li>
-            <li>
-              <Link href="/#skills">skills</Link>
-            </li>
-            <li>
-              <Link href="/#works">works</Link>
-            </li>
-            <li>
-              <Link href="/#techs">techs</Link>
-            </li>
-            <li>
-              <Link href="/about">about</Link>
-            </li>
-            <li>
-              <Link href="/resume">resume</Link>
-            </li>
-          </ul>
-        </div>
-        <div className="flex justify-center align-center ">
-          <button type="button" className={(mobileNav == true ? 'm-hire' : '') + " hire-me cta"}>Hire me</button>
-        </div>
-        <div className={(mobileNav === true ? "opened " : "") + "menu-icons relative"} onClick={toogleMenu}>
-          <div className="burger"></div>
-          <div className="burger"></div>
+              <li>
+                <Link href="/#skills">skills</Link>
+              </li>
+              <li>
+                <Link href="/#works">works</Link>
+              </li>
+              <li>
+                <Link href="/#techs">techs</Link>
+              </li>
+              <li>
+                <Link href="/about">about</Link>
+              </li>
+              <li>
+                <Link href="/resume">resume</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="flex justify-center align-center ">
+            <button type="button" className={(mobileNav == true ? 'm-hire' : '') + " hire-me cta"}>Hire me</button>
+          </div>
+          <div className={(mobileNav === true ? "opened " : "") + "menu-icons relative"} onClick={toogleMenu}>
+            <div className="burger"></div>
+            <div className="burger"></div>
+          </div>
         </div>
       </div>
     </>

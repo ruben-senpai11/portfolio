@@ -14,7 +14,7 @@ export default function Hero (){
               <span>Friends call me <span className="">white_dev</span> </span>
             </h1>
             <p>
-              white_dev is high a skilled  
+              white_dev is a high skilled  
               <span> Frontend developer</span> 
             </p>
           </div>
