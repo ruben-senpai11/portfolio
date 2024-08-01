@@ -234,8 +234,8 @@
     display: flex;
     position: absolute;
     height: 32px;
-    top: 375px;
-    left: 50px;
+    top: 350px;
+    left: 52px;
     bottom: 0;
   }
 
@@ -254,7 +254,7 @@
 @media screen and (max-width: 768px) {
 
   .navbar{
-    padding: .1rem 1rem;
+    /* padding: .1rem 1rem; */
   }
 
   .logo h1 {
