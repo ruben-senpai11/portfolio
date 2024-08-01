@@ -26,11 +26,11 @@ import figma from "../assets/favicons/figma.png"
 
 import Image from "next/image";
 
-interface Props{
+interface Props {
 
 }
 
-export default function Stack(){
+export default function Stack() {
 
 
   const container = useRef<HTMLElement>(null);
@@ -41,11 +41,11 @@ export default function Stack(){
   useGSAP(() => {
 
     gsap.to(".stack", {
-      x: ()=> "-"+ ((document.querySelector(".stack") as HTMLElement)?.offsetWidth - (document.querySelector(".story-3") as HTMLElement)?.offsetWidth ),
+      x: () => "-" + ((document.querySelector(".stack") as HTMLElement)?.offsetWidth - (document.querySelector(".story-3") as HTMLElement)?.offsetWidth),
       scrollTrigger: {
         trigger: '.story-3',
         start: 'center center',
-        end: ()=> "+="+ 1.5*((document.querySelector(".stack") as HTMLElement)?.offsetWidth),
+        end: () => "+=" + 1.5 * ((document.querySelector(".stack") as HTMLElement)?.offsetWidth),
         toggleActions: "restart pause reverse pause",
         scrub: true,
         pin: true,
@@ -53,88 +53,120 @@ export default function Stack(){
         anticipatePin: 1,
       }
     });
-  }, );
+  },);
 
-  return(
+  return (
 
     <>
       <section ref={container} className="stack ">
-         <div className="astack">
-           <Image src={html} width={200} height={200} alt="html" />
-           HTML
-          </div>
-         <div className="astack">
-           <Image src={css} width={200} height={200} alt="css" />
-           CSS
-          </div>
-         <div className="astack">
-           <Image src={js} width={200} height={200} alt="js" />
-           Javascript
-          </div>
-         <div className="astack">
-           <Image src={ts} width={200} height={200} alt="ts" />
-           Typescript
-          </div>
-         <div className="astack">
-           <Image src={express} width={200} height={200} alt="express" />
-           Express JS
-          </div>
-         <div className="astack">
-           <Image src={laravel} width={200} height={200} alt="laravel" />
-           Laravel
-          </div>
-         <div className="astack">
-           <Image src={react} width={200} height={200} alt="react" />
-           React
-          </div>
-         <div className="astack">
-           <Image src={remix} width={200} height={200} alt="remix" />
-           Remix
-          </div>
-         <div className="astack">
-           <Image src={next} width={200} height={200} alt="next" />
-           Next.js
-          </div>
-         <div className="astack">
-           <Image src={mysql} width={200} height={200} alt="mysql" />
+        <div className="astack">
+          <Image src={html} width={200} height={200} alt="html" />
+          <p className="flex">
+            HTML
+          </p>
+        </div>
+        <div className="astack">
+          <Image src={css} width={200} height={200} alt="css" />
+          <p className="flex">
+            CSS
+          </p>
+        </div>
+        <div className="astack">
+          <Image src={js} width={200} height={200} alt="js" />
+          <p className="flex">
+            Javascript
+          </p>
+        </div>
+        <div className="astack">
+          <Image src={ts} width={200} height={200} alt="ts" />
+          <p className="flex">
+            Typescript
+          </p>
+        </div>
+        <div className="astack">
+          <Image src={express} width={200} height={200} alt="express" />
+          <p className="flex">
+            Express
+          </p> JS
+        </div>
+        <div className="astack">
+          <Image src={laravel} width={200} height={200} alt="laravel" />
+          <p className="flex">
+            Laravel
+          </p>
+        </div>
+        <div className="astack">
+          <Image src={react} width={200} height={200} alt="react" />
+          <p className="flex">
+            React
+          </p>
+        </div>
+        <div className="astack">
+          <Image src={remix} width={200} height={200} alt="remix" />
+          <p className="flex">
+            Remix
+          </p>
+        </div>
+        <div className="astack">
+          <Image src={next} width={200} height={200} alt="next" />
+          <p className="flex">
+            Next
+          </p>.js
+        </div>
+        <div className="astack">
+          <Image src={mysql} width={200} height={200} alt="mysql" />
+          <p className="flex">
             MySQL
-          </div>
-         <div className="astack">
-           <Image src={postgresql} width={200} height={200} alt="postgresql" />
+          </p>
+        </div>
+        <div className="astack">
+          <Image src={postgresql} width={200} height={200} alt="postgresql" />
+          <p className="flex">
             PostgreSQL
-          </div>
-         <div className="astack">
-           <Image src={prisma} width={200} height={200} alt="prisma" />
+          </p>
+        </div>
+        <div className="astack">
+          <Image src={prisma} width={200} height={200} alt="prisma" />
+          <p className="flex">
             Prisma
-          </div>
-         <div className="astack">
-           <Image src={tailwind} width={200} height={200} alt="tailwind" />
-            Tailwind CSS
-          </div>
-         <div className="astack">
-           <Image src={bootstrap} width={200} height={200} alt="bootstrap" />
-            Bootstrap
-          </div>
-         <div className="astack">
-           <Image src={gsapLogo} width={200} height={200} alt="gsap" />
+          </p>
+        </div>
+        <div className="astack">
+          <Image src={tailwind} width={200} height={200} alt="tailwind" />
+          <p className="flex">
+            Tailwind
+          </p> CSS
+        </div>
+        <div className="astack">
+          <Image src={gsapLogo} width={200} height={200} alt="gsap" />
+          <p className="flex">
             GSAP
-          </div>
-         <div className="astack">
-           <Image src={figma} width={200} height={200} alt="figma" />
+          </p>
+        </div>
+        <div className="astack">
+          <Image src={figma} width={200} height={200} alt="figma" />
+          <p className="flex">
             Figma
-          </div>
-         <div className="astack">
-           <Image src={webflow} width={200} height={200} alt="webflow" />
+          </p>
+        </div>
+        <div className="astack">
+          <Image src={webflow} width={200} height={200} alt="webflow" />
+          <p className="flex">
             Webflow
-          </div>
-         <div className="astack">
-           <Image src={shopify} width={200} height={200} alt="shopify" />
+          </p>
+        </div>
+        <div className="astack">
+          <Image src={shopify} width={200} height={200} alt="shopify" />
+          <p className="flex">
             Shopify
-          </div>
-         <div className="astack">
-           <Image src={github} width={200} height={200} alt="github" />
+          </p>
+        </div>
+        <div className="astack">
+          <Image src={github} width={200} height={200} alt="github" />
+          <p className="flex">
             Github
-          </div>
+          </p>
+        </div>
       </section>
     </>
   )

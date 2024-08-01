@@ -67,14 +67,14 @@ function Header({ title }: Props) {
               <li className="active">
                 <Link href="/#hero">home</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/#skills">skills</Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/#works">works</Link>
               </li>
               <li>
-                <Link href="/#techs">techs</Link>
+                <Link href="/#stack">stack</Link>
               </li>
               <li>
                 <Link href="/about">about</Link>

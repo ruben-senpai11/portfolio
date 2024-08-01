@@ -111,15 +111,21 @@
 @media screen and (max-width: 924px) {
 
 
-  .nav-container{
+  .main{
+    padding-top: 42px;
+  }
+
+  .nav-container {
     position: fixed;
     top: calc(1rem + 4px);
     width: calc(100% - 51px);
     z-index: 999;
   }
-  .nav-scrolled.nav-container{
-    top: 0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
+
+  .nav-scrolled.nav-container {
+    top: 0;
   }
+
   .navbar {
     background-color: var(--background-color);
     /* border-top: 1px solid var(--foreground-color); */
@@ -167,7 +173,7 @@
 
   .mobile-menu {
     position: absolute;
-    top: 48px;
+    top: 44px;
     left: 0;
     right: 0;
     width: 100%;
@@ -228,7 +234,7 @@
     display: flex;
     position: absolute;
     height: 32px;
-    top: 410px;
+    top: 375px;
     left: 50px;
     bottom: 0;
   }
@@ -246,21 +252,37 @@
 
 
 @media screen and (max-width: 768px) {
+
+  .navbar{
+    padding: .1rem 1rem;
+  }
+
   .logo h1 {
     font-size: 30px;
   }
-  .nav-container{
+
+  .nav-container {
     top: calc(1rem +1px);
-    width: calc(100% - 30px);
+    /* width: calc(100% - 30px); */
   }
-  .nav-scrolled.nav-container{
+
+  .nav-scrolled.nav-container {
     top: 0px;
   }
+
   .navbar {
     background-color: var(--background-color);
     /* border-top: 1px solid var(--foreground-color); */
     border-bottom: 1px solid #ccc;
   }
+}
+
+@media screen and (max-width: 650px) {
+  
+  .nav-container {
+    width: calc(100% - 30px);
+  }
+
 }
 
 @media screen and (max-width: 580px) {

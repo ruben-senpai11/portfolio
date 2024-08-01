@@ -1,13 +1,14 @@
-h2{
+h2 {
   margin-bottom: 10px;
 }
-.a-picture{
+
+.a-picture {
   border: none;
   padding: 0;
   margin: 0;
 }
 
-.a-picture img{
+.a-picture img {
   width: 200px;
   height: 250px;
 }
@@ -22,7 +23,79 @@ h2{
   overflow: hidden;
 }
 
-.story-2{
+.story-2 {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
+}
+
+.story-3{
+  width: 95%;
+  max-width: 700px;
+  overflow: hidden!important;
+}
+
+
+/******    Stack  *******/
+
+.stack {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  width: 95%;
+  max-width: 95%;
+  overflow-x: hidden!important;
+}
+
+.astack {
+  display: flex;
+  justify-content: start;
+  gap: 7px;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-family: serif;
+  font-size: 32px;
+  width: max-content;
+  /* min-width: 100px; */
+}
+
+.stack img {
+  width: auto;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+  /* display: none; */
+} 
+
+
+
+@media screen and (max-width: 1100px) {
+
+  .story-1 {
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+}
+
+@media screen and (max-width: 924px) {
+
+  .story-1{
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 50px;
+  }
+  .story-2{
+    padding: 25px 20px;
+  }
+  .a-description{
+    width: 100%;
+  }
+  .a-picture{
+    /* align-self: flex-end; */
+  }
+
 }

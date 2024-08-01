@@ -111,6 +111,7 @@ h2 {
 .main {
   /* padding-bottom: 100px; */
   gap: 100px;
+  overflow: hidden!important;
 }
 
 section {
@@ -274,35 +275,6 @@ li.gray {
 
 
 
-/******    Stack  *******/
-
-.stack {
-  display: flex;
-  justify-content: space-between;
-  gap: 60px;
-  /* overflow-x: scroll; */
-  margin-top: 70px;
-  margin-bottom: 70px;
-}
-
-.stack div {
-  display: flex;
-  justify-content: start;
-  gap: 7px;
-  align-items: center;
-  font-family: serif;
-  font-size: 32px;
-  width: max-content;
-  /* min-width: 100px; */
-}
-
-.stack img {
-  width: auto;
-  height: 60px;
-  object-fit: cover;
-  border-radius: 4px;
-  /* display: none; */
-}
 
 @media screen and (max-width: 1200px) {
 

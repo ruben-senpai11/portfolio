@@ -3,7 +3,7 @@ import Footer from "./../navigation/footer";
 import Header from "./../navigation/header";
 import Image from "next/image";
 
-import youngDev from "../assets/img/young_white_dev.jpg"
+import youngDev from "/img/young_dev.jpg"
 import smilingDev from "../assets/img/smiling_white_dev.jpg"
 
 import "./about.css"
@@ -19,7 +19,7 @@ export default function Page() {
         <div className="main my-8 mb-16">
           <section className="about flex flex-col gap-16">
             <h1 className="text-[48px] " >About me</h1>
-            <div className="flex flex-col gap-24   ">
+            <div className="flex flex-col gap-20   ">
               <div className="flex justify-center px-[5%]  ">
                 <div className="flex justify-between story-1 ">
                   <div className="a-description w-[60%] ">
@@ -31,12 +31,12 @@ export default function Page() {
                     <p>When I think of it , it was a huge way to arrive here. I've been through many technologies, and defintely found myself in frontend development and web design</p>
                   </div>
                   <div className="picture a-picture flex items-center ">
-                    <Image src={youngDev} width={400} height={400} alt="Young white_dev" />
+                    {/* <Image src={youngDev} width={400} height={400} alt="young white_dev" /> */}
                   </div>
                 </div>
               </div>
 
-              <div className="flex flex-col items-center story-2 gap-8 pt-4 ">
+              <div className="flex flex-col items-center story-2 gap-8 py-8 ">
                 <div className="a-description ">
                   <h2>2. Transition</h2>
                   {/* <p>You may have noticed, even though I claim to be a frontend dev, I have a full's stack.</p> */}
@@ -47,9 +47,6 @@ export default function Page() {
 
                   <p>Then, since my 2 last jobs, I decided to specialize myself as frontend.</p>
                   <p> This is the perfect job ror me, it enhance my productivity and I enjoy it like a kid</p>
-                </div>
-                <div className="picture a-picture flex items-center ">
-                  {/* <Image src={smilingDev} width={400} height={400} alt="Young hite_dev" /> */}
                 </div>
               </div>
 
@@ -63,15 +60,12 @@ export default function Page() {
               </div>
 
 
-              <div className="flex flex-col items-center story-2 gap-8 pt-4 ">
+              <div className="flex flex-col items-center story-2 gap-8 py-4 ">
                 <div className="a-description ">
                   <h2>4. Waiting for you !</h2>
-                  <p>All I need now is use all these skills and learn more with you
+                  <p>All I aim now is use all these skills and learn more with you
                     Programming is all I love and honnestly, I can't wait to work with you.</p>
                   <p>I may be your goldmine, promised 😇</p>           
-                </div>
-                <div className="picture a-picture flex items-center ">
-                  {/* <Image src={smilingDev} width={400} height={400} alt="Young hite_dev" /> */}
                 </div>
               </div>
             </div>
