@@ -273,7 +273,14 @@ li.gray {
   /* display: none; */
 }
 
+.p-description{
+  overflow: scroll;
+}
 
+.p-description p{
+  font-size: 15px;
+  color: #333;
+}
 
 
 @media screen and (max-width: 1200px) {
