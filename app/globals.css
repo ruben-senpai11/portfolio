@@ -5,8 +5,8 @@
 
 :root {
   --bborder-width: 1px;
-  --bborder-padding-y: 1.2rem;
-  --bborder-padding-x: 1.5rem;
+  --bborder-padding-y: 1.4rem;
+  --bborder-padding-x: 1.7rem;
   --bborder-padding-y-sm: 1rem;
   --bborder-padding-x-sm: .7rem;
   --foreground-color: black;
@@ -75,7 +75,7 @@ h2 {
 
 .bborder {
   padding-right: var(--bborder-padding-x);
-  max-width: 1500px !important;
+  max-width: 1400px !important;
 }
 
 .bborder-top {
@@ -90,12 +90,54 @@ h2 {
 }
 
 .bborder-bottom {
-  min-width: calc(100% + var(--bborder-padding-y));
+  min-width: calc(100% + var(--bborder-padding-x));
   min-height: var(--bborder-padding-y);
   background-color: white;
   padding-bottom: var(--bborder-padding-y);
   border-top: var(--bborder-width) solid var(--foreground-color);
   overflow: hidden;
+}
+
+
+/* **************   ENVIRONMENT   ********************* */
+
+.env{
+  position: fixed;
+  bottom: calc(var(--bborder-padding-y) * 2);
+  left: calc(var(--bborder-padding-x) / 6);
+  width: 20px;
+  display: flex; 
+  flex-direction: column-reverse;
+  padding: 0;
+  gap: 130px;
+  font-size: 14px;
+  /* border: solid green; */
+}
+
+.theme, .language {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 14px;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  /* border: solid; */
+}
+.theme span, .language span{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.checkbox{
+  display: flex;
+  width: 10px;
+  height: 10px;
+  border: 1px solid;
+}
+.checkbox.active{
+  background-color: black;
 }
 
 
@@ -146,7 +188,6 @@ section {
   object-fit: cover;
   border: 1px solid var(--foreground-color);
 }
-
 
 /****** Skills ***/
 
@@ -273,8 +314,20 @@ li.gray {
   /* display: none; */
 }
 
+@media screen and (min-width: 1200px){
 
-
+  .picture img {
+    margin-left: 100px;
+    margin-right: -150px;
+  }
+  
+  .bar{
+    display: flex;
+    border-left: .5px solid var(--foreground-color);
+    /* padding-right: 31px; */
+  }
+  
+}
 
 @media screen and (max-width: 1200px) {
 
@@ -293,6 +346,10 @@ li.gray {
   .project-30 .project-img {
     width: max-content;
 
+  }
+
+  .desktop{
+    display: none;
   }
 
 }

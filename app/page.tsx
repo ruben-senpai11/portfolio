@@ -15,10 +15,19 @@ export default function Page() {
       <BBorder >
         <Header title="white_dev" />
         <div className="main flex flex-col gap-16 ">
-          <Hero/>
-          <Skills/>
+          <Hero />
+          <Skills />
           <Works />
           <Tech />
+          <div>I'am a
+            <span>developer</span>
+            <span>baskettball player</span>
+            <span>pianist</span>
+            <span>electrocian</span>
+            <span>boxer</span>
+            <span>photographer</span>
+            <span>human</span>
+          </div>
         </div>
         <Footer />
       </BBorder>

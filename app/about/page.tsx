@@ -50,11 +50,11 @@ export default function Page() {
                 </div>
               </div>
 
-              <div className="flex justify-center px-[5%]  ">
+              <div className="flex justify-center px-[0%]  ">
                 <div className="flex justify-between story-1 story-3 ">
                   <div className="">
                     <h2>3. My Stack</h2>
-                    {/* <Stack /> */}
+                    <Stack />
                   </div>
                 </div>
               </div>
