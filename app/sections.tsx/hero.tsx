@@ -1,6 +1,6 @@
 import Image from "next/image"
-import Smiling_dev from "../assets/img/smiling_white_dev.jpg"
-import White_mode_dev from "../assets/img/profile-pic_white_mode.png"
+import smiling_dev from "../assets/img/smiling_white_dev.jpg"
+import white_mode_dev from "../assets/img/profile-pic_white_mode.png"
 import dark_mode_dev from "../assets/img/profile-pic_Dark_mode.png"
 
 export default function Hero (){
@@ -21,7 +21,7 @@ export default function Hero (){
             </p>
           </div>
           <div className="picture flex items-center ">
-            <Image src={Smiling_dev} width={400} height={400} alt="smiling_white_dev" />
+            <Image src={smiling_dev} width={400} height={400} alt="smiling_white_dev" />
           </div>
           <div className="bar desktop"></div>
         {/* </div> */}

@@ -1,6 +1,8 @@
-/*"use client"
-import { useEffect, useState } from "react";*/
+"use client"
+import { useEffect, useState } from "react";
 import { setupScrollListener } from "./utils/scrollPosition";
+import Checkbox from "./components/checkbox";
+import Env from "./components/env";
 
 interface Props {
   children: any
@@ -33,47 +35,49 @@ export default function BBorder({ children }: Props) {
         <div className="bborder-right" style={{height: `${(scrollPercent.toFixed(0))}px`}} >          
   */
 
+
+  const [screenWidth, setScreenWidth] = useState(0);
+
+  useEffect(() => {
+    // Set initial width
+    setScreenWidth(window.innerWidth);
+
+    // Update width on resize
+    const handleResize = () => setScreenWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup on unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Dynamic Tailwind classes based on width
+  const Bbordered = screenWidth > 1400 ? "bbordered" : "";
+  const autoLeftCalc = screenWidth > 1400 ? "auto-left" : "inner-left";
+
+
+
   return (
     <>
-      <div className="flex justify-center relative ">
-        <div className="bborder">
-          <div className="bborder-right">
-            <div className="bborder-top">
-              <div className="bborder-left  ">
-                <div className="flex flex-col ">
-                  <div className="">
-                    {children}
-                  </div>
-                  <div className="bborder-bottom">  
+        <div className={`flex justify-center relative ${Bbordered}`}>
+          <div className="bborder">
+            <div className="bborder-right">
+              <div className="bborder-top">
+                <div className="bborder-left  ">
+                  <div className="flex flex-col ">
+                    <div className="">
+                      {children}
+                    </div>
+                    <div className="bborder-bottom">
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="env">   
-          <div className="theme">
-            <span>
-              <span className="checkbox active"></span>
-              Light
-            </span>
-            <span>
-              <span className="checkbox"></span>
-              Dark
-            </span>
-          </div>
-          <div className="language">
-            <span>
-              <span className="checkbox active"></span>
-              En
-            </span>
-            <span>
-              <span className="checkbox"></span>
-              Fr
-            </span>
+          <div className={`env ${autoLeftCalc}`} style={{ left: `${(screenWidth - 1397) /2 }px`, bottom: "24px" }}>
+            <Env/>
           </div>
         </div>
-      </div>
     </>
   )
 }

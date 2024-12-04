@@ -19,11 +19,11 @@ export default function Page() {
           <Skills />
           <Works />
           <Tech />
-          <div>I'am a
+          <div className="flex gap-4 my-0 mx-auto" >I'am a
             <span>developer</span>
             <span>baskettball player</span>
             <span>pianist</span>
-            <span>electrocian</span>
+            <span>electronician</span>
             <span>boxer</span>
             <span>photographer</span>
             <span>human</span>
