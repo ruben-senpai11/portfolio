@@ -1,5 +1,5 @@
 const Page = () => {
-  const pdfUrl = '../../public/resume.pdf';
+  const pdfUrl = '/resume.pdf';
 
   return (
     <div>

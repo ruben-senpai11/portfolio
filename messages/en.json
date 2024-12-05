@@ -1,4 +1,12 @@
 {
+  "Navigation": {
+    "home": "home",
+    "works": "works",
+    "stack": "stack",
+    "about": "about",
+    "resume": "resume",
+    "hire-me": "hire me"
+  },
   "HomePage": {
     "title": "Hello world!",
     "about": "Go to the about page"

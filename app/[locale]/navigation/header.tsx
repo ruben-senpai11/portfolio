@@ -2,8 +2,9 @@
 import { useEffect, useState } from 'react';
 import ThemeMode from '../components/themeMode';
 import { ChangeEvent } from 'react';
-import Link from 'next/link';
+import {Link} from '@/i18n/routing';
 import "./navigation.css"
+import { useTranslations } from 'next-intl';
 
 interface Props {
   title: string
@@ -50,6 +51,7 @@ function Header({ title }: Props) {
     }
   }, [])
 
+  const t = useTranslations('Navigation');
 
 
 
@@ -65,27 +67,27 @@ function Header({ title }: Props) {
           <div className={(mobileNav == true ? 'mobile-menu' : 'desktop-menu') + " "}>
             <ul className="navlinks flex gap-12 navlinks justify-between align-center ">
               <li className="active">
-                <Link href="/#hero">home</Link>
+                <Link href="/#hero">{t('home')}</Link>
               </li>
               {/* <li>
-                <Link href="/#skills">skills</Link>
+                <Link href="/#skills">{t('about')}</Link>
               </li> */}
               <li>
-                <Link href="/#works">works</Link>
+                <Link href="/#works">{t('works')}</Link>
               </li>
               <li>
-                <Link href="/#stack">stack</Link>
+                <Link href="/#stack">{t('stack')}</Link>
               </li>
               <li>
-                <Link href="/about">about</Link>
+                <Link href="/about">{t('about')}</Link>
               </li>
               <li>
-                <Link href="/resume">resume</Link>
+                <Link href="/resume">{t('resume')}</Link>
               </li>
             </ul>
           </div>
           <div className="flex justify-center align-center ">
-            <button type="button" className={(mobileNav == true ? 'm-hire' : '') + " hire-me cta"}>Hire me</button>
+            <button type="button" className={(mobileNav == true ? 'm-hire' : '') + " hire-me cta"}>{t('hire-me')}</button>
           </div>
           <div className={(mobileNav === true ? "opened " : "") + "menu-icons relative"} onClick={toogleMenu}>
             <div className="burger"></div>

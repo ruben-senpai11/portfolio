@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Checkbox from "./checkbox"
+import Theme from "./theme"
 
 interface Props {
   language: string
@@ -15,21 +16,13 @@ export default function Environment() {
 
   return (
     <>
-      <div className="theme">
-        <span>
-          <Checkbox label="Light" isChecked={true} />
-        </span>
-        <span>
-          <Checkbox label="Dark" isChecked={false} />
-        </span>
-      </div>
+      <Theme />
       <div className="language">
         <span>
           <Checkbox label="En" isChecked={true} />
         </span>
         <span>
           <Checkbox label="Fr" isChecked={false} />
-
         </span>
 
       </div>

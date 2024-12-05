@@ -1,4 +1,12 @@
 {
+  "Navigation": {
+    "home": "accueil",
+    "works": "travaux",
+    "stack": "stack",
+    "about": "à propos",
+    "resume": "curriculum",
+    "hire-me": "Dire Bonjour"
+  },
   "HomePage": {
     "title": "Salut tout le monde!",
     "about": "Voir la page à propos"
