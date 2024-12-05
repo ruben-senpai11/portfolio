@@ -1,8 +1,7 @@
 "use client"
 import { useEffect, useState } from "react";
-import { setupScrollListener } from "./utils/scrollPosition";
-import Checkbox from "./components/checkbox";
-import Env from "./components/env";
+// import { setupScrollListener } from "./utils/scrollPosition";
+import Environment from "./components/environment";
 
 interface Props {
   children: any
@@ -39,18 +38,14 @@ export default function BBorder({ children }: Props) {
   const [screenWidth, setScreenWidth] = useState(0);
 
   useEffect(() => {
-    // Set initial width
     setScreenWidth(window.innerWidth);
 
-    // Update width on resize
     const handleResize = () => setScreenWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
 
-    // Cleanup on unmount
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Dynamic Tailwind classes based on width
   const Bbordered = screenWidth > 1400 ? "bbordered" : "";
   const autoLeftCalc = screenWidth > 1400 ? "auto-left" : "inner-left";
 
@@ -75,7 +70,7 @@ export default function BBorder({ children }: Props) {
             </div>
           </div>
           <div className={`env ${autoLeftCalc}`} style={{ left: `${(screenWidth - 1397) /2 }px`, bottom: "24px" }}>
-            <Env/>
+            <Environment/>
           </div>
         </div>
     </>

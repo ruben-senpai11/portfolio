@@ -9,7 +9,7 @@ interface Props {
 }
 
 
-export default function Env() {
+export default function Environment() {
 
 
 

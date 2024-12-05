@@ -11,12 +11,15 @@ export default function Hero (){
         {/* <div className=""> */}
           <div className="description flex flex-col gap-8 justify-center align-center ">
             <h1 className="flex flex-col " >
-              <span className="text-[48px]"> Hi, I'm <span className="font-mono bg-zinc-200 m-1 px-2 py-1 ">Ruben White</span></span>
-              <span>22 years old & developer for 3 years</span>
+              <span className="text-[48px]"> 
+                Hey, I'm <span className="font-mono bg-zinc-200 m-1 px-2 py-1 ">Ruben White</span> 
+              </span>
+              <span>Friends call me white_dev</span>
+              {/* <span>22 years old & developer for 3 years</span> */}
               <span className="max-w-[500px] border-solid text-[20px] pt-" >I beleive in God and the ability he gave to me to make your next website <span className="font-mono bg-violet-300 m-1 p-1 " > divinely efficient</span>. </span>
             </h1>
             <p>
-              Ruben White is a high skilled  
+              Ruben White, i mean the white_dev is a high skilled  
               <span> Frontend developer</span> 
             </p>
           </div>
