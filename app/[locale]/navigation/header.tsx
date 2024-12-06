@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import ThemeMode from '../components/themeMode';
 import { ChangeEvent } from 'react';
 import {Link} from '@/i18n/routing';
-import "./navigation.css"
+import "../css/navigation.css"
 import { useTranslations } from 'next-intl';
 
 interface Props {

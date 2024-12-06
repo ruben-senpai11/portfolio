@@ -1,5 +1,5 @@
 import {useTranslations} from 'next-intl';
-import {Link} from '@/i18n/routing';
+import "./css/sections.css"
 
 import BBorder from "./bborder";
 import Footer from "./navigation/footer";
@@ -21,7 +21,7 @@ export default function HomePage() {
           <Skills />
           <Works />
           <Tech />
-          <div className="flex gap-4 my-0 mx-auto" >I'am a
+          <div className="flex gap-4 my-0 mx-auto" >I'm a
             <span>developer</span>
             <span>baskettball player</span>
             <span>pianist</span>
@@ -31,6 +31,7 @@ export default function HomePage() {
             <span>human</span>
           </div>
         </div>
+
         <Footer />
       </BBorder>
     </>

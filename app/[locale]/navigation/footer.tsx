@@ -1,5 +1,5 @@
 import Link from "next/link"
-import "./navigation.css"
+import "../css/navigation.css"
 
 
 function Footer(){

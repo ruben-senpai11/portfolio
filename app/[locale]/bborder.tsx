@@ -1,8 +1,8 @@
 "use client"
-import { useRouter } from 'next/router';
 import { useEffect, useState } from "react";
 import Language from "./components/language";
 import Theme from "./components/theme";
+import "./css/bborder.css"
 
 interface Props {
   children: any
@@ -21,13 +21,13 @@ export default function BBorder({ children }: Props) {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const Bbordered = screenWidth > 1400 ? "bbordered" : "";
-  const autoLeftCalc = screenWidth > 1400 ? "auto-left" : "inner-left";
+  // const Bbordered = screenWidth > 1400 ? "bbordered" : "";
+  // const autoLeftCalc = screenWidth > 1400 ? "auto-left" : "inner-left";
 
 
   return (
     <>
-      <div className={`flex justify-center relative ${Bbordered}`}>
+      <div className={`flex justify-center relative `}>
         <div className="bborder">
           <div className="bborder-right">
             <div className="bborder-top">
@@ -43,7 +43,9 @@ export default function BBorder({ children }: Props) {
             </div>
           </div>
         </div>
-        <div className={`env ${autoLeftCalc}`} style={{ left: `${(screenWidth - 1397) / 2}px`, bottom: "24px" }}>
+        <div className={`env`} 
+          // style={{ left: `${(screenWidth - 1397) / 2}px`, bottom: "24px" }}
+        >
           <Theme />
           <Language />
         </div>
