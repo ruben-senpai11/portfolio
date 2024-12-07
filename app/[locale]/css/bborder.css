@@ -59,7 +59,8 @@
   font-size: 14px;
   /* border: solid green; */
   left: calc(var(--bborder-padding-x) / 4)!important;
-  bottom: calc(var(--bborder-padding-y) *2)!important;
+  /* bottom: 25px!important; */
+  bottom: calc(var(--bborder-padding-y) )!important;
 }
 
 .theme, .language {

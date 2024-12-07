@@ -29,7 +29,7 @@ export default function Works() {
               </div>
               <div className="p-description">
                 <h5 className="p-title uppercase ">Mangaverse</h5>
-                <p>description</p>
+                {/* <p>Here is the place to add a fancy description showing you how much I made things up to make this project a banger right? Even though there is no stuff like this at this time keep in mind that in the Mangaverse, you can find any manga you look for. I've implemented fonctionnalities like Multiple Themes switch (from scratch), Infinite Scroll....</p> */}
               </div>
             </div>
             <div className="project project-30 ">
@@ -38,7 +38,7 @@ export default function Works() {
               </div>
               <div className="p-description">
                 <h5 className="p-title uppercase ">Bandage e-commerce</h5>
-                {/* <p>description</p> */}
+                {/* <p></p> */}
               </div>
             </div>
           </div>
@@ -67,7 +67,7 @@ export default function Works() {
               </div>
               <div className="p-description">
                 <h5 className="p-title uppercase ">Bunny Management</h5>
-                <p>description</p>
+                {/* <p>Here too is the place were I may add a fancy description making this project more banger Even though there is no stuff like this at this time keep in mind that in the Bunny Management is a platform to ... manage bunnies. Yeah ! It helps rabbit breeders prevent line crossing and enhance their breeding with less stress and tasks but more results</p> */}
               </div>
             </div>
           </div>

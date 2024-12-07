@@ -1,6 +1,6 @@
 import Image from "next/image"
 import smiling_dev from "../assets/img/smiling_white_dev.jpg"
-import white_mode_dev from "../assets/img/profile-pic_white_mode.png"
+import white_mode_pic from "../assets/img/profile-pic (20).png"
 import dark_mode_dev from "../assets/img/profile-pic_Dark_mode.png"
 
 export default function Hero (){
@@ -19,14 +19,14 @@ export default function Hero (){
               <span className="max-w-[500px] border-solid text-[20px] pt-" >I beleive in God and the ability he gave to me to make your next website <span className="font-mono bg-violet-300 m-1 p-1 " > divinely efficient</span>. </span>
             </h1>
             <p>
-              Ruben White, i mean the white_dev is a high skilled  
+              Ruben White is a high skilled  
               <span> Frontend developer</span> 
             </p>
           </div>
           <div className="picture flex items-center ">
-            <Image src={smiling_dev} width={400} height={400} alt="smiling_white_dev" />
+            {/* <div className="bar desktop"></div> */}
+            <Image src={white_mode_pic} width={400} height={400} alt="smiling_white_dev" />
           </div>
-          <div className="bar desktop"></div>
         {/* </div> */}
       </section>
     </>

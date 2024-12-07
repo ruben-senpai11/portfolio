@@ -21,16 +21,30 @@ section {
 .picture{
   margin-right: 40px;
   padding-right: 4px;
-  border-right: 1px solid #ccc
+  border-right: 1px solid #ccc;
 } */
+
+.picture{
+  position: relative;
+  width: 380px;
+  height: 380px;
+  max-height:  380px;
+  /* border: 1.5px solid; */
+  border-right: 1.5px solid;
+  border-bottom: 1.5px solid;
+}
 
 .picture img {
   /* border-radius: 400px; */
-  width: 400px;
-  height: 400px;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: max-content;
+  height: max-content; 
   object-fit: cover;
   /* border: 1px solid var(--foreground-color); */
-  box-shadow: 15px 15px 30px var(--foreground-color);
+  box-shadow: 2px 2px 5px var(--foreground-color);
+  /* border-radius: 20px; */
 }
 
 /****** Skills ***/
@@ -162,13 +176,13 @@ li.gray {
 @media screen and (min-width: 1200px){
 
   .picture img {
-    margin-left: 100px;
-    margin-right: -150px;
+    /* margin-left: 100px;
+    margin-right: -150px; */
   }
   
   .bar{
-    display: flex;
-    border-left: .5px solid var(--foreground-color);
+    /* display: flex;
+    border-left: .5px solid var(--foreground-color); */
   }
   
 }
@@ -213,7 +227,9 @@ li.gray {
   }
 
   .picture img {
-    width: 70%;
+    /* width: 400px;
+    height: 400px; */
+    /* width: 70%; */
     height: auto;
   }
 
