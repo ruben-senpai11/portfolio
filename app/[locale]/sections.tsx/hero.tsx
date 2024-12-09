@@ -1,6 +1,6 @@
 import Image from "next/image"
 import smiling_dev from "../assets/img/smiling_white_dev.jpg"
-import white_mode_pic from "../assets/img/profile-pic (20).png"
+import white_mode_pic from "../assets/img/profile-pic (21).png"
 import dark_mode_dev from "../assets/img/profile-pic_Dark_mode.png"
 
 export default function Hero (){

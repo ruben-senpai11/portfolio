@@ -26,9 +26,9 @@ section {
 
 .picture{
   position: relative;
-  width: 380px;
-  height: 380px;
-  max-height:  380px;
+  width: 350px;
+  height: 350px;
+  max-height:  350px;
   /* border: 1.5px solid; */
   border-right: 1.5px solid;
   border-bottom: 1.5px solid;
