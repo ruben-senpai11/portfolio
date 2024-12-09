@@ -2,8 +2,9 @@ import BBorder from "./../bborder";
 import Footer from "./../navigation/footer";
 import Header from "./../navigation/header";
 import Image from "next/image";
+import "../css/sections.css"
 
-import youngDev from "/img/young_dev.jpg"
+import youngDev from "../assets/img/young_dev.jpeg"
 import smilingDev from "../assets/img/smiling_white_dev.jpg"
 
 import "./about.css"
@@ -16,7 +17,7 @@ export default function Page() {
     <>
       <BBorder >
         <Header title="white_dev" />
-        <div className="main my-8 mb-16">
+        <div className="main ">
           <section className="about flex flex-col gap-16">
             <h1 className="text-[48px] " >About me</h1>
             <div className="flex flex-col gap-20   ">
@@ -30,8 +31,8 @@ export default function Page() {
                     <p>I've learned Python after it and was inducted to web development on school</p>
                     <p>When I think of it , it was a huge way to arrive here. I've been through many technologies, and defintely found myself in frontend development and web design</p>
                   </div>
-                  <div className="picture a-picture flex items-center ">
-                    {/* <Image src={youngDev} width={400} height={400} alt="young white_dev" /> */}
+                  <div className=" a-picture flex items-center ">
+                    <Image src={youngDev} width={400} height={400} alt="young white_dev" />
                   </div>
                 </div>
               </div>
@@ -54,7 +55,7 @@ export default function Page() {
                 <div className="flex justify-between story-1 story-3 ">
                   <div className="">
                     <h2>3. My Stack</h2>
-                    <Stack />
+                    {/* <Stack /> */}
                   </div>
                 </div>
               </div>

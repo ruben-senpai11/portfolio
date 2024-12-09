@@ -1,0 +1,37 @@
+:root{
+  --tb-padding-x: 15px;
+  --tb-padding-y: 15px
+}
+
+
+.t-bborder-left {
+  min-width: 100%;
+  width: 100%;
+  border-left: var(--bborder-width) solid var(--foreground-color);
+}
+
+.t-bborder {
+  padding-right: var(--tb-padding-x);
+  min-width: 100%;
+}
+
+.t-bborder-top {
+  width: 100%;
+  padding-left: var(--tb-padding-x);
+  border-top: var(--bborder-width) solid var(--foreground-color);
+}
+
+.t-bborder-right {
+  padding-top: calc(var(--tb-padding-y));
+  border-right: var(--bborder-width) solid var(--foreground-color);
+}
+
+.t-bborder-bottom {
+  min-width: calc(100% + var(--tb-padding-x));
+  min-height: var(--tb-padding-y);
+  background-color: var(--background-color);
+  padding-bottom: var(--tb-padding-y);
+  border-top: var(--bborder-width) solid var(--foreground-color);
+  overflow: hidden;
+}
+

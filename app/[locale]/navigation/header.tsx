@@ -1,10 +1,12 @@
 'use client'
 import { useEffect, useState } from 'react';
-import ThemeMode from '../components/themeMode';
 import { ChangeEvent } from 'react';
-import {Link} from '@/i18n/routing';
+import { Link } from '@/i18n/routing';
 import "../css/navigation.css"
 import { useTranslations } from 'next-intl';
+import TinyBborder from '../components/tiny-bborder';
+import Theme from '../components/theme';
+import Language from '../components/language';
 
 interface Props {
   title: string
@@ -53,18 +55,26 @@ function Header({ title }: Props) {
 
   const t = useTranslations('Navigation');
 
+  // contact button
+
+  const [isShown, setIsShown] = useState(false)
+
+  const handleContact = () => {
+    setIsShown(!isShown)
+  }
+
 
 
   return (
     <>
-      <div className={ (isScrolled ? "nav-scrolled" : "") + " nav-container" }>
+      <div className={(isScrolled ? "nav-scrolled" : "") + " nav-container"}>
         <div className="navbar">
           <div className="logo">
             <Link href="/">
               {title}
             </Link>
           </div>
-          <div className={(mobileNav == true ? 'mobile-menu' : 'desktop-menu') + " "}>
+          <div className={(mobileNav == true ? 'm-menu-container' : 'desktop-menu') + " "}>
             <ul className="navlinks flex gap-12 navlinks justify-between align-center ">
               <li className="active">
                 <Link href="/#hero">{t('home')}</Link>
@@ -87,14 +97,63 @@ function Header({ title }: Props) {
             </ul>
           </div>
           <div className="flex justify-center align-center ">
-            <button type="button" className={(mobileNav == true ? 'm-hire' : '') + " hire-me cta"}>{t('hire-me')}</button>
+            <button type="button" onClick={() => handleContact()} className=" hire-me cta">{t('hire-me')}</button>
+            <div className={"context-menu " + (mobileNav == true ? "flex" : "none")}>
+              <p className="uppercase">say hello</p>
+                <span className="tb-container">
+                  <Link href="" >
+                    <span> send a mail</span>
+                    <span>
+                      <svg width="16" height="16" fill="currentColor" className="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                      </svg>
+                    </span>
+                  </Link>
+                  <Link href="" >
+                    <span> chat on whatsapp</span>
+                    <span>
+                      <svg width="16" height="16" fill="currentColor" className="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                      </svg>
+                    </span>
+                  </Link>
+                </span>
+              <div className="socials flex gap-4 ">
+                <Link href="linkedin.com/in/alban-honfovou/" target="blank" >LN</Link>
+                <Link href="https://www.facebook.com/alban.honfovou/" target="blank" >FA</Link>
+                <Link href="https://wa.me/+22996404757/" target="blank" >WA</Link>
+                <Link href="https://github.com/ruben-senpai11" target="blank" >GH</Link>
+              </div>
+            </div>
+            <div className={"bordered " + (isShown ? "flex" : "none")}>
+              <TinyBborder >
+                <span className="tb-container">
+                  <Link href="" >
+                    <span> send a mail</span>
+                    <span>
+                      <svg width="16" height="16" fill="currentColor" className="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                      </svg>
+                    </span>
+                  </Link>
+                  <Link href="" >
+                    <span> chat on whatsapp</span>
+                    <span>
+                      <svg width="16" height="16" fill="currentColor" className="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                      </svg>
+                    </span>
+                  </Link>
+                </span>
+              </TinyBborder>
+            </div>
           </div>
           <div className={(mobileNav === true ? "opened " : "") + "menu-icons relative"} onClick={toogleMenu}>
             <div className="burger"></div>
             <div className="burger"></div>
           </div>
         </div>
-      </div>
+      </div >
     </>
   )
 }

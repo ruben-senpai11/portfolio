@@ -38,6 +38,30 @@ h2 {
   transform: scale(1.02);
 }
 
+/* links animation */
+
+
+a {
+  position: relative;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1.5px;
+  width: 100%;
+  background-color: #999;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease-in-out;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+}
+
 
 
 /* Scroll Bar ----------------------------------------- */
@@ -117,7 +141,7 @@ h2 {
   }
 
 
-  .text-\[48px\] {
+  .text-\[48px\], .text-\[48px\] span {
     font-size: 34px;
   }
 
@@ -128,3 +152,7 @@ h2 {
   }
 
 }
+
+
+
+

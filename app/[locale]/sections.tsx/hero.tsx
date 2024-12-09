@@ -25,7 +25,7 @@ export default function Hero (){
           </div>
           <div className="picture flex items-center ">
             {/* <div className="bar desktop"></div> */}
-            <Image src={white_mode_pic} width={400} height={400} alt="smiling_white_dev" />
+            <Image src={white_mode_pic} width={400} height={400} alt="smiling_white_dev" priority />
           </div>
         {/* </div> */}
       </section>

@@ -21,13 +21,10 @@ export default function BBorder({ children }: Props) {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // const Bbordered = screenWidth > 1400 ? "bbordered" : "";
-  // const autoLeftCalc = screenWidth > 1400 ? "auto-left" : "inner-left";
-
 
   return (
     <>
-      <div className={`flex justify-center relative `}>
+      <div className="flex justify-center relative">
         <div className="bborder">
           <div className="bborder-right">
             <div className="bborder-top">
@@ -43,9 +40,7 @@ export default function BBorder({ children }: Props) {
             </div>
           </div>
         </div>
-        <div className={`env`} 
-          // style={{ left: `${(screenWidth - 1397) / 2}px`, bottom: "24px" }}
-        >
+        <div className="env">
           <Theme />
           <Language />
         </div>

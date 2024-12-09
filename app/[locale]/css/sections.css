@@ -1,4 +1,3 @@
-
 section {
   padding: 2rem 4rem;
 }
@@ -24,27 +23,25 @@ section {
   border-right: 1px solid #ccc;
 } */
 
-.picture{
+.picture {
   position: relative;
   width: 350px;
+  min-width: 350px;
   height: 350px;
-  max-height:  350px;
-  /* border: 1.5px solid; */
+  max-height: 350px;
+  margin-top: 20px;
   border-right: 1.5px solid;
   border-bottom: 1.5px solid;
 }
 
 .picture img {
-  /* border-radius: 400px; */
   position: absolute;
   top: -20px;
   left: -20px;
   width: max-content;
-  height: max-content; 
+  height: max-content;
   object-fit: cover;
-  /* border: 1px solid var(--foreground-color); */
   box-shadow: 2px 2px 5px var(--foreground-color);
-  /* border-radius: 20px; */
 }
 
 /****** Skills ***/
@@ -61,7 +58,6 @@ section {
   height: 330px;
   overflow-x: hidden;
 }
-
 
 .r-card::-webkit-scrollbar {
   width: 1px;
@@ -98,7 +94,6 @@ section {
   height: 35px;
 }
 
-
 .s-tech {
   width: 100%;
   height: 100%;
@@ -120,8 +115,6 @@ li.gray {
 .w-100 {
   width: 100%;
 }
-
-
 
 /*** Works ****/
 .project {
@@ -172,23 +165,22 @@ li.gray {
   /* display: none; */
 }
 
-
-@media screen and (min-width: 1200px){
-
-  .picture img {
-    /* margin-left: 100px;
-    margin-right: -150px; */
-  }
-  
-  .bar{
-    /* display: flex;
-    border-left: .5px solid var(--foreground-color); */
-  }
-  
+@media screen and (min-width: 1200px) {
 }
 
 @media screen and (max-width: 1200px) {
+  .hero {
+    height: auto;
+  }
 
+  .picture {
+    position: relative;
+    width: 300px;
+    min-width: 300px;
+    height: 300px;
+    max-height: 300px;
+    margin-top: 40px;
+  }
   .projects {
     flex-direction: column;
   }
@@ -203,13 +195,10 @@ li.gray {
 
   .project-30 .project-img {
     width: max-content;
-
   }
-
 }
 
 @media screen and (max-width: 924px) {
-  
   section {
     padding: 1rem 2rem;
   }
@@ -217,19 +206,18 @@ li.gray {
   .hero {
     flex-direction: column;
     height: auto;
-    padding-top: 50px;
+    padding-top: 70px;
     padding-bottom: 0;
     gap: 35px;
   }
 
   .picture {
     justify-content: center;
+    margin: 40px auto 0 auto;
+    padding-left: 20px;
   }
 
   .picture img {
-    /* width: 400px;
-    height: 400px; */
-    /* width: 70%; */
     height: auto;
   }
 
@@ -287,12 +275,9 @@ li.gray {
 }
 
 @media screen and (max-width: 650px) {
-
-
   section {
     padding: 1rem 1rem;
   }
-
 
   .skills,
   .techs {
@@ -313,5 +298,14 @@ li.gray {
   .description {
     gap: 8px;
   }
+}
 
+
+@media screen and (max-width: 450px) {
+  .picture {
+    width: 250px;
+    min-width: 250px;
+    height: 250px;
+    max-height: 250px;
+  }
 }
