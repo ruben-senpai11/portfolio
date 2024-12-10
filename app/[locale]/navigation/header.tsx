@@ -11,15 +11,6 @@ interface Props {
 }
 
 function Header({ title }: Props) {
-  const [searchInput, setsearchInput] = useState('');
-
-  const handleInput = (event: ChangeEvent<HTMLInputElement>) => {
-    setsearchInput(event.target.value)
-  }
-  const searchIcon = (<svg width="16" height="16" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16">
-    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-  </svg>);
-
 
   //Mobile Nav
   const [mobileNav, setmobileNav] = useState(false);
@@ -95,20 +86,20 @@ function Header({ title }: Props) {
             </ul>
           </div>
           <div className="flex justify-center align-center ">
-            <button type="button" onClick={() => handleContact()} className=" hire-me cta">{t('hire-me')}</button>
+            <button type="button" onClick={() => handleContact()} className=" hire-me cta">{t('say-hello')}</button>
             <div className={"context-menu " + (mobileNav == true ? "flex" : "none")}>
-              <p className="uppercase">say hello</p>
+              <p className="uppercase">{t('say-hello')}</p>
                 <span className="tb-container">
-                  <Link href="" >
-                    <span> send a mail</span>
+                  <Link href="mailto:rubenwhite22@gmail.com" >
+                    <span> {t('email-me')}</span>
                     <span>
                       <svg width="16" height="16" fill="currentColor" className="bi bi-arrow-up-right" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
                       </svg>
                     </span>
                   </Link>
-                  <Link href="" >
-                    <span> chat on whatsapp</span>
+                  <Link href="https://wa.me/+22996404757/" >
+                    <span>{(t('whatsapp-me'))} </span>
                     <span>
                       <svg width="16" height="16" fill="currentColor" className="bi bi-arrow-up-right" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
@@ -126,16 +117,16 @@ function Header({ title }: Props) {
             <div className={"bordered " + (isShown ? "flex" : "none")}>
               <TinyBborder >
                 <span className="tb-container">
-                  <Link href="" >
-                    <span> send a mail</span>
+                  <Link href="mailto:rubenwhite22@gmail.com" >
+                    <span> {t('email-me')}</span>
                     <span>
                       <svg width="16" height="16" fill="currentColor" className="bi bi-arrow-up-right" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
                       </svg>
                     </span>
                   </Link>
-                  <Link href="" >
-                    <span> chat on whatsapp</span>
+                  <Link href="https://wa.me/+22996404757/" >
+                    <span>{(t('whatsapp-me'))} </span>
                     <span>
                       <svg width="16" height="16" fill="currentColor" className="bi bi-arrow-up-right" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />

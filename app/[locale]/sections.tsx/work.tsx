@@ -4,6 +4,8 @@ import bunny from "../assets/img/bunny-management.png"
 import bandage from "../assets/img/bandage e-commerce.png"
 import mangaverseImg from "../assets/img/mangaverse.png"
 import { useTranslations } from "next-intl";
+import TinyBborder from "../components/tiny-bborder";
+import { Link } from "@/i18n/routing";
 
 export default function Works() {
 
@@ -13,8 +15,9 @@ export default function Works() {
     <>
       <section id="works" className="flex flex-col gap-4 ">
         <h2 className="text-4xl " >{(w('label'))}</h2>
-        <p>
+        <p className="flex gap-2 ">
           {(w('description'))}
+          <Link href="/resume" >{(w('resume-link'))} </Link>
         </p>
         <div className="p-grid flex flex-col gap-8">
           <div className="projects flex justify-between gap-4 ">
@@ -65,6 +68,18 @@ export default function Works() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="m-auto mt-4">
+          <TinyBborder >
+            <span className="flex px-8 py-4">
+              <Link href="/resume" className=" flex gap-8" >
+                <span> {(w('see-more'))} </span>
+                <svg width="16" height="16" fill="currentColor" className="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                </svg>
+              </Link>
+            </span>
+          </TinyBborder>
         </div>
       </section>
     </>

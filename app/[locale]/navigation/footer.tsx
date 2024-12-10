@@ -1,14 +1,17 @@
 import Link from "next/link"
 import "../css/navigation.css"
+import { useTranslations } from "next-intl"
 
 
 function Footer(){
+
+  const f = useTranslations('Navigation')
 
   return(
     <>
       <div className="footer flex justify-between gap-10 ">
         <div className="">
-          <p>© 2024 · <span className="desktop"> All Rights Reserved</span></p>
+          <p>© 2024 · <span className="desktopA">{(f('copyright'))}</span></p>
         </div>
         <div className="">
           <p>Made with 🤍 by the white_dev</p>

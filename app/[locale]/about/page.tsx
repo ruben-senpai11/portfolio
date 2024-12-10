@@ -42,8 +42,7 @@ export default function Page() {
                 <div className="a-description ">
                   <h2>2. {(a('part2.title'))}</h2>
                   {/* <p>You may have noticed, even though I claim to be a frontend dev, I have a full's stack.</p> */}
-                  <p>{(a('part2.p2'))}</p>
-
+                  <p>{(a('part2.p1'))}</p>
                   <p>{(a('part2.p2'))}</p>
                 </div>
               </div>
@@ -61,7 +60,9 @@ export default function Page() {
               <div className="flex flex-col items-center story-2 gap-8 py-4 ">
                 <div className="a-description ">
                   <h2>4. {(a('part4.title'))}</h2>
-                  <p>{(a('part4.p'))}</p>
+                  <p>{(a('part4.p1'))}</p>
+                  <p>{(a('part4.p2'))}</p>
+                  <p>{(a('part4.p3'))}</p>
                 </div>
               </div>
             </div>

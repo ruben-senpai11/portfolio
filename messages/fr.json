@@ -1,195 +1,190 @@
 {
-  "Header": {
+  "Navigation": {
     "home": "accueil",
     "works": "travaux",
     "stack": "stack",
     "about": "à propos",
     "resume": "curriculum",
-    "hire-me": "dire bonjour"
+    "say-hello": "envoyer un mot",
+    "email-me": "envoyer un mail",
+    "whatsapp-me": "discuter sur whatsapp",  
+    "copyright": "Tous droits réservés",
+    "author": "Made with 🤍 by the white_dev"
   },
   "HomePage": {
     "hero": {
-      "title": "Hey, I'm Ruben White",
-      "title-2": "Friends call me white_dev",
-      "description": "I beleive in God and the ability he gave to me to make your next website divinely efficient.",
-      "text": "Ruben White is a high skilled Frontend developer"
+      "title": "Hey, je suis",
+      "title-2": "Mais les amis m'appellent le white_dev",
+      "description": "Je crois en Dieu et l'aptitude qu'Il m'a donnée à rendre votre prochain site web",
+      "description-colored": "divinement efficace",
+      "text": "Ruben White est un développeur Frontend talentueux et expérimenté."
     },
     "skills": {
-      "label": "Skills",
-      "description": "I hava a great experience in building websites and implenting functionnnalities while using no or low-code solutions like CMS and development technologies as well",
+      "label": "Compétences",
+      "description": "3 ans d'expérience dans la création de sites web et l'implémentation de fonctionnalités. Que ce soit avec des solutions low-code ou no-code, des technologies et languages de programmation, j'ai appris à faire tout et à tout faire bien.",
       "table1": {
-        "head": "Basic Websites",
+        "head": "Sites Web Classiques",
         "body": {
-          "line1": "Authentication",
-          "line2": "Responsive web Design",
-          "line3": "User Interface (UI)",
-          "line4": "User Experience (UX)",
-          "line5": "Maquet integration from Figma & Adobe",
-          "line6": "Issues fixing",
-          "line7": "Page Speed Optimisation",
+          "line1": "Authentification",
+          "line2": "Responsivité",
+          "line3": "Interface Utilisateur (UI)",
+          "line4": "Expérience Utilisateur (UX)",
+          "line5": "Intégration de Maquettes (Figma & Adobe)",
+          "line6": "Résolution de Bugs",
+          "line7": "Optimisation de la Vitesse de chargement",
           "line8": "SEO",
-          "line9": "Blog & filters",
-          "line10": "Social Media integration",
-          "line11": "Accessibility",
-          "line12": "Forms & Validation",
-          "line13": "Webfonts & typography",
-          "line14": "Theme & Template customisation",
-          "line15": "Internationalization",
-          "line16": "",
-          "line17": "",
-          "line18": "",
-          "line19": "",
-          "line20": ""
+          "line9": "Blog",
+          "line10": "Intégration des Réseaux Sociaux",
+          "line11": "Accessibilité",
+          "line12": "Formulaires & Validation",
+          "line13": "Style & Typographie",
+          "line14": "Personnalisation des Templates & Thèmes ",
+          "line15": "Internationalisation (ajout de plusieurs langues)",
+          "line16": "Et plus .."
         }
       },
       "table2": {
         "head": "E-commerce",
         "body": {
-          "line1": "Store settings",
-          "line2": "Stock & Products management",
-          "line3": "Products Variants",
-          "line4": "Order management",
+          "line1": "Configuration de Boutique",
+          "line2": "Gestion des Stocks",
+          "line3": "Variantes de Produits",
+          "line4": "Gestion des Commandes",
           "line5": "Copywriting",
-          "line6": "Personnalization & Recommandations",
-          "line7": "Search & Filtering",
-          "line8": "Promotions & Discounts management",
-          "line9": "Gifts & Vounchers",
-          "line10": "Email campaigns",
-          "line11": "Automatisation",
-          "line12": "User account management",
-          "line13": "Customer Relationship Management (CRM)",
-          "line14": "Live Chat & Chatbots",
-          "line15": "Whishlist & Compliance",
-          "line16": "Multi-currency support",
-          "line17": "Multi channel selling",
-          "line18": "Return & Refund management",
-          "line19": "Loyalty Programs",
-          "line20": "Performance Optimisation for large catalogs"
+          "line6": "Personnalisation & Recommandations",
+          "line7": "Recherche & Filtres",
+          "line8": "Promotions & Réductions",
+          "line9": "Cartes Cadeaux & Bons de réduction ",
+          "line10": "Campagnes Email",
+          "line11": "Automatisation (Flaviyo, etc...)",
+          "line12": "Gestion des Comptes Utilisateurs",
+          "line13": "Systèmes de gestion des clients (CRM)",
+          "line14": "Messages en Direct & Chatbots",
+          "line15": "Suivi des paniers abandonnés",
+          "line16": "Support Multidevise",
+          "line17": "Vente Multiplateforme",
+          "line18": "Gestion des Retours & Remboursements",
+          "line19": "Programmes de Fidélité",
+          "line20": "Optimisation des Performances pour les grands catalogues",
+          "line21": "Et plus + +"
         }
       },
       "table3": {
-        "head": "Web Application",
+        "head": "Applications Web",
         "body": {
-          "line1": "APIs",
-          "line2": "PWAs",
-          "line3": "Static Site Generation",
-          "line4": "Dynamic Forms & validation",
-          "line5": "Datatables",
-          "line6": "Multiple themes ",
-          "line7": "Infinite Scroll",
-          "line8": "Web workers",
-          "line9": "Version Control (Git)",
-          "line10": "Components librairies",
-          "line11": "Error Handling",
-          "line12": "Database management",
-          "line13": "Performance optimisation",
-          "line14": "Authentication & Authorization",
-          "line15": "Unit & Integration Testing",
-          "line16": "DevOps Practices",
-          "line17": "",
-          "line18": "",
-          "line19": "",
-          "line20": ""
+          "line1": "Intégration d'APIs",
+          "line2": "Applications Web Progressives (PWAs)",
+          "line3": "Génération de Sites Statique",
+          "line4": "Formulaires Dynamiques & Validation",
+          "line5": "DataTables",
+          "line6": "Thématisation",
+          "line7": "infinite Scroll",
+          "line8": "Web Workers ",
+          "line9": "Contrôle de Version (Git)",
+          "line10": "Bibliothèques de Composants",
+          "line11": "Gestion des Erreurs",
+          "line12": "Gestion de Bases de Données",
+          "line13": "Optimisation des Performances",
+          "line14": "Authentification & Autorisation",
+          "line15": "Tests Unitaires & d'Intégration",
+          "line16": "Hébergement et optimisation des ressources",
+          "line17": "Et plus + + +"
         }
       }
-    }, 
+    },
     "works": {
-      "label": "Works",
-      "description": "Here are some Freelance missions, Personal & Side Projects",
+      "label": "Projets",
+      "description": "Voici une mise en bouche des projets réalisés. En attendant la finalisation de la page Portfolio, vous pouvez",
+      "resume-link": "en voir plus sur mon CV",
+      "see-more": "en voir plus",
       "work1": {
         "title": "Mangaverse",
-        "descripton": "description"
+        "description": "Une plateforme complète d'exploration de mangas."
       },
       "work2": {
-        "title": "Bandage e-commerce",
-        "descripton": ""
+        "title": "Bandage E-commerce",
+        "description": "Intégration d'une maquette au pixel près dans un projet React, et optimisation..."
       },
       "work3": {
-        "title": "Shopify App",
-        "descripton": ""
+        "title": "Application Shopify",
+        "description": "Développement d'une application sur mesure pour un écosystème de boutiques Shopify."
       },
       "work4": {
-        "title": "Bunny Management",
-        "descripton": ""
-      }
+        "title": "Ma ferme en ligne",
+        "description": "Conception d'une plateforme de gestion de l'élevage de lapins. Elle a pour but d'aider le fermier dans ses tâches quotidiennes et permettre un suivi rigoureux à distance au propriétaire "
+      },
+      "videoError": "Votre navigateur ne prend pas en charge la balise vidéo."
     },
     "techs": {
-      "label": "Techs",
-      "description": "Among all the technologies we learn for studies, training and work in enterprises, the ones we love and are familiar with ; here are the the ones I acctually use. From the most mastered to those I'm still discovering",
+      "label": "Technologies",
+      "description": "Voici les technologies que j’utilise, ou plutôt, celles que j'aime et m'aitrîse le plus.",
       "table1": {
-        "head": "Programming Languages",
+        "head": "Langages de Programmation",
         "body": {
           "line1": "HTML & CSS",
-          "line2": "Typescript, Javascript",
+          "line2": "TypeScript & JavaScript",
           "line3": "PHP",
           "line4": "MySQL",
           "line5": "PostgreSQL",
           "line6": "Python",
           "line7": "C",
-          "line8": "Arduino, Energia",
-          "line9": "",
-          "line10": ""
+          "line8": "Liquid"
         }
       },
       "table2": {
-        "head": "Libraires & Frameworks",
+        "head": "Bibliothèques & Frameworks",
         "body": {
           "line1": "Next.js",
           "line2": "Laravel",
           "line3": "GSAP",
           "line4": "Remix",
-          "line5": "Express",
+          "line5": "Express.js",
           "line6": "Livewire",
           "line7": "Prisma",
-          "line8": "Webpack",
-          "line9": "",
-          "line10": ""
+          "line8": "Webpack"
         }
       },
       "table3": {
-        "head": "Content Management System",
+        "head": "Systèmes de Gestion de Contenu",
         "body": {
           "line1": "Shopify",
           "line2": "WordPress",
           "line3": "Webflow",
-          "line4": "Wix",
-          "line5": ""
+          "line4": "Wix"
         }
       },
       "table4": {
-        "head": "Other Tools",
+        "head": "Autres Outils",
         "body": {
           "line1": "Figma",
           "line2": "Photoshop",
-          "line3": "Jest",
-          "line4": "",
-          "line5": ""
+          "line3": "Jest"
         }
       }
     }
-  },"AboutPage" :{
-    "h1": "About me",
+  },
+  "AboutPage": {
+    "title": "À propos ",
     "part1": {
-      "title": "The Beggining",
-      "p-1-a": "I printed my first",
-      "p-1-b": "5 years ago. It was in python, and then with my electronic background, I was entirely focused on robotic with Arduino these years",
-      "p-2": "I've learned Python after it and was inducted to web development on school. When I think of it , it was a huge way to arrive here. I've been through many technologies, and defintely found myself in frontend development and web design"
+      "title": "Les Débuts",
+      "p1-a": "Il y a 5 ans, j'écrivais mon premier",
+      "p1-b": "en Python. Avec mon parcours en électronique, j'ai fait essentiellement de la robotique avec des cartes comme Arduino en codant du C pendant l'année qui a suivi.",
+      "p2": "Sur la volée d'une formation, PanDEV, j'ai approfondi les bases en Python, puis découvert celles du développement web en 2ème année.",
+      "p3": "En y repensant, j'ai exploré de nombreuses technologies et de tous les environnements, le développement web et le web design sont les plus parfaits pour moi."
     },
     "part2": {
       "title": "Transition",
-      "p-1": "As most of devs, I've started this work looking to have geographic liberty and a way to use creativity, but I had to throw myself in professionnal life to see what it really is. Even though I have experience in building applications from A to Z, the most expectative the project is about creativity, User Interface & Experience, the more comfortable I am",
-      "p-2": "Then, since my 2 last jobs, I decided to specialize myself as frontend. This is the perfect job ror me, it enhance my productivity and I enjoy it like a kid"
+      "p1": "Comme beaucoup d'autres dans le métier, elle m'a plu, l'idée de liberté géographique, financière et d'expression créative. Mais après avoir touché du doigt le lifestyle du développeur, j'ai su qu'en tant que développeur full stack ou ... \"backend\", je ne ferais pas long feu dans le métier.",
+      "p2": "Lors de mes deux derniers postes, j'ai décidé de me spécialiser dans le Frontend. Ce rôle correspond parfaitement à mes points forts, booste ma productivité, et me procure cette paix que vous avez quand vous savez que vous faites ce pour quoi Dieu vous a créé."
     },
     "part3": {
-      "title": "My Stack"
+      "title": "Ma Stack"
     },
     "part4": {
-      "title": "Waiting for you !",
-      "p-1": "All I aim now is use all these skills and learn more with you Programming is all I love and honnestly, I can't wait to work with you."
+      "title": "Nous voilà arrivés !",
+      "p1": "En premier lieu, je vous remercie de m'avoir lu, c'est un plaisir de savoir que les mots écrits depuis le dark-mode de mon éditeur ont plu à vos yeux, et, il est probable que d'autres choses vous plaisent !",
+      "p2": "Si tant il est que nous travaillions ensemble, j'apprendrai à nouveau de belles choses dont je tirerai le meilleur pour vous concevoir un site légendaire ! ",
+      "p3": "Si l'idée vous plait envoyez-moi un mot ! Moi, je suis impatient de vous lire à mon tour."
     }
-  },
-  "Footer": {
-    "copyright": "All Rights Reserved",
-    "autor": "Made with 🤍 by the white_dev"
   }
 }

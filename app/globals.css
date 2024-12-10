@@ -6,14 +6,23 @@
 :root {
   --foreground-color: #000000;
   --background-color: #fafafa;
+  --bg-text-background: #ccc;
+  --bg-text-colored-background: rgb(196 181 253);
+  --purple: rgb(109 40 217);
+  --purple: rgb(91 33 182);
+  --blue: rgb(29 78 216);
+  --gray: rgb(100 116 139);
 }
 
 [ data-theme="dark"] {
   --foreground-color: white;
   --background-color: #161515;
   --rgb-foreground-color: (255, 255, 255);
-  --bg-text-hero-bgcolor: #555;
-  --bg-text-about-bgcolor: #555;
+  --bg-text-background: #555;
+  --bg-text-colored-background: rgb(109 40 217);
+  --purple: rgb(167 139 250);
+  --blue: rgb(202 138 4);
+  /* --gray: ; */
 }
 
 body {
@@ -104,6 +113,14 @@ a:hover::after {
 .main {
   gap: 100px;
   overflow: hidden!important;
+}
+
+
+.bg-text{
+  background-color: var(--bg-text-background);
+}
+.bg-text-colored{
+  background-color: var(--bg-text-colored-background);
 }
 
 

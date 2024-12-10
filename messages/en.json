@@ -5,161 +5,152 @@
     "stack": "stack",
     "about": "about",
     "resume": "resume",
-    "hire-me": "say hello",
+    "say-hello": "say hello",
     "email-me": "send a mail",
     "whatsapp-me": "chat on whatsapp",
     "copyright": "All Rights Reserved",
-    "autor": "Made with 🤍 by the white_dev"
+    "author": "Made with 🤍 by the white_dev"
   },
   "HomePage": {
     "hero": {
       "title": "Hey, I'm",
       "title-2": "Friends call me white_dev",
-      "description": "I beleive in God and the ability he gave to me to make your next website",
-      "description-colored": " divinely efficient",
-      "text": "Ruben White is a high skilled Frontend developer"
+      "description": "I believe in God and the abilities He gave me to make your next website",
+      "description-colored": "divinely efficient",
+      "text": "Ruben White is a highly skilled Frontend Developer."
     },
     "skills": {
       "label": "Skills",
-      "description": "I hava a great experience in building websites and implenting functionnnalities while using no or low-code solutions like CMS and development technologies as well",
+      "description": "I have extensive experience in building websites and implementing functionalities using no-code or low-code solutions, as well as advanced development technologies.",
       "table1": {
         "head": "Basic Websites",
         "body": {
           "line1": "Authentication",
-          "line2": "Responsive web Design",
+          "line2": "Responsive Web Design",
           "line3": "User Interface (UI)",
           "line4": "User Experience (UX)",
-          "line5": "Maquet integration from Figma & Adobe",
-          "line6": "Issues fixing",
-          "line7": "Page Speed Optimisation",
+          "line5": "Design Integration (Figma & Adobe)",
+          "line6": "Bug Fixing",
+          "line7": "Page Speed Optimization",
           "line8": "SEO",
-          "line9": "Blog & filters",
-          "line10": "Social Media integration",
+          "line9": "Filters",
+          "line10": "Social Media Integration",
           "line11": "Accessibility",
           "line12": "Forms & Validation",
-          "line13": "Webfonts & typography",
-          "line14": "Theme & Template customisation",
+          "line13": "Web Fonts & Typography",
+          "line14": "Theme & Template Customization",
           "line15": "Internationalization",
-          "line16": "",
-          "line17": "",
-          "line18": "",
-          "line19": "",
-          "line20": ""
+          "line16": "And plus .."
         }
       },
       "table2": {
         "head": "E-commerce",
         "body": {
-          "line1": "Store settings",
-          "line2": "Stock & Products management",
-          "line3": "Products Variants",
-          "line4": "Order management",
+          "line1": "Store Setup",
+          "line2": "Inventory Management",
+          "line3": "Product Variants",
+          "line4": "Order Management",
           "line5": "Copywriting",
-          "line6": "Personnalization & Recommandations",
+          "line6": "Personalization & Recommendations",
           "line7": "Search & Filtering",
-          "line8": "Promotions & Discounts management",
-          "line9": "Gifts & Vounchers",
-          "line10": "Email campaigns",
-          "line11": "Automatisation",
-          "line12": "User account management",
+          "line8": "Promotions & Discounts",
+          "line9": "Gift Cards & Vouchers",
+          "line10": "Email Campaigns",
+          "line11": "Automation",
+          "line12": "User Account Management",
           "line13": "Customer Relationship Management (CRM)",
           "line14": "Live Chat & Chatbots",
-          "line15": "Whishlist & Compliance",
-          "line16": "Multi-currency support",
-          "line17": "Multi channel selling",
-          "line18": "Return & Refund management",
+          "line15": "Wishlist Management",
+          "line16": "Multi-Currency Support",
+          "line17": "Multi-Channel Selling",
+          "line18": "Returns & Refunds",
           "line19": "Loyalty Programs",
-          "line20": "Performance Optimisation for large catalogs"
+          "line20": "Performance Optimization for Large Catalogs",
+          "line21": "And plus + +"
         }
       },
       "table3": {
-        "head": "Web Application",
+        "head": "Web Applications",
         "body": {
-          "line1": "APIs",
-          "line2": "PWAs",
+          "line1": "API Integration",
+          "line2": "Progressive Web Apps (PWAs)",
           "line3": "Static Site Generation",
-          "line4": "Dynamic Forms & validation",
-          "line5": "Datatables",
-          "line6": "Multiple themes ",
+          "line4": "Dynamic Forms & Validation",
+          "line5": "DataTables",
+          "line6": "White & Dark Mode (And more themes",
           "line7": "Infinite Scroll",
-          "line8": "Web workers",
+          "line8": "Web Workers",
           "line9": "Version Control (Git)",
-          "line10": "Components librairies",
+          "line10": "Component Libraries",
           "line11": "Error Handling",
-          "line12": "Database management",
-          "line13": "Performance optimisation",
+          "line12": "Database Management",
+          "line13": "Performance Optimization",
           "line14": "Authentication & Authorization",
           "line15": "Unit & Integration Testing",
-          "line16": "DevOps Practices",
-          "line17": "",
-          "line18": "",
-          "line19": "",
-          "line20": ""
+          "line16": "Deployment and server optimization",
+          "line17": "And plus + + +"
         }
       }
-    }, 
+    },
     "works": {
       "label": "Works",
-      "description": "Here are some Freelance missions, Personal & Side Projects",
+      "description": "Here are some freelance missions, personal, and side projects. In waiting for a the full list on the Portfolio page, you can",
+      "resume-link": " see more on my resume",
+      "see-more": "see more",
       "work1": {
         "title": "Mangaverse",
-        "description": "description"
+        "description": "A comprehensive Manga exploration platform. The purpose is to find in a single search all any manga you're looking for."
       },
       "work2": {
-        "title": "Bandage e-commerce",
-        "description": ""
+        "title": "Bandage E-commerce",
+        "description": "Translating Figma mockup into a pixelperfect website. Then improved UX with lazyload, animations..."
       },
       "work3": {
         "title": "Shopify App",
-        "description": ""
+        "description": "Custom app development for Shopify store owner."
       },
       "work4": {
         "title": "Bunny Management",
-        "description": "description"
+        "description": "Design of a bunny management platform. This project aim to assist the breeder in his daily tasks, prevent viruses and enable a owner to monitor the farm from anywhere"
       },
-      "videoError": "Your browser does not support the video tag"
+      "videoError": "Your browser does not support the video tag."
     },
     "techs": {
-      "label": "Techs",
-      "description": "Among all the technologies we learn for studies, training and work in enterprises, the ones we love and are familiar with ; here are the the ones I acctually use. From the most mastered to those I'm still discovering",
+      "label": "Technologies",
+      "description": "These are the technologies I use, I mean, those I love and master the most.",
       "table1": {
         "head": "Programming Languages",
         "body": {
           "line1": "HTML & CSS",
-          "line2": "Typescript, Javascript",
+          "line2": "TypeScript & JavaScript",
           "line3": "PHP",
           "line4": "MySQL",
           "line5": "PostgreSQL",
           "line6": "Python",
           "line7": "C",
-          "line8": "Arduino, Energia",
-          "line9": "",
-          "line10": ""
+          "line8": "liquid"
         }
       },
       "table2": {
-        "head": "Libraires & Frameworks",
+        "head": "Libraries & Frameworks",
         "body": {
           "line1": "Next.js",
           "line2": "Laravel",
           "line3": "GSAP",
           "line4": "Remix",
-          "line5": "Express",
+          "line5": "Express.js",
           "line6": "Livewire",
           "line7": "Prisma",
-          "line8": "Webpack",
-          "line9": "",
-          "line10": ""
+          "line8": "Webpack"
         }
       },
       "table3": {
-        "head": "Content Management System",
+        "head": "Content Management Systems",
         "body": {
           "line1": "Shopify",
           "line2": "WordPress",
           "line3": "Webflow",
-          "line4": "Wix",
-          "line5": ""
+          "line4": "Wix"
         }
       },
       "table4": {
@@ -167,32 +158,34 @@
         "body": {
           "line1": "Figma",
           "line2": "Photoshop",
-          "line3": "Jest",
-          "line4": "",
-          "line5": ""
+          "line3": "Jest"
         }
       }
     }
-  },"AboutPage" :{
-    "title": "About me",
+  },
+  "AboutPage": {
+    "title": "About Me",
     "part1": {
-      "title": "The Beggining",
-      "p1-a": "I printed my first",
-      "p1-b": "5 years ago. It was in python, and then with my electronic background, I was entirely focused on robotic with Arduino these years",
-      "p2": "I've learned Python after it and was inducted to web development on school.",
-      "p3": "When I think of it , it was a huge way to arrive here. I've been through many technologies, and defintely found myself in frontend development and web design"
+      "title": "The Beginning",
+      "p1-a": "I wrote my first ",
+      "p1-b": "5 years ago in Python. With my electronist background, I spent the first year focused on robotics using cards like Arduino.",
+      "p2": "I later learned Python in-depth and web development basics at school.",
+      "p3": "Reflecting on my journey, I’ve explored many technologies but ultimately found my passion in frontend development and web design."
     },
     "part2": {
       "title": "Transition",
-      "p1": "As most of devs, I've started this work looking to have geographic liberty and a way to use creativity, but I had to throw myself in professionnal life to see what it really is. Even though I have experience in building applications from A to Z, the most expectative the project is about creativity, User Interface & Experience, the more comfortable I am",
-      "p2": "Then, since my 2 last jobs, I decided to specialize myself as frontend. This is the perfect job ror me, it enhance my productivity and I enjoy it like a kid"
+      "p1": "As most of developers, I started the journey looking towards the freedom web jobs offer. Later, I tasted the professional life of this job, It wasn't so bad, but as a full stack developer, or a ...\"backend\", I could have stop ways ago.",
+      "p2": "Over my last two roles, I decided to specialize myself in Frontend development. It aligns perfectly with my strengths, boosts my productivity, and often brings the peace you feel when you're doing the thing God designed you for. At that time I also started receiving freelance missions, and freelance and freedom sound good together right?"
     },
     "part3": {
-      "title": "My Stack"
+      "title": "My Stack",
+      "description": ""
     },
     "part4": {
-      "title": "Waiting for you !",
-      "p": "All I aim now is use all these skills and learn more with you Programming is all I love and honnestly, I can't wait to work with you."
+      "title": "Waiting for You!",
+      "p1": "Here we are ! First, I thank you to have read me, it's a pleasure to know the text wroten in my editor's dark mode made some light in your eyes",
+      "p2": "Maybe you're my next partner, we may have a rich journey together were I can learn a ton of new things and use them to make you a banger website !",
+      "p3": "Why not send me a message? Me, I can't wait to see you."
     }
   }
 }

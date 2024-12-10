@@ -13,10 +13,11 @@ h2 {
   height: 250px;
 }
 
-.a-description .bg-text{
-  background-color: var(--bg-text-hero-bgcolor);
+.a-description{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-
 .story-1 {
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
@@ -71,9 +72,6 @@ h2 {
   /* display: none; */
 } 
 
-.willAnime{
-  
-}
 
 
 @media screen and (max-width: 1100px) {
@@ -100,8 +98,5 @@ h2 {
   .a-description{
     width: 100%;
   }
-  .a-picture{
-    /* align-self: flex-end; */
-  }
-
+  
 }

@@ -22,7 +22,7 @@
 }
 
 .t-bborder-right {
-  padding-top: calc(var(--tb-padding-y));
+  padding-top: 28px;
   border-right: var(--bborder-width) solid var(--foreground-color);
 }
 
@@ -35,3 +35,6 @@
   overflow: hidden;
 }
 
+.navbar .t-bborder-bottom{
+  background-color: transparent;
+}

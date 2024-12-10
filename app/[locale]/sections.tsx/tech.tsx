@@ -34,11 +34,6 @@ export default function Tech() {
           <div className="tech r-card">
             <h4>{(table2('head'))}</h4>
             <ul className="">
-              <li className="purple" >
-                {/* <Image src={nextLogo} width={100} height={100} alt="NextLogo" /> */}
-                Next.js
-              </li>
-              {/* <li className="purple" ><Image src={reactLogo} width={100} height={100} alt="reactLogo" />React</li> */}
               <li className="purple" >{(table2('body.line1'))}</li>
               <li className="purple" >{(table2('body.line2'))}</li>
               <li className="blue" >{(table2('body.line3'))}</li>

@@ -15,11 +15,11 @@ export default function Hero (){
           <div className="description flex flex-col gap-8 justify-center align-center ">
             <h1 className="flex flex-col " >
               <span className="text-[48px]"> 
-                {(h('title'))} <span className="font-mono bg-zinc-200 m-1 px-2 py-1 ">Ruben White</span> 
+                {(h('title'))} <span className="font-mono bg-zinc-200 m-1 px-2 py-1 bg-text ">Ruben White</span> 
               </span>
               <span>{(h('title-2'))}</span>
               {/* <span>22 years old & developer for 3 years</span> */}
-              <span className="max-w-[500px] border-solid text-[20px] pt-" >{(h('description'))}<span className="font-mono bg-violet-300 m-1 p-1 " >{(h('description-colored'))}</span>. </span>
+              <span className="max-w-[500px] border-solid text-[20px] pt-" >{(h('description'))}<span className="font-mono bg-violet-700 m-1 p-1 bg-text-colored " >{(h('description-colored'))}</span>. </span>
             </h1>
             <p>
             {(h('text'))} 

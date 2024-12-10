@@ -32,7 +32,7 @@ export default function Skills() {
               <li className="purple" >{(table1('body.line13'))}</li>
               <li className="purple" >{(table1('body.line14'))}</li>
               <li className="blue" >{(table1('body.line15'))}</li>
-              <li className="gray" >{(table1('body.line16'))}</li>
+              <li className="blue" >{(table1('body.line16'))}</li>
               <li className="" ></li>
               <li className="" ></li>
               <li className="" ></li>
@@ -41,8 +41,8 @@ export default function Skills() {
           <div className="skill r-card">
             <h4>{(table2('head'))}</h4>
             <ul>
-              <li className="purple" >{(table2('body.line1'))}</li>
               <li className="purple" >{(table2('body.line2'))}</li>
+              <li className="purple" >{(table2('body.line1'))}</li>
               <li className="purple" >{(table2('body.line3'))}</li>
               <li className="purple" >{(table2('body.line4'))}</li>
               <li className="purple" >{(table2('body.line5'))}</li>
@@ -61,6 +61,7 @@ export default function Skills() {
               <li className="blue" >{(table2('body.line18'))}</li>
               <li className="gray" >{(table2('body.line19'))}</li>
               <li className="gray" >{(table2('body.line20'))}</li>
+              <li className="gray" >{(table2('body.line21'))}</li>
             </ul>
           </div>
           <div className="skill r-card">
@@ -82,6 +83,7 @@ export default function Skills() {
               <li className="blue" >{(table3('body.line14'))}</li>
               <li className="blue" >{(table3('body.line15'))}</li>
               <li className="blue" >{(table3('body.line16'))}</li>
+              <li className="blue" >{(table3('body.line17'))}</li>
               <li className="" ></li>
               <li className="" ></li>
               <li className="" ></li>
