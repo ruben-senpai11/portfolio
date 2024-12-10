@@ -1,81 +1,90 @@
+import { useTranslations } from "next-intl";
 
 
 export default function Skills() {
 
+  const s = useTranslations('HomePage.skills');
+  const table1 = useTranslations('HomePage.skills.table1');
+  const table2 = useTranslations('HomePage.skills.table2');
+  const table3 = useTranslations('HomePage.skills.table3');
+
   return (
     <>
       <section id="skills" className="flex flex-col gap-4 ">
-        <h2 className="text-4xl " >Skills</h2>
-        <p>I hava a great experience in building websites and implenting functionnnalities while using no or low-code solutions like CMS and development technologies as well</p>
+        <h2 className="text-4xl " >{(s('label'))}</h2>
+        <p>{(s('description'))}</p>
         <div className="skills flex justify-between gap-4 ">
           <div className="skill r-card">
-            <h4>Basic Websites</h4>
+            <h4>{(table1('head'))}</h4>
             <ul>
-              <li className="purple" >Authentication</li>
-              <li className="purple" >Responsive web Design</li>
-              <li className="purple" >User Interface (UI)</li>
-              <li className="purple" >User Experience (UX)</li>
-              <li className="purple" >Maquet integration from Figma & Adobe</li>
-              <li className="purple" >Issues fixing</li>
-              <li className="purple" >Page Speed Optimisation</li>
-              <li className="purple" >SEO</li>
-              <li className="purple" >Blog & filters</li>
-              <li className="purple" >Social Media integration</li>
-              <li className="purple" >Accessibility</li>
-              <li className="purple" >Forms & Validation</li>
-              <li className="purple" >Webfonts & typography</li>
-              <li className="purple" >Theme & Template customisation</li>
-              <li className="blue" >Internationalization</li>
-              <li className="gray" ></li>
+              <li className="purple" >{(table1('body.line1'))}</li>
+              <li className="purple" >{(table1('body.line2'))}</li>
+              <li className="purple" >{(table1('body.line3'))}</li>
+              <li className="purple" >{(table1('body.line4'))}</li>
+              <li className="purple" >{(table1('body.line5'))}</li>
+              <li className="purple" >{(table1('body.line6'))}</li>
+              <li className="purple" >{(table1('body.line7'))}</li>
+              <li className="purple" >{(table1('body.line8'))}</li>
+              <li className="purple" >{(table1('body.line9'))}</li>
+              <li className="purple" >{(table1('body.line10'))}</li>
+              <li className="purple" >{(table1('body.line11'))}</li>
+              <li className="purple" >{(table1('body.line12'))}</li>
+              <li className="purple" >{(table1('body.line13'))}</li>
+              <li className="purple" >{(table1('body.line14'))}</li>
+              <li className="blue" >{(table1('body.line15'))}</li>
+              <li className="gray" >{(table1('body.line16'))}</li>
               <li className="" ></li>
               <li className="" ></li>
               <li className="" ></li>
             </ul>
           </div>
           <div className="skill r-card">
-            <h4>E-commerce</h4>
+            <h4>{(table2('head'))}</h4>
             <ul>
-              <li className="purple" >Store settings</li>
-              <li className="purple" >Stock & Products management</li>
-              <li className="purple" >Products Variants </li>
-              <li className="purple" >Order management</li>
-              <li className="purple" >Copywriting</li>
-              <li className="purple" >Personnalization & Recommandations</li>
-              <li className="purple" >Search & Filtering</li>
-              <li className="purple" >Promotions & Discounts management</li>
-              <li className="purple" >Gifts & Vounchers</li>
-              <li className="purple" >Email campaigns</li>
-              <li className="purple" >Automatisation</li>
-              <li className="purple" >User account management </li>
-              <li className="purple" >Customer Relationship Management (CRM)</li>
-              <li className="blue" >Live Chat & Chatbots</li>
-              <li className="blue" >Whishlist & Compliance</li>
-              <li className="blue" >Multi-currency support</li>
-              <li className="blue" >Multi channel selling</li>
-              <li className="blue" >Return & Refund management</li>
-              <li className="gray" >Loyalty Programs</li>
-              <li className="gray" >Performance Optimisation for large catalogs</li>
+              <li className="purple" >{(table2('body.line1'))}</li>
+              <li className="purple" >{(table2('body.line2'))}</li>
+              <li className="purple" >{(table2('body.line3'))}</li>
+              <li className="purple" >{(table2('body.line4'))}</li>
+              <li className="purple" >{(table2('body.line5'))}</li>
+              <li className="purple" >{(table2('body.line6'))}</li>
+              <li className="purple" >{(table2('body.line7'))}</li>
+              <li className="purple" >{(table2('body.line8'))}</li>
+              <li className="purple" >{(table2('body.line9'))}</li>
+              <li className="purple" >{(table2('body.line10'))}</li>
+              <li className="purple" >{(table2('body.line11'))}</li>
+              <li className="purple" >{(table2('body.line12'))}</li>
+              <li className="purple" >{(table2('body.line13'))}</li>
+              <li className="blue" >{(table2('body.line14'))}</li>
+              <li className="blue" >{(table2('body.line15'))}</li>
+              <li className="blue" >{(table2('body.line16'))}</li>
+              <li className="blue" >{(table2('body.line17'))}</li>
+              <li className="blue" >{(table2('body.line18'))}</li>
+              <li className="gray" >{(table2('body.line19'))}</li>
+              <li className="gray" >{(table2('body.line20'))}</li>
             </ul>
           </div>
           <div className="skill r-card">
-            <h4>Web Application</h4>
+            <h4>{(table3('head'))}</h4>
             <ul>
-              <li className="purple" >APIs</li>
-              <li className="purple" >PWAs</li>
-              <li className="purple" >Static Site Generation</li>
-              <li className="purple" >Dynamic Forms & validation</li>
-              <li className="purple" >Datatables</li>
-              <li className="purple" >Multiple themes</li>
-              <li className="purple" >Infinite Scroll</li>
-              <li className="purple" >Web workers</li>
-              <li className="purple" >Version Control (Git) </li>
-              <li className="purple" >Components librairies</li>
-              <li className="purple" >Error Handling</li>
-              <li className="purple" >Database management</li>
-              <li className="blue" >Performance optimisation</li>
-              <li className="blue" >Authentication & Authorization</li>
-              <li className="blue" >Unit & Integration Testing</li>
-              <li className="blue" >DevOps Practices</li>
+              <li className="purple" >{(table3('body.line1'))}</li>
+              <li className="purple" >{(table3('body.line2'))}</li>
+              <li className="purple" >{(table3('body.line3'))}</li>
+              <li className="purple" >{(table3('body.line4'))}</li>
+              <li className="purple" >{(table3('body.line5'))}</li>
+              <li className="purple" >{(table3('body.line6'))}</li>
+              <li className="purple" >{(table3('body.line7'))}</li>
+              <li className="purple" >{(table3('body.line8'))}</li>
+              <li className="purple" >{(table3('body.line9'))}</li>
+              <li className="purple" >{(table3('body.line10'))}</li>
+              <li className="purple" >{(table3('body.line11'))}</li>
+              <li className="purple" >{(table3('body.line12'))}</li>
+              <li className="blue" >{(table3('body.line13'))}</li>
+              <li className="blue" >{(table3('body.line14'))}</li>
+              <li className="blue" >{(table3('body.line15'))}</li>
+              <li className="blue" >{(table3('body.line16'))}</li>
+              <li className="" ></li>
+              <li className="" ></li>
+              <li className="" ></li>
             </ul>
           </div>
         </div>

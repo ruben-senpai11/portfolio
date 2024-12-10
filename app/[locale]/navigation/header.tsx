@@ -5,8 +5,6 @@ import { Link } from '@/i18n/routing';
 import "../css/navigation.css"
 import { useTranslations } from 'next-intl';
 import TinyBborder from '../components/tiny-bborder';
-import Theme from '../components/theme';
-import Language from '../components/language';
 
 interface Props {
   title: string
@@ -53,6 +51,8 @@ function Header({ title }: Props) {
     }
   }, [])
 
+  
+
   const t = useTranslations('Navigation');
 
   // contact button
@@ -62,8 +62,6 @@ function Header({ title }: Props) {
   const handleContact = () => {
     setIsShown(!isShown)
   }
-
-
 
   return (
     <>

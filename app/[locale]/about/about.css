@@ -13,6 +13,9 @@ h2 {
   height: 250px;
 }
 
+.a-description .bg-text{
+  background-color: var(--bg-text-hero-bgcolor);
+}
 
 .story-1 {
   border-left: 1px solid #ccc;

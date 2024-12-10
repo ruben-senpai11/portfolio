@@ -3,14 +3,18 @@ import stratosedi from "../assets/img/strastosedi.png"
 import bunny from "../assets/img/bunny-management.png"
 import bandage from "../assets/img/bandage e-commerce.png"
 import mangaverseImg from "../assets/img/mangaverse.png"
+import { useTranslations } from "next-intl";
 
 export default function Works() {
+
+  const w = useTranslations("HomePage.works")
+
   return (
     <>
       <section id="works" className="flex flex-col gap-4 ">
-        <h2 className="text-4xl " >Works</h2>
+        <h2 className="text-4xl " >{(w('label'))}</h2>
         <p>
-          Here are some Freelance missions, Personal & Side Projects
+          {(w('description'))}
         </p>
         <div className="p-grid flex flex-col gap-8">
           <div className="projects flex justify-between gap-4 ">
@@ -19,17 +23,12 @@ export default function Works() {
                 {/* <Image src={mangaverseImg} width={500} height={100} alt="" /> */}
                 <video width="600" height="400" autoPlay controls>
                   <source src="/video/mangaverse-long.webm" type="video/webm" />
-                  <track
-                    kind="subtitles"
-                    srcLang="en"
-                    label="English"
-                  />
-                  Your browser does not support the video tag.
+                  {(w('videoError'))}
                 </video>
               </div>
               <div className="p-description">
-                <h5 className="p-title uppercase ">Mangaverse</h5>
-                {/* <p>Here is the place to add a fancy description showing you how much I made things up to make this project a banger right? Even though there is no stuff like this at this time keep in mind that in the Mangaverse, you can find any manga you look for. I've implemented fonctionnalities like Multiple Themes switch (from scratch), Infinite Scroll....</p> */}
+                <h5 className="p-title uppercase ">{(w('work1.title'))}</h5>
+                {(w('work1.description'))}
               </div>
             </div>
             <div className="project project-30 ">
@@ -37,8 +36,8 @@ export default function Works() {
                 <Image src={bandage} width={500} height={100} alt="" />
               </div>
               <div className="p-description">
-                <h5 className="p-title uppercase ">Bandage e-commerce</h5>
-                {/* <p></p> */}
+                <h5 className="p-title uppercase ">{(w('work2.title'))}</h5>
+                {(w('work2.description'))}
               </div>
             </div>
           </div>
@@ -48,8 +47,8 @@ export default function Works() {
                 <Image src={stratosedi} width={500} height={100} alt="" />
               </div>
               <div className="p-description">
-                <h5 className="p-title uppercase ">Shopify App</h5>
-                {/* <p>description</p> */}
+                <h5 className="p-title uppercase ">{(w('work3.title'))}</h5>
+                {(w('work3.description'))}
               </div>
             </div>
             <div className="project project-70 ">
@@ -57,17 +56,12 @@ export default function Works() {
                 {/* <Image src={bunny} width={500} height={100} alt="" /> */}
                 <video width="600" height="400" autoPlay controls>
                   <source src="/video/bunny.webm" type="video/webm" />
-                  <track
-                    kind="subtitles"
-                    srcLang="en"
-                    label="English"
-                  />
-                  Your browser does not support the video tag.
+                  {(w('videoError'))}
                 </video>
               </div>
               <div className="p-description">
-                <h5 className="p-title uppercase ">Bunny Management</h5>
-                {/* <p>Here too is the place were I may add a fancy description making this project more banger Even though there is no stuff like this at this time keep in mind that in the Bunny Management is a platform to ... manage bunnies. Yeah ! It helps rabbit breeders prevent line crossing and enhance their breeding with less stress and tasks but more results</p> */}
+                <h5 className="p-title uppercase ">{(w('work4.title'))}</h5>
+                {(w('work4.description'))}
               </div>
             </div>
           </div>

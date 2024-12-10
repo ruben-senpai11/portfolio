@@ -12,6 +12,8 @@
   --foreground-color: white;
   --background-color: #161515;
   --rgb-foreground-color: (255, 255, 255);
+  --bg-text-hero-bgcolor: #555;
+  --bg-text-about-bgcolor: #555;
 }
 
 body {

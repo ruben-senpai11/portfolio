@@ -1,5 +1,5 @@
 {
-  "Navigation": {
+  "Header": {
     "home": "accueil",
     "works": "travaux",
     "stack": "stack",
@@ -8,7 +8,188 @@
     "hire-me": "dire bonjour"
   },
   "HomePage": {
-    "title": "Salut tout le monde!",
-    "about": "Voir la page à propos"
+    "hero": {
+      "title": "Hey, I'm Ruben White",
+      "title-2": "Friends call me white_dev",
+      "description": "I beleive in God and the ability he gave to me to make your next website divinely efficient.",
+      "text": "Ruben White is a high skilled Frontend developer"
+    },
+    "skills": {
+      "label": "Skills",
+      "description": "I hava a great experience in building websites and implenting functionnnalities while using no or low-code solutions like CMS and development technologies as well",
+      "table1": {
+        "head": "Basic Websites",
+        "body": {
+          "line1": "Authentication",
+          "line2": "Responsive web Design",
+          "line3": "User Interface (UI)",
+          "line4": "User Experience (UX)",
+          "line5": "Maquet integration from Figma & Adobe",
+          "line6": "Issues fixing",
+          "line7": "Page Speed Optimisation",
+          "line8": "SEO",
+          "line9": "Blog & filters",
+          "line10": "Social Media integration",
+          "line11": "Accessibility",
+          "line12": "Forms & Validation",
+          "line13": "Webfonts & typography",
+          "line14": "Theme & Template customisation",
+          "line15": "Internationalization",
+          "line16": "",
+          "line17": "",
+          "line18": "",
+          "line19": "",
+          "line20": ""
+        }
+      },
+      "table2": {
+        "head": "E-commerce",
+        "body": {
+          "line1": "Store settings",
+          "line2": "Stock & Products management",
+          "line3": "Products Variants",
+          "line4": "Order management",
+          "line5": "Copywriting",
+          "line6": "Personnalization & Recommandations",
+          "line7": "Search & Filtering",
+          "line8": "Promotions & Discounts management",
+          "line9": "Gifts & Vounchers",
+          "line10": "Email campaigns",
+          "line11": "Automatisation",
+          "line12": "User account management",
+          "line13": "Customer Relationship Management (CRM)",
+          "line14": "Live Chat & Chatbots",
+          "line15": "Whishlist & Compliance",
+          "line16": "Multi-currency support",
+          "line17": "Multi channel selling",
+          "line18": "Return & Refund management",
+          "line19": "Loyalty Programs",
+          "line20": "Performance Optimisation for large catalogs"
+        }
+      },
+      "table3": {
+        "head": "Web Application",
+        "body": {
+          "line1": "APIs",
+          "line2": "PWAs",
+          "line3": "Static Site Generation",
+          "line4": "Dynamic Forms & validation",
+          "line5": "Datatables",
+          "line6": "Multiple themes ",
+          "line7": "Infinite Scroll",
+          "line8": "Web workers",
+          "line9": "Version Control (Git)",
+          "line10": "Components librairies",
+          "line11": "Error Handling",
+          "line12": "Database management",
+          "line13": "Performance optimisation",
+          "line14": "Authentication & Authorization",
+          "line15": "Unit & Integration Testing",
+          "line16": "DevOps Practices",
+          "line17": "",
+          "line18": "",
+          "line19": "",
+          "line20": ""
+        }
+      }
+    }, 
+    "works": {
+      "label": "Works",
+      "description": "Here are some Freelance missions, Personal & Side Projects",
+      "work1": {
+        "title": "Mangaverse",
+        "descripton": "description"
+      },
+      "work2": {
+        "title": "Bandage e-commerce",
+        "descripton": ""
+      },
+      "work3": {
+        "title": "Shopify App",
+        "descripton": ""
+      },
+      "work4": {
+        "title": "Bunny Management",
+        "descripton": ""
+      }
+    },
+    "techs": {
+      "label": "Techs",
+      "description": "Among all the technologies we learn for studies, training and work in enterprises, the ones we love and are familiar with ; here are the the ones I acctually use. From the most mastered to those I'm still discovering",
+      "table1": {
+        "head": "Programming Languages",
+        "body": {
+          "line1": "HTML & CSS",
+          "line2": "Typescript, Javascript",
+          "line3": "PHP",
+          "line4": "MySQL",
+          "line5": "PostgreSQL",
+          "line6": "Python",
+          "line7": "C",
+          "line8": "Arduino, Energia",
+          "line9": "",
+          "line10": ""
+        }
+      },
+      "table2": {
+        "head": "Libraires & Frameworks",
+        "body": {
+          "line1": "Next.js",
+          "line2": "Laravel",
+          "line3": "GSAP",
+          "line4": "Remix",
+          "line5": "Express",
+          "line6": "Livewire",
+          "line7": "Prisma",
+          "line8": "Webpack",
+          "line9": "",
+          "line10": ""
+        }
+      },
+      "table3": {
+        "head": "Content Management System",
+        "body": {
+          "line1": "Shopify",
+          "line2": "WordPress",
+          "line3": "Webflow",
+          "line4": "Wix",
+          "line5": ""
+        }
+      },
+      "table4": {
+        "head": "Other Tools",
+        "body": {
+          "line1": "Figma",
+          "line2": "Photoshop",
+          "line3": "Jest",
+          "line4": "",
+          "line5": ""
+        }
+      }
+    }
+  },"AboutPage" :{
+    "h1": "About me",
+    "part1": {
+      "title": "The Beggining",
+      "p-1-a": "I printed my first",
+      "p-1-b": "5 years ago. It was in python, and then with my electronic background, I was entirely focused on robotic with Arduino these years",
+      "p-2": "I've learned Python after it and was inducted to web development on school. When I think of it , it was a huge way to arrive here. I've been through many technologies, and defintely found myself in frontend development and web design"
+    },
+    "part2": {
+      "title": "Transition",
+      "p-1": "As most of devs, I've started this work looking to have geographic liberty and a way to use creativity, but I had to throw myself in professionnal life to see what it really is. Even though I have experience in building applications from A to Z, the most expectative the project is about creativity, User Interface & Experience, the more comfortable I am",
+      "p-2": "Then, since my 2 last jobs, I decided to specialize myself as frontend. This is the perfect job ror me, it enhance my productivity and I enjoy it like a kid"
+    },
+    "part3": {
+      "title": "My Stack"
+    },
+    "part4": {
+      "title": "Waiting for you !",
+      "p-1": "All I aim now is use all these skills and learn more with you Programming is all I love and honnestly, I can't wait to work with you."
+    }
+  },
+  "Footer": {
+    "copyright": "All Rights Reserved",
+    "autor": "Made with 🤍 by the white_dev"
   }
 }
