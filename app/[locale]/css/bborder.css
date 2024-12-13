@@ -2,8 +2,8 @@
   --bborder-width: 1px;
   --bborder-padding-y: 1.4rem;
   --bborder-padding-x: 1.7rem;
-  --bborder-padding-y-sm: 1.3rem;
-  --bborder-padding-x-sm: 1.3rem;
+  --bborder-padding-y-sm: .8rem;
+  --bborder-padding-x-sm: .8rem;
   --bborder-padding-y-lg: 1.6rem;
   --bborder-padding-x-lg: 1.8rem;
 }
@@ -118,7 +118,8 @@
   }
 
   .bborder-top {
-    padding-left: var(--bborder-padding-x-sm);
+    padding-left: 1.3rem;   
+    /* padding-left: var(--bborder-padding-x-sm); */
   }
 
   .bborder-right {

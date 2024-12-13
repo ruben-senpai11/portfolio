@@ -242,7 +242,7 @@ li.gray {
     padding-top: 7px;
     font-weight: 500;
   }
-
+  
   .p-grid,
   .projects {
     gap: 20px;
@@ -250,11 +250,16 @@ li.gray {
 
   .project {
     flex-direction: column;
+    height: auto;
   }
 
   .project-70,
   .project-30 {
     width: 100%;
+  }
+  .project-30 .project-img{
+    max-height: 300px;
+    object-fit: cover;
   }
 
   .project-img,
@@ -275,7 +280,7 @@ li.gray {
 
 @media screen and (max-width: 650px) {
   section {
-    padding: 1rem 1rem;
+    padding: 1rem 1.8rem;
   }
 
   .skills,

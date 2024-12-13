@@ -15,7 +15,7 @@ export default function Works() {
     <>
       <section id="works" className="flex flex-col gap-4 ">
         <h2 className="text-4xl " >{(w('label'))}</h2>
-        <p className="flex gap-2 ">
+        <p className="flex gap-2 flex-wrap ">
           {(w('description'))}
           <Link href="/resume" >{(w('resume-link'))} </Link>
         </p>
@@ -71,8 +71,8 @@ export default function Works() {
         </div>
         <div className="m-auto mt-4">
           <TinyBborder >
-            <span className="flex px-8 py-4">
-              <Link href="/resume" className=" flex gap-8" >
+            <span className="flex px-8 py-2">
+              <Link href="/resume" className=" flex gap-4" >
                 <span> {(w('see-more'))} </span>
                 <svg width="16" height="16" fill="currentColor" className="bi bi-arrow-up-right" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
