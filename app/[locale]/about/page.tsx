@@ -1,22 +1,19 @@
-import sharp from 'sharp';
 import BBorder from "./../bborder";
 import Footer from "./../navigation/footer";
 import Header from "./../navigation/header";
 import Image from "next/image";
 import "../css/sections.css"
 
-import youngDev from "../assets/img/young_dev.jpg"
+import youngDev from "../assets/img/young_dev.jpeg"
 import smilingDev from "../assets/img/smiling_white_dev.jpg"
 
 import "./about.css"
 import Stack from "../components/stack";
 import { useTranslations } from "next-intl";
 
-export default async function Page() {
+export default function Page() {
 
   const a = useTranslations("AboutPage");
-
-  await sharp('./app/[locale]/assets/img/young_dev.jpeg').rotate().toFile('./app/[locale]/assets/img/young_dev_fixed.jpeg');
 
   return (
     <>
