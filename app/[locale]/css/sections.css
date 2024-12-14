@@ -213,7 +213,7 @@ li.gray {
 
   .picture {
     justify-content: center;
-    margin: 40px auto 0 auto;
+    margin: 20px auto 0 auto;
     padding-left: 20px;
   }
 
@@ -260,6 +260,9 @@ li.gray {
   .project-30 .project-img{
     max-height: 300px;
     object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .project-img,
@@ -280,7 +283,18 @@ li.gray {
 
 @media screen and (max-width: 650px) {
   section {
-    padding: 1rem 1.8rem;
+    padding: 1.5rem 1.8rem;
+  }
+  .picture {
+    width: 300px;
+    min-width: 300px;
+    height: 300px;
+    max-height: 300px;
+  }
+
+  .project-30 .project-img{
+    max-height: 200px;
+    object-fit: cover;
   }
 
   .skills,
@@ -291,7 +305,7 @@ li.gray {
   }
 
   .r-card {
-    width: 90%;
+    width: 100%;
     height: 100%;
   }
 
@@ -301,6 +315,10 @@ li.gray {
 
   .description {
     gap: 8px;
+  }
+
+  .see-more {
+    padding-top: 5px;
   }
 }
 

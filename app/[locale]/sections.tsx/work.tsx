@@ -71,7 +71,7 @@ export default function Works() {
         </div>
         <div className="m-auto mt-4">
           <TinyBborder >
-            <span className="flex px-8 py-2">
+            <span className="see-more flex px-8 py-2">
               <Link href="/resume" className=" flex gap-4" >
                 <span> {(w('see-more'))} </span>
                 <svg width="16" height="16" fill="currentColor" className="bi bi-arrow-up-right" viewBox="0 0 16 16">
