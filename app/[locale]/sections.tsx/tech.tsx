@@ -51,7 +51,6 @@ export default function Tech() {
                 <li className="purple" >{(table3('body.line1'))}</li>
                 <li className="blue" >{(table3('body.line2'))}</li>
                 <li className="blue" >{(table3('body.line3'))}</li>
-                <li className="blue" >{(table3('body.line4'))}</li>
               </ul>
             </div>
             <div className="pt- ">

@@ -99,7 +99,7 @@
       "see-more": "en voir plus",
       "work1": {
         "title": "Mangaverse",
-        "description": "Une plateforme complète d'exploration de mangas."
+        "description": "Une plateforme complète d'exploration de mangas. Le but est de trouver en une seule recherche n'importe quelle œuvre qu'on recherche."
       },
       "work2": {
         "title": "Bandage E-commerce",
@@ -149,8 +149,7 @@
         "body": {
           "line1": "Shopify",
           "line2": "WordPress",
-          "line3": "Webflow",
-          "line4": "Wix"
+          "line3": "Webflow"
         }
       },
       "table4": {

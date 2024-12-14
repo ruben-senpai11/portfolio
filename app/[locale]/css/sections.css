@@ -3,6 +3,7 @@ section {
 }
 
 .hero {
+  padding-top: 40px;
   height: 500px;
   padding-top: 100px;
   padding-bottom: 0;
@@ -170,6 +171,7 @@ li.gray {
 
 @media screen and (max-width: 1200px) {
   .hero {
+    padding-top: 40px;
     height: auto;
   }
 
@@ -200,10 +202,11 @@ li.gray {
 
 @media screen and (max-width: 924px) {
   section {
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
   }
 
   .hero {
+    padding-top: 40px;
     flex-direction: column;
     height: auto;
     padding-top: 70px;
@@ -214,8 +217,8 @@ li.gray {
   .picture {
     justify-content: center;
     margin: 20px auto 0 auto;
-    padding-left: 20px;
   }
+
 
   .picture img {
     height: auto;
@@ -245,7 +248,7 @@ li.gray {
   
   .p-grid,
   .projects {
-    gap: 20px;
+    gap: 25px;
   }
 
   .project {
@@ -283,7 +286,10 @@ li.gray {
 
 @media screen and (max-width: 650px) {
   section {
-    padding: 1.5rem 1.8rem;
+    padding: 1.8rem 1.5rem;
+  }
+  .hero {
+    padding-top: 40px;
   }
   .picture {
     width: 300px;
@@ -310,15 +316,19 @@ li.gray {
   }
 
   .tech {
-    height: 300px;
+    height: auto;
   }
 
   .description {
     gap: 8px;
   }
 
+  .tb-see-more{
+    margin: 0 auto;
+    margin-top: 5px;
+  }
   .see-more {
-    padding-top: 5px;
+    padding-top: 5px 7px;
   }
 }
 
@@ -329,5 +339,12 @@ li.gray {
     min-width: 250px;
     height: 250px;
     max-height: 250px;
+  }
+}
+
+
+@media screen and (max-width: 370px) {
+  .picture {
+    margin: 20px auto 0 20px;
   }
 }

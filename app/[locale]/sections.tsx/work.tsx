@@ -15,9 +15,9 @@ export default function Works() {
     <>
       <section id="works" className="flex flex-col gap-4 ">
         <h2 className="text-4xl " >{(w('label'))}</h2>
-        <p className="flex gap-2 flex-wrap ">
+        <p className=" flex-wrap ">
           {(w('description'))}
-          <Link href="/resume" >{(w('resume-link'))} </Link>
+          <Link href="/resume" > {(w('resume-link'))} </Link>
         </p>
         <div className="p-grid flex flex-col gap-8">
           <div className="projects flex justify-between gap-4 ">
@@ -69,7 +69,7 @@ export default function Works() {
             </div>
           </div>
         </div>
-        <div className="m-auto mt-4">
+        <div className="tb-see-more m-auto mt-4">
           <TinyBborder >
             <span className="see-more flex px-8 py-2">
               <Link href="/resume" className=" flex gap-4" >

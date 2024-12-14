@@ -1,6 +1,8 @@
 :root{
   --tb-padding-x: 15px;
-  --tb-padding-y: 15px
+  --tb-padding-y: 15px;
+  --tb-padding-x-sm: 10px;
+  --tb-padding-y-sm: 10px;
 }
 
 
@@ -37,4 +39,32 @@
 
 .navbar .t-bborder-bottom{
   background-color: transparent;
+}
+
+
+
+@media screen and (max-width: 650px){
+
+  .t-bborder-left {
+    border-left: var(--bborder-width) solid var(--foreground-color);
+  }
+  
+  .t-bborder {
+    padding-right: var(--tb-padding-x-sm);
+  }
+  
+  .t-bborder-top {
+    padding-left: var(--tb-padding-x-sm);
+  }
+  
+  .t-bborder-right {
+    padding-top: 15px;
+    border-right: var(--bborder-width) solid var(--foreground-color);
+  }
+  
+  .t-bborder-bottom {
+    min-width: calc(100% + var(--tb-padding-x-sm));
+    min-height: var(--tb-padding-y-sm);
+    padding-bottom: var(--tb-padding-y-sm);
+  }
 }
