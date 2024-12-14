@@ -4,7 +4,7 @@ import Header from "./../navigation/header";
 import Image from "next/image";
 import "../css/sections.css"
 
-import youngDev from "../assets/img/young_dev.jpeg"
+import youngDev from "../assets/img/young_dev.jpg"
 import smilingDev from "../assets/img/smiling_white_dev.jpg"
 
 import "./about.css"
