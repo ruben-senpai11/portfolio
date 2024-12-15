@@ -248,6 +248,9 @@
   .footer div{
     width: max-content;
   }
+  .tb-container{
+    padding-left: 0;
+  }
 }
 
 

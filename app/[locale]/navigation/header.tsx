@@ -23,6 +23,14 @@ function Header({ title }: Props) {
     }
   }
 
+  const setNavFalse =()=>{
+    setmobileNav(false)
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' 
+    });
+  }
+
   //  Scroll Trigger
   const [isScrolled, setIsScrolled] = useState(false)
 
@@ -65,16 +73,16 @@ function Header({ title }: Props) {
           </div>
           <div className={(mobileNav == true ? 'm-menu-container' : 'desktop-menu') + " "}>
             <ul className="navlinks flex gap-12 navlinks justify-between align-center ">
-              <li className="active">
+              <li onClick={setNavFalse} className="active">
                 <Link href="/#hero">{t('home')}</Link>
               </li>
               {/* <li>
                 <Link href="/#skills">{t('about')}</Link>
               </li> */}
-              <li>
+              <li onClick={setNavFalse}>
                 <Link href="/#works">{t('works')}</Link>
               </li>
-              <li>
+              <li onClick={setNavFalse}>
                 <Link href="/#stack">{t('stack')}</Link>
               </li>
               <li>
