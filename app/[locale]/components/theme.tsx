@@ -7,7 +7,6 @@ export default function Theme() {
   const [theme, setTheme] = useState<string>(
     localStorage.getItem("theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
     );
-    console.log(theme);
   
   useEffect(() => {
     // Apply the theme to the document body

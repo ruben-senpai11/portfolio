@@ -29,7 +29,7 @@
 }
 
 .t-bborder-bottom {
-  min-width: calc(100% + var(--tb-padding-x));
+  min-width: calc(100% + var(--tb-padding-x) + 3px);
   min-height: var(--tb-padding-y);
   background-color: var(--background-color);
   padding-bottom: var(--tb-padding-y);
