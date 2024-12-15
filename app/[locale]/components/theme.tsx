@@ -9,11 +9,9 @@ export default function Theme() {
     );
   
   useEffect(() => {
-    // Apply the theme to the document body
     document.body.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
 
-    // Listener for system theme changes
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
     const handleChange = (e: MediaQueryListEvent) => {
       const newTheme = e.matches ? "dark" : "light";

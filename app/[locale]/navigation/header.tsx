@@ -80,16 +80,16 @@ function Header({ title }: Props) {
                 <Link href="/#skills">{t('about')}</Link>
               </li> */}
               <li onClick={setNavFalse}>
-                <Link href="/#works">{t('works')}</Link>
+                <Link href="/#works">{" "}{t('works')}</Link>
               </li>
               <li onClick={setNavFalse}>
-                <Link href="/#stack">{t('stack')}</Link>
+                <Link href="/#stack">{" "}{t('stack')}</Link>
               </li>
               <li>
-                <Link href="/about">{t('about')}</Link>
+                <Link href="/about">{" "}{t('about')}</Link>
               </li>
               <li>
-                <Link href="/resume">{t('resume')}</Link>
+                <Link href="/resume">{" "}{t('resume')}</Link>
               </li>
             </ul>
           </div>
@@ -102,7 +102,7 @@ function Header({ title }: Props) {
                     <span> {t('email-me')}</span>
                     <span>
                       <svg width="16" height="16" fill="currentColor" className="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                        <path fillRule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
                       </svg>
                     </span>
                   </Link>
@@ -110,7 +110,7 @@ function Header({ title }: Props) {
                     <span>{(t('whatsapp-me'))} </span>
                     <span>
                       <svg width="16" height="16" fill="currentColor" className="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                        <path fillRule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
                       </svg>
                     </span>
                   </Link>
@@ -129,7 +129,7 @@ function Header({ title }: Props) {
                     <span> {t('email-me')}</span>
                     <span>
                       <svg width="16" height="16" fill="currentColor" className="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                        <path fillRule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
                       </svg>
                     </span>
                   </Link>
@@ -137,7 +137,7 @@ function Header({ title }: Props) {
                     <span>{(t('whatsapp-me'))} </span>
                     <span>
                       <svg width="16" height="16" fill="currentColor" className="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                        <path fillRule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
                       </svg>
                     </span>
                   </Link>
