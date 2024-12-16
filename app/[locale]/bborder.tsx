@@ -26,23 +26,25 @@ export default function BBorder({ children }: Props) {
     <>
       <div className="flex justify-center relative">
         <div className="bborder">
-          <div className="bborder-right">
-            <div className="bborder-top">
-              <div className="bborder-left  ">
-                <div className="flex flex-col ">
-                  <div className="">
-                    {children}
-                  </div>
-                  <div className="bborder-bottom">
+          <div className="background">
+            <div className="bborder-right">
+              <div className="bborder-top">
+                <div className="bborder-left  ">
+                  <div className="flex flex-col ">
+                    <div className="">
+                      {children}
+                    </div>
+                    <div className="bborder-bottom">
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="env">
-          <Theme />
-          <Language />
+          <div className="env">
+            <Theme />
+            <Language />
+          </div>
         </div>
       </div>
     </>

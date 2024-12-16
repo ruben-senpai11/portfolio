@@ -8,6 +8,7 @@ import Hero from "./sections.tsx/hero";
 import Skills from "./sections.tsx/skills";
 import Tech from "./sections.tsx/tech";
 import Works from "./sections.tsx/work";
+import Exceptionnal from './sections.tsx/exceptionnal';
 
 
 export default function HomePage() {
@@ -18,8 +19,9 @@ export default function HomePage() {
         <Header title="white_dev" />
         <div className="main flex flex-col gap-16 pb-6 ">
           <Hero />
-          <Works />
+          {/* <Exceptionnal /> */}
           <Skills />
+          <Works />
           <Tech />
           {/* <div className="main flex gap-4 my-0 mx-auto" > I'm a
             <span>developer</span>

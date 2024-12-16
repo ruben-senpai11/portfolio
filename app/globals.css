@@ -8,10 +8,11 @@
   --background-color: #fafafa;
   --bg-text-background: #ccc;
   --bg-text-colored-background: rgb(196 181 253);
-  --purple: rgb(91 33 182);
   --purple: #810881;
+  --purple: rgb(91 33 182);
+  --purple: rgb(82, 9, 199);
   --blue: rgb(29 78 216);
-  --blue: blue;
+  --blue: rgb(0, 60, 255);
   --gray: rgb(100 116 139);
 }
 
@@ -29,8 +30,14 @@
 body {
   background-color: var(--background-color);
   color: var(--foreground-color);
-  font-family: sans-serif;
+  font-family: sans-serif!important;
 }
+
+
+.main{
+  /* background:  url('/write_in_tongues/5.svg') center / cover no-repeat fixed padding-box;   */
+}
+
 
 h1 {
   font-size: 2rem;
