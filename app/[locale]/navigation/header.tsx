@@ -23,6 +23,14 @@ function Header({ title }: Props) {
     }
   }
 
+  const setNavFalse =()=>{
+    setmobileNav(false)
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' 
+    });
+  }
+
   //  Scroll Trigger
   const [isScrolled, setIsScrolled] = useState(false)
 
@@ -65,23 +73,23 @@ function Header({ title }: Props) {
           </div>
           <div className={(mobileNav == true ? 'm-menu-container' : 'desktop-menu') + " "}>
             <ul className="navlinks flex gap-12 navlinks justify-between align-center ">
-              <li className="active">
+              <li onClick={setNavFalse} className="active">
                 <Link href="/#hero">{t('home')}</Link>
               </li>
               {/* <li>
                 <Link href="/#skills">{t('about')}</Link>
               </li> */}
-              <li>
-                <Link href="/#works">{t('works')}</Link>
+              <li onClick={setNavFalse}>
+                <Link href="/#works">{" "}{t('works')}</Link>
+              </li>
+              <li onClick={setNavFalse}>
+                <Link href="/#stack">{" "}{t('stack')}</Link>
               </li>
               <li>
-                <Link href="/#stack">{t('stack')}</Link>
+                <Link href="/about">{" "}{t('about')}</Link>
               </li>
               <li>
-                <Link href="/about">{t('about')}</Link>
-              </li>
-              <li>
-                <Link href="/resume">{t('resume')}</Link>
+                <Link href="/resume">{" "}{t('resume')}</Link>
               </li>
             </ul>
           </div>
@@ -94,7 +102,7 @@ function Header({ title }: Props) {
                     <span> {t('email-me')}</span>
                     <span>
                       <svg width="16" height="16" fill="currentColor" className="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                        <path fillRule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
                       </svg>
                     </span>
                   </Link>
@@ -102,13 +110,13 @@ function Header({ title }: Props) {
                     <span>{(t('whatsapp-me'))} </span>
                     <span>
                       <svg width="16" height="16" fill="currentColor" className="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                        <path fillRule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
                       </svg>
                     </span>
                   </Link>
                 </span>
               <div className="socials flex gap-4 ">
-                <Link href="linkedin.com/in/alban-honfovou/" target="blank" >LN</Link>
+                <Link href="https://linkedin.com/in/alban-honfovou/" target="blank" >LN</Link>
                 <Link href="https://www.facebook.com/alban.honfovou/" target="blank" >FA</Link>
                 <Link href="https://wa.me/+22996404757/" target="blank" >WA</Link>
                 <Link href="https://github.com/ruben-senpai11" target="blank" >GH</Link>
@@ -121,7 +129,7 @@ function Header({ title }: Props) {
                     <span> {t('email-me')}</span>
                     <span>
                       <svg width="16" height="16" fill="currentColor" className="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                        <path fillRule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
                       </svg>
                     </span>
                   </Link>
@@ -129,7 +137,7 @@ function Header({ title }: Props) {
                     <span>{(t('whatsapp-me'))} </span>
                     <span>
                       <svg width="16" height="16" fill="currentColor" className="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                        <path fillRule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
                       </svg>
                     </span>
                   </Link>

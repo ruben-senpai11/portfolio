@@ -85,7 +85,8 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding: 15px 15px;
+  padding: 15px;
+  background-color: var(--background-color);
 }
 
 .tb-container a{
@@ -246,6 +247,9 @@
 
   .footer div{
     width: max-content;
+  }
+  .tb-container{
+    padding-left: 0;
   }
 }
 

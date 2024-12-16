@@ -75,6 +75,10 @@ a:hover::after {
   transform: scaleX(1);
 }
 
+.navlinks a::after{
+  /* left: -15px; */
+  /* width: calc(100% + 15px); */
+}
 
 
 /* Scroll Bar ----------------------------------------- */
