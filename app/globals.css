@@ -8,9 +8,10 @@
   --background-color: #fafafa;
   --bg-text-background: #ccc;
   --bg-text-colored-background: rgb(196 181 253);
-  --purple: rgb(109 40 217);
   --purple: rgb(91 33 182);
+  --purple: #810881;
   --blue: rgb(29 78 216);
+  --blue: blue;
   --gray: rgb(100 116 139);
 }
 
@@ -28,6 +29,7 @@
 body {
   background-color: var(--background-color);
   color: var(--foreground-color);
+  font-family: sans-serif;
 }
 
 h1 {

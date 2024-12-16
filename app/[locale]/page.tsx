@@ -18,8 +18,8 @@ export default function HomePage() {
         <Header title="white_dev" />
         <div className="main flex flex-col gap-16 pb-6 ">
           <Hero />
-          <Skills />
           <Works />
+          <Skills />
           <Tech />
           {/* <div className="main flex gap-4 my-0 mx-auto" > I'm a
             <span>developer</span>
