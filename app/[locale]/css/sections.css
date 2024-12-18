@@ -3,7 +3,6 @@ section {
 }
 
 .hero {
-  padding-top: 40px;
   height: 500px;
   padding-top: 100px;
   padding-bottom: 0;
@@ -171,11 +170,10 @@ li.gray {
 }
 
 @media screen and (max-width: 1200px) {
-  .hero {
-    padding-top: 40px;
-    height: auto;
+  .hero{
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
-
   .picture {
     position: relative;
     width: 300px;
@@ -289,9 +287,7 @@ li.gray {
   section {
     padding: 1.8rem 1.5rem;
   }
-  .hero {
-    padding-top: 40px;
-  }
+
   .picture {
     width: 300px;
     min-width: 300px;

@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Language from "./components/language";
 import Theme from "./components/theme";
 import "./css/bborder.css"
+import Background from "./components/background";
 
 interface Props {
   children: any
@@ -44,6 +45,7 @@ export default function BBorder({ children }: Props) {
           <div className="env">
             <Theme />
             <Language />
+            {/* <Background lightColors={["red", "blue", "green"]} darkColors={[""]} /> */}
           </div>
         </div>
       </div>

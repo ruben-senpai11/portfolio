@@ -5,12 +5,17 @@
 
 :root {
   --foreground-color: #000000;
+  --background-color: #eeffee;
+  --background-color: #ffeeee;
+  --background-color: #dedeff;
   --background-color: #fafafa;
-  --bg-text-background: #ccc;
-  --bg-text-colored-background: rgb(196 181 253);
-  --purple: #810881;
+  --background-color: #eeffff;
+  --bg-text-background: #cccccc90;
+  --bg-text-background: #99999950;
+  --bg-text-colored-background: rgb(230, 92, 243);
   --purple: rgb(91 33 182);
   --purple: rgb(82, 9, 199);
+  --purple: #810881;
   --blue: rgb(29 78 216);
   --blue: rgb(0, 60, 255);
   --gray: rgb(100 116 139);
@@ -18,9 +23,14 @@
 
 [ data-theme="dark"] {
   --foreground-color: white;
-  --background-color: #161515;
+  --background-color: #161615;
+  --background-color: #200a01;
+  --background-color: #0a2001;
+  --background-color: #012020;
+  --background-color: #010a20;
   --rgb-foreground-color: (255, 255, 255);
-  --bg-text-background: #555;
+  --bg-text-background: #99999950;
+  --bg-text-colored-background: rgb(230, 92, 243);
   --bg-text-colored-background: rgb(109 40 217);
   --purple: rgb(167 139 250);
   --blue: rgb(202 138 4);
@@ -35,7 +45,7 @@ body {
 
 
 .main{
-  /* background:  url('/write_in_tongues/5.svg') center / cover no-repeat fixed padding-box;   */
+  /* background:  url('/write_in_tongues/6.svg') center / cover no-repeat fixed padding-box;   */
 }
 
 

@@ -32,27 +32,15 @@ export default function Theme() {
 
   return (
     <>
-
       <div className="theme">
-
       <span onClick={() => handleTheme()}>
           <span className={"checkbox " + (theme == "light" ? "active" : "")} ></span>
           <span className="upppercase">light</span>
         </span>
-
-
         <span onClick={() => handleTheme()}>
           <span className={"checkbox " + (theme == "dark" ? "active" : "")} ></span>
           <span className="upppercase">dark</span>
         </span>
-
-
-        {/* <span>
-          <Checkbox label="Light" isChecked={true} />
-        </span>
-        <span>
-          <Checkbox label="Dark" isChecked={false} />
-        </span> */}
       </div>
     </>
   )
