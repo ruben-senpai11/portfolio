@@ -8,8 +8,8 @@
   --background-color: #eeffee;
   --background-color: #ffeeee;
   --background-color: #dedeff;
-  --background-color: #fafafa;
   --background-color: #eeffff;
+  --background-color: #fafafa;
   --bg-text-background: #cccccc90;
   --bg-text-background: #99999950;
   --bg-text-colored-background: rgb(230, 92, 243);
@@ -23,11 +23,11 @@
 
 [ data-theme="dark"] {
   --foreground-color: white;
-  --background-color: #161615;
   --background-color: #200a01;
   --background-color: #0a2001;
   --background-color: #012020;
   --background-color: #010a20;
+  --background-color: #161615;
   --rgb-foreground-color: (255, 255, 255);
   --bg-text-background: #99999950;
   --bg-text-colored-background: rgb(230, 92, 243);
