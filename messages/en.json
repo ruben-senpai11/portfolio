@@ -11,13 +11,23 @@
     "copyright": "All Rights Reserved",
     "author": "Made with 🤍 by the white_dev"
   },
+  "Global": {
+    "videoError": "Your browser does not support the video tag."
+  },
   "HomePage": {
     "hero": {
       "title": "Hey, I'm",
       "title-2": "Friends call me white_dev",
       "description": "I believe in God and the abilities He gave me to make your next website",
       "description-colored": "divinely efficient",
-      "text": "Ruben White is a highly skilled Frontend Developer."
+      "text": "The white_dev is a highly skilled Frontend Developer."
+    },
+    "exceptional": {
+      "title": "What Makes Me Special?",
+      "p1": "I love to offer THE BEST. Since the experience differs depending on the screen's size, I ensure each screen provides the best experience possible. This includes focusing on User Experience, Accessibility across screens and systems, Responsiveness and so on.",
+      "p2": "With 8 billion unique and special people on Earth, I aim to offer via each screen they use the best experience possible.",
+      "p3": "Guess what? I'm the type of developer who writes pure CSS for responsive designs and.. other aspects of coding too.",
+      "p4": "Sure, I master tools like Tailwind CSS, shadcn/ui or daisyUI. However, what I prefer rely solely on CSS when appropriate, ensuring the sites I work on are more performant, efficient, and fast."
     },
     "skills": {
       "label": "Skills",
@@ -112,8 +122,7 @@
       "work4": {
         "title": "Bunny Management",
         "description": "Design of a bunny management platform. This project aim to assist the breeder in his daily tasks, prevent viruses and enable a owner to monitor the farm from anywhere"
-      },
-      "videoError": "Your browser does not support the video tag."
+      }
     },
     "techs": {
       "label": "Technologies",

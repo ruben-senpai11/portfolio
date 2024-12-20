@@ -8,7 +8,6 @@ section {
   padding-bottom: 0;
 }
 
-
 .description {
   height: 100%;
 }
@@ -43,6 +42,45 @@ section {
   height: max-content;
   object-fit: cover;
   box-shadow: 2px 2px 5px var(--foreground-color);
+}
+
+/* ***** Exceptional ********** */
+
+.theme-switchers {
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+  /* height: 150px; */
+}
+.theme-switchers img {
+  width: max-content;
+  height: auto;
+  object-fit: cover;
+}
+
+.responsivity {
+  padding: 15px;
+  border: 1px solid;
+  gap: 20px;
+}
+.responsivity hr {
+  border-color: var(--foreground-color);
+}
+.responsivity div {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.r-top video {
+  width: 49%;
+  height: auto;
+}
+.r-bottom video {
+  width: 32%;
+  height: auto;
 }
 
 /****** Skills ***/
@@ -170,7 +208,7 @@ li.gray {
 }
 
 @media screen and (max-width: 1200px) {
-  .hero{
+  .hero {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -182,6 +220,11 @@ li.gray {
     max-height: 300px;
     margin-top: 40px;
   }
+
+  .r-bottom video {
+    width: 31.5%;
+  }
+
   .projects {
     flex-direction: column;
   }
@@ -218,9 +261,25 @@ li.gray {
     margin: 20px auto 0 auto;
   }
 
-
   .picture img {
     height: auto;
+  }
+
+  .responsivity {
+    padding: 15px;
+    gap: 10px;
+  }
+  .responsivity div {
+    gap: 10px;
+  }
+
+  .r-top video, .r-bottom video {
+    width: 48.5%;
+  }
+  .r-bottom {
+    height: max-content;
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 
   .r-card {
@@ -244,7 +303,7 @@ li.gray {
     padding-top: 7px;
     font-weight: 500;
   }
-  
+
   .p-grid,
   .projects {
     gap: 25px;
@@ -259,7 +318,7 @@ li.gray {
   .project-30 {
     width: 100%;
   }
-  .project-30 .project-img{
+  .project-30 .project-img {
     max-height: 300px;
     object-fit: cover;
     display: flex;
@@ -295,7 +354,7 @@ li.gray {
     max-height: 300px;
   }
 
-  .project-30 .project-img{
+  .project-30 .project-img {
     max-height: 200px;
     object-fit: cover;
   }
@@ -320,7 +379,7 @@ li.gray {
     gap: 8px;
   }
 
-  .tb-see-more{
+  .tb-see-more {
     margin: 0 auto;
     margin-top: 5px;
   }
@@ -329,7 +388,6 @@ li.gray {
   }
 }
 
-
 @media screen and (max-width: 450px) {
   .picture {
     width: 250px;
@@ -337,8 +395,23 @@ li.gray {
     height: 250px;
     max-height: 250px;
   }
-}
+  .responsivity {
+    padding: 10px;
+    gap: 10px;
+  }
+  .responsivity div {
+    gap: 15px;
+  }
 
+  .r-top video, .r-bottom video {
+    width: 100%;
+  }
+  .r-top {
+    height: max-content;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
 
 @media screen and (max-width: 370px) {
   .picture {

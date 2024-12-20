@@ -7,17 +7,27 @@
     "resume": "curriculum",
     "say-hello": "envoyer un mot",
     "email-me": "envoyer un mail",
-    "whatsapp-me": "discuter sur whatsapp",  
+    "whatsapp-me": "discuter sur whatsapp",
     "copyright": "Tous droits réservés",
     "author": "Made with 🤍 by the white_dev"
+  },
+  "Global": {
+    "videoError": "Votre navigateur ne prend pas en charge la balise vidéo."
   },
   "HomePage": {
     "hero": {
       "title": "Hey, je suis",
-      "title-2": "Mais les amis m'appellent le white_dev",
+      "title-2": "Mais les amis m'appellent the white_dev",
       "description": "Je crois en Dieu et l'aptitude qu'Il m'a donnée à rendre votre prochain site web",
       "description-colored": "divinement efficace",
-      "text": "Ruben White est un développeur Frontend talentueux et expérimenté."
+      "text": "The white_dev est un développeur Frontend talentueux et expérimenté."
+    },
+    "exceptional": {
+      "title": "Qu'est-ce qui me rend Différent ?",
+      "p1": "J'aime offrir LE MEILLEUR. Étant donné que l'expérience varie en fonction de la taille de l'écran, je m'assure que chaque écran offre la meilleure expérience possible. Ceci implique une maîtrise de l'expérience utilisateur, l'accessibilité sur différents écrans et systèmes, la responsivité, et plus..",
+      "p2": "Avec 8 milliards de personnes uniques et spéciales sur Terre, mon objectif est d'offrir à travers chaque écran qu'elles utilisent la meilleure expérience possible.",
+      "p3": "Devinez quoi ? Je suis le genre de développeur à écrire du pur CSS pour ce qui est de la responsivité et... pour le reste aussi en fait.",
+      "p4": "Bien sûr, je maîtrise des outils comme Tailwind CSS, shadcn/ui ou daisyUI. Cependant, je préfère de loin m'appuyer uniquement sur le CSS lorsque cela est est pertinent, ce qui garantit des sites plus performants, efficaces et rapides."
     },
     "skills": {
       "label": "Compétences",
@@ -112,8 +122,7 @@
       "work4": {
         "title": "Ma ferme en ligne",
         "description": "Conception d'une plateforme de gestion de l'élevage de lapins. Elle a pour but d'aider le fermier dans ses tâches quotidiennes et permettre un suivi rigoureux à distance au propriétaire "
-      },
-      "videoError": "Votre navigateur ne prend pas en charge la balise vidéo."
+      }
     },
     "techs": {
       "label": "Technologies",

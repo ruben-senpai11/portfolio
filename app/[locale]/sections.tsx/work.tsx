@@ -10,6 +10,7 @@ import { Link } from "@/i18n/routing";
 export default function Works() {
 
   const w = useTranslations("HomePage.works")
+  const g = useTranslations("Global")
 
   return (
     <>
@@ -59,7 +60,7 @@ export default function Works() {
                 {/* <Image src={bunny} width={500} height={100} alt="" /> */}
                 <video width="600" height="400" autoPlay controls>
                   <source src="/video/bunny.webm" type="video/webm" />
-                  {(w('videoError'))}
+                  {(g('videoError'))}
                 </video>
               </div>
               <div className="p-description">

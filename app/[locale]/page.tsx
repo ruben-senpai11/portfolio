@@ -19,7 +19,7 @@ export default function HomePage() {
         <Header title="white_dev" />
         <div className="main flex flex-col gap-16 pb-6 ">
           <Hero />
-          {/* <Exceptionnal /> */}
+          <Exceptionnal />
           <Skills />
           <Works />
           <Tech />
