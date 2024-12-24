@@ -22,11 +22,30 @@ export default function BBorder({ children }: Props) {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const [isVisible, setIsVisible] = useState(false)
+
+  const observer = new MutationObserver((mutationsList) => {
+    for (const mutation of mutationsList) {
+      if (mutation.type === "attributes" && mutation.attributeName === "data-theme") {
+        const newTheme = document.body.getAttribute("data-theme");
+        console.log("Theme changed to:", newTheme);
+
+        if (newTheme == "dark") {
+          setIsVisible(true)
+        }
+        else setIsVisible(false)
+      }
+    }
+  });
+
+  // Start observing changes to the `body` element
+  observer.observe(document.body, { attributes: true });
+
 
   return (
     <>
       <div className="flex justify-center relative">
-        <div className="bborder">
+        <div className="bborder ">
           <div className="background">
             <div className="bborder-right">
               <div className="bborder-top">
@@ -45,7 +64,9 @@ export default function BBorder({ children }: Props) {
           <div className="env">
             <Theme />
             <Language />
-            {/* <Background lightColors={["red", "blue", "green"]} darkColors={[""]} /> */}
+          </div>
+          <div className={isVisible ? "block" : "hidden"}>
+            <Background lightColors={["red", "blue", "green"]} darkColors={["red", "blue", "green", "cyan", "default"]} />
           </div>
         </div>
       </div>

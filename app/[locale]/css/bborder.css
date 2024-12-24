@@ -45,7 +45,6 @@
 
 .env {
   position: fixed;
-  bottom: calc(var(--bborder-padding-y));
   width: 20px;
   display: flex;
   flex-direction: column-reverse;
@@ -53,7 +52,7 @@
   gap: 130px;
   font-size: 14px;
   left: calc(var(--bborder-padding-x) / 4) !important;
-  bottom: calc(var(--bborder-padding-y)) !important;
+  bottom: calc(var(--bborder-padding-y) + 5px) !important;
 }
 
 .theme,
@@ -66,6 +65,7 @@
   transform: rotate(-90deg);
   /* border: solid; */
 }
+
 .theme span,
 .language span {
   display: flex;
@@ -81,9 +81,33 @@
   border: 1px solid;
   cursor: pointer;
 }
+
 .checkbox.active {
   background-color: var(--foreground-color);
 }
+
+
+.background-color {
+  position: fixed;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0;
+  gap: 10px;
+  top: calc(var(--bborder-padding-y) + 45px) !important;
+  left: calc(var(--bborder-padding-x) / 2) !important;
+  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.background-color .current-color {
+  border-color: 2px solid var(--foreground-color);
+}
+
+.background-color .checkbox {
+  border: none;
+  width: 10.5px;
+  height: 10.5px;
+}
+
 
 @media screen and (min-width: 1200px) {
   .bborder {
@@ -118,7 +142,7 @@
   }
 
   .bborder-top {
-    padding-left: 1.3rem;   
+    padding-left: 1.3rem;
     /* padding-left: var(--bborder-padding-x-sm); */
   }
 
@@ -136,5 +160,8 @@
     left: calc(var(--bborder-padding-x-sm) / 10) !important;
     left: 0px;
     bottom: calc(var(--bborder-padding-y-sm)) !important;
+  }
+  .background-color {
+    left: calc(var(--bborder-padding-x) / 4) !important;
   }
 }

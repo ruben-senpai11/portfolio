@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 
-interface Props{
+interface Props {
   lightColors: any,
   darkColors: any
 }
 
-export default function Background({lightColors, darkColors}:Props) {
+export default function Background({ lightColors, darkColors }: Props) {
 
 
   const [background, setBackground] = useState<string>(
@@ -29,29 +29,19 @@ export default function Background({lightColors, darkColors}:Props) {
     };
   }, [background]);
 
-  const handleBackground = () => {
-    setBackground(background === "light" ? "dark" : "light");
+  const handleBackground = (newbackground: string) => {
+    setBackground(newbackground);
   };
 
 
   return (
     <>
-      <div className="background">
-        <span onClick={() => handleBackground()}>
-          <span className={"checkbox " + (background == "light" ? "active" : "")} ></span>
-        </span>
-        <span onClick={() => handleBackground()}>
-          <span className={"checkbox " + (background == "dark" ? "active" : "")} ></span>
-        </span>
-        <span onClick={() => handleBackground()}>
-          <span className={"checkbox " + (background == "light" ? "active" : "")} ></span>
-        </span>
-        <span onClick={() => handleBackground()}>
-          <span className={"checkbox " + (background == "dark" ? "active" : "")} ></span>
-        </span>
-        <span onClick={() => handleBackground()}>
-          <span className={"checkbox " + (background == "dark" ? "active" : "")} ></span>
-        </span>
+      <div className="background-color ">
+        {darkColors.map((color: string, index: number) => (
+          <span key={index} onClick={() => handleBackground(color)} help-text={color} >
+            <span className={"checkbox " + color + (background == color ? " current-color" : "")} ></span>
+          </span>
+        ))}
       </div>
     </>
   )

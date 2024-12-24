@@ -23,10 +23,10 @@
 
 [ data-theme="dark"] {
   --foreground-color: white;
-  --background-color: #200a01;
-  --background-color: #0a2001;
-  --background-color: #012020;
-  --background-color: #010a20;
+  --cyan-background-color: #012020;
+  --green-background-color: #0a2001;
+  --red-background-color: #200a01;
+  --blue-background-color: #010a20;
   --background-color: #161615;
   --rgb-foreground-color: (255, 255, 255);
   --bg-text-background: #99999950;
@@ -35,6 +35,26 @@
   --purple: rgb(167 139 250);
   --blue: rgb(202 138 4);
   /* --gray: ; */
+}
+
+[data-background="red"] {
+  --background-color: var(--red-background-color);
+}
+
+[data-background="green"] {
+  --background-color: var(--green-background-color);
+}
+
+[data-background="blue"] {
+  --background-color: var(--blue-background-color);
+}
+
+[data-background="cyan"] {
+  --background-color: var(--cyan-background-color);
+}
+
+[data-background="default"] {
+  background-color: var(--background-color);
 }
 
 body {
@@ -144,6 +164,28 @@ a:hover::after {
 }
 .bg-text-colored{
   background-color: var(--bg-text-colored-background);
+}
+
+
+.checkbox.default{
+  background: var(--foreground-color);
+  background: #444;
+}
+.checkbox.blue{
+  background-color: blue;
+  background-color: #1c50d4;
+}
+.checkbox.red{
+  background-color: red;
+  background-color: #eb2020;
+}
+.checkbox.green{
+  background-color: green;
+  background-color: #0a8508;
+}
+.checkbox.cyan{
+  background-color: var(--cyan-background-color);
+  background-color: #02693a;
 }
 
 

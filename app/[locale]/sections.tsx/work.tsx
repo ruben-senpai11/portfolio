@@ -1,17 +1,26 @@
-import Image from "next/image";
-import stratosedi from "../assets/img/strastosedi.png"
-import bunny from "../assets/img/bunny-management.png"
-import bandage from "../assets/img/bandage e-commerce.png"
-import mangaverseImg from "../assets/img/mangaverse.png"
 import { useTranslations } from "next-intl";
 import TinyBborder from "../components/tiny-bborder";
 import { Link } from "@/i18n/routing";
+import Image from "next/image";
+
+import strastosedi1 from "../assets/img/strastosedi1.png"
+import strastosedi2 from "../assets/img/strastosedi2.png"
+import stratosedi from "../assets/img/strastosedi.png"
+import bandage from "../assets/img/bandage e-commerce.png"
+import mangaverseImg from "../assets/img/mangaverse.png"
+import ImageCarousel from "../components/imagesCarousel";
 
 export default function Works() {
 
   const w = useTranslations("HomePage.works")
   const g = useTranslations("Global")
 
+  const strastosImages = [
+    {src: stratosedi, alt: "strastosedi Logo"},
+    {src: strastosedi1, alt: "strastosedi Presentation 1"},
+    {src: strastosedi2, alt: "strastosedi Presentation 2"}
+  ] 
+  
   return (
     <>
       <section id="works" className="flex flex-col gap-4 ">
@@ -48,7 +57,8 @@ export default function Works() {
           <div className="projects flex justify-between gap-4 ">
             <div className="project project-30  ">
               <div className="project-img">
-                <Image src={stratosedi} width={500} height={100} alt="" />
+                {/* <Image src={stratosedi} width={500} height={100} alt="" /> */}
+                <ImageCarousel images={strastosImages} delay={2000} />
               </div>
               <div className="p-description">
                 <h5 className="p-title uppercase ">{(w('work3.title'))}</h5>

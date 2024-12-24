@@ -1,31 +1,36 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
+import Image, { StaticImageData } from "next/image";
 
-import Image from 'next/image';
-
-interface Props {
-  images: [],
-  initialImage: string,
-  delay: number,
+interface CarouselProps {
+  images: { src: StaticImageData; alt: string }[]; 
+  delay: number; 
 }
 
-
-const ImageCarousel = ({ images, delay }: Props) => {
-  const [index, setIndex] = useState(0);
+const ImageCarousel: React.FC<CarouselProps> = ({ images, delay }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % images.length);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, delay);
-    return () => clearInterval(interval);
-  }, []);
+
+    return () => clearInterval(interval); 
+  }, [images.length, delay]);
 
   return (
-    <>
-      {/* <Image src={designer} alt="White Devs Artisans" className='artisanIllustration' /> */}
-      <Image src={images[index]} alt="White Devs Artisans" className='artisanIllustration' />
-    </>
+    <div className="carousel-container">
+      <Image
+        src={images[currentIndex].src}
+        alt={images[currentIndex].alt}
+        className="carousel-image"
+        layout="responsive"
+        width={1000} 
+        height={500} 
+        priority
+      />
+    </div>
   );
 };
 
