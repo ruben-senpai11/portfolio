@@ -18,30 +18,31 @@ export default function Language() {
   const searchParams = useSearchParams(); // Get current query parameters
 
   const handleLanguage = async (newLanguage: string) => {
-    setLoading(true);
+    setLoading(true); // Start showing the spinner
+    setLanguage(newLanguage); // Update local state
     console.log("Languauge loading");
-    setLanguage(newLanguage);
-
+  
+    // Prepare the new URL
     const segments = pathname.split("/").filter(Boolean);
     segments[0] = newLanguage;
-
+  
     const newPathname = `/${segments.join("/")}`;
     const params = searchParams.toString();
     const newUrl = `${newPathname}${params ? `?${params}` : ""}`;
-
-    console.log("newPath", newPathname);
-
-
-
-    await new Promise((resolve) => setTimeout(resolve, 1000)); // 300ms delay
-
-    requestAnimationFrame(() => {
-      router.replace(newUrl);
-      setLoading(false);
-    });
-
-    setLoading(false);
+  
+    router.replace(newUrl); // Trigger the navigation
+  
+    // Poll for the URL change to confirm
+    const checkUrlChanged = () =>
+      window.location.pathname.startsWith(`/${newLanguage}`);
+  
+    while (!checkUrlChanged()) {
+      await new Promise((resolve) => setTimeout(resolve, 50)); // Check every 50ms
+    }
+  
+    setLoading(false); // Stop showing the spinner
   };
+  
 
 
 
