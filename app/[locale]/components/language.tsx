@@ -1,4 +1,4 @@
-"use client";
+
 import { useLocale } from "next-intl";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
@@ -18,22 +18,24 @@ export default function Language() {
   const searchParams = useSearchParams(); // Get current query parameters
 
   const handleLanguage = async (newLanguage: string) => {
-    setLoading(true); // Show loading
+    setLoading(true);
     console.log("Languauge loading");
-    
     setLanguage(newLanguage);
-
+  
     const segments = pathname.split("/").filter(Boolean);
     segments[0] = newLanguage;
-
+  
     const newPathname = `/${segments.join("/")}`;
     const params = searchParams.toString();
-
     const newUrl = `${newPathname}${params ? `?${params}` : ""}`;
-
-    await router.replace(newUrl); // Wait for the route change to complete
-    setLoading(false); // Hide loading
+  
+    await new Promise((resolve) => setTimeout(resolve, 1000)); // 300ms delay
+    await router.replace(newUrl);
+  
+    setLoading(false);
   };
+  
+  
 
   return (
     <>
