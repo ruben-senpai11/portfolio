@@ -21,21 +21,29 @@ export default function Language() {
     setLoading(true);
     console.log("Languauge loading");
     setLanguage(newLanguage);
-  
+
     const segments = pathname.split("/").filter(Boolean);
     segments[0] = newLanguage;
-  
+
     const newPathname = `/${segments.join("/")}`;
     const params = searchParams.toString();
     const newUrl = `${newPathname}${params ? `?${params}` : ""}`;
-  
+
+    console.log("newPath", newPathname);
+
+
+
     await new Promise((resolve) => setTimeout(resolve, 1000)); // 300ms delay
-    await router.replace(newUrl);
-  
+
+    requestAnimationFrame(() => {
+      router.replace(newUrl);
+      setLoading(false);
+    });
+
     setLoading(false);
   };
-  
-  
+
+
 
   return (
     <>
