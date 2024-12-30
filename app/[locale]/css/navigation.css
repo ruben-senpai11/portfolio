@@ -104,7 +104,7 @@
 .loading-spinner svg {
   shape-rendering: auto;
   display: block;
-  background: rgb(255, 255, 255);
+  background: var(--background-color);
 }
 
 @media screen and (min-width:1000px) {

@@ -19,6 +19,8 @@ export default function Language() {
 
   const handleLanguage = async (newLanguage: string) => {
     setLoading(true); // Show loading
+    console.log("Languauge loading");
+    
     setLanguage(newLanguage);
 
     const segments = pathname.split("/").filter(Boolean);
@@ -37,11 +39,11 @@ export default function Language() {
     <>
       <div className="language">
         {loading ? ( // Show loading GIF if in loading state
-          <div className="loading-spinner">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" width="200" height="200" ><g data-idx="1"><path stroke-linejoin="miter" stroke-width="10" fill="none" stroke="#000000" d="M30 20l50 0l0 60l-60 0l0 -60l10 0" data-idx="2"></path>
-              <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="10" fill="none" stroke="#ffffff" d="M30 20l50 0l0 60l-60 0l0 -60l10 0" data-idx="3" stroke-dasharray="31.6802px, 208.32px" stroke-dashoffset="-230.4px">
+          <span className="loading-spinner">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" width="16" height="16" ><g data-idx="1"><path strokeLinejoin="miter" strokeWidth="10" fill="none" stroke="currentColor" d="M30 20l50 0l0 60l-60 0l0 -60l10 0" data-idx="2"></path>
+              <path strokeLinecap="square" strokeLinejoin="miter" strokeWidth="10" fill="none" stroke="#ffffff" d="M30 20l50 0l0 60l-60 0l0 -60l10 0" data-idx="3" strokeDasharray="31.6802px, 208.32px" strokeDashoffset="-230.4px">
               </path><g data-idx="6"></g></g></svg>
-          </div>
+          </span>
         ) : (
           <>
             <span onClick={() => handleLanguage("en")}>
