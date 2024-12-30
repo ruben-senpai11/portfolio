@@ -36,12 +36,12 @@ export default function Tech() {
             <ul className="">
               <li className="purple" >{(table2('body.line1'))}</li>
               <li className="purple" >{(table2('body.line2'))}</li>
-              <li className="blue" >{(table2('body.line3'))}</li>
-              <li className="blue" >{(table2('body.line4'))}</li>
+              <li className="purple" >{(table2('body.line3'))}</li>
+              <li className="purple" >{(table2('body.line4'))}</li>
               <li className="blue" >{(table2('body.line5'))}</li>
               <li className="blue" >{(table2('body.line6'))}</li>
-              <li className="blue" >{(table2('body.line7'))}</li>
-              <li className="gray" ></li>
+              {/* <li className="blue" >{(table2('body.line7'))}</li> */}
+              <li className="blue" >{(table2('body.line8'))}</li>
             </ul>
           </div>
           <div className="tech r-card flex flex-col gap-[8px] justify-between">
@@ -49,7 +49,7 @@ export default function Tech() {
               <h4>{(table3('head'))}</h4>
               <ul>
                 <li className="purple" >{(table3('body.line1'))}</li>
-                <li className="blue" >{(table3('body.line2'))}</li>
+                <li className="purple" >{(table3('body.line2'))}</li>
                 <li className="blue" >{(table3('body.line3'))}</li>
               </ul>
             </div>
@@ -58,7 +58,7 @@ export default function Tech() {
               <ul>
                 <li className="purple" >{(table4('body.line1'))}</li>
                 <li className="blue" >{(table4('body.line2'))}</li>
-                <li className="gray" >{(table4('body.line3'))}</li>
+                <li className="blue" >{(table4('body.line3'))}</li>
               </ul>
             </div>
           </div>

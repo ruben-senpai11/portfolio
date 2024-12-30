@@ -2,13 +2,13 @@ import { useTranslations } from "next-intl";
 import TinyBborder from "../components/tiny-bborder";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
+import ImageCarousel from "../components/imagesCarousel";
 
 import strastosedi1 from "../assets/img/strastosedi1.png"
 import strastosedi2 from "../assets/img/strastosedi2.png"
 import stratosedi from "../assets/img/strastosedi.png"
 import bandage from "../assets/img/bandage e-commerce.png"
-import mangaverseImg from "../assets/img/mangaverse.png"
-import ImageCarousel from "../components/imagesCarousel";
+import exclamationMark from "../assets/img/icons8-exclamation-mark-100.png"
 
 export default function Works() {
 
@@ -46,7 +46,7 @@ export default function Works() {
             </div>
             <div className="project project-30 ">
               <div className="project-img">
-                <Image src={bandage} width={500} height={100} alt="" />
+                <Image src={bandage} width={400} height={100} alt="bandage e-commerce" />
               </div>
               <div className="p-description">
                 <h5 className="p-title uppercase ">{(w('work2.title'))}</h5>
@@ -56,7 +56,7 @@ export default function Works() {
           </div>
           <div className="projects flex justify-between gap-4 ">
             <div className="project project-30  ">
-              <div className="project-img">
+              <div className="project-img stratos">
                 {/* <Image src={stratosedi} width={500} height={100} alt="" /> */}
                 <ImageCarousel images={strastosImages} delay={2000} />
               </div>

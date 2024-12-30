@@ -12,7 +12,11 @@
     "author": "Made with 🤍 by the white_dev"
   },
   "Global": {
-    "videoError": "Votre navigateur ne prend pas en charge la balise vidéo."
+    "videoError": "Votre navigateur ne prend pas en charge la balise vidéo.",
+    "skills-Colors": "NB : Les compétences en couleur violet sont celles que j'utilise le plus souvent, celles en bleue ou en orange un peu moins. ",
+    "technologies-Colors": "Les outils en couleur violet sont ceux que j'utilise le plus souvent, ceux en bleue ou en orange un peu moins. ",
+    "s-more": "afficher plus",
+    "s-less": "afficher moins"
   },
   "HomePage": {
     "hero": {
@@ -144,12 +148,12 @@
         "head": "Bibliothèques & Frameworks",
         "body": {
           "line1": "Next.js",
-          "line2": "Laravel",
+          "line2": "Prisma",
           "line3": "GSAP",
           "line4": "Remix",
           "line5": "Express.js",
-          "line6": "Livewire",
-          "line7": "Prisma",
+          "line6": "Laravel",
+          "line7": "Livewire",
           "line8": "Webpack"
         }
       },
@@ -157,8 +161,8 @@
         "head": "Systèmes de Gestion de Contenu",
         "body": {
           "line1": "Shopify",
-          "line2": "WordPress",
-          "line3": "Webflow"
+          "line2": "Webflow",
+          "line3": "WordPress"
         }
       },
       "table4": {

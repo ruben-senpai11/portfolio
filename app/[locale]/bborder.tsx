@@ -28,7 +28,6 @@ export default function BBorder({ children }: Props) {
     for (const mutation of mutationsList) {
       if (mutation.type === "attributes" && mutation.attributeName === "data-theme") {
         const newTheme = document.body.getAttribute("data-theme");
-        console.log("Theme changed to:", newTheme);
 
         if (newTheme == "dark") {
           setIsVisible(true)

@@ -52,15 +52,18 @@ function Header({ title }: Props) {
 
   
 
-  const t = useTranslations('Navigation');
-
+  
   // contact button
-
+  
   const [isShown, setIsShown] = useState(false)
-
+  
   const handleContact = () => {
     setIsShown(!isShown)
   }
+  
+  //  Import text content
+  const t = useTranslations('Navigation');
+
 
   return (
     <>
