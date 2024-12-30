@@ -8,7 +8,6 @@ import strastosedi1 from "../assets/img/strastosedi1.png"
 import strastosedi2 from "../assets/img/strastosedi2.png"
 import stratosedi from "../assets/img/strastosedi.png"
 import bandage from "../assets/img/bandage e-commerce.png"
-import exclamationMark from "../assets/img/icons8-exclamation-mark-100.png"
 
 export default function Works() {
 
@@ -36,7 +35,7 @@ export default function Works() {
                 {/* <Image src={mangaverseImg} width={500} height={100} alt="" /> */}
                 <video width="600" height="400" autoPlay controls>
                   <source src="/video/mangaverse-long.webm" type="video/webm" />
-                  {(w('videoError'))}
+                  {(g('videoError'))}
                 </video>
               </div>
               <div className="p-description">

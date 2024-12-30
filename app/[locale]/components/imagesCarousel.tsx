@@ -25,8 +25,8 @@ const ImageCarousel: React.FC<CarouselProps> = ({ images, delay }) => {
         src={images[currentIndex].src}
         alt={images[currentIndex].alt}
         className="carousel-image"
-        width={1000} 
-        height={500} 
+        width={1600} 
+        height={900} 
         priority
       />
     </div>
