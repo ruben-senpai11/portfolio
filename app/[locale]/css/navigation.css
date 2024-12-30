@@ -107,6 +107,19 @@
   background: var(--background-color);
 }
 
+path[data-idx="2"] {
+  stroke: var(--background-color); 
+  stroke-width: 5;
+}
+
+path[data-idx="3"] {
+  stroke: var(--foreground-color); 
+  stroke-width: 7;
+}
+
+
+
+
 @media screen and (min-width:1000px) {
   .footer div {
     width: 250px;

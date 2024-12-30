@@ -19,6 +19,7 @@ export default function Language() {
 
   const handleLanguage = async (newLanguage: string) => {
     setLoading(true); // Start showing the spinner
+    //  await new Promise((resolve) => setTimeout(resolve, 30000)); 
     setLanguage(newLanguage); // Update local state
     console.log("New languauge loading");
 
@@ -61,7 +62,6 @@ export default function Language() {
                   strokeLinejoin="miter"
                   strokeWidth="10"
                   fill="none"
-                  stroke="currentColor"
                   d="M30 20l50 0l0 60l-60 0l0 -60l10 0"
                   data-idx="2"
                 ></path>
@@ -70,10 +70,9 @@ export default function Language() {
                   strokeLinejoin="miter"
                   strokeWidth="10"
                   fill="none"
-                  stroke="#ffffff"
                   d="M30 20l50 0l0 60l-60 0l0 -60l10 0"
                   data-idx="3"
-                  strokeDasharray="31.6802px, 208.32px"
+                  strokeDasharray="71.6802px, 158.32px"
                   strokeDashoffset="-230.4px"
                 >
                   <animate
