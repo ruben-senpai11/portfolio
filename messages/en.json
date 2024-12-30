@@ -13,8 +13,7 @@
   },
   "Global": {
     "videoError": "Your browser does not support the video tag.",
-    "skills-Colors": "NB : The skills in purple are the ones I use the most often, those in blue or orange a little bit less",
-    "technologies-Colors": "NB : The technologies in purple are the ones I use the most often, those in blue or orange a little bit less",
+    "tech-colors": "NB : The tools in purple are the ones I use the most often, those in blue or orange a bit less",
     "s-more": "show more",
     "s-less": "show less"
   },
@@ -24,7 +23,7 @@
       "title-2": "Friends call me white_dev",
       "description": "I believe in God and the abilities He gave me to make your next website",
       "description-colored": "divinely efficient",
-      "text": "The white_dev is a highly skilled Frontend Developer."
+      "text": "The white_dev is an Experienced Frontend Developer."
     },
     "exceptional": {
       "title": "What Makes Me Special?",

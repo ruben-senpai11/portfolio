@@ -13,8 +13,7 @@
   },
   "Global": {
     "videoError": "Votre navigateur ne prend pas en charge la balise vidéo.",
-    "skills-Colors": "NB : Les compétences en couleur violet sont celles que j'utilise le plus souvent, celles en bleue ou en orange un peu moins. ",
-    "technologies-Colors": "Les outils en couleur violet sont ceux que j'utilise le plus souvent, ceux en bleue ou en orange un peu moins. ",
+    "tech-colors": "NB : Les technologies les plus utilisées sont en violet, en orange ou bleu les moins utilisées",
     "s-more": "afficher plus",
     "s-less": "afficher moins"
   },
@@ -24,7 +23,7 @@
       "title-2": "Mais les amis m'appellent the white_dev",
       "description": "Je crois en Dieu et l'aptitude qu'Il m'a donnée à rendre votre prochain site web",
       "description-colored": "divinement efficace",
-      "text": "The white_dev est un développeur Frontend talentueux et expérimenté."
+      "text": "The white_dev est un développeur Front-end Expérimenté."
     },
     "exceptional": {
       "title": "Qu'est-ce qui me rend Différent ?",

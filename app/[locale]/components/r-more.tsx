@@ -13,7 +13,7 @@ export default function RMore({ index, isHidden, handleMore }: Props) {
   return (
     <>
       <div onClick={() => handleMore(index)} className="r-more">
-        <p>{isHidden ? ("... " + (g('s-more'))) : ("... " + (g('s-less')))}</p>
+        <p className="blue">{isHidden ? ("... " + (g('s-more'))) : ("... " + (g('s-less')))}</p>
       </div>
     </>
   );

@@ -100,3 +100,11 @@ h2 {
   }
   
 }
+
+
+@media screen and (max-width:450px){
+  .px-\[5\%\] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
