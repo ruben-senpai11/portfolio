@@ -8,6 +8,7 @@ import strastosedi1 from "../assets/img/strastosedi1.png"
 import strastosedi2 from "../assets/img/strastosedi2.png"
 import stratosedi from "../assets/img/strastosedi.png"
 import bandage from "../assets/img/bandage e-commerce.png"
+import CTA from "../components/cta";
 
 export default function Works() {
 
@@ -15,11 +16,11 @@ export default function Works() {
   const g = useTranslations("Global")
 
   const strastosImages = [
-    {src: stratosedi, alt: "strastosedi Logo"},
-    {src: strastosedi1, alt: "strastosedi Presentation 1"},
-    {src: strastosedi2, alt: "strastosedi Presentation 2"}
-  ] 
-  
+    { src: stratosedi, alt: "strastosedi Logo" },
+    { src: strastosedi1, alt: "strastosedi Presentation 1" },
+    { src: strastosedi2, alt: "strastosedi Presentation 2" }
+  ]
+
   return (
     <>
       <section id="works" className="flex flex-col gap-4 ">
@@ -80,16 +81,19 @@ export default function Works() {
           </div>
         </div>
         <div className="tb-see-more m-auto mt-4">
-          <TinyBborder >
+          {/* <TinyBborder >
             <span className="see-more flex px-8 py-2">
-              <Link href="/resume" className=" flex gap-4" >
+              <Link href="/resume" target="_blank" className=" flex gap-4" >
                 <span> {(w('see-more'))} </span>
                 <svg width="16" height="16" fill="currentColor" className="bi bi-arrow-up-right" viewBox="0 0 16 16">
                   <path fillRule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
                 </svg>
               </Link>
             </span>
-          </TinyBborder>
+          </TinyBborder> */}
+          <div className="w-max m-auto">
+            <CTA link="/resume" label={(w('see-more'))} />
+          </div>
         </div>
       </section>
     </>

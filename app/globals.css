@@ -79,17 +79,96 @@ h2 {
 }
 
 .cta {
-  padding: 4px 12px;
-  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  padding: 8px 34px;
+  margin: 0 auto;
   color: var(--background-color);
   background-color: var(--foreground-color);
 }
 
-.cta:hover {
+.navbar .cta{
+  padding: 4px 12px;
+  border-radius: 5px;
+}
+
+.navbar .cta:hover {
   transform: scale(1.02);
 }
 
-/* links animation */
+
+/* Loading Gif */
+
+.loading-gif{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000aa;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* CTA */
+
+.btn.cta {
+  position: relative;
+  overflow: hidden;
+  color: var(--background-color);
+  background-color: var(--foreground-color);
+  transition: background-color 0.4s ease;
+  
+}
+
+.cta-text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+
+.cta-transition,
+.cta-bottom-transition {
+  display: flex;
+  flex-direction: row-reverse;
+  position: absolute;
+  top: 0;
+  left: -130%;
+  width: 130%;
+  height: 100%;
+  transition: left 0.4s ease;
+  z-index: 1;
+}
+
+.inverted-color{
+  width: 29%;
+  color: var(--foreground-color)!important;
+  background-color: var(--background-color);
+}
+.current-color{
+  width: 100%;
+  background-color: var(--foreground-color);
+}
+
+.btn.cta:hover .cta-transition {
+  left: 0;
+  width: calc(130% - 1px);
+}
+
+.btn.cta:hover {
+  color: var(--background-color);
+}
+
+
+
+/* Links animation */
 
 
 a {

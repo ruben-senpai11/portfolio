@@ -24,6 +24,11 @@
 }
 
 .t-bborder-right {
+  padding-top: var(--tb-padding-y);
+  border-right: var(--bborder-width) solid var(--foreground-color);
+}
+
+.navbar .t-bborder-right {
   padding-top: 28px;
   border-right: var(--bborder-width) solid var(--foreground-color);
 }

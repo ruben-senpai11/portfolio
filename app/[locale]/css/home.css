@@ -41,7 +41,8 @@ section {
   width: max-content;
   height: max-content;
   object-fit: cover;
-  box-shadow: 2px 2px 5px var(--foreground-color);
+  /* box-shadow: 12px 12px 15px #6d28d955; */
+  /* box-shadow: 2px 2px 5px var(--foreground-color); */
 }
 
 /* ***** Exceptional ********** */
@@ -102,6 +103,10 @@ section {
   gap: 3px;
   padding-top: 7px;
   font-weight: 500;
+}
+
+.r-more{
+  display: none;
 }
 
 .tech {
@@ -205,9 +210,40 @@ li.gray {
   align-items: center;
 }
 
-.r-more{
-  display: none;
+
+/* Contact Form */
+
+.contact-infos{
+  gap: 40px;
+  width: 100%;
 }
+.contact-infos p, .input-message p{
+  color: #777;
+  text-transform: capitalize;
+}
+
+.name, .email, .message {
+  width: 100%;
+  padding: 10px 15px 5px 10px;
+  color: var(--foreground-color);
+  background-color: var(--background-color);
+  border-bottom: 1px solid var(--foreground-color);
+}
+
+.name{
+  border-left: 1px solid var(--foreground-color);
+} 
+.email {
+  border-right: 1px solid var(--foreground-color);
+}
+.message{
+  width: 100%;
+  height: auto;
+  padding: 10px 15px;
+  border-left: 1px solid var(--foreground-color);
+  border-right: 1px solid var(--foreground-color);
+}
+
 
 @media screen and (min-width: 1200px) {
 }
@@ -248,9 +284,13 @@ li.gray {
   }
 }
 
+
 @media screen and (max-width:1100px) {
   .r-card {
     width: 31%;
+  }
+  .contact-infos{
+    gap: 20px;
   }
 }
 
@@ -444,6 +484,18 @@ li.gray {
   }
   .see-more {
     padding-top: 5px 7px;
+  }
+
+  .contact-infos{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .name, .email {
+    padding: 5px 10px 5px 10px;
+  }
+  .message{
+    /* height: 50px; */
+    padding: 5px 10px;
   }
 }
 

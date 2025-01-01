@@ -59,10 +59,12 @@ import lemonplet8 from "../assets/img/Responsive/Lemonplet-responsive8.png"
 import lemonplet9 from "../assets/img/Responsive/Lemonplet-responsive9.png"
 
 import ImageCarousel from "../components/imagesCarousel";
+import CTA from "../components/cta";
 
 export default function Exceptionnal() {
 
   const g = useTranslations("Global")
+  const w = useTranslations("HomePage.works")
   const e = useTranslations("HomePage.exceptional")
 
   const bunnyImages = [
@@ -103,7 +105,7 @@ export default function Exceptionnal() {
     { src: lemonplet5, alt: "Lemonplet dressing store Refonte 5" },
     { src: lemonplet6, alt: "Lemonplet dressing store Refonte 6" },
     { src: lemonplet7, alt: "Lemonplet dressing store Refonte 7" },
- //   { src: lemonplet8, alt: "Lemonplet dressing store Refonte 8" },
+    //   { src: lemonplet8, alt: "Lemonplet dressing store Refonte 8" },
     { src: lemonplet9, alt: "Lemonplet dressing store Refonte 9" },
   ];
   const mangaverseImages = [
@@ -111,9 +113,9 @@ export default function Exceptionnal() {
     { src: mangaverse2, alt: "Mangaverse Application 2" },
     { src: mangaverse3, alt: "Mangaverse Application 3" },
     { src: mangaverse4, alt: "Mangaverse Application 4" },
- //   { src: mangaverse5, alt: "Mangaverse Application 5" },
+    //   { src: mangaverse5, alt: "Mangaverse Application 5" },
     { src: mangaverse6, alt: "Mangaverse Application 6" },
- //   { src: mangaverse7, alt: "Mangaverse Application 7" },
+    //   { src: mangaverse7, alt: "Mangaverse Application 7" },
     { src: mangaverse8, alt: "Mangaverse Application 8" },
     { src: mangaverse9, alt: "Mangaverse Application 9" },
     { src: mangaverse10, alt: "Mangaverse Application 10" },
@@ -123,16 +125,6 @@ export default function Exceptionnal() {
     <>
       <section id="exceptionnal" className="flex flex-col gap-4 ">
         <h2 className="text-4xl " >{(e('title'))}</h2>
-        {/* <p>To defend why you may choose me among all the others, I could list you but I'll focus on those two ones </p>
-        <p>1. I am CREATIVE & CONSISTANT</p>
-        <div className="theme-switchers">
-          <Image src={themeRoundedLight} width={250} height={100} alt="Rounded Theme Switcher in Light Mode" />
-          <Image src={themeMultipleLight} width={250} height={100} alt="Multiple Theme Switcher in Light Mode" />
-          <Image src={themeSquareLight} width={250} height={100} alt="Square Theme Switcher in Light Mode" />
-        </div>
-        <p>I just love innovation, simple but quite beatiful things. I've been fascinated by color switches and achieved to create different format of switchers with pure Css and Typescrit. It gonna highlight the way I can bring your ideas to life, without effort, because I'm doing this for a while regardless to the project type or the technologies used. </p> */}
-        <p> </p>
-
         <p className="leading-6 ">
           {(e('p1'))}
           <br />
@@ -140,34 +132,17 @@ export default function Exceptionnal() {
         </p>
         <div className="responsivity flex flex-col">
           <div className="r-top">
-            {/* <video width="400" height="300" autoPlay loop controls >
-              <source src="/video/responsive/KENI-responsive.webm" type="video/webm" />
-              {(g('videoError'))}
-            </video> */}
-            <ImageCarousel images={keniImages}  delay={1500} />
-            {/* <video width="400" height="300" autoPlay loop controls >
-              <source src="/video/responsive/mangaverse-responsive.webm" type="video/webm" />
-              {(g('videoError'))}
-            </video> */}
-            <ImageCarousel images={mangaverseImages}  delay={1500} />
+            <ImageCarousel images={keniImages} delay={1500} />
+            <ImageCarousel images={mangaverseImages} delay={1500} />
           </div>
           <hr />
           <div className="r-bottom">
-            {/* <video width="400" height="300" autoPlay loop controls >
-              <source src="/video/responsive/Lemonplet-responsive.webm" type="video/webm" />
-              {(g('videoError'))}
-            </video> */}
-            <ImageCarousel images={lemonpletImages}  delay={1500} />
-            <video width="400" height="300"  loop controls >
+            <ImageCarousel images={lemonpletImages} delay={1500} />
+            <video width="400" height="300" loop controls >
               <source src="/video/responsive/SPTools-responsive.webm" type="video/webm" />
               {(g('videoError'))}
             </video>
-            {/* <ImageCarousel images={sptoolsImages}  delay={1500} /> */}
-            {/* <video width="400" height="300" autoPlay loop controls >
-              <source src="/video/responsive/bunny-responsive.webm" type="video/webm" />
-              {(g('videoError'))}
-            </video> */}
-            <ImageCarousel images={bunnyImages}  delay={1500} />
+            <ImageCarousel images={bunnyImages} delay={1500} />
           </div>
         </div>
         <p className="leading-6" >
@@ -175,7 +150,7 @@ export default function Exceptionnal() {
           <br />
           {(e('p4'))}
         </p>
-        <div className=""></div>
+        <CTA link="/resume" label={(w('see-more'))} />
       </section>
     </>
   )

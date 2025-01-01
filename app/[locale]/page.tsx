@@ -1,14 +1,15 @@
 import { useTranslations } from 'next-intl';
-import "./css/sections.css"
+import "./css/home.css"
 
 import BBorder from "./bborder";
 import Footer from "./navigation/footer";
 import Header from "./navigation/header";
-import Hero from "./sections.tsx/hero";
-import Skills from "./sections.tsx/skills";
-import Tech from "./sections.tsx/tech";
-import Works from "./sections.tsx/work";
-import Exceptionnal from './sections.tsx/exceptionnal';
+import Hero from "./sections/hero";
+import Skills from "./sections/skills";
+import Tech from "./sections/tech";
+import Works from "./sections/work";
+import Exceptionnal from './sections/exceptionnal';
+import ContactForm from './sections/contact';
 
 
 export default function HomePage() {
@@ -32,8 +33,8 @@ export default function HomePage() {
             <span>photographer</span>
             <span>human</span>
           </div> */}
+          <ContactForm />
         </div>
-
         <Footer />
       </BBorder>
     </>

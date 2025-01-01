@@ -1,11 +1,11 @@
 import "../css/tiny-bborder.css"
 
-interface Props{
-  children : any
+interface Props {
+  children: any
 }
 
 
-export default function TinyBborder({children}:Props) {
+export default function TinyBborder({ children }: Props) {
 
 
   return (

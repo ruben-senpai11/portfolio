@@ -2,7 +2,7 @@
   "Navigation": {
     "home": "accueil",
     "works": "travaux",
-    "stack": "stack",
+    "stack": "technos",
     "about": "à propos",
     "resume": "curriculum",
     "say-hello": "envoyer un mot",
@@ -13,9 +13,21 @@
   },
   "Global": {
     "videoError": "Votre navigateur ne prend pas en charge la balise vidéo.",
-    "tech-colors": "NB : Les technologies les plus utilisées sont en violet, en orange ou bleu les moins utilisées",
+    "tech-colors": "Les technologies les plus utilisées sont en violet, en orange ou bleu les moins utilisées",
     "s-more": "afficher plus",
-    "s-less": "afficher moins"
+    "s-less": "afficher moins",
+    "contactForm": {
+      "title": "Envoyer un mot",
+      "description": "Vous avez une question, une proposition, ou voulez juste dire bonjour? Je suis toute ouïe.",
+      "name-help": "votre nom",
+      "name-placeholder": "Ruben White",
+      "email-help": "votre adresse mail",
+      "email-placeholder": "rubenwhite22@gmail.com",
+      "message-help": "votre message",
+      "message-placeholder": "Salut, je travaille sur un nouveu projet et je pense que tu peux nous aider à en faire une merveille. Quand es-tu disponible?",
+      "submit": "Commencer l'aventure" ,
+      "success-message": "Votre message a été reçu avec succès. Je vous répondrai au plus tôt ; généralement en mois de 6 heures !"
+    }
   },
   "HomePage": {
     "hero": {
@@ -23,7 +35,7 @@
       "title-2": "Mais les amis m'appellent the white_dev",
       "description": "Je crois en Dieu et l'aptitude qu'Il m'a donnée à rendre votre prochain site web",
       "description-colored": "divinement efficace",
-      "text": "The white_dev est un développeur Front-end Expérimenté."
+      "text": "The white_dev est un Développeur Front-end Expérimenté."
     },
     "exceptional": {
       "title": "Qu'est-ce qui me rend Différent ?",
@@ -193,9 +205,9 @@
     },
     "part4": {
       "title": "Nous voilà arrivés !",
-      "p1": "En premier lieu, je vous remercie de m'avoir lu, c'est un plaisir de savoir que les mots écrits depuis le dark-mode de mon éditeur ont plu à vos yeux, et, il est probable que d'autres choses vous plaisent !",
+      "p1": "En premier lieu, je vous remercie de m'avoir lu, c'est un plaisir de savoir que les mots écrits depuis mon éditeur ont plu à vos yeux, et, il est probable que d'autres choses vous plaisent !",
       "p2": "Si tant il est que nous travaillions ensemble, j'apprendrai à nouveau de belles choses dont je tirerai le meilleur pour vous concevoir un site légendaire ! ",
-      "p3": "Si l'idée vous plait envoyez-moi un mot ! Moi, je suis impatient de vous lire à mon tour."
+      "p3": "Pourquoi ne pas me laisser un message ! Je suis impatient de vous lire en retour."
     }
   }
 }

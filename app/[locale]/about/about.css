@@ -18,7 +18,7 @@ h2 {
   flex-direction: column;
   gap: 10px;
 }
-.story-1 {
+.h-padding {
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   padding: 10px;
@@ -49,7 +49,7 @@ h2 {
   margin-bottom: 70px;
   width: 95%;
   max-width: 95%;
-  overflow-x: hidden!important;
+  overflow-x: hidden;
 }
 
 .astack {
@@ -85,12 +85,46 @@ h2 {
 
 }
 
+
+@media screen and (max-width: 1000px) {
+
+  .stack {
+    gap: 40px;
+    overflow-x: visible;
+  }
+  .stack-container{
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .stack img{
+    width: max-content;
+    max-width: unset;
+  }
+  .astack {
+    gap: 5px;
+  }
+  .astack img, .astack svg{
+    width: 40px;
+    height: 40px;
+  }
+  .astack p{
+    font-size: 24px;
+  }
+}
+
+
 @media screen and (max-width: 924px) {
 
-  .story-1{
+  .h-padding{
     flex-direction: column;
     padding: 0 20px;
-    gap: 50px;
+  }
+  .story-1{
+    gap: 25px;
+  }
+  .a-picture{
+    justify-content: center;
   }
   .story-2{
     padding: 25px 20px;

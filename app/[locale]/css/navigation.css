@@ -104,7 +104,7 @@
 .loading-spinner svg {
   shape-rendering: auto;
   display: block;
-  background: var(--background-color);
+  background: transparent;
 }
 
 path[data-idx="2"] {
@@ -117,7 +117,9 @@ path[data-idx="3"] {
   stroke-width: 7;
 }
 
-
+.navlinks{
+  /* display: none; */
+}
 
 
 @media screen and (min-width:1000px) {
