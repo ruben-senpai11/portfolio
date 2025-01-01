@@ -10,6 +10,7 @@ import smilingDev from "../assets/img/smiling_white_dev.jpg"
 import "./about.css"
 import Stack from "../components/stack";
 import { useTranslations } from "next-intl";
+import ContactForm from "../sections/contact";
 
 export default function Page() {
 
@@ -65,6 +66,7 @@ export default function Page() {
             </div>
           </section>
         </div>
+        <ContactForm />
         <Footer />
       </BBorder>
     </>

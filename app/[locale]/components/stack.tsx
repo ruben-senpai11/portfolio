@@ -32,26 +32,24 @@ interface Props {
 
 export default function Stack() {
 
-
-  const [width, setWidth] = useState(window.innerWidth);
-  useEffect(() => {
-    const handleResize = () => {
-      setWidth(window.innerWidth);
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-
   const container = useRef<HTMLElement>(null);
-  gsap.registerPlugin(ScrollTrigger);
 
-  function animeGSAP() {
+  if (typeof window !== "undefined" && "MutationObserver" in window) {
+
+    const [width, setWidth] = useState(window.innerWidth);
+    useEffect(() => {
+      const handleResize = () => {
+        setWidth(window.innerWidth);
+      };
+
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    gsap.registerPlugin(ScrollTrigger);
+
     if (width < 999) {
-
       useGSAP(() => {
-
         gsap.to(".stack", {
           x: () => "-" + ((document.querySelector(".stack") as HTMLElement)?.scrollWidth - (document.querySelector(".willAnime") as HTMLElement)?.offsetWidth),
           //x: () => "-2800",
@@ -67,13 +65,9 @@ export default function Stack() {
             anticipatePin: 1,
           }
         });
-
       }, {});
-
     } else {
-
       useGSAP(() => {
-
         gsap.to(".stack", {
           x: () => "-" + ((document.querySelector(".stack") as HTMLElement)?.offsetWidth - (document.querySelector(".story-3") as HTMLElement)?.offsetWidth),
           scrollTrigger: {
@@ -90,10 +84,6 @@ export default function Stack() {
       }, {});
     }
   }
-
-  animeGSAP()
-
-
 
   return (
 
@@ -128,7 +118,7 @@ export default function Stack() {
             <Image src={express} width={200} height={200} alt="express" />
             <p className="flex">
               ExpressJS
-            </p> 
+            </p>
           </div>
           <div className="astack">
             <Image src={laravel} width={200} height={200} alt="laravel" />
