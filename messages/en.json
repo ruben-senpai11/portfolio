@@ -12,6 +12,8 @@
     "author": "Made with 🤍 by the white_dev"
   },
   "Global": {
+    "light": "light",
+    "dark": "dark",
     "videoError": "Your browser does not support the video tag.",
     "tech-colors": "The tools in purple are the ones I use the most often, those in blue or orange a bit less",
     "s-more": "show more",
@@ -21,10 +23,14 @@
       "description": "Got a question or proposal, or just want to say hello? Go ahead.",
       "name-help": "your name",
       "name-placeholder": "Ruben White",
+      "name-error": "Please enter a name",
       "email-help": "your email",
       "email-placeholder": "rubenwhite22@gmail.com",
+      "email-error": "Please enter your email",
+      "invalid-email-error": "The mail address you entered is invalid !",
       "message-help": "your message",
       "message-placeholder": "Hi, I got a new project and I think you can help me make it a Banger. Are you available right now?",
+      "message-error": "Please enter a message",
       "submit": "Start the journey",
       "success-message": "Your message has been received successfully. I'll answer you soon, on average within 6 hrs !"
     }

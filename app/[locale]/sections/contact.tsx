@@ -55,16 +55,16 @@ function ContactForm({ }: Props) {
     const errors: Errors = {};
 
     if (formData.name.trim() === '') {
-      errors.name = 'Veuillez renseigner votre nom ';
+      errors.name = (c('name-error'));
     }
     if (formData.email.trim() === '') {
-      errors.email = 'Veuillez renseigner votre adresse ';
+      errors.email = (c('email-error'));
     }
     if (formData.message.trim() === '') {
-      errors.message = 'Veuillez saisir un message ';
+      errors.message = (c('message-error'));
     } else
       if (!formData.email.includes('@')) {
-        errors.email = "Cette adresse mail est invalide !";
+        errors.email = (c('invalid-email-error'));
       }
     return errors;
   };

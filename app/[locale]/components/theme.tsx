@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useTranslations } from "use-intl";
 
 
 export default function Theme() {
@@ -29,17 +30,18 @@ export default function Theme() {
     setTheme(theme === "light" ? "dark" : "light");
   };
 
+  const t = useTranslations('Global')
 
   return (
     <>
       <div className="theme">
       <span onClick={() => handleTheme()}>
           <span className={"checkbox " + (theme == "light" ? "active" : "")} ></span>
-          <span className="upppercase">light</span>
+          <span className="upppercase">{(t('light'))}</span>
         </span>
         <span onClick={() => handleTheme()}>
           <span className={"checkbox " + (theme == "dark" ? "active" : "")} ></span>
-          <span className="upppercase">dark</span>
+          <span className="upppercase">{(t('dark'))}</span>
         </span>
       </div>
     </>

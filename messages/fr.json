@@ -12,6 +12,8 @@
     "author": "Made with 🤍 by the white_dev"
   },
   "Global": {
+    "light": "light",
+    "dark": "dark",
     "videoError": "Votre navigateur ne prend pas en charge la balise vidéo.",
     "tech-colors": "Les technologies les plus utilisées sont en violet, en orange ou bleu les moins utilisées",
     "s-more": "afficher plus",
@@ -21,10 +23,14 @@
       "description": "Vous avez une question, une proposition, ou voulez juste dire bonjour? Je suis toute ouïe.",
       "name-help": "votre nom",
       "name-placeholder": "Ruben White",
+      "name-error": "Veuillez renseigner votre nom",
       "email-help": "votre adresse mail",
       "email-placeholder": "rubenwhite22@gmail.com",
+      "email-error": "Veuillez renseigner votre adresse",
+      "invalid-email-error": "Cette adresse mail est invalide !",
       "message-help": "votre message",
       "message-placeholder": "Salut, je travaille sur un nouveu projet et je pense que tu peux nous aider à en faire une merveille. Quand es-tu disponible?",
+      "message-error": "Veuillez saisir un message",
       "submit": "Commencer l'aventure" ,
       "success-message": "Votre message a été reçu avec succès. Je vous répondrai au plus tôt ; généralement en mois de 6 heures !"
     }
