@@ -79,7 +79,7 @@ function ContactForm({ }: Props) {
 
     if (formIsClean) {
       try {
-        //const response = await handleSubmit(e);
+        const response = await handleSubmit(e);
         setFormData({ name: "", email: "", message: "" });
         setFormSent(true)
       } catch (err) {
