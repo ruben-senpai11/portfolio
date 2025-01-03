@@ -1,5 +1,5 @@
 
-## The White_developer portfolio
+## The White developer portfolio
 
 This repo is home for the codebase that powers my entire website.
 
@@ -15,12 +15,6 @@ Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 As I aim coding with the less dependencies possible, this is all you need
