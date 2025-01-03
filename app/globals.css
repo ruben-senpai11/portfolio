@@ -15,6 +15,10 @@
   --blue: rgb(29 78 216);
   --blue: rgb(0, 60, 255);
   --gray: rgb(100 116 139);
+  --cyan-background-color: #012020;
+  --green-background-color: #0a2001;
+  --red-background-color: #200a01;
+  --blue-background-color: #010a20;
 }
 
 [ data-theme="light"] {
@@ -24,10 +28,6 @@
 
 [ data-theme="dark"] {
   --foreground-color: white;
-  --cyan-background-color: #012020;
-  --green-background-color: #0a2001;
-  --red-background-color: #200a01;
-  --blue-background-color: #010a20;
   --background-color: #161615;
   --rgb-foreground-color: (255, 255, 255);
   --bg-text-background: #99999950;
@@ -35,7 +35,6 @@
   --bg-text-colored-background: rgb(109 40 217);
   --purple: rgb(167 139 250);
   --blue: rgb(202 138 4);
-  /* --gray: ; */
 }
 
 [data-background="red"][data-theme="dark"] {

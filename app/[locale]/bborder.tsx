@@ -25,21 +25,22 @@ export default function BBorder({ children }: Props) {
 
   const [isVisible, setIsVisible] = useState(false)
 
-  const observer = new MutationObserver((mutationsList) => {
-    for (const mutation of mutationsList) {
-      if (mutation.type === "attributes" && mutation.attributeName === "data-theme") {
-        const newTheme = document.body.getAttribute("data-theme");
+  if (typeof window !== "undefined" && "MutationObserver" in window) {
+    const observer = new MutationObserver((mutationsList) => {
+      for (const mutation of mutationsList) {
+        if (mutation.type === "attributes" && mutation.attributeName === "data-theme") {
+          const newTheme = document.body.getAttribute("data-theme");
 
-        if (newTheme == "dark") {
-          setIsVisible(true)
+          if (newTheme == "dark") {
+            setIsVisible(true)
+          }
+          else setIsVisible(false)
         }
-        else setIsVisible(false)
       }
-    }
-  });
-
-  // Start observing changes to the `body` element
-  observer.observe(document.body, { attributes: true });
+    });
+    // Start observing changes to the `body` element
+    observer.observe(document.body, { attributes: true });
+  }
 
 
   return (

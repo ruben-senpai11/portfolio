@@ -9,7 +9,7 @@ export default function Background({ lightColors, darkColors }: Props) {
 
 
   const [background, setBackground] = useState<string>(
-    localStorage.getItem("background") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
+    localStorage.getItem("background") || "default"
   );
 
   useEffect(() => {
