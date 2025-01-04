@@ -17,7 +17,6 @@ Then, run the development server:
 npm run dev
 ```
 
-As I aim coding with the less dependencies possible, this is all you need
 
 ## License
 
