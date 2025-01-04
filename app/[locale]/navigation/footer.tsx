@@ -17,7 +17,7 @@ function Footer(){
           <p>Made with 🤍 by the white_dev</p>
         </div>
         <div className="socials flex gap-4 ">
-          <Link href="https://linkedin.com/in/alban-honfovou/" target="_blank" >LN</Link>
+          <Link href="https://www.linkedin.com/in/ruben-white22/" target="_blank" >LN</Link>
           <Link href="https://www.facebook.com/alban.honfovou/" target="_blank" >FA</Link>
           <Link href="https://wa.me/+22996404757/" target="_blank" >WA</Link>
           <Link href="https://github.com/ruben-senpai11" target="_blank" >GH</Link>
