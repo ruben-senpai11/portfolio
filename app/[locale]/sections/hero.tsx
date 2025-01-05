@@ -1,6 +1,6 @@
 import Image from "next/image"
 import smiling_dev from "../assets/img/smiling_white_dev.jpg"
-import white_mode_pic from "../assets/img/ruben-honfovou.png"
+import white_mode_pic from "../assets/img/profile-pic-yellow.png"
 import dark_mode_dev from "../assets/img/profile-pic_Dark_mode.png"
 import { useTranslations } from "next-intl";
 

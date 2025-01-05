@@ -171,7 +171,7 @@ function Header({ title }: Props) {
                 <Link href="/about">{" "}{t('about')}</Link>
               </li>
               <li onClick={() => { setNavFalse }}>
-                <Link href="/resume">{" "}{t('resume')}</Link>
+                <Link href={(t('resume-link'))}>{" "}{t('resume')}</Link>
               </li>
             </ul>
           </div>
