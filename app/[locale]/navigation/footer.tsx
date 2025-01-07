@@ -11,7 +11,7 @@ function Footer(){
     <>
       <div className="footer flex justify-between gap-10 ">
         <div className="">
-          <p>© 2024 · <span className="desktopA">{(f('copyright'))}</span></p>
+          <p>© 2025 · <span className="desktopA">{(f('copyright'))}</span></p>
         </div>
         <div className="">
           <p>Made with 🤍 by the white_dev</p>
