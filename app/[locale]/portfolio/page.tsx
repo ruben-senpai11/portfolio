@@ -15,8 +15,8 @@ export default function Page() {
             <div className="flex flex-col gap-20   ">
             </div>
           </section>
+          <ContactForm />
         </div>
-        <ContactForm />
         <Footer />
       </BBorder>
     </>

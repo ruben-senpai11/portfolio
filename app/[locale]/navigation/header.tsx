@@ -165,14 +165,14 @@ function Header({ title }: Props) {
                 <Link href="/#works">{" "}{t('works')}</Link>
               </li>
               <li onClick={() => { setNavFalse }}>
-                <Link href="/#stack">{" "}{t('stack')}</Link>
+                <Link href="/portfolio">{" "}{t('portfolio')}</Link>
               </li>
               <li onClick={() => { setNavFalse }}>
                 <Link href="/about">{" "}{t('about')}</Link>
               </li>
-              <li onClick={() => { setNavFalse }}>
+              {/* <li onClick={() => { setNavFalse }}>
                 <Link href={(t('resume-link'))}>{" "}{t('resume')}</Link>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="flex justify-center align-center ">
