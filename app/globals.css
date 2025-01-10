@@ -170,11 +170,11 @@ h2 {
 /* Links animation */
 
 
-a {
+a:not(.project-link) {
   position: relative;
 }
 
-a::after {
+a:not(.project-link)::after {
   content: '';
   position: absolute;
   left: 0;
@@ -187,11 +187,11 @@ a::after {
   transition: transform 0.2s ease-in-out;
 }
 
-a:hover::after {
+a:not(.project-link):hover::after {
   transform: scaleX(1);
 }
 
-.navlinks a::after{
+.navlinks::after{
   /* left: -15px; */
   /* width: calc(100% + 15px); */
 }

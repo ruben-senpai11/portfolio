@@ -42,7 +42,7 @@
       "title-2": "Mais les amis m'appellent the white_dev",
       "description": "Je crois en Dieu et l'aptitude qu'Il m'a donnée à rendre votre prochain site web",
       "description-colored": "divinement efficace",
-      "text": "The white_dev est un Développeur Front-end Expérimenté."
+      "text": "The white_dev est un développeur talentueux expérimenté."
     },
     "exceptional": {
       "title": "Qu'est-ce qui me rend Différent ?",
@@ -53,7 +53,7 @@
     },
     "skills": {
       "label": "Compétences",
-      "description": "3 ans d'expérience dans la création de sites web et l'implémentation de fonctionnalités. Que ce soit avec des solutions low-code ou no-code, des technologies et languages de programmation, j'ai appris à faire tout et à tout faire bien.",
+      "description": "4 ans d'expérience dans la création de sites web et l'implémentation de fonctionnalités. Que ce soit avec des solutions low-code ou no-code, des technologies et languages de programmation, j'ai appris à faire tout et à tout faire bien.",
       "table1": {
         "head": "Sites Web Classiques",
         "body": {
@@ -125,7 +125,7 @@
       }
     },
     "works": {
-      "label": "Projets",
+      "label": "Travaux",
       "description": "Voici une mise en bouche des projets réalisés. En attendant la finalisation de la page Portfolio, vous pouvez",
       "resume-link": "en voir plus sur mon CV",
       "see-more": "en voir plus",
@@ -214,7 +214,7 @@
       "title": "Nous voilà arrivés !",
       "p1": "En premier lieu, je vous remercie de m'avoir lu, c'est un plaisir de savoir que les mots écrits depuis mon éditeur ont plu à vos yeux, et, il est probable que d'autres choses vous plaisent !",
       "p2": "Si tant il est que nous travaillions ensemble, j'apprendrai à nouveau de belles choses dont je tirerai le meilleur pour vous concevoir un site légendaire ! ",
-      "p3": "Pourquoi ne pas me laisser un message ! Je suis impatient de vous lire en retour."
+      "p3": "Pourquoi ne pas me laisser un message? Je suis impatient de vous lire en retour."
     }
   }
 }

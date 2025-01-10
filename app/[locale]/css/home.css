@@ -148,7 +148,7 @@ li.gray {
 }
 
 /*** Works ****/
-.project {
+.wproject {
   display: flex;
   height: 300px;
   padding: 10px;
@@ -270,7 +270,7 @@ li.gray {
     flex-direction: column;
   }
 
-  .project {
+  .wproject {
     width: 100%;
   }
 
@@ -364,7 +364,7 @@ li.gray {
     gap: 25px;
   }
 
-  .project {
+  .wproject {
     flex-direction: column;
     height: auto;
   }

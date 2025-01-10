@@ -31,7 +31,7 @@ export default function Works() {
         </p>
         <div className="p-grid flex flex-col gap-8">
           <div className="projects flex justify-between gap-4 ">
-            <div className="project project-70 ">
+            <div className="wproject project-70 ">
               <div className="project-img">
                 {/* <Image src={mangaverseImg} width={500} height={100} alt="" /> */}
                 <video width="600" height="400" autoPlay controls>
@@ -44,7 +44,7 @@ export default function Works() {
                 {(w('work1.description'))}
               </div>
             </div>
-            <div className="project project-30 ">
+            <div className="wproject project-30 ">
               <div className="project-img">
                 <Image src={bandage} width={400} height={100} alt="bandage e-commerce" />
               </div>
@@ -55,7 +55,7 @@ export default function Works() {
             </div>
           </div>
           <div className="projects flex justify-between gap-4 ">
-            <div className="project project-30  ">
+            <div className="wproject project-30  ">
               <div className="project-img stratos">
                 {/* <Image src={stratosedi} width={500} height={100} alt="" /> */}
                 <ImageCarousel images={strastosImages} delay={2000} />
@@ -65,7 +65,7 @@ export default function Works() {
                 {(w('work3.description'))}
               </div>
             </div>
-            <div className="project project-70 ">
+            <div className="wproject project-70 ">
               <div className="project-img">
                 {/* <Image src={bunny} width={500} height={100} alt="" /> */}
                 <video width="600" height="400" autoPlay controls>
