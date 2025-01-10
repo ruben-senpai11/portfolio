@@ -33,7 +33,7 @@
       "message-placeholder": "Salut, je travaille sur un nouveu projet et je pense que tu peux nous aider à en faire une merveille. Quand es-tu disponible?",
       "message-error": "Veuillez saisir un message",
       "submit": "Commencer l'aventure" ,
-      "success-message": "Votre message a été reçu avec succès. Je vous répondrai au plus tôt ; généralement en mois de 6 heures !"
+      "success-message": "Votre message a été reçu avec succès. Je vous répondrai au plus tôt ; généralement en mois de 4 heures. Merci pour votre confiance !"
     }
   },
   "HomePage": {

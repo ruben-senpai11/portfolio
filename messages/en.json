@@ -24,7 +24,7 @@
       "description": "Got a question or proposal, or just want to say hello? Go ahead.",
       "name-help": "your name",
       "name-placeholder": "Ruben White",
-      "name-error": "Please enter a name",
+      "name-error": "Please enter your name",
       "email-help": "your email",
       "email-placeholder": "rubenwhite22@gmail.com",
       "email-error": "Please enter your email",
@@ -33,7 +33,7 @@
       "message-placeholder": "Hi, I got a new project and I think you can help me make it a Banger. Are you available right now?",
       "message-error": "Please enter a message",
       "submit": "Start the journey",
-      "success-message": "Your message has been received successfully. I'll answer you soon, on average within 6 hrs !"
+      "success-message": "Your message has been received successfully. I'll answer you soon, on average within 4 hrs. Thanks for your confidence !"
     }
   },
   "HomePage": {

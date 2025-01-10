@@ -15,11 +15,11 @@ export default function Project({ image, title, description, stack, link }: Prop
   return (
     <>
       <div className="project flex flex-col">
-        <Link href={link} target="_blank" className="project-link" >
+        <Link  href={link !== "" ? link : "#"} target={link !== "" ? "_blank" : "_parent"} className="project-link" >
           <div className="cover-image flex flex-col">
             <Image src={image} width={400} height={300} alt={title} />
           </div>
-          <div className="infos flex flex-col">
+          <div className="infos flex flex-col gap-2">
             <div className="flex items-center justify-between">
               <p className="title">{title} </p>
               {link == "" &&
