@@ -2,7 +2,7 @@ import BBorder from "../bborder";
 import LoadingGif from "../components/loadingGif";
 
 const Page = () => {
-  const pdfUrl = '/resume.pdf';
+  const pdfUrl = '/Ruben Resume 2025.pdf';
 
   return (
     <BBorder>

@@ -150,7 +150,7 @@ export default function Exceptionnal() {
           <br />
           {(e('p4'))}
         </p>
-        <CTA link="/resume" label={(w('see-more'))} />
+        <CTA link="/portfolio" label={(w('see-more'))} />
       </section>
     </>
   )

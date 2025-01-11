@@ -92,7 +92,7 @@ export default function Works() {
             </span>
           </TinyBborder> */}
           <div className="w-max m-auto">
-            <CTA link="/resume" label={(w('see-more'))} />
+            <CTA link="/portfolio" label={(w('see-more'))} />
           </div>
         </div>
       </section>

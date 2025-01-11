@@ -153,10 +153,10 @@
         "head": "Programming Languages",
         "body": {
           "line1": "HTML & CSS",
-          "line2": "TypeScript & JavaScript",
-          "line3": "PHP",
-          "line4": "MySQL",
-          "line5": "PostgreSQL",
+          "line2": "JavaScript",
+          "line3": "TypeScript",
+          "line4": "PHP",
+          "line5": "SQL (PostgreSQL)",
           "line6": "Python",
           "line7": "C",
           "line8": "Liquid"
