@@ -5,6 +5,7 @@ import { getMessages } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { notFound } from 'next/navigation';
 import "../globals.css";
+import { ReactNode } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,13 +15,16 @@ export const metadata: Metadata = {
 };
 
 
-export default async function LocaleLayout({
-  children,
-  params: { locale }
-}: {
-  children: React.ReactNode;
-  params: { locale: string };
-}) {
+type LayoutProps = {
+  children: ReactNode,
+  params: { locale:string }
+}
+
+export default async function LocaleLayout({ children, params }:LayoutProps) {
+  
+  const paramsResponse = await params 
+  const locale = paramsResponse.locale
+
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
