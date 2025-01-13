@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 type LayoutProps = {
   children: ReactNode,
-  params: { locale:string }
+  params: Promise<{ locale:string }>
 }
 
 export default async function LocaleLayout({ children, params }:LayoutProps) {
