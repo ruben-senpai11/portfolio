@@ -5,7 +5,7 @@
     "portfolio": "portfolio",
     "about": "à propos",
     "resume": "curriculum",
-    "resume-link": "/curriculum",
+    "resume-link": "/resume",
     "say-hello": "envoyer un mot",
     "email-me": "envoyer un mail",
     "whatsapp-me": "discuter sur whatsapp",
@@ -42,7 +42,7 @@
       "title-2": "Mais les amis m'appellent the white_dev",
       "description": "Je crois en Dieu et l'aptitude qu'Il m'a donnée à rendre votre prochain site web",
       "description-colored": "divinement efficace",
-      "text": "The white_dev est un développeur talentueux expérimenté."
+      "text": "The white_dev est un développeur Shopify talentueux expérimenté."
     },
     "exceptional": {
       "title": "Qu'est-ce qui me rend Différent ?",
@@ -155,11 +155,11 @@
           "line1": "HTML & CSS",
           "line2": "JavaScript",
           "line3": "TypeScript",
-          "line4": "PHP",
+          "line4": "Liquid",
           "line5": "SQL (PostgreSQL)",
           "line6": "Python",
-          "line7": "C",
-          "line8": "Liquid"
+          "line7": "Klaviyo",
+          "line8": "PHP"
         }
       },
       "table2": {

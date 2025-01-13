@@ -42,7 +42,7 @@
       "title-2": "Friends call me white_dev",
       "description": "I believe in God and the abilities He gave me to make your next website",
       "description-colored": "divinely efficient",
-      "text": "The white_dev is an Experienced Frontend Developer."
+      "text": "The white_dev is an high skilled Shopify Developer."
     },
     "exceptional": {
       "title": "What Makes Me Special?",
@@ -155,11 +155,11 @@
           "line1": "HTML & CSS",
           "line2": "JavaScript",
           "line3": "TypeScript",
-          "line4": "PHP",
+          "line4": "Liquid",
           "line5": "SQL (PostgreSQL)",
           "line6": "Python",
-          "line7": "C",
-          "line8": "Liquid"
+          "line7": "Klaviyo",
+          "line8": "PHP"
         }
       },
       "table2": {
