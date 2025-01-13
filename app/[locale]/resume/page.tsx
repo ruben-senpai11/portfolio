@@ -5,17 +5,17 @@ import LoadingGif from "../components/loadingGif";
 const Page = () => {
   const pdfUrl = '/Ruben Resume 2025.pdf';
 
-  const htmlContent = `
-  <div class="MuiContainer-root MuiContainer-maxWidthLg scale-container mui-1qsxih2"
+  const htmlContent = `<div class="MuiContainer-root MuiContainer-maxWidthLg scale-container mui-1qsxih2"
   style=" width: 100%; height:100%; display: flex; justify-content: center; align-items: center; margin: 20px;">
   <div class="contenedor-externo">
-    <div class="scaled-page" style="display: flex; flex-direction: column; width: 210mm; border: 1px solid rgb(40, 60, 74)">
+    <div class="scaled-page"
+      style="display: flex; flex-direction: column; width: 210mm; ">
       <div id="lolo" class="a4-page">
-        
+
         <div id="paddingGeneral" style="padding: 0px;">
           <div style="display: flex; align-content: flex-start;">
             <aside
-              style="font-size: 12px; line-height: 1.25; color: rgb(228, 146, 7); background-color: rgb(40, 60, 74); width: 50%; max-width: 256px;">
+              style="font-size: 12px; line-height: 1.25; color: rgb(228, 146, 7); background-color: rgb(40, 60, 74); width: 50%; max-width: 256px; border: 2px solid #e49207; border-right: 0;">
               <div style="width: 100%;">
                 <div>
                   <div class="pdfasidecolor"
@@ -25,7 +25,7 @@ const Page = () => {
                         style="display:block;width: max-content; margin-top: 10px; border-radius: 50%;overflow: hidden; display: flex;">
                         <div style="max-width: 215px; height: 215px;"><img class="imageprofile"
                             style="width: 100%; height: 100%;"
-                            src="http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile-pic-yellow.04a6a6ca.png&w=640&q=75"
+                            src="https://ruben-shopify.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile-pic-yellow.04a6a6ca.png&w=640&q=75"
                             alt="Profile"></div>
                       </div>
                     </div>
@@ -220,7 +220,8 @@ const Page = () => {
                               </g>
                             </svg>
                           </div>
-                          <p style="flex-shrink: 1;min-width: 0;word-wrap: break-word;padding-top: 1px; margin: 2px 0">Github:
+                          <p style="flex-shrink: 1;min-width: 0;word-wrap: break-word;padding-top: 1px; margin: 2px 0">
+                            Github:
                             https://github.com/ruben-senpai11</p>
                         </div>
                       </div>
@@ -240,9 +241,24 @@ const Page = () => {
                     <div
                       style="color: #ffffff; text-transform: none;margin-right: 10px;font-weight: initial;font-family:Montserrat;overflow-wrap: break-word">
                       <ul style="padding: 3px;margin: 0px;list-style-type: square;">
-                        <li style="margin-left: 15px;margin-left: 15px;">Créatif</li>
-                        <li style="margin-left: 15px;margin-left: 15px;">Adaptatif</li>
-                        <li style="margin-left: 15px;margin-left: 15px;">Autodidacte</li>
+                        <li style="margin-left: 15px; margin-bottom: 2px;">
+                          <span style="font-weight: 500;">
+                            Créatif :
+                          </span>
+                          <span>Prêt à innover et sortir des sentiers battus</span>
+                        </li>
+                        <li style="margin-left: 15px; margin-bottom: 2px;">
+                          <span style="font-weight: 500;">
+                            Méticuleux :
+                          </span>
+                          <span>Grand sens du détail</span>
+                        </li>
+                        <li style="margin-left: 15px; margin-bottom: 2px;">
+                          <span style="font-weight: 500;">
+                            Proactif :
+                          </span>
+                          <span>Axé vers la résolution des problèmes et adaptatif en toutes circonstances</span>
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -250,7 +266,7 @@ const Page = () => {
               </div>
             </aside>
             <main id="main"
-              style="margin: 0px; width: 100%; min-height: 1000px; padding-top: 20px; padding-left: 0px; font-size: 12px; color: rgb(228, 146, 7); line-height: 1.25; background-color: rgb(255, 255, 255);">
+              style="margin: 0px; width: 100%; min-height: 1000px; padding-top: 20px; padding-left: 0px; font-size: 12px; color: rgb(228, 146, 7); line-height: 1.25; background-color: rgb(255, 255, 255); border: 1px solid rgb(40, 60, 74); border-left: 0;">
               <div style="text-transform: uppercase; font-weight: bolder;">
                 <section style="margin: 10px 20px;">
                   <article
@@ -284,7 +300,7 @@ const Page = () => {
                   <article></article>
                 </section>
                 <div style="margin-left: 20px;">
-                  <div id:'praga'=""
+                  <div 
                     style="color: #000000; text-transform: none;margin-right: 10px;font-weight: initial;font-family:Montserrat;overflow-wrap: break-word;margin-bottom: 5px;">
                     <div style="">
                       <div style="width:100%;clear:both;display: flex; align-items: center;">
@@ -308,10 +324,10 @@ const Page = () => {
                       <div style="width:100%; clear:both;display: flex; align-items: center;">
                         <div style="width:15%; float:left;min-width: 150px;"></div>
                         <div style="width:85%; float:right;">
-                          <ul style="padding: 3px; padding: 3px;margin: 0px;">
+                          <ul style="list-style:disc; padding: 3px; padding: 3px;margin: 0px;">
                             <li style="margin-left: 15px;margin-left: 15px;">Création de thèmes Shopify en accord avec
                               une maquette et un cahier de charges fourni
-                              <ul style="padding: 3px; padding: 3px;margin: 0px;">
+                              <ul style="list-style:circle; padding: 3px; padding: 3px;margin: 0px;">
                                 <li style="margin-left: 15px;margin-left: 15px;">Intégration de la maquette en HTML, CSS
                                   JavaScript&nbsp;</li>
                                 <li style="margin-left: 15px;margin-left: 15px;">Implémentation dans le thème Shopify
@@ -333,7 +349,7 @@ const Page = () => {
                       </div>
                     </div>
                   </div>
-                  <div 
+                  <div
                     style="color: #000000; text-transform: none;margin-right: 10px;font-weight: initial;font-family:Montserrat;overflow-wrap: break-word;margin-bottom: 5px;">
                     <div style="">
                       <div style="width:100%;clear:both;display: flex; align-items: center;">
@@ -357,7 +373,7 @@ const Page = () => {
                       <div style="width:100%; clear:both;display: flex; align-items: center;">
                         <div style="width:15%; float:left;min-width: 150px;"></div>
                         <div style="width:85%; float:right;">
-                          <ul style="padding: 3px; padding: 3px;margin: 0px;">
+                          <ul style="list-style:disc; padding: 3px; padding: 3px;margin: 0px;">
                             <li style="margin-left: 15px;margin-left: 15px;">Intégration de maquettes Figma &amp; Adobe
                               XD à des sites Shopify, WordPress et Prestashop&nbsp;</li>
                             <li style="margin-left: 15px;margin-left: 15px;">Résolutions de bugs et Optimisation de la
@@ -371,7 +387,7 @@ const Page = () => {
                       </div>
                     </div>
                   </div>
-                  <div 
+                  <div
                     style="color: #000000; text-transform: none;margin-right: 10px;font-weight: initial;font-family:Montserrat;overflow-wrap: break-word;margin-bottom: 5px;">
                     <div style="">
                       <div style="width:100%;clear:both;display: flex; align-items: center;">
@@ -395,7 +411,7 @@ const Page = () => {
                       <div style="width:100%; clear:both;display: flex; align-items: center;">
                         <div style="width:15%; float:left;min-width: 150px;"></div>
                         <div style="width:85%; float:right;">
-                          <ul style="padding: 3px; padding: 3px;margin: 0px;">
+                          <ul style="list-style:disc; padding: 3px; padding: 3px;margin: 0px;">
                             <li style="margin-left: 15px;margin-left: 15px;">Développement de l'interface de la 1ère
                               version de Yemi Services</li>
                             <li style="margin-left: 15px;margin-left: 15px;">Création d'une PWA</li>
@@ -420,7 +436,7 @@ const Page = () => {
                   <article></article>
                 </section>
                 <div style="margin-left: 20px;">
-                  <div 
+                  <div
                     style="color: #000000; text-transform: none;margin-right: 10px;font-weight: initial;font-family:Montserrat;overflow-wrap: break-word;margin-bottom: 5px;">
                     <div style="margin:0px;">
                       <div>
@@ -537,14 +553,33 @@ const Page = () => {
                   </div>
                 </div>
               </div>
+              <!-- <div style="text-transform: uppercase; font-weight: bolder;">
+                <section style="margin: 10px 20px;">
+                  <article
+                    style="color: #e49207; display: flex;flex-direction: column; text-transform: uppercase;font-family:Montserrat;letter-spacing: 3px;font-size:16px;">
+                    <span
+                      style="height: 1px;background: black;width: 80px;display: inline-block; margin-bottom: 5px;"></span>Autres
+                    profils
+                  </article>
+                  <article></article>
+                </section>
+                <div style="margin-left: 20px;">
+                  <div
+                    style="color: #000000; text-transform: none;margin-right: 10px;font-weight: initial;font-family:Montserrat;overflow-wrap: break-word">
+                    <ul style="list-style:disc; padding: 3px; padding: 3px;margin: 0px;">
+                      <li style="margin-left: 15px;margin-left: 15px;">Président de la Jeuneusse Ouvrière Catholique de Bakhita</li>
+                      <li style="margin-left: 15px;margin-left: 15px;">Commissaire aux comptes de la Coordination de la Jeunesse Paroissiale</li>
+                    </ul>
+                  </div>
+                </div>
+              </div> -->
             </main>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-  `;
+</div>`;
   return (
     <>
     {/* <BBorder> */}
