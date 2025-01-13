@@ -3,7 +3,7 @@ import LoadingGif from "../components/loadingGif";
 
 
 const Page = () => {
-  const pdfUrl = '/Ruben Resume 2025.pdf';
+  const pdfUrl = '/Ruben Resume 2025.pdf'; 
 
   const htmlContent = `<div class="MuiContainer-root MuiContainer-maxWidthLg scale-container mui-1qsxih2"
   style=" width: 100%; height:100%; display: flex; justify-content: center; align-items: center; margin: 20px;">
