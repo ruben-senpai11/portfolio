@@ -31,7 +31,7 @@ export default function Project({ image, title, description, stack, link }: Prop
               }
             </div>
             <p className="description">{description} </p>
-            <p className="stack flex gap-2">
+            <p className="stack flex gap-2 flex-wrap">
               {stack.map((techno: string, index) => (
                 techno.length !== 0 ? <span key={index} className="blue" >{techno}{index + 1 < stack.length ? "," : ""} </span> : ""
               ))} </p>
