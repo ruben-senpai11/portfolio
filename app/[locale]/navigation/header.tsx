@@ -71,33 +71,36 @@ function Header({ title }: Props) {
 
   const pathname = usePathname(); // Get the current pathname
   const [prevPathname, setPrevPathname] = useState(pathname);
+  console.log(pathname);
+  const currentPage = pathname.split('/').filter(Boolean).pop();
+  console.log(currentPage);
+  
+
+  const [isDocumentLoaded, setIsDocumentLoaded] = useState(false);
 
   useEffect(() => {
-    // Check if the pathname has changed
-    // console.log("path", pathname);  
-    //  console.log("prev Path", prevPathname);
-    if (prevPathname !== pathname) {
-      // handleLoading
-      setPrevPathname(pathname); // Update the previous pathname
+    const handleDocumentLoad = () => {
+      if (document.readyState === 'complete') {
+        setIsDocumentLoaded(true);
+        setLoading(false)
+  }
+    };
+
+    if (document.readyState === 'complete') {
+      setIsDocumentLoaded(true);
+        setLoading(false)
+      } else { 
+      window.addEventListener('load', handleDocumentLoad);
     }
-  }, [pathname]); // Dependencies are pathname and prevPathname
 
-  const handleLoading = async () => {
-    setLoading(true); // Start showing the spinner
-    setNavFalse
-    //  await new Promise((resolve) => setTimeout(resolve, 30000)); 
-
-    const newPathname = window.location.pathname
-    console.log("new path", newPathname);
+    return () => window.removeEventListener('load', handleDocumentLoad);
+  }, []);
 
 
-    const checkUrlChanged = () => pathname !== newPathname;
-
-    while (!checkUrlChanged()) {
-      await new Promise((resolve) => setTimeout(resolve, 50));
-    }
-    setLoading(false);
-  };
+  const handlePage = (index:number) => {
+    
+    setLoading(true)
+  }
 
 
   return (
@@ -155,22 +158,22 @@ function Header({ title }: Props) {
           </div>
           <div className={(mobileNav == true ? 'm-menu-container' : 'desktop-menu') + " "}>
             <ul className="navlinks flex gap-12 navlinks justify-between align-center ">
-              <li onClick={() => { setNavFalse }} className="active">
-                <Link href="/#hero">{t('home')}</Link>
+              <li onClick={() => { setNavFalse; handlePage(0) }} className={ currentPage == "" ? "active" : "" }>
+                <Link href="/">{t('home')}</Link>
               </li>
               {/* <li>
                 <Link href="/#skills">{t('about')}</Link>
               </li> */}
-              {/* <li onClick={() => { setNavFalse }}>
+              {/* <li onClick={() => { setNavFalse; handlePage()  } className={ currentPage == 0 ? "active" : "" }>
                 <Link href="/#works">{" "}{t('works')}</Link>
               </li> */}
-              <li onClick={() => { setNavFalse }}>
+              <li onClick={() => { setNavFalse; handlePage(1) }} className={ currentPage == "about" ? "active" : "" }>
                 <Link href="/about">{" "}{t('about')}</Link>
               </li>
-              <li onClick={() => { setNavFalse }}>
+              <li onClick={() => { setNavFalse; handlePage(2) }} className={ currentPage == "portfolio" ? "active" : "" }>
                 <Link href="/portfolio">{" "}{t('portfolio')}</Link>
               </li>
-              <li onClick={() => { setNavFalse }}>
+              <li onClick={() => { setNavFalse; handlePage(3) }} className={ currentPage == "resume" ? "active" : "" }>
                 <Link href={(t('resume-link'))} target='_blank' >{" "}{t('resume')}</Link>
               </li>
             </ul>

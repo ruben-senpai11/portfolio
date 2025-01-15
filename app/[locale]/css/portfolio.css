@@ -45,7 +45,8 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  color: green;
+  margin: 0;
+  gap: 5px;
 }
 
 @media screen and (max-width: 1200px) {
