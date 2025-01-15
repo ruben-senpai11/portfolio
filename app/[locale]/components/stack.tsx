@@ -89,7 +89,7 @@ export default function Stack() {
 
     <>
       <div className="willAnime">
-        <section ref={container} className="stack ">
+        <section ref={container} className="stack font-sans">
           <div className="astack">
             <Image src={html} width={200} height={200} alt="html" />
             <p className="flex">

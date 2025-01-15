@@ -17,7 +17,8 @@ export default function HomePage() {
   const t = useTranslations('HomePage');
   return (
     <>
-      {/* <SplashScreen timer={2000} /> */}
+      <SplashScreen timer={2000} />
+      
       <BBorder >
         <Header title="white_dev" />
         <div className="main flex flex-col gap-16 pb-6 ">

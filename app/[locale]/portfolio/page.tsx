@@ -87,7 +87,7 @@ export default function Page() {
               </div>
             </div>
           </section>
-          <ContactForm />
+          {/* <ContactForm /> */}
         </div>
         <Footer />
       </BBorder>

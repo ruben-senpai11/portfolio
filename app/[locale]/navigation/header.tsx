@@ -96,6 +96,7 @@ function Header({ title }: Props) {
 
 
   const handlePage = (newPage: string) => {
+    setNavFalse
     if (newPage == "home" && currentPage !== "en" || newPage == "home" && currentPage !== "fr") {}
     else if (newPage !== currentPage )  setLoading(true)
     // console.log("newPage: ", newPage, "\n currentPage: ", currentPage );
@@ -157,13 +158,13 @@ function Header({ title }: Props) {
           </div>
           <div className={(mobileNav == true ? 'm-menu-container' : 'desktop-menu') + " "}>
             <ul className="navlinks flex gap-12 navlinks justify-between align-center ">
-              <li onClick={() => { setNavFalse; handlePage("home") }} className={currentPage == "en" || currentPage == "fr" ? "active" : ""}>
+              <li onClick={() => { handlePage("home") }} className={currentPage == "en" || currentPage == "fr" ? "active" : ""}>
                 <Link href="/">{t('home')}</Link>
               </li>
-              <li onClick={() => { setNavFalse; handlePage("about") }} className={currentPage == "about" ? "active" : ""}>
+              <li onClick={() => { handlePage("about") }} className={currentPage == "about" ? "active" : ""}>
                 <Link href="/about">{" "}{t('about')}</Link>
               </li>
-              <li onClick={() => { setNavFalse; handlePage("portfolio") }} className={currentPage == "portfolio" ? "active" : ""}>
+              <li onClick={() => { handlePage("portfolio") }} className={currentPage == "portfolio" ? "active" : ""}>
                 <Link href="/portfolio">{" "}{t('portfolio')}</Link>
               </li>
               <li onClick={() => { setNavFalse }} className={currentPage == "resume" ? "active" : ""}>

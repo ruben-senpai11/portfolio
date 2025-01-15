@@ -33,7 +33,7 @@ export default function Page() {
                     <p>{(a('part1.p3'))}</p>
                   </div>
                   <div className=" a-picture flex items-center ">
-                    <Image src={youngDev} width={400} height={400} alt="young white_dev" />
+                    {/* <Image src={youngDev} width={400} height={400} alt="young white_dev" /> */}
                   </div>
                 </div>
               </div>
