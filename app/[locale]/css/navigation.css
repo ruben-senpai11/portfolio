@@ -13,7 +13,7 @@
   justify-content: space-between;
   align-items: center;
   border-top: 0;
-  z-index: 999999;
+  z-index: 999;
   width: 100%;
   padding-bottom: 4px;
 }
@@ -150,7 +150,7 @@ path[data-idx="3"] {
     top: calc(var(--bborder-padding-y) + var(--bborder-width));
     left: calc(var(--bborder-padding-x) + var(--bborder-width));
     width: calc(100% - var(--bborder-padding-x)*2 - var(--bborder-width)*2);
-    z-index: 999;
+    z-index: 9;
   }
 
   .nav-scrolled.nav-container {

@@ -191,13 +191,23 @@ a:not(.project-link):hover::after {
   transform: scaleX(1);
 }
 
-.navlinks::after{
-  /* left: -15px; */
-  /* width: calc(100% + 15px); */
+
+/* Splash Screnn */
+
+.splash-screen{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+  border: solid;
+  z-index: 99999;
+}
+.splash-screen span{
+  font-weight: 100!important;
 }
 
 
-/* Scroll Bar ----------------------------------------- */
+/* Scroll Bar  */
 
 ::-webkit-scrollbar {
   width: 3px;

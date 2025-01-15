@@ -15,7 +15,7 @@ export default function Hero (){
           <div className="description flex flex-col gap-8 justify-center align-center ">
             <h1 className="flex flex-col " >
               <span className="text-[48px]"> 
-                {(h('title'))} <span className="font-mono bg-zinc-200 m-1 px-2 py-1 bg-text ">Ruben White</span> 
+                {(h('title'))} <span className="font-mono bg-zinc-200 m-1 px-2 py-1 bg-text ">Ruben Honfovou</span> 
               </span>
               <span>{(h('title-2'))}</span>
               {/* <span>22 years old & developer for 3 years</span> */}

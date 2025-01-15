@@ -39,10 +39,10 @@
   "HomePage": {
     "hero": {
       "title": "Hey, je suis",
-      "title-2": "Mais les amis m'appellent the white_dev",
+      "title-2": "Mais vous pouvez m'appeler le white_dev",
       "description": "Je crois en Dieu et l'aptitude qu'Il m'a donnée à rendre votre prochain site web",
       "description-colored": "divinement efficace",
-      "text": "The white_dev est un développeur talentueux expérimenté."
+      "text": "Je suis un développeur talentueux et expérimenté."
     },
     "exceptional": {
       "title": "Qu'est-ce qui me rend Différent ?",

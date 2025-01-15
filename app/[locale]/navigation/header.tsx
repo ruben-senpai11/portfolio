@@ -1,12 +1,10 @@
 'use client'
 import { useEffect, useState } from 'react';
-import { ChangeEvent } from 'react';
 import { Link } from '@/i18n/routing';
 import "../css/navigation.css"
 import { useTranslations } from 'next-intl';
 import TinyBborder from '../components/tiny-bborder';
-import { useLocale } from "next-intl";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 interface Props {
   title: string
@@ -70,26 +68,26 @@ function Header({ title }: Props) {
   const [loading, setLoading] = useState(false); // New loading state
 
   const pathname = usePathname(); // Get the current pathname
-  const [prevPathname, setPrevPathname] = useState(pathname);
-  console.log(pathname);
+  //console.log(pathname);
   const currentPage = pathname.split('/').filter(Boolean).pop();
-  console.log(currentPage);
-  
+  //console.log(currentPage);
 
-  const [isDocumentLoaded, setIsDocumentLoaded] = useState(false);
+
+  const [documentLoaded, setDocumentLoaded] = useState(false);
+
+  const handleDocumentLoad = () => {
+    if (document.readyState === 'complete') {
+      setDocumentLoaded(true);
+      setLoading(false)
+    }
+  };
 
   useEffect(() => {
-    const handleDocumentLoad = () => {
-      if (document.readyState === 'complete') {
-        setIsDocumentLoaded(true);
-        setLoading(false)
-  }
-    };
 
     if (document.readyState === 'complete') {
-      setIsDocumentLoaded(true);
-        setLoading(false)
-      } else { 
+      setDocumentLoaded(true);
+      setLoading(false)
+    } else {
       window.addEventListener('load', handleDocumentLoad);
     }
 
@@ -97,9 +95,10 @@ function Header({ title }: Props) {
   }, []);
 
 
-  const handlePage = (index:number) => {
-    
-    setLoading(true)
+  const handlePage = (newPage: string) => {
+    if (newPage == "home" && currentPage !== "en" || newPage == "home" && currentPage !== "fr") {}
+    else if (newPage !== currentPage )  setLoading(true)
+    // console.log("newPage: ", newPage, "\n currentPage: ", currentPage );
   }
 
 
@@ -158,22 +157,16 @@ function Header({ title }: Props) {
           </div>
           <div className={(mobileNav == true ? 'm-menu-container' : 'desktop-menu') + " "}>
             <ul className="navlinks flex gap-12 navlinks justify-between align-center ">
-              <li onClick={() => { setNavFalse; handlePage(0) }} className={ currentPage == "" ? "active" : "" }>
+              <li onClick={() => { setNavFalse; handlePage("home") }} className={currentPage == "en" || currentPage == "fr" ? "active" : ""}>
                 <Link href="/">{t('home')}</Link>
               </li>
-              {/* <li>
-                <Link href="/#skills">{t('about')}</Link>
-              </li> */}
-              {/* <li onClick={() => { setNavFalse; handlePage()  } className={ currentPage == 0 ? "active" : "" }>
-                <Link href="/#works">{" "}{t('works')}</Link>
-              </li> */}
-              <li onClick={() => { setNavFalse; handlePage(1) }} className={ currentPage == "about" ? "active" : "" }>
+              <li onClick={() => { setNavFalse; handlePage("about") }} className={currentPage == "about" ? "active" : ""}>
                 <Link href="/about">{" "}{t('about')}</Link>
               </li>
-              <li onClick={() => { setNavFalse; handlePage(2) }} className={ currentPage == "portfolio" ? "active" : "" }>
+              <li onClick={() => { setNavFalse; handlePage("portfolio") }} className={currentPage == "portfolio" ? "active" : ""}>
                 <Link href="/portfolio">{" "}{t('portfolio')}</Link>
               </li>
-              <li onClick={() => { setNavFalse; handlePage(3) }} className={ currentPage == "resume" ? "active" : "" }>
+              <li onClick={() => { setNavFalse }} className={currentPage == "resume" ? "active" : ""}>
                 <Link href={(t('resume-link'))} target='_blank' >{" "}{t('resume')}</Link>
               </li>
             </ul>

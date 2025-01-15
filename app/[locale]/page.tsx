@@ -10,12 +10,14 @@ import Tech from "./sections/tech";
 import Works from "./sections/work";
 import Exceptionnal from './sections/exceptionnal';
 import ContactForm from './sections/contact';
+import SplashScreen from './sections/splashScreen';
 
 
 export default function HomePage() {
   const t = useTranslations('HomePage');
   return (
     <>
+      {/* <SplashScreen timer={2000} /> */}
       <BBorder >
         <Header title="white_dev" />
         <div className="main flex flex-col gap-16 pb-6 ">
