@@ -16,6 +16,9 @@ export default function Page() {
 
   const a = useTranslations("AboutPage");
 
+  const now = new Date()
+  const currentYear = now.getFullYear();
+  
   return (
     <>
       <BBorder >

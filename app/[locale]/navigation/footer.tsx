@@ -7,11 +7,13 @@ function Footer(){
 
   const f = useTranslations('Navigation')
 
+  const now = new Date()
+  const currentYear = now.getFullYear();
   return(
     <>
       <div className="footer flex justify-between gap-10 ">
         <div className="">
-          <p>© 2025 · <span className="desktopA">{(f('copyright'))}</span></p>
+          <p>© { currentYear } · <span className="desktopA">{(f('copyright'))}</span></p>
         </div>
         <div className="">
           <p>Made with 🤍 by the white_dev</p>

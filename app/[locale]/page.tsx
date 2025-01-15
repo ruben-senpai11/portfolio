@@ -17,7 +17,6 @@ export default function HomePage() {
   const t = useTranslations('HomePage');
   return (
     <>
-      <SplashScreen timer={2000} />
       
       <BBorder >
         <Header title="white_dev" />

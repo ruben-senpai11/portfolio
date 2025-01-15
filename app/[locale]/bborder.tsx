@@ -5,6 +5,7 @@ import Theme from "./components/theme";
 import "./css/bborder.css"
 import Background from "./components/background";
 import LoadingGif from "./components/loadingGif";
+import SplashScreen from "./sections/splashScreen";
 
 interface Props {
   children: any
@@ -46,6 +47,7 @@ export default function BBorder({ children }: Props) {
   return (
     <>
       <div className="flex justify-center relative">
+      <SplashScreen timer={3000} />
         <div className="bborder ">
           <div className="background">
             <div className="bborder-right">
