@@ -7,6 +7,7 @@ import Background from "./components/background";
 import LoadingGif from "./components/loadingGif";
 import SplashScreen from "./sections/splashScreen";
 import gsap from "gsap";
+import CustomCursor from "./components/customCursor";
 
 interface Props {
   children: any
@@ -75,6 +76,7 @@ export default function BBorder({ children }: Props) {
 
   return (
     <>
+      <CustomCursor />
       <div className="flex justify-center relative">
         <SplashScreen timer={2000} />
         <div ref={boxRef} className="bborder ">

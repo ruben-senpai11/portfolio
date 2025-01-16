@@ -109,6 +109,11 @@ li.gray {
   color: var(--gray);
 }
 
+/* Custom Cursor */
+
+.custom-cursor{
+  border: 1px solid var(--foreground-color)!important;
+}
 
 
 /* Splash Screnn */
