@@ -8,13 +8,13 @@
 }
 
 .navbar {
+  width: 100%;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-top: 0;
-  z-index: 999;
-  width: 100%;
+  overflow: hidden;
   padding-bottom: 4px;
 }
 
@@ -108,19 +108,14 @@
 }
 
 path[data-idx="2"] {
-  stroke: var(--background-color); 
+  stroke: var(--background-color);
   stroke-width: 5;
 }
 
 path[data-idx="3"] {
-  stroke: var(--foreground-color); 
+  stroke: var(--foreground-color);
   stroke-width: 7;
 }
-
-.navlinks{
-  /* display: none; */
-}
-
 
 @media screen and (min-width:1000px) {
   .footer div {
@@ -130,6 +125,12 @@ path[data-idx="3"] {
   .footer .socials {
     justify-content: flex-end;
   }
+
+  .navlinks {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
 }
 
 @media screen and (max-width:1100px) {
@@ -150,6 +151,7 @@ path[data-idx="3"] {
     top: calc(var(--bborder-padding-y) + var(--bborder-width));
     left: calc(var(--bborder-padding-x) + var(--bborder-width));
     width: calc(100% - var(--bborder-padding-x)*2 - var(--bborder-width)*2);
+    max-width: 100%;
     z-index: 9;
   }
 
@@ -160,6 +162,7 @@ path[data-idx="3"] {
   .navbar {
     background-color: var(--background-color);
     border-bottom: 1px solid #ccc;
+    overflow: visible;
   }
 
   .desktopp,

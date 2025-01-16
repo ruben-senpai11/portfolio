@@ -18,7 +18,6 @@
 
 .bborder {
   padding-right: var(--bborder-padding-x);
-  min-width: 100%;
 }
 
 .bborder-top {

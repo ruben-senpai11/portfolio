@@ -107,7 +107,6 @@ function Header({ title }: Props) {
     <>
       {loading &&
         <div className="loading-gif">
-
           <span className="loading-spinner">
             <svg
               xmlns="http://www.w3.org/2000/svg"

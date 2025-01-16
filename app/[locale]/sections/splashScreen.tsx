@@ -16,13 +16,9 @@ export default function SplashScreen({ timer }: Props) {
 
     if (typeof window !== undefined) {
 
-
-      // Check if session exists
       if (!sessionStorage.getItem('sessionInitialized')) {
         setShowSplash(true);
         // Set session
-        sessionStorage.setItem('sessionInitialized', 'true');
-        console.log('Session started');
       } else {
         setShowSplash(false);
         console.log('Session already exists');
@@ -46,10 +42,10 @@ export default function SplashScreen({ timer }: Props) {
     <>
       {showSplash &&
 
-        <div className="splash-screen w-[100vw] h-[100vh] flex flex-col justify-center items-center ">
-          <p className="text-4xl font-normal flex gap-4" >
+        <div className="splash-screen w-[100vw] h-[100vh] ">
+          <p className="text-4xl font-normal gap-4 " >
             Ruben Honfovou
-            <span className="font-thin">Portfolio</span>
+            <span className="font-mono font-thin">Portfolio</span>
           </p>
         </div>
 

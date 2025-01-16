@@ -1,11 +1,12 @@
 "use client"
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Language from "./components/language";
 import Theme from "./components/theme";
 import "./css/bborder.css"
 import Background from "./components/background";
 import LoadingGif from "./components/loadingGif";
 import SplashScreen from "./sections/splashScreen";
+import gsap from "gsap";
 
 interface Props {
   children: any
@@ -26,6 +27,8 @@ export default function BBorder({ children }: Props) {
 
   const [isVisible, setIsVisible] = useState(false)
 
+  const boxRef = useRef(null);
+
   if (typeof window !== "undefined" && "MutationObserver" in window) {
     const observer = new MutationObserver((mutationsList) => {
       for (const mutation of mutationsList) {
@@ -41,14 +44,36 @@ export default function BBorder({ children }: Props) {
     });
     // Start observing changes to the `body` element
     observer.observe(document.body, { attributes: true });
-  }
 
+
+
+
+    if (!sessionStorage.getItem('sessionInitialized')) {
+    } else {
+    }
+
+    useEffect(() => {
+      if (!sessionStorage.getItem('sessionInitialized')) {
+        sessionStorage.setItem('sessionInitialized', 'true');
+        console.log('Session started');
+        
+        // GSAP animation
+        gsap.fromTo(
+          boxRef.current,
+          { width: "0px", minWidth: "0px!important", height: "0px" }, // Initial state
+          { width: "100%", minWidth: "100%", height: "100%", duration: 4, ease: "bounce.inOut", delay: 2 }
+        );
+      }
+    }, []);
+
+
+  }
 
   return (
     <>
       <div className="flex justify-center relative">
-      <SplashScreen timer={3000} />
-        <div className="bborder ">
+        <SplashScreen timer={2000} />
+        <div ref={boxRef} className="bborder ">
           <div className="background">
             <div className="bborder-right">
               <div className="bborder-top">

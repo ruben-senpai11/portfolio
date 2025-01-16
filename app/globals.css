@@ -60,12 +60,7 @@
 body {
   background-color: var(--background-color);
   color: var(--foreground-color);
-  font-family: sans-serif!important;
-}
-
-
-.main{
-  /* background:  url('/write_in_tongues/6.svg') center / cover no-repeat fixed padding-box;   */
+  font-family: sans-serif !important;
 }
 
 section {
@@ -92,7 +87,7 @@ h2 {
   background-color: var(--foreground-color);
 }
 
-.navbar .cta{
+.navbar .cta {
   padding: 4px 12px;
   border-radius: 5px;
 }
@@ -105,7 +100,8 @@ li.purple {
   color: var(--purple);
 }
 
-li.blue, .blue {
+li.blue,
+.blue {
   color: var(--blue);
 }
 
@@ -114,9 +110,37 @@ li.gray {
 }
 
 
+
+/* Splash Screnn */
+
+.splash-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  background-color: var(--background-color);
+  z-index: 99999;
+}
+.splash-screen p{
+  width: max-content;
+  /* height: 100%; */
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.splash-screen span {
+  /* font-family: "Inter 200"; */
+  font-weight: 100 !important;
+}
+
+
+
 /* Loading Gif */
 
-.loading-gif{
+.loading-gif {
   position: fixed;
   top: 0;
   left: 0;
@@ -138,7 +162,7 @@ li.gray {
   color: var(--background-color);
   background-color: var(--foreground-color);
   transition: background-color 0.4s ease;
-  
+
 }
 
 .cta-text {
@@ -162,12 +186,13 @@ li.gray {
   z-index: 1;
 }
 
-.inverted-color{
+.inverted-color {
   width: 29%;
-  color: var(--foreground-color)!important;
+  color: var(--foreground-color) !important;
   background-color: var(--background-color);
 }
-.current-color{
+
+.current-color {
   width: 100%;
   background-color: var(--foreground-color);
 }
@@ -208,20 +233,6 @@ a:not(.project-link):hover::after {
 }
 
 
-/* Splash Screnn */
-
-.splash-screen{
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: var(--background-color);
-  z-index: 99999;
-}
-.splash-screen span{
-  font-weight: 100!important;
-}
-
-
 /* Scroll Bar  */
 
 ::-webkit-scrollbar {
@@ -259,47 +270,52 @@ a:not(.project-link):hover::after {
 /*****  Main   ***/
 .main {
   gap: 70px;
-  overflow: hidden!important;
+  overflow: hidden !important;
 }
 
 
-.bg-text{
+.bg-text {
   background-color: var(--bg-text-background);
 }
-.bg-text-colored{
+
+.bg-text-colored {
   background-color: var(--bg-text-colored-background);
 }
 
 
-.checkbox.default{
+.checkbox.default {
   background: var(--foreground-color);
   background: #444;
 }
-.checkbox.blue{
+
+.checkbox.blue {
   background-color: blue;
   background-color: #1c50d4;
 }
-.checkbox.red{
+
+.checkbox.red {
   background-color: red;
   background-color: #eb2020;
 }
-.checkbox.green{
+
+.checkbox.green {
   background-color: green;
   background-color: #0a8508;
 }
-.checkbox.cyan{
+
+.checkbox.cyan {
   background-color: var(--cyan-background-color);
   background-color: #02693a;
 }
 
 
-#shadow-host-companion{
+#shadow-host-companion {
   padding: 0;
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
 
-  .main{
+  .main {
     max-width: 1250px;
     margin: 0 auto;
   }
@@ -307,14 +323,14 @@ a:not(.project-link):hover::after {
 
 @media screen and (max-width: 1200px) {
 
-  .desktop{
+  .desktop {
     display: none;
   }
 
 }
 
 @media screen and (max-width: 924px) {
-  
+
   section {
     padding: 1.5rem 2rem;
   }
@@ -337,7 +353,8 @@ a:not(.project-link):hover::after {
   }
 
 
-  .text-\[48px\], .text-\[48px\] span {
+  .text-\[48px\],
+  .text-\[48px\] span {
     font-size: 34px;
   }
 
@@ -348,7 +365,3 @@ a:not(.project-link):hover::after {
   }
 
 }
-
-
-
-
