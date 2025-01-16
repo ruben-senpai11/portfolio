@@ -46,23 +46,27 @@ export default function BBorder({ children }: Props) {
     observer.observe(document.body, { attributes: true });
 
 
-
-
-    if (!sessionStorage.getItem('sessionInitialized')) {
-    } else {
-    }
-
     useEffect(() => {
       if (!sessionStorage.getItem('sessionInitialized')) {
         sessionStorage.setItem('sessionInitialized', 'true');
         console.log('Session started');
-        
+
         // GSAP animation
-        gsap.fromTo(
-          boxRef.current,
-          { width: "0px", minWidth: "0px!important", height: "0px" }, // Initial state
-          { width: "100%", minWidth: "100%", height: "100%", duration: 4, ease: "bounce.inOut", delay: 2 }
-        );
+
+        if (window.innerWidth > 924) {
+          gsap.fromTo(
+            boxRef.current,
+            { width: "0px", minWidth: "0px!important", height: "0px" }, // Initial state
+            { width: "100%", minWidth: "100%", height: "100%", duration: 4, ease: "bounce.inOut", delay: 2 }
+          );
+
+        } else {
+          gsap.fromTo(
+            boxRef.current,
+            { opacity: "0" }, // Initial state
+            { opacity: "1", duration: 4, ease: "bounce.inOut", delay: 2 }
+          );
+        }
       }
     }, []);
 
