@@ -21,7 +21,7 @@ export default function Language() {
     setLoading(true); // Start showing the spinner
     //  await new Promise((resolve) => setTimeout(resolve, 30000)); 
     setLanguage(newLanguage); // Update local state
-    console.log("New languauge loading");
+    //console.log("New languauge loading");
 
     // Prepare the new URL
     const segments = pathname.split("/").filter(Boolean);

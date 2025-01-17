@@ -50,7 +50,7 @@ export default function BBorder({ children }: Props) {
     useEffect(() => {
       if (!sessionStorage.getItem('sessionInitialized')) {
         sessionStorage.setItem('sessionInitialized', 'true');
-        console.log('Session started');
+        //console.log('Session started');
 
         // GSAP animation
 

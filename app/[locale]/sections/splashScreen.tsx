@@ -21,7 +21,7 @@ export default function SplashScreen({ timer }: Props) {
         // Set session
       } else {
         setShowSplash(false);
-        console.log('Session already exists');
+        //console.log('Session already exists');
       }
       const handleUnload = () => sessionStorage.removeItem('sessionInitialized')
 
