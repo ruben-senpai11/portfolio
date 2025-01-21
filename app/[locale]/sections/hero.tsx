@@ -19,10 +19,10 @@ export default function Hero (){
               </span>
               <span>{(h('title-2'))}</span>
               {/* <span>22 years old & developer for 3 years</span> */}
-              <span className="max-w-[500px] border-solid text-[20px] pt-2" >{(h('description'))}<span className="font-mono bg-purple-400 m-1 p-1 bg-text-colored " >{(h('description-colored'))}</span>. </span>
+              <span className="max-w-[500px] border-solid text-[20px] pt-0" >{(h('description'))}<span className="font-mono bg-purple-400 m-1 p-1 bg-text-colored " >{(h('description-colored'))}</span>. </span>
             </h1>
             <p>
-            {(h('text'))} 
+              {(h('text'))} 
               {/* <span> Frontend developer</span>  */}
             </p>
           </div>

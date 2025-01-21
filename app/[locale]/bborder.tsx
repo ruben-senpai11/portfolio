@@ -29,6 +29,7 @@ export default function BBorder({ children }: Props) {
   const [isVisible, setIsVisible] = useState(false)
 
   const boxRef = useRef(null);
+  const contentRef = useRef(null);
 
   if (typeof window !== "undefined" && "MutationObserver" in window) {
     const observer = new MutationObserver((mutationsList) => {
@@ -54,18 +55,38 @@ export default function BBorder({ children }: Props) {
 
         // GSAP animation
 
+        const timeline = gsap.timeline()
+
         if (window.innerWidth > 924) {
+
+          /*
           gsap.fromTo(
             boxRef.current,
-            { width: "0px", minWidth: "0px!important", height: "0px" }, // Initial state
-            { width: "100%", minWidth: "100%", height: "100%", duration: 4, ease: "bounce.inOut", delay: 2 }
+            { width: "0px", minWidth: "0px!important", marginTop: "40%", height: "0px" },
+            { width: "100%", minWidth: "100%", height: "100%", marginTop: "0%", duration: 2, ease: "ease", delay: 2 }
+            );
+            */
+          
+          gsap.fromTo(
+            contentRef.current,
+            { display: "none", width:"100%", maxWidth: "100%", height: "100%", maxHeight:"100%", marginTop: "0%", opacity: "0" },
+            { display: "block", width:"100%", maxWidth: "100%", height: "100%", maxHeight:"100%", marginTop: "0", opacity: "1", duration: 2, ease: "expo.out", delay: 2 }
+            );
+            
+
+            /*
+          gsap.fromTo(
+            contentRef.current,
+            { opacity: "0" },
+            { opacity: "1", duration: 2, ease: "ease"}
           );
+          */
 
         } else {
           gsap.fromTo(
             boxRef.current,
-            { opacity: "0" }, // Initial state
-            { opacity: "1", duration: 4, ease: "bounce.inOut", delay: 2 }
+            { opacity: "0" },
+            { opacity: "1", duration: 3, ease: "bounce.inOut", delay: 2 }
           );
         }
       }
@@ -76,16 +97,16 @@ export default function BBorder({ children }: Props) {
 
   return (
     <>
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <div className="flex justify-center relative">
-        <SplashScreen timer={2000} />
+        <SplashScreen name="Ruben Honfovou" label="Portfolio" timer={2000} />
         <div ref={boxRef} className="bborder ">
           <div className="background">
             <div className="bborder-right">
               <div className="bborder-top">
                 <div className="bborder-left  ">
                   <div className="flex flex-col ">
-                    <div className="">
+                    <div ref={contentRef} className="">
                       <LoadingGif>
                         {children}
                       </LoadingGif>

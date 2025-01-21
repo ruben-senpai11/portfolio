@@ -61,6 +61,7 @@ body {
   background-color: var(--background-color);
   color: var(--foreground-color);
   font-family: sans-serif !important;
+  /* cursor: none; */
 }
 
 section {

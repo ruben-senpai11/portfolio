@@ -2,10 +2,12 @@
 import { ReactNode, useEffect, useState } from "react";
 
 interface Props {
+  name: string
+  label: string
   timer: number,
 }
 
-export default function SplashScreen({ timer }: Props) {
+export default function SplashScreen({ name, label, timer }: Props) {
 
   const [showSplash, setShowSplash] = useState(false);
 
@@ -44,8 +46,8 @@ export default function SplashScreen({ timer }: Props) {
 
         <div className="splash-screen w-[100vw] h-[100vh] ">
           <p className="text-4xl font-normal gap-4 " >
-            Ruben Honfovou
-            <span className="font-mono font-thin">Portfolio</span>
+            {name}
+            <span className="font-mono font-thin">{label}</span>
           </p>
         </div>
 
