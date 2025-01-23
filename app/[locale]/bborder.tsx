@@ -13,7 +13,7 @@ interface Props {
   children: any
 }
 
-export default function BBorder({ children }: Props) {
+export default function BBorder({ children }: Props) {  
 
   const [screenWidth, setScreenWidth] = useState(0);
 

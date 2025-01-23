@@ -40,14 +40,14 @@ export default function Page() {
               <div className="flex flex-col gap-8">
                 <h2>Freelance & Side Projects</h2>
                 <div className="projects-grid ">
-                  <Project image={bunny} title="Bunny Management" stack={["Laravel", "PHP", "jQUERY", "MySQL", "REST-API"]} link="https://whitedev.vercel.app/video/bunny.webm" description=" With given templates, I created dynamic forms, custom pages & datatables and an awesome landing page" />
-                  <Project image={lemonplet} title="Lemönplet" stack={["Shopify", "HTML & CSS", "JS"]} link="https://lemonplet.com/" description="We given this store a new look with a pixel-perfect design mockup into Shopify theme translation" />
-                  <Project image={bandage} title="Bandage E-commerce" stack={["React", "TS", "HTML & CSS", "Figma"]} link="https://bandage-ecommerce-ui.vercel.app/" description="Translating Figma mockup into a pixelperfect website. I’ve improved UX with lazyload, animations..." />
+                  <Project image={bunny} title="Bunny Management" stack={["Laravel", "PHP", "jQUERY", "MySQL", "Bootstrap"]} link="https://whitedev.vercel.app/video/bunny.webm" description=" With given templates, I created dynamic forms, custom pages & datatables and an awesome landing page" />
+                  <Project image={lemonplet} title="Lemönplet" stack={["Shopify", "HTML & CSS", "JS", "jQUERY"]} link="https://lemonplet.com/" description="We given this store a new look with a pixel-perfect design mockup into Shopify theme translation" />
+                  <Project image={bandage} title="Bandage E-commerce" stack={["React", "TS", "HTML & CSS", "Tailwind CSS", "Figma"]} link="https://bandage-ecommerce-ui.vercel.app/" description="Translating Figma mockup into a pixelperfect website. I’ve improved UX with lazyload, animations..." />
                   <Project image={evren} title="Evren Shah Portfolio" stack={["React", "TS", "HTML & CSS", "Figma"]} link="https://portofolio-rosy-eight.vercel.app/" description="Integration of a frontend devleoper portfolio mockup in a react website. I've added a beta double theme switch" />
                   <Project image={fig} title="Fig Intranet" stack={["PHP", "jQUERY", "HTML & CSS"]} link="" description="For the video games events, we've buit this website accessible not through interne but local network to supply essential informations our guests." />
-                  <Project image={mangaverse} title="Mangaverse" stack={["Next.js, TS, Tailwind CSS", "Apollo"]} link="https://my-mangaverse.vercel.app/" description="Building an unique web app involving multiple-theme switch, server actions, API, design, user-centric approach..." />
+                  <Project image={mangaverse} title="Mangaverse" stack={["Next.js, TS, Tailwind CSS", "Apollo GraphQL"]} link="https://my-mangaverse.vercel.app/" description="Building an unique web app involving multiple-theme switch, server actions, API, design, user-centric approach..." />
                   <Project image={stratosedi} title="Stratos EDI Shopify App" stack={["Remix, React, Prisma, GraphQL"]} link="" description="Building from scratch an unique app to improve orders tracking by the organization merchants" />
-                  <Project image={portfolio} title="My Portfolio" stack={["Next.js, TS, Tailwind CSS"]} link="https://whitedev.vercel.app/" description="Crafted a simple & unique portfolio to tell you about me. It involved a out of the box thinking, user-centered approach and so on .." />
+                  <Project image={portfolio} title="My Portfolio" stack={["Next.js, TypeScript, Tailwind CSS"]} link="https://whitedev.vercel.app/" description="Crafted a simple & unique portfolio to tell you about me. It involved a out of the box thinking, user-centered approach and so on .." />
                 </div>
               </div>
               {/* <div className="flex flex-col">
