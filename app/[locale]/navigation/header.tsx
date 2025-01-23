@@ -157,17 +157,17 @@ function Header({ title }: Props) {
           </div>
           <div className={(mobileNav == true ? 'm-menu-container' : 'desktop-menu') + " "}>
             <ul className="navlinks flex gap-12 navlinks justify-between align-center ">
-              <li onClick={() => { handlePage("home") }} className={currentPage == "en" || currentPage == "fr" ? "active" : ""}>
-                <Link href="/">{t('home')}</Link>
+              <li className={currentPage == "en" || currentPage == "fr" ? "active" : ""}>
+                <Link onClick={() => { handlePage("home") }} href="/">{t('home')}</Link>
               </li>
-              <li onClick={() => { handlePage("about") }} className={currentPage == "about" ? "active" : ""}>
-                <Link href="/about">{" "}{t('about')}</Link>
+              <li className={currentPage == "about" ? "active" : ""}>
+                <Link onClick={() => { handlePage("about") }} href="/about">{" "}{t('about')}</Link>
               </li>
-              <li onClick={() => { handlePage("portfolio") }} className={currentPage == "portfolio" ? "active" : ""}>
-                <Link href="/portfolio">{" "}{t('portfolio')}</Link>
+              <li className={currentPage == "portfolio" ? "active" : ""}>
+                <Link onClick={() => { handlePage("portfolio") }} href="/portfolio">{" "}{t('portfolio')}</Link>
               </li>
-              <li onClick={() => { setNavFalse }} className={currentPage == "resume" ? "active" : ""}>
-                <Link href={(t('resume-link'))} target='_blank' >{" "}{t('resume')}</Link>
+              <li className={currentPage == "resume" ? "active" : ""}>
+                <Link onClick={() => { setNavFalse }} href={(t('resume-link'))} target='_blank' >{" "}{t('resume')}</Link>
               </li>
             </ul>
           </div>

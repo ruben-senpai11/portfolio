@@ -53,8 +53,6 @@ export default function BBorder({ children }: Props) {
         sessionStorage.setItem('sessionInitialized', 'true');
         //console.log('Session started');
 
-        // GSAP animation
-
         const timeline = gsap.timeline()
 
         if (window.innerWidth > 924) {
@@ -69,8 +67,8 @@ export default function BBorder({ children }: Props) {
           
           gsap.fromTo(
             contentRef.current,
-            { display: "none", width:"100%", maxWidth: "100%", height: "100%", maxHeight:"100%", marginTop: "0%", opacity: "0" },
-            { display: "block", width:"100%", maxWidth: "100%", height: "100%", maxHeight:"100%", marginTop: "0", opacity: "1", duration: 2, ease: "expo.out", delay: 2 }
+            { display: "none", opacity: "0" },
+            { display: "block", opacity: "1", duration: 2, ease: "expo.out", delay: 2 }
             );
             
 
