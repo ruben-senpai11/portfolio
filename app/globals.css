@@ -349,11 +349,6 @@ a:not(.project-link):hover::after {
 
 @media screen and (max-width: 650px) {
 
-
-  section {
-    padding: 1.8rem 1.5rem;
-  }
-
   section {
     padding: 1rem 1rem;
   }
