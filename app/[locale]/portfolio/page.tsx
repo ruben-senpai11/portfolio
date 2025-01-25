@@ -11,6 +11,7 @@ import bunny from "../assets/img/bunny-management.png"
 import fig from "../assets/img/joystick.png"
 import mangaverse from "../assets/img/mangaverse.png"
 import portfolio from "../assets/img/portfolio.png"
+import interview from "../assets/img/Interview.png"
 
 import navbar from "../assets/img/responsive-navbar.png"
 import soon from "../assets/img/coming-soon.webp"
@@ -39,6 +40,7 @@ export default function Page() {
               <div className="flex flex-col gap-8">
                 <h2>Freelance & Side Projects</h2>
                 <div className="projects-grid ">
+                  <Project image={interview} title="Interview Project" stack={["Vue.js", "TypeScript", "Bootstrap", "GSAP"]} description="I figured out to master Vue.js at a new level of proficency. I'm building so an app who includes as well innovative design & structure as advanced tests." link="https://ruben-interview.vercel.app/" />
                   <Project image={bunny} title="Bunny Management" stack={["Laravel", "PHP", "jQUERY", "MySQL", "Bootstrap"]} link="https://whitedev.vercel.app/video/bunny.webm" description=" With given templates, I created dynamic forms, custom pages & datatables and an awesome landing page" />
                   <Project image={lemonplet} title="Lemönplet" stack={["Shopify", "HTML & CSS", "JS", "jQUERY"]} link="https://lemonplet.com/" description="We given this store a new look with a pixel-perfect design mockup into Shopify theme translation" />
                   <Project image={bandage} title="Bandage E-commerce" stack={["React", "TS", "Tailwind CSS", "Figma"]} link="https://bandage-ecommerce-ui.vercel.app/" description="Translating Figma mockup into a pixelperfect website. I’ve improved UX with lazyload, animations..." />
@@ -46,7 +48,7 @@ export default function Page() {
                   <Project image={fig} title="Fig Intranet" stack={["PHP", "jQUERY", "HTML & CSS"]} link="" description="For the video games events, we've buit this website accessible not through interne but local network to supply essential informations our guests." />
                   <Project image={mangaverse} title="Mangaverse" stack={["Next.js, TS, Tailwind CSS", "Apollo GraphQL"]} link="https://my-mangaverse.vercel.app/" description="Building an unique web app involving multiple-theme switch, server actions, API, design, user-centric approach..." />
                   <Project image={stratosedi} title="Stratos EDI Shopify App" stack={["Remix, React, Prisma, GraphQL"]} link="" description="Building from scratch an unique app to improve orders tracking by the organization merchants" />
-                  <Project image={portfolio} title="My Portfolio" stack={["Next.js, TypeScript, Tailwind CSS"]} link="https://whitedev.vercel.app/" description="Crafted a simple & unique portfolio to tell you about me. It involved a out of the box thinking, user-centered approach and so on .." />
+                  <Project image={portfolio} title="My Portfolio" stack={["Next.js, TypeScript, Tailwind CSS", "GSAP"]} link="https://whitedev.vercel.app/" description="Crafted a simple & unique portfolio to tell you about me. It involved a out of the box thinking, user-centered approach and so on .." />
                 </div>
               </div>
               {/* <div className="flex flex-col">
