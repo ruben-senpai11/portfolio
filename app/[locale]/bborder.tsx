@@ -51,35 +51,15 @@ export default function BBorder({ children }: Props) {
     useEffect(() => {
       if (!sessionStorage.getItem('sessionInitialized')) {
         sessionStorage.setItem('sessionInitialized', 'true');
-        //console.log('Session started');
-
         const timeline = gsap.timeline()
 
-        if (window.innerWidth > 924) {
-
-          /*
-          gsap.fromTo(
-            boxRef.current,
-            { width: "0px", minWidth: "0px!important", marginTop: "40%", height: "0px" },
-            { width: "100%", minWidth: "100%", height: "100%", marginTop: "0%", duration: 2, ease: "ease", delay: 2 }
-            );
-            */
-          
+        if (window.innerWidth > 924) {          
           gsap.fromTo(
             contentRef.current,
             { display: "none", opacity: "0" },
             { display: "block", opacity: "1", duration: 2, ease: "expo.out", delay: 2 }
             );
             
-
-            /*
-          gsap.fromTo(
-            contentRef.current,
-            { opacity: "0" },
-            { opacity: "1", duration: 2, ease: "ease"}
-          );
-          */
-
         } else {
           gsap.fromTo(
             boxRef.current,
@@ -89,7 +69,6 @@ export default function BBorder({ children }: Props) {
         }
       }
     }, []);
-
 
   }
 
