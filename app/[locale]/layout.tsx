@@ -16,15 +16,13 @@ export const metadata: Metadata = {
 
 export default async function LocaleLayout({
   children,
-  params: { locale }
+  params,
 }: {
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  if (!routing.locales.includes(locale as any)) {
-    notFound();
-  }
-
+  
+  const { locale } = await Promise.resolve(params); // Ensure params is awaited if required by Next.js
   const messages = await getMessages();
 
   return (

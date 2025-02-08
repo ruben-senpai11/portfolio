@@ -64,7 +64,7 @@ export default function BBorder({ children }: Props) {
           gsap.fromTo(
             boxRef.current,
             { opacity: "0" },
-            { opacity: "1", duration: 3, ease: "bounce.inOut", delay: 2 }
+            { opacity: "1", duration: 2, ease: "expo.out", delay: 2 }
           );
         }
       }
