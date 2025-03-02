@@ -56,8 +56,8 @@ export default function BBorder({ children }: Props) {
         if (window.innerWidth > 924) {          
           gsap.fromTo(
             contentRef.current,
-            { display: "none", opacity: "0" },
-            { display: "block", opacity: "1", duration: 2, ease: "expo.out", delay: 2 }
+            { opacity: "0" },
+            { opacity: "1", duration: 2, ease: "expo.out", delay: 2 }
             );
             
         } else {
