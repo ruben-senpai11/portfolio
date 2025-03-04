@@ -40,7 +40,7 @@ export default function Page() {
               <div className="flex flex-col gap-8">
                 <h2>Freelance & Side Projects</h2>
                 <div className="projects-grid ">
-                  {/* <Project image={interview} title="Interview Project" stack={["Vue.js", "TypeScript", "Bootstrap", "GSAP"]} description="I figured out to master Vue.js at a new level of proficency. I'm building so an app who includes as well innovative design & structure as advanced tests." link="https://ruben-interview.vercel.app/" /> */}
+                  <Project image={interview} title="Interview Project" stack={["Vue.js", "TypeScript", "Bootstrap", "GSAP"]} description="I figured out to master Vue.js at a new level of proficency. I'm building so an app who includes as well innovative design & structure as advanced tests." link="https://ruben-interview.vercel.app/" />
                   <Project image={bunny} title="Bunny Management" stack={["Laravel", "PHP", "jQUERY", "MySQL", "Bootstrap"]} link="https://whitedev.vercel.app/video/bunny.webm" description=" With given templates, I created dynamic forms, custom pages & datatables and an awesome landing page" />
                   <Project image={lemonplet} title="Lemönplet" stack={["Shopify", "HTML & CSS", "JS", "jQUERY"]} link="https://lemonplet.com/" description="We given this store a new look with a pixel-perfect design mockup into Shopify theme translation" />
                   <Project image={bandage} title="Bandage E-commerce" stack={["React", "TS", "Tailwind CSS", "Figma"]} link="https://bandage-ecommerce-ui.vercel.app/" description="Translating Figma mockup into a pixelperfect website. I’ve improved UX with lazyload, animations..." />
