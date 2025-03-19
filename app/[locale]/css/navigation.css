@@ -252,7 +252,7 @@ path[data-idx="3"] {
     border-top: 1px solid var(--foreground-color);
     border-bottom: 1px solid var(--foreground-color);
     margin: 0 auto;
-    padding: 40px 1rem 340px 1rem;
+    padding: 40px 1rem 350px 1rem;
     display: flex;
     flex-direction: column;
     gap: 35px;
