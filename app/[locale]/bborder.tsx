@@ -84,9 +84,7 @@ export default function BBorder({ children }: Props) {
                 <div className="bborder-left  ">
                   <div className="flex flex-col ">
                     <div ref={contentRef} className="">
-                      <LoadingGif>
                         {children}
-                      </LoadingGif>
                     </div>
                     <div className="bborder-bottom">
                     </div>

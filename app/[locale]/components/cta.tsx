@@ -14,7 +14,7 @@ export default function CTA({ link, label }: Props) {
       <div className="w-max m-auto">
         <TinyBborder>
           <div className="flex w-100">
-            <Link href={link} target="_blank" className="flex justify-center btn cta w-100 gap-4" >
+            <Link href={link} className="flex justify-center btn cta w-100 gap-4" >
               <span className="cta-text flex gap-4">
                 {label}
                 <svg width="16" height="16" fill="currentColor" className="bi bi-arrow-up-right" viewBox="0 0 16 16">

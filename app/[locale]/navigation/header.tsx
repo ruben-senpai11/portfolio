@@ -98,55 +98,19 @@ function Header({ title }: Props) {
   const handlePage = (newPage: string) => {
     setNavFalse
     if (newPage == "home" && currentPage !== "en" || newPage == "home" && currentPage !== "fr") {}
-    else if (newPage !== currentPage )  setLoading(true)
-    // console.log("newPage: ", newPage, "\n currentPage: ", currentPage );
+    else if (newPage !== currentPage ){
+      setLoading(true)
+    }
+    // setLoading(true)
   }
 
 
   return (
     <>
       {loading &&
-        <div className="loading-gif">
-          <span className="loading-spinner">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 100 100"
-              preserveAspectRatio="xMidYMid"
-              width="70"
-              height="70"
-              style={{ display: 'block', shapeRendering: 'auto' }}
-            >
-              <g data-idx="1">
-                <path
-                  strokeLinejoin="miter"
-                  strokeWidth="10"
-                  fill="none"
-                  d="M30 20l50 0l0 60l-60 0l0 -60l10 0"
-                  data-idx="2"
-                ></path>
-                <path
-                  strokeLinecap="square"
-                  strokeLinejoin="miter"
-                  strokeWidth="10"
-                  fill="none"
-                  d="M30 20l50 0l0 60l-60 0l0 -60l10 0"
-                  data-idx="3"
-                  strokeDasharray="71.6802px, 158.32px"
-                  strokeDashoffset="-230.4px"
-                >
-                  <animate
-                    attributeName="stroke-dashoffset"
-                    from="-230.4"
-                    to="0"
-                    dur="1s"
-                    repeatCount="indefinite"
-                  />
-                </path>
-              </g>
-            </svg>
-
-          </span>
-        </div>
+          <div className="loading-line">
+            <div className="loading-fulfiller"></div>
+          </div>
       }
       <div className={(isScrolled ? "nav-scrolled" : "") + " nav-container"}>
         <div className="navbar">
