@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from '@/i18n/routing';
 import "../css/navigation.css"
 import { useTranslations } from 'next-intl';
@@ -97,22 +97,38 @@ function Header({ title }: Props) {
 
   const handlePage = (newPage: string) => {
     setNavFalse
-    if (newPage == "home" && currentPage !== "en" || newPage == "home" && currentPage !== "fr") {}
-    else if (newPage !== currentPage ){
+    if (newPage == "home" && currentPage !== "en" || newPage == "home" && currentPage !== "fr") { }
+    else if (newPage !== currentPage) {
       setLoading(true)
     }
     // setLoading(true)
   }
 
 
+  const navbarRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: any) => {
+      if (navbarRef.current && !navbarRef.current.contains(event.target as Node)) {
+        setNavFalse;
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <>
       {loading &&
-          <div className="loading-line">
-            <div className="loading-fulfiller"></div>
-          </div>
+        <div className="loading-line">
+          <div className="loading-fulfiller"></div>
+        </div>
       }
-      <div className={(isScrolled ? "nav-scrolled" : "") + " nav-container"}>
+      <div ref={navbarRef} className={(isScrolled ? "nav-scrolled" : "") + " nav-container"}>
         <div className="navbar">
           <div className="logo">
             <Link href="/">
