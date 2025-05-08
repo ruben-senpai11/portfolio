@@ -21,12 +21,17 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  
+
   const { locale } = await Promise.resolve(params); // Ensure params is awaited if required by Next.js
   const messages = await getMessages();
 
   return (
     <html lang={locale}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Sora:wght@100..800&display=swap" rel="stylesheet"/>
+      </head>
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages}>
           {children}

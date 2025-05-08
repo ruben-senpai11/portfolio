@@ -68,6 +68,28 @@ section {
   padding: 2rem 4rem;
 }
 
+/*
+
+html {
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+  font-family: "Manrope";
+}
+
+section {
+  padding: 2rem 4rem;
+}
+
+h1, a {
+  font-family: "Sora";
+}
+
+*/
 
 h1 {
   font-size: 2rem;
@@ -306,7 +328,7 @@ a:not(.project-link):hover::after {
 @media screen and (min-width: 1200px) {
 
   .main {
-    max-width: 1250px;
+    max-width: 1450px;
     margin: 0 auto;
   }
 }

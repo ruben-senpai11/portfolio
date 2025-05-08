@@ -8,6 +8,8 @@ import LoadingGif from "./components/loadingGif";
 import SplashScreen from "./sections/splashScreen";
 import gsap from "gsap";
 import CustomCursor from "./components/customCursor";
+import GlassParticles from "./components/glassParticles";
+import GlassBackground from "./components/glassBackground";
 
 interface Props {
   children: any
@@ -56,15 +58,15 @@ export default function BBorder({ children }: Props) {
         if (window.innerWidth > 924) {          
           gsap.fromTo(
             contentRef.current,
-            { opacity: "0" },
-            { opacity: "1", duration: 2, ease: "expo.out", delay: 2 }
+            { width: "0" },
+            { width: "100%", duration: 2, ease: "elastic.out", delay: 2 }
             );
             
         } else {
           gsap.fromTo(
             boxRef.current,
-            { opacity: "0" },
-            { opacity: "1", duration: 2, ease: "expo.out", delay: 2 }
+            { width: "0" },
+            { width: "100%", duration: 2, ease: "elastic.out", delay: 2 }
           );
         }
       }
@@ -76,7 +78,7 @@ export default function BBorder({ children }: Props) {
     <>
       {/* <CustomCursor /> */}
       <div className="flex justify-center relative">
-        <SplashScreen name="Ruben Honfovou" label="Portfolio" timer={2000} />
+        {/* <SplashScreen name="Ruben Honfovou" label="Portfolio" timer={2000} /> */}
         <div ref={boxRef} className="bborder ">
           <div className="background">
             <div className="bborder-right">
@@ -95,7 +97,8 @@ export default function BBorder({ children }: Props) {
           </div>
           <div className="env">
             <Theme />
-            <Language />
+          <GlassBackground />
+          <Language />
           </div>
           <div className={isVisible ? "block" : "hidden"}>
             <Background lightColors={["red", "blue", "green"]} darkColors={["red", "blue", "green", "cyan", "default"]} />
