@@ -33,7 +33,7 @@ const GlassParticles = () => {
         const dx = mouse.x - p.x;
         const dy = mouse.y - p.y;
         const dist = Math.sqrt(dx * dx + dy * dy);
-        if (dist < 200) {
+        if (dist < 40) {
           p.vx += dx / dist * 0.05;
           p.vy += dy / dist * 0.05;
         }
@@ -49,7 +49,7 @@ const GlassParticles = () => {
         ctx.save();
         ctx.translate(p.x, p.y);
         ctx.rotate(p.angle);
-        ctx.fillStyle = "rgba(102,48,118,0.02)";
+        ctx.fillStyle = "rgba(102,48,118,0.01)";
         ctx.strokeStyle = "rgba(80,180,180,0.2)";
         ctx.beginPath();
         ctx.moveTo(0, 0);

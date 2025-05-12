@@ -72,7 +72,7 @@ const GlassBackground = () => {
         const dy = mouse.y - p.y;
         const dist = Math.sqrt(dx * dx + dy * dy);
 
-        if (dist < 200) {
+        if (dist < 40) {
           const strength = (1 - dist / 200) * 0.3;
           p.vx += dx * strength * 0.005;
           p.vy += dy * strength * 0.005;
@@ -101,8 +101,8 @@ const GlassBackground = () => {
         }
         ctx.closePath();
 
-        ctx.fillStyle = "rgba(200, 122, 200, 0.05)";
-        ctx.strokeStyle = "rgba(100, 100, 100, 0.12)";
+        ctx.fillStyle = "rgba(102,48,118,0.01)";
+        ctx.strokeStyle = "rgba(80,180,180,0.2)";
         ctx.lineWidth = 0.5;
         ctx.fill();
         ctx.stroke();

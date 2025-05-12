@@ -55,20 +55,20 @@ export default function BBorder({ children }: Props) {
         sessionStorage.setItem('sessionInitialized', 'true');
         const timeline = gsap.timeline()
 
-        if (window.innerWidth > 924) {          
-          gsap.fromTo(
-            contentRef.current,
-            { width: "0" },
-            { width: "100%", duration: 2, ease: "elastic.out", delay: 2 }
-            );
+        // if (window.innerWidth > 924) {          
+        //   gsap.fromTo(
+        //     contentRef.current,
+        //     { opacity: "0" },
+        //     { opacity: "100%", duration: 2, ease: "elastic.out", delay: 2 }
+        //     );
             
-        } else {
-          gsap.fromTo(
-            boxRef.current,
-            { width: "0" },
-            { width: "100%", duration: 2, ease: "elastic.out", delay: 2 }
-          );
-        }
+        // } else {
+        //   gsap.fromTo(
+        //     boxRef.current,
+        //     { opacity: "0" },
+        //     { opacity: "100%", duration: 2, ease: "elastic.out", delay: 2 }
+        //   );
+        // }
       }
     }, []);
 
@@ -78,7 +78,7 @@ export default function BBorder({ children }: Props) {
     <>
       {/* <CustomCursor /> */}
       <div className="flex justify-center relative">
-        {/* <SplashScreen name="Ruben Honfovou" label="Portfolio" timer={2000} /> */}
+        <SplashScreen name="Ruben Honfovou" label="Portfolio" timer={2000} />
         <div ref={boxRef} className="bborder ">
           <div className="background">
             <div className="bborder-right">
@@ -98,6 +98,7 @@ export default function BBorder({ children }: Props) {
           <div className="env">
             <Theme />
           <GlassBackground />
+          {/* <GlassParticles /> */}
           <Language />
           </div>
           <div className={isVisible ? "block" : "hidden"}>
