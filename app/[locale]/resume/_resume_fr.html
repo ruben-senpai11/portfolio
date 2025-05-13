@@ -16,12 +16,13 @@
       height: fit-content; */
       padding: 0;
       box-sizing: border-box;
+      background-color: #5556;
     }
     canvas {
       background: transparant;
       border-radius: 12px;
       /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); */
-      margin-left: 20px;
+      /* margin-left: 20px; */
     }
   </style>
 </head>
@@ -37,7 +38,7 @@
           <div id="paddingGeneral" style="padding: 0px;">
             <div style="display: flex; align-content: flex-start;">
               <aside
-                style="font-size: 12px; line-height: 1.55; color: #7C3AED; background-color: #E5E7EB; width: 50%; max-width: 256px; border: 2px dottsed #7C3AED; border-right: 0; box-shadow: -1px -1px 2pxs #7C3AED;">
+                style="font-size: 12px; line-height: 1.55; color: #7C3AED; background-color: #E5E7EB; width: 50%; max-width: 256px; border: 0px solid #7C3AED; border-right: 0; box-shadow: -1px -1px 2pxs #7C3AED;">
                 <div style="width: 100%;">
                   <div>
                     <div class="pdfasidecolor"
@@ -93,8 +94,8 @@
                             +229 0196404757</a>
                         </li>
                         <li
-                          style="display:flex; align-items: center!important; margin: 0!important; font-weight: initial;text-transform: initial;color: #111827;align-items: start;gap: 10px;margin-bottom: 0px;">
-                          <div style="padding-top: 2px;color: #7C3AED;"><svg width="15px" height="15px"
+                          style="display:flex; align-items: center!important; margin: 0!important; font-weight: initial;text-transform: initial;color: #111827;align-items: start;gap: 10px;margin-bottom: 0px; padding-top: 10px;">
+                          <div style="padding-top: 5px;color: #7C3AED;"><svg width="15px" height="15px"
                               xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                               <path fill="#7C3AED"
                                 d="M174.309-182.001q-37.033 0-63.67-26.638-26.638-26.637-26.638-63.67v-415.382q0-37.033 26.638-63.67 26.637-26.638 63.67-26.638h611.382q38.033 0 64.17 26.638 26.138 26.637 26.138 63.67v415.382q0 37.033-26.138 63.67-26.137 26.638-64.17 26.638H174.309ZM480-426.694l318-182.615L791.846-700 480-517 168.154-700 162-609.309l318 182.615Z">
@@ -305,7 +306,7 @@
                 </div>
               </aside>
               <main id="main"
-                style="margin: 0px; width: 100%; min-height: 1000px; padding-top: 20px; padding-left: 0px; padding-bottom: 10px; font-size: 12px; color: #7C3AED; line-height: 1.35; background-color: rgb(255, 255, 255); border: 1pxd solidz #7C3AED; border-left: 0; box-shadow: 1px 0px 2px #7C3AED;">
+                style="margin: 0px; width: 100%; min-height: 1000px; padding-top: 20px; padding-left: 0px; padding-bottom: 10px; padding-right: 5px; font-size: 12px; color: #7C3AED; line-height: 1.35; background-color: rgb(255, 255, 255); border: 0px solid #7C3AED74; border-left: 0; box-shadow: 2px 0px 2px #7C3AED;">
                 <div style="text-transform: uppercase; font-weight: bolder;">
                   <section style="margin: 10px 20px;">
                     <article
@@ -628,7 +629,7 @@
                   </section>
                   <div style="margin-left: 20px;">
 
-                    <canvas id="radarChart" width="450" height="350"></canvas>
+                    <canvas id="radarChart" width="500" height="350"></canvas>
 
 
                   </div>
@@ -668,12 +669,12 @@
       "Backend\n(JS, TS, Php) \n", 
       "SEO & Marketing \n(Copywriting, Cold Call, \n Email Automation)", 
       "Créativité \n \n", 
-      "Frontend \n (React, Next.js \n, Vue.js, Laravel, CMS)", 
+      "Frontend / UI\n (React, Next.js \n, Vue.js, Laravel, CMS)", 
       "UX \n (Maze, Hotjar, \n Principes de psychologies, \n Laws of UX)", 
-      "Design \n \n"];
+      "Design Thinking\n \n"];
 
 
-    const values = [70, 55, 85, 90, 75, 60]; // 0-100 scale
+    const values = [70, 75, 88, 98, 80, 85]; // 0-100 scale
 
     const canvas = document.getElementById("radarChart");
     const ctx = canvas.getContext("2d");
@@ -720,7 +721,7 @@
         ctx.textBaseline = "middle";
         //ctx.fillText(labelLines[0], x, y + 0);
 
-        const labelX = center.x + (radius + 20) * Math.cos(angle);
+        const labelX = center.x + (radius + 40) * Math.cos(angle);
         const labelY = center.y + (radius + 20) * Math.sin(angle);
         ctx.fillText(labelLines[0], labelX, labelY);
       }

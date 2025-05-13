@@ -101,8 +101,8 @@ const GlassBackground = () => {
         }
         ctx.closePath();
 
-        ctx.fillStyle = "rgba(102,48,118,0.01)";
-        ctx.strokeStyle = "rgba(80,180,180,0.2)";
+        ctx.fillStyle = "rgba(250,250,250,0.051)";
+        ctx.strokeStyle = "#7C3AED25";
         ctx.lineWidth = 0.5;
         ctx.fill();
         ctx.stroke();
