@@ -45,11 +45,11 @@
 
 .responsivity {
   padding: 15px;
-  border: 1px solid;
+  border: 1px solid var(--secondary);
   gap: 20px;
 }
 .responsivity hr {
-  border-color: var(--foreground-color);
+  border-color: var(--secondary);
 }
 .responsivity div {
   height: max-content;
@@ -75,7 +75,7 @@
   flex-direction: column;
   gap: 0px;
   padding: 10px 15px;
-  border: 1px solid var(--foreground-color);
+  border: 1px solid var(--secondary);
   border-radius: 2px;
 
   height: 330px;
@@ -124,7 +124,7 @@
 .s-tech {
   width: 100%;
   height: 100%;
-  border: 1px solid var(--foreground-color);
+  border: 1px solid var(--secondary);
 }
 
 .w-100 {
@@ -136,7 +136,7 @@
   display: flex;
   height: 300px;
   padding: 10px;
-  border: 1px solid;
+  border: 1px solid var(--secondary);
 }
 
 .project-70 {
@@ -166,7 +166,7 @@
 .project-img {
   height: 100%;
   overflow: hidden;
-  /* border:  2px solid var(--foreground-color); */
+  /* border:  2px solid var(--primary); */
   box-shadow: 0 0 4px #00000055;
   border-radius: 4px;
 }
@@ -211,21 +211,21 @@
   padding: 10px 15px 5px 10px;
   color: var(--foreground-color);
   background-color: var(--background-color);
-  border-bottom: 1px solid var(--foreground-color);
+  border-bottom: 1px solid var(--primary);
 }
 
 .name{
-  border-left: 1px solid var(--foreground-color);
+  border-left: 1px solid var(--primary);
 } 
 .email {
-  border-right: 1px solid var(--foreground-color);
+  border-right: 1px solid var(--primary);
 }
 .message{
   width: 100%;
   height: auto;
   padding: 10px 15px;
-  border-left: 1px solid var(--foreground-color);
-  border-right: 1px solid var(--foreground-color);
+  border-left: 1px solid var(--primary);
+  border-right: 1px solid var(--primary);
 }
 
 
@@ -234,16 +234,17 @@
 
 @media screen and (max-width: 1200px) {
   .hero {
-    padding-top: 60px;
+    padding-top: 200px;
     padding-bottom: 60px;
+    gap: 40px;
   }
   .picture {
     position: relative;
-    width: 300px;
-    min-width: 300px;
-    height: 300px;
-    max-height: 300px;
-    margin-top: 40px;
+    width: 330px;
+    min-width: 330px;
+    height: 330px;
+    max-height: 330px;
+    margin-top: 0px;
   }
 
   .r-bottom video {
@@ -278,7 +279,7 @@
   }
 }
 
-@media screen and (max-width: 924px) {
+@media screen and (max-width: 1024px) {
 
   .hero {
     padding-top: 40px;

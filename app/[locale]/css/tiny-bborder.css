@@ -3,13 +3,14 @@
   --tb-padding-y: 15px;
   --tb-padding-x-sm: 10px;
   --tb-padding-y-sm: 10px;
+  --border-color: var(--secondary);
 }
 
 
 .t-bborder-left {
   min-width: 100%;
   width: 100%;
-  border-left: var(--bborder-width) solid var(--foreground-color);
+  border-left: var(--bborder-width) solid var(--border-color);
 }
 
 .t-bborder {
@@ -20,17 +21,17 @@
 .t-bborder-top {
   width: 100%;
   padding-left: var(--tb-padding-x);
-  border-top: var(--bborder-width) solid var(--foreground-color);
+  border-top: var(--bborder-width) solid var(--border-color);
 }
 
 .t-bborder-right {
   padding-top: var(--tb-padding-y);
-  border-right: var(--bborder-width) solid var(--foreground-color);
+  border-right: var(--bborder-width) solid var(--border-color);
 }
 
 .navbar .t-bborder-right {
   padding-top: 28px;
-  border-right: var(--bborder-width) solid var(--foreground-color);
+  border-right: var(--bborder-width) solid var(--border-color);
 }
 
 .t-bborder-bottom {
@@ -38,7 +39,7 @@
   min-height: var(--tb-padding-y);
   background-color: var(--background-color);
   padding-bottom: var(--tb-padding-y);
-  border-top: var(--bborder-width) solid var(--foreground-color);
+  border-top: var(--bborder-width) solid var(--border-color);
   overflow: hidden;
 }
 
@@ -51,7 +52,7 @@
 @media screen and (max-width: 650px){
 
   .t-bborder-left {
-    border-left: var(--bborder-width) solid var(--foreground-color);
+    border-left: var(--bborder-width) solid var(--border-color);
   }
   
   .t-bborder {
@@ -64,7 +65,7 @@
   
   .t-bborder-right {
     padding-top: 15px;
-    border-right: var(--bborder-width) solid var(--foreground-color);
+    border-right: var(--bborder-width) solid var(--border-color);
   }
   
   .t-bborder-bottom {

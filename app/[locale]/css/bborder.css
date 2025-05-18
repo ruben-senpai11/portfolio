@@ -6,6 +6,7 @@
   --bborder-padding-x-sm: .8rem;
   --bborder-padding-y-lg: 1.6rem;
   --bborder-padding-x-lg: 1.8rem;
+  --border-color: var(--secondary)
 }
 
 /*** Custom Document Border   ***/

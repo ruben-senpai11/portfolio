@@ -12,7 +12,7 @@ export default function CTA({ link, label }: Props) {
   return (
     <>
       <div className="w-max m-auto">
-        <TinyBborder>
+        {/* <TinyBborder> */}
           <div className="flex w-100">
             <Link href={link} className="flex justify-center btn cta w-100 gap-4" >
               <span className="cta-text flex gap-4">
@@ -27,7 +27,7 @@ export default function CTA({ link, label }: Props) {
               </span>
             </Link>
           </div>
-        </TinyBborder>
+        {/* </TinyBborder> */}
       </div>
     </>
   )

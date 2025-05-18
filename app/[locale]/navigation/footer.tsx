@@ -15,8 +15,14 @@ function Footer(){
         <div className="">
           <p>© { currentYear } · <span className="desktopA">{(f('copyright'))}</span></p>
         </div>
-        <div className="">
-          <p>Made with 🤍 by the white_dev</p>
+        <div>
+          <p className="text-nowrap">
+            Made with 🤍 by the &nbsp;
+            <span className="text-nowrap font-mono font-boldf m-1 text-gradientf">
+              UIX developer
+              <span className="font-sans font-extraboldf">{" </>"}</span>
+            </span>  
+          </p>
         </div>
         <div className="socials flex gap-4 ">
           <Link href="https://www.linkedin.com/in/ruben-white22/" target="_blank" >LN</Link>

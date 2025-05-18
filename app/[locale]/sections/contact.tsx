@@ -6,17 +6,9 @@ import "../css/home.css"
 import TinyBborder from "../components/tiny-bborder";
 import { useTranslations } from "next-intl";
 import { useForm } from "@formspree/react";
+// import ContactForm from "../components/contactForm";
 
 
-/*
-import { createClient } from '@supabase/supabase-js'
-const supabaseUrl = 'https://mtwammsrqnqlhxvmybcd.supabase.co'
-const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_KEY 
-if (!supabaseKey) {
-  throw new Error('SUPABASE_KEY is not defined in environment variables');
-}
-const supabase = createClient(supabaseUrl, supabaseKey)
-*/
 
 interface Props {
 }
@@ -135,7 +127,7 @@ function ContactForm({ }: Props) {
               <p className="pt-4">{(c('success-message'))}</p>
             }
             <div className="flex w-max m-auto">
-              <TinyBborder>
+              {/* <TinyBborder> */}
                 <button type="submit" className="btn cta w-max" disabled={state.submitting}>
                   <span className="cta-text font-medium">{(c('submit'))}</span>
                   <span className="cta-transition">
@@ -143,7 +135,7 @@ function ContactForm({ }: Props) {
                     <span className="current-color"></span>
                   </span>
                 </button>
-              </TinyBborder>
+              {/* </TinyBborder> */}
             </div>
 
           </form>

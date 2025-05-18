@@ -6,9 +6,9 @@
     "about": "about",
     "resume": "resume",
     "resume-link": "/resume",
-    "say-hello": "say hello",
-    "email-me": "send a mail",
-    "whatsapp-me": "chat on whatsapp",
+    "say-hello": "Say hello",
+    "email-me": "Send a mail",
+    "whatsapp-me": "Chat on whatsapp",
     "copyright": "All Rights Reserved",
     "author": "Made with 🤍 by the white_dev"
   },
@@ -26,9 +26,13 @@
       "name-placeholder": "Ruben White",
       "name-error": "Please enter your name",
       "email-help": "your email",
-      "email-placeholder": "rubenwhite22@gmail.com",
+      "email-placeholder": "mybest@email.com",
       "email-error": "Please enter your email",
       "invalid-email-error": "The mail address you entered is invalid !",
+      "website-help": "your website",
+      "website-placeholder": "www.mywebsite.com",
+      "website-error": "Please enter your website's URL",
+      "invalid-website-error": "The URL you entered is invalid !",
       "message-help": "your message",
       "message-placeholder": "Hi, I got a new project and I think you can help me make it a Banger. Are you available right now?",
       "message-error": "Please enter a message",
@@ -38,11 +42,14 @@
   },
   "HomePage": {
     "hero": {
-      "title": "Hey, I'm",
+      "title": "I'm Ruben Honfovou, a",
       "title-2": "But you can call me white_dev",
-      "description": "I believe in God and the abilities He gave me to make your next website",
+      "description": "I'm a Frontend developer who combines UI patterns, UX principles, and cognitive psychology to create fluid and high-converting web experiences",
       "description-colored": "divinely efficient",
-      "text": "I'm a High Skilled Frontend Developer."
+      "text": "I'm a High Skilled Frontend Developer.",
+      "email-placeholder": "My prefered email address",
+      "email-cta": "I want to improve my website",
+      "email-success": "Thanks for your submission ! I'll sent you an appointment by mail"
     },
     "exceptional": {
       "title": "What Makes Me Special?",
@@ -128,7 +135,7 @@
       "label": "Works",
       "description": "Here are some freelance missions, personal, and side projects. In waiting for a the full list on the Portfolio page, you can",
       "resume-link": " see more on my resume",
-      "see-more": "see my portfolio",
+      "see-more": "Discover my portfolio",
       "work1": {
         "title": "Mangaverse",
         "description": "The purpose of the Mangaverse is to find in a single search all any manga you're looking for."

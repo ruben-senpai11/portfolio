@@ -28,7 +28,7 @@ export default function SplashScreen({ name, label, timer }: Props) {
       const handleUnload = () => sessionStorage.removeItem('sessionInitialized')
 
       window.addEventListener("beforeunload", handleUnload);
-      
+
       return () => {
         clearTimeout(timeout)
         handleUnload
@@ -44,10 +44,13 @@ export default function SplashScreen({ name, label, timer }: Props) {
     <>
       {showSplash &&
 
-        <div className="splash-screen w-[100vw] h-[100vh] ">
-          <p className="text-4xl font-normal gap-4 " >
-            {name}
-            <span className="font-mono font-thin">{label}</span>
+        <div className="splash-screen w-[100vw] h-[100vh] bg-gradient">
+          <p className="flex flex-col gap-8 " >
+            <span className="text-6xl font-mono font-extrabold m-1 text-gradientf">UIX Developer <span className="font-sans bg-gradienft font-extrabold">{"</>"}</span> </span>
+            <span className="text-3xl font-normal text-nowrap">
+              {name}
+              <span className="font-mono font-thin"> {label}</span>
+            </span>
           </p>
         </div>
 

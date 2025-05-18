@@ -26,9 +26,13 @@
       "name-placeholder": "Ruben White",
       "name-error": "Veuillez renseigner votre nom",
       "email-help": "votre adresse mail",
-      "email-placeholder": "rubenwhite22@gmail.com",
+      "email-placeholder": "mybest@email.com",
       "email-error": "Veuillez renseigner votre adresse",
       "invalid-email-error": "Cette adresse mail est invalide !",
+      "website-help": "Votre site web",
+      "website-placeholder": "www.mywebsite.com",
+      "website-error": "Veuillez saisir le lien de votre site web",
+      "invalid-website-error": "Le lien que vous avez saisi est invalide !",
       "message-help": "votre message",
       "message-placeholder": "Salut, je travaille sur un nouveu projet et je pense que tu peux nous aider à en faire une merveille. Quand es-tu disponible?",
       "message-error": "Veuillez saisir un message",
@@ -38,11 +42,13 @@
   },
   "HomePage": {
     "hero": {
-      "title": "Hey, je suis",
+      "title": "Hey, je suis Ruben Honfovou, un",
       "title-2": "Mais vous pouvez m'appeler the white_dev",
-      "description": "Je crois en Dieu et l'aptitude qu'Il m'a donnée à rendre votre prochain site web",
+      "description": "Je suis le développeur Frontend qui combine l'UX, l'UI et les principes de psychologie pour peauffiner les interfaces web et augmenter les taux de conversion",
       "description-colored": "divinement efficace",
-      "text": "The white_dev est un développeur talentueux et expérimenté."
+      "email-placeholder": "My prefered email address",
+      "email-cta": "I want to improve my website",
+      "email-success": "Thanks for your submission ! I'll sent you an appointment by mail"
     },
     "exceptional": {
       "title": "Qu'est-ce qui me rend Différent ?",
@@ -128,7 +134,7 @@
       "label": "Travaux",
       "description": "Voici une mise en bouche des projets réalisés. En attendant la finalisation de la page Portfolio, vous pouvez",
       "resume-link": "en voir plus sur mon CV",
-      "see-more": "voir mon portfolio",
+      "see-more": "Découvrir mon portfolio",
       "work1": {
         "title": "Mangaverse",
         "description": "Une plateforme complète d'exploration de mangas. Le but est de trouver en une seule recherche n'importe quelle œuvre qu'on recherche."

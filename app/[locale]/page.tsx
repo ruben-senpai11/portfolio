@@ -9,21 +9,24 @@ import Skills from "./sections/skills";
 import Tech from "./sections/tech";
 import Works from "./sections/work";
 import Exceptionnal from './sections/exceptionnal';
-import ContactForm from './sections/contact';
 import SplashScreen from './sections/splashScreen';
+import Contact from './sections/contact';
 
 
 export default function HomePage() {
+  
   const t = useTranslations('HomePage');
+  const c = useTranslations('Global.contactForm');
+
   return (
     <>
       
       <BBorder >
-        <Header title="white_dev" />
+        <Header title="UIX developer" />
         <div className="main flex flex-col gap-16 pb-6 ">
           <Hero />
           <Exceptionnal />
-          <Skills />
+          {/* <Skills /> */}
           <Works />
           <Tech />
           {/* <div className="main flex gap-4 my-0 mx-auto" > I'm a
@@ -35,7 +38,7 @@ export default function HomePage() {
             <span>photographer</span>
             <span>human</span>
           </div> */}
-          <ContactForm />
+          <Contact />
         </div>
         <Footer />
       </BBorder>

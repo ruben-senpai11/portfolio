@@ -132,7 +132,10 @@ function Header({ title }: Props) {
         <div className="navbar">
           <div className="logo">
             <Link href="/">
-              {title}
+              <span className="text-6xlg font-mono font-boldf m-1 text-gradientf">
+                {title} 
+                <span className="font-sans font-extraboldf">{" </>"}</span>
+              </span>
             </Link>
           </div>
           <div className={(mobileNav == true ? 'm-menu-container' : 'desktop-menu') + " "}>

@@ -9,8 +9,8 @@ import "../globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "White dev Portfolio",
-  description: "Hi, I'm Ruben White. Frontend developer, though keep in mind I got a divine way to code !",
+  title: "UIX developer | Ruben Honfovou Portfolio",
+  description: "Hi, I'm the Frontend developer who combines UX, UI and Psychology to make your outcome better !",
 };
 
 
