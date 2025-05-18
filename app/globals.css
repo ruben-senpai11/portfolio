@@ -136,7 +136,8 @@ li.gray {
   height: 100%;
   display: flex;
   z-index: 99999;
-  color: #111827;
+  color: var(--foreground-color);
+  background-color: var(--background-color);
 }
 .splash-screen p{
   width: max-content;
@@ -222,6 +223,10 @@ li.gray {
 
 .btn.cta:hover {
   color: var(--background-color);
+}
+
+iframe{
+  max-width: 100%;
 }
 
 /* Hero */

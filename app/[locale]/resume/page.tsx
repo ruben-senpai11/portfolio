@@ -1,609 +1,832 @@
 import BBorder from "../bborder";
 import LoadingGif from "../components/loadingGif";
+import Footer from "../navigation/footer";
+import Header from "../navigation/header";
 
 
 const Page = () => {
-  const pdfUrl = '/Ruben Resume 2025.pdf';
+  const pdfUrl = '/Ruben UIX Developer Resume _EN.pdf';
 
-  const htmlContent = `<div class="MuiContainer-root MuiContainer-maxWidthLg scale-container mui-1qsxih2"
-  style=" width: 100%; height:100%; display: flex; justify-content: center; align-items: center; margin: 20px;">
-  <div class="contenedor-externo">
-    <div class="scaled-page"
-      style="display: flex; flex-direction: column; width: 210mm; ">
-      <div id="lolo" class="a4-page">
+  const htmlContent = `
+  
+<!DOCTYPE html>
+<html lang="en">
 
-        <div id="paddingGeneral" style="padding: 0px;">
-          <div style="display: flex; align-content: flex-start;">
-            <aside
-              style="font-size: 12px; line-height: 1.25; color: rgb(228, 146, 7); background-color: rgb(40, 60, 74); width: 50%; max-width: 256px; border: 2px solid #e49207; border-right: 0;">
-              <div style="width: 100%;">
-                <div>
-                  <div class="pdfasidecolor"
-                    style="width: 100%; background: #283c4a; display: flex; justify-content: center; align-items: center;margin-top:20px;">
-                    <div style="display: flex;justify-content: center;align-items: center;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UIX developer | Ruben HONFOVOU | English ReCume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sora:wght@100..800&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    canvas {
+      background: transparant;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="MuiContainer-root MuiContainer-maxWidthLg scale-container mui-1qsxih2"
+    style=" width: 100%; height:100%; display: flex; justify-content: center; align-items: center; margin: 10px auto;">
+    <div class="contenedor-externo">
+      <div class="scaled-page" style="display: flex; flex-direction: column; width: 210mm; ">
+        <div id="lolo" class="a4-page">
+
+          <div id="paddingGeneral" style="padding: 0px;">
+            <div style="display: flex; align-content: flex-start;">
+              <aside
+                style="font-size: 12px; line-height: 1.55; color: #7C3AED; background-color: #E5E7EB; width: 50%; max-width: 256px; border: 0px solid #7C3AED; border-right: 0; box-shadow: -1px -1px 2pxs #7C3AED;">
+                <div style="width: 100%;">
+                  <div>
+                    <div class="pdfasidecolor"
+                      style="width: 100%; background: #E5E7EB; display: flex; justify-content: center; align-items: center;margin-top:20px;">
+                      <div style="display: flex;justify-content: center;align-items: center;">
+                        <div
+                          style="display:block;width: max-content; margin-top: 10px; border-radius: 50%;overflow: hidden; display: flex;">
+                          <div style="max-width: 215px; height: 215px;"><img class="imageprofile"
+                              style="width: 100%; height: 100%;"
+                              src="https://whitedev.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile-pic-yellow.04a6a6ca.png&w=828&q=75"
+                              alt="Profile"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pdfasidecolor"
+                  style="font-size: 12px; line-height: 1.55; color: #7C3AED; background-color: #E5E7EB; position: relative; padding: 20px;">
+                  <div style="text-transform: uppercase; font-weight: bolder;">
+                    <div style="margin-bottom: 30px;">
+                      <p
+                        style="color:#111827;text-transform: capitalize;letter-spacing: 3px;margin-bottom: 0;font-family:'Open sans';font-size: 19px;">
+                        Ruben Alban</p>
+                      <p
+                        style="color: #7C3AED;text-transform: capitalize;letter-spacing: 3px; margin-top: 0;margin-bottom: 0;font-family:'Open sans';font-size:22px;">
+                        HONFOVOU</p><span
+                        style="height: 1px;background: #111827;width: 80px;display:inline-block; margin-top: 16px; margin-bottom: 0px;"></span>
+                      <p
+                        style="margin-top: 0;color: initial;font-family:'Open sans';font-size:16px;font-weight: normal;color: #111827;text-transform: initial;letter-spacing: 3px;">
+                        UIX developer
+                      </p>
+                      <p
+                        style="margin-top: 0;color: initial;font-family:'Open sans';font-size:12px;font-weight: normal;color: #111827;text-transform: initial;letter-spacing: 2px;">
+                        Frontend Developer with a focus on UX/UI
+                      </p>
+                    </div>
+                    <div id="icon" name="praga" style="margin-bottom: 10px;display:block;"><span
+                        style="height: 1px;background: #111827;width: 80px;display: inline-block;"></span>
+                      <p
+                        style="color: #7C3AED; text-transform: capitalize;letter-spacing: 3px; margin-bottom: 8px;font-family:'Open sans';font-size:16px;margin-top: 0;">
+                        CONTACT</p>
+                      <ul style="list-style:none;padding-left: 0;margin-bottom: 0px;margin-top: 0px;grid-gap: 1px">
+                        <li
+                          style="display:flex; align-items: center!important; margin: 0!important; font-weight: initial;text-transform: initial;color: #111827;align-items: start;gap: 10px;margin-bottom: 0px;">
+                          <div style="padding-top: 2px;color: #7C3AED;"><svg width="15px" height="15px"
+                              xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                              <path fill="#7C3AED"
+                                d="M774.614-133.001q-124.076-9-236.691-61.077-112.615-52.077-203.384-142.846-90.384-89.769-141.961-202.691-51.577-112.923-60.577-236.999-2-23 11.5-37.692 13.5-14.693 36.5-14.693h142.46q18.154 0 31.731 10.885 13.577 10.885 19.73 28.423L398.845-675q2.385 11.385-1.5 24.154-3.884 12.769-10.654 18.769l-101.384 99.923q21.308 38.846 46.962 73.769 25.654 34.924 58.038 68.078 30.924 29.923 65.001 55.654 34.077 25.731 71.077 45.038l110.769-104.538q7.385-7.769 13.731-9.192t15.731.577l120.075 27.615q18.154 5 29.731 18.461 11.577 13.462 11.577 32.001v143.69q0 23-15.193 36.5-15.192 13.5-38.192 11.5Z">
+                              </path>
+                            </svg></div>
+                          <a href="tel:+2290196404757"
+                            style="font-family:'Open sans';color: #111827;flex-shrink: 1;min-width: 0;word-wrap: break-word; text-decoration: none; color: inherit; ">
+                            +229 0196404757</a>
+                        </li>
+                        <li
+                          style="display:flex; align-items: center!important; margin: 0!important; font-weight: initial;text-transform: initial;color: #111827;align-items: start;gap: 10px;margin-bottom: 0px; padding-top: 10px;">
+                          <div style="padding-top: 5px;color: #7C3AED;"><svg width="15px" height="15px"
+                              xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                              <path fill="#7C3AED"
+                                d="M174.309-182.001q-37.033 0-63.67-26.638-26.638-26.637-26.638-63.67v-415.382q0-37.033 26.638-63.67 26.637-26.638 63.67-26.638h611.382q38.033 0 64.17 26.638 26.138 26.637 26.138 63.67v415.382q0 37.033-26.138 63.67-26.137 26.638-64.17 26.638H174.309ZM480-426.694l318-182.615L791.846-700 480-517 168.154-700 162-609.309l318 182.615Z">
+                              </path>
+                            </svg></div>
+                          <a href="mailto:rubenwhite22@gmail.com"
+                            style="font-family:'Open sans';color: #111827;flex-shrink: 1;min-width: 0;word-wrap: break-word; margin: 0; text-decoration: none; color: inherit; ">
+                            rubenwhite22@gmail.com </a>
+                        </li>
+                        <li
+                          style="display:flex; align-items: center!important; margin: 0!important; font-weight: initial;text-transform: initial;color:#7C3AED;align-items: start;gap: 10px;margin-bottom: 0px;">
+                          <div style="padding-top: 2px;color: #7C3AED;"><svg width="15px" height="15px"
+                              xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                              <path fill="#7C3AED"
+                                d="M480.192-475.385q30.731 0 52.423-21.884t21.692-52.615q0-30.731-21.884-52.423t-52.615-21.692q-30.731 0-52.423 21.884T405.693-549.5q0 30.731 21.884 52.423t52.615 21.692ZM480-82.617Q314.026-219.57 234.052-333.208q-79.974-113.638-79.974-216.869 0-121.46 88.577-224.191Q331.231-876.999 479.5-876.999t237.345 102.731q89.077 102.731 89.077 224.191 0 103.231-79.461 216.423Q646.999-220.463 480-82.617Z">
+                              </path>
+                            </svg></div>
+                          <p
+                            style="font-family:'Open sans';color: #111827;flex-shrink: 1;min-width: 0;word-wrap: break-word;">
+                            Cotonou</p>
+                        </li>
+                        <li
+                          style="display:flex; align-items: center!important; margin: 0!important; font-weight: initial;text-transform: initial;color: #7C3AED;align-items: start;gap: 10px;margin-bottom: 0px;">
+                          <div style="padding-top: 2px;color: #7C3AED;"><svg width="15px" height="15px"
+                              xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                              <path fill="#7C3AED"
+                                d="M240-120v-680h390q14 0 26 6.5t20 17.5l124 176-124 176q-8 11-20 17.5t-26 6.5H320v280h-80Z">
+                              </path>
+                            </svg> </div>
+                          <p
+                            style="font-family:'Open sans';color: #111827;flex-shrink: 1;min-width: 0;word-wrap: break-word;">
+                            Beninese </p>
+                        </li>
+                        <li
+                          style="display:flex; align-items: center!important; margin: 0!important; font-weight: initial;text-transform: initial;color: #7C3AED;align-items: start;gap: 10px;margin-bottom: 0px;">
+                          <div style="padding-top: 2px;color: #7C3AED;"><svg width="15px" height="15px"
+                              xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                              <path fill="#7C3AED"
+                                d="M480-504.309q-61.749 0-103.874-42.124-42.125-42.125-42.125-103.874 0-61.75 42.125-103.874Q418.251-796.306 480-796.306q61.749 0 103.874 42.125 42.125 42.124 42.125 103.874 0 61.749-42.125 103.874Q541.749-504.309 480-504.309ZM182.001-158.694v-103.922q0-25.384 13.149-46.776 13.149-21.393 36.466-36.146 56.308-33.077 120.062-50.615 63.753-17.538 128.23-17.538 64.476 0 128.322 17.538 63.846 17.538 120.154 50.615 23.317 13.753 36.466 35.646 13.149 21.892 13.149 47.276v103.922H182.001Z">
+                              </path>
+                            </svg> </div>
+                          <p
+                            style="font-family:'Open sans';color: #111827;flex-shrink: 1;min-width: 0;word-wrap: break-word;">
+                            22 ans </p>
+                        </li>
+                        <li
+                          style="display:none;font-weight: initial;text-transform: initial;color: #7C3AED;align-items: start;gap: 10px;margin-bottom: 0px;">
+                          <div style="padding-top: 2px;color: #7C3AED;"><svg width="15px" height="15px"
+                              xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="none">
+                              <path fill="#7C3AED"
+                                d="M211.231-242v64q0 3.4-3.15 5.7-3.15 2.3-7.147 2.3h-22.637q-3.997 0-7.147-2.3-3.15-2.3-3.15-5.7v-297.846L245.384-665q4.566-14.339 17.673-21.669Q276.164-694 292.231-694h378.615q14.918 0 27.088 7.6 12.171 7.6 16.682 21.4L792-475.846V-178q0 3.4-3.15 5.7-3.15 2.3-7.147 2.3h-22.637q-3.997 0-7.147-2.3-3.15-2.3-3.15-5.7v-64H211.231Zm12.384-251.846h512.77L673.462-652H286.538l-62.923 158.154Zm83.489 161.538q14.665 0 25.55-11.065 10.885-11.066 10.885-25.731 0-14.665-11.066-25.55-11.066-10.885-25.731-10.885-14.665 0-25.55 11.066-10.884 11.066-10.884 25.731 0 14.665 11.065 25.55 11.066 10.884 25.731 10.884Zm346.154 0q14.665 0 25.55-11.065 10.884-11.066 10.884-25.731 0-14.665-11.065-25.55-11.066-10.885-25.731-10.885-14.665 0-25.55 11.066-10.885 11.066-10.885 25.731 0 14.665 11.066 25.55 11.066 10.884 25.731 10.884Z">
+                              </path>
+                            </svg> </div>
+                          <p
+                            style="font-family:'Open sans';color: #111827;flex-shrink: 1;min-width: 0;word-wrap: break-word;">
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div style="text-transform: uppercase; font-weight: bolder;">
+                    <section style="margin-top: 20px;margin-right: 20px;margin-bottom: 10px;">
+                      <article
+                        style="color: #7C3AED; display: flex;flex-direction: column; text-transform: uppercase;font-family:'Open sans';letter-spacing: 3px;font-size:16px;">
+                        <span
+                          style="height: 1px;background: #111827;width: 80px;display: inline-block; margin-bottom: 5px;"></span>LANGUAGES
+                      </article>
+                      <article></article>
+                    </section>
+                    <div>
+                      <div id="praga"
+                        style="color: #111827; text-transform: none;margin-right: 10px;font-weight: initial;font-family:'Open sans';overflow-wrap: break-word">
+                        <div style="display: flex; gap: 4px; width: 100%;">
+                          <p style="color: #7C3AED; margin-top: 0; font-weight: 800;"><span
+                              style="color: #111827; font-weight: 500; ">Anglais</span> C1</p>
+                        </div>
+                        <div id="praga"
+                          style="color: #111827; text-transform: none;margin-right: 10px;font-weight: initial;font-family:'Open sans';overflow-wrap: break-word">
+                          <div style="display: flex; gap: 4px; width: 100%;">
+                            <p style="color: #7C3AED; margin-top: 0; font-weight: 800;"><span
+                                style="color: #111827; font-weight: 500; ">Français</span> C2</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="text-transform: uppercase; font-weight: bolder;">
+                    <section style="margin-top: 20px;margin-right: 20px;margin-bottom: 10px;">
+                      <article
+                        style="color: #7C3AED; display: flex;flex-direction: column; text-transform: uppercase;font-family:'Open sans';letter-spacing: 3px;font-size:16px;">
+                        <span
+                          style="height: 1px;background: #111827;width: 80px;display: inline-block; margin-bottom: 5px;"></span>Interests
+                      </article>
+                      <article></article>
+                    </section>
+                    <div>
                       <div
-                        style="display:block;width: max-content; margin-top: 10px; border-radius: 50%;overflow: hidden; display: flex;">
-                        <div style="max-width: 215px; height: 215px;"><img class="imageprofile"
-                            style="width: 100%; height: 100%;"
-                            src="http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile-pic-yellow.04a6a6ca.png&w=640&q=75"
-                            alt="Profile"></div>
+                        style="color: #111827; text-transform: none;margin-right: 10px;font-weight: initial;font-family:'Open sans';overflow-wrap: break-word">
+                        <p style="text-align: left;">Emotionnal Intelligence <br>
+                          Bible, Boxe, Basketball
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="pdfasidecolor"
-                style="font-size: 12px; line-height: 1.25; color: rgb(228, 146, 7); background-color: rgb(40, 60, 74); position: relative; padding: 20px;">
-                <div style="text-transform: uppercase; font-weight: bolder;">
-                  <div style="margin-bottom: 30px;">
-                    <p
-                      style="color:#ffffff;text-transform: capitalize;letter-spacing: 3px;margin-bottom: 0;font-family:Montserrat;font-size:18px;">
-                      Ruben</p>
-                    <p
-                      style="color: #e49207;text-transform: capitalize;letter-spacing: 3px; margin-top: 0;margin-bottom: 0;font-family:Montserrat;font-size:20px;">
-                      HONFOVOU</p><span
-                      style="height: 1px;background: #ffffff;width: 80px;display:inline-block; margin-top: 16px; margin-bottom: 4px;"></span>
-                    <p
-                      style="margin-top: 0;color: initial;font-family:Montserrat;font-size:14px;font-weight: normal;color: #ffffff;text-transform: initial;letter-spacing: 3px;">
-                      Développeur Shopify </p>
-                  </div>
-                  <div id="icon" name="praga" style="margin-bottom: 10px;display:block;"><span
-                      style="height: 1px;background: #ffffff;width: 80px;display: inline-block;"></span>
-                    <p
-                      style="color: #e49207; text-transform: capitalize;letter-spacing: 3px; margin-bottom: 8px;font-family:Montserrat;font-size:16px;margin-top: 0;">
-                      CONTACT</p>
-                    <ul style="list-style:none;padding-left: 0;margin-bottom: 0px;margin-top: 0px;grid-gap: 5px">
-                      <li
-                        style="display:flex; align-items: center!important; margin: 0!important; font-weight: initial;text-transform: initial;color: #e49207;align-items: start;gap: 10px;margin-bottom: 8px;">
-                        <div style="padding-top: 4px;color: #e49207;"><svg width="15px" height="15px"
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-                            <path fill="#e49207"
-                              d="M774.614-133.001q-124.076-9-236.691-61.077-112.615-52.077-203.384-142.846-90.384-89.769-141.961-202.691-51.577-112.923-60.577-236.999-2-23 11.5-37.692 13.5-14.693 36.5-14.693h142.46q18.154 0 31.731 10.885 13.577 10.885 19.73 28.423L398.845-675q2.385 11.385-1.5 24.154-3.884 12.769-10.654 18.769l-101.384 99.923q21.308 38.846 46.962 73.769 25.654 34.924 58.038 68.078 30.924 29.923 65.001 55.654 34.077 25.731 71.077 45.038l110.769-104.538q7.385-7.769 13.731-9.192t15.731.577l120.075 27.615q18.154 5 29.731 18.461 11.577 13.462 11.577 32.001v143.69q0 23-15.193 36.5-15.192 13.5-38.192 11.5Z">
-                            </path>
-                          </svg></div>
-                        <p
-                          style="font-family:Montserrat;color: #ffffff;flex-shrink: 1;min-width: 0;word-wrap: break-word;">
-                          +229 0196404757</p>
-                      </li>
-                      <li
-                        style="display:flex; align-items: center!important; margin: 0!important; font-weight: initial;text-transform: initial;color: #e49207;align-items: start;gap: 10px;margin-bottom: 8px;">
-                        <div style="padding-top: 4px;color: #e49207;"><svg width="15px" height="15px"
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-                            <path fill="#e49207"
-                              d="M174.309-182.001q-37.033 0-63.67-26.638-26.638-26.637-26.638-63.67v-415.382q0-37.033 26.638-63.67 26.637-26.638 63.67-26.638h611.382q38.033 0 64.17 26.638 26.138 26.637 26.138 63.67v415.382q0 37.033-26.138 63.67-26.137 26.638-64.17 26.638H174.309ZM480-426.694l318-182.615L791.846-700 480-517 168.154-700 162-609.309l318 182.615Z">
-                            </path>
-                          </svg></div>
-                        <p
-                          style="font-family:Montserrat;color: #ffffff;flex-shrink: 1;min-width: 0;word-wrap: break-word;">
-                          rubenwhite22@gmail.com </p>
-                      </li>
-                      <li
-                        style="display:flex; align-items: center!important; margin: 0!important; font-weight: initial;text-transform: initial;color:#e49207;align-items: start;gap: 10px;margin-bottom: 8px;">
-                        <div style="padding-top: 4px;color: #e49207;"><svg width="15px" height="15px"
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-                            <path fill="#e49207"
-                              d="M480.192-475.385q30.731 0 52.423-21.884t21.692-52.615q0-30.731-21.884-52.423t-52.615-21.692q-30.731 0-52.423 21.884T405.693-549.5q0 30.731 21.884 52.423t52.615 21.692ZM480-82.617Q314.026-219.57 234.052-333.208q-79.974-113.638-79.974-216.869 0-121.46 88.577-224.191Q331.231-876.999 479.5-876.999t237.345 102.731q89.077 102.731 89.077 224.191 0 103.231-79.461 216.423Q646.999-220.463 480-82.617Z">
-                            </path>
-                          </svg></div>
-                        <p
-                          style="font-family:Montserrat;color: #ffffff;flex-shrink: 1;min-width: 0;word-wrap: break-word;">
-                          Cotonou</p>
-                      </li>
-                      <li
-                        style="display:flex; align-items: center!important; margin: 0!important; font-weight: initial;text-transform: initial;color: #e49207;align-items: start;gap: 10px;margin-bottom: 8px;">
-                        <div style="padding-top: 4px;color: #e49207;"><svg width="15px" height="15px"
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-                            <path fill="#e49207"
-                              d="M240-120v-680h390q14 0 26 6.5t20 17.5l124 176-124 176q-8 11-20 17.5t-26 6.5H320v280h-80Z">
-                            </path>
-                          </svg> </div>
-                        <p
-                          style="font-family:Montserrat;color: #ffffff;flex-shrink: 1;min-width: 0;word-wrap: break-word;">
-                          Béninois </p>
-                      </li>
-                      <li
-                        style="display:flex; align-items: center!important; margin: 0!important; font-weight: initial;text-transform: initial;color: #e49207;align-items: start;gap: 10px;margin-bottom: 8px;">
-                        <div style="padding-top: 4px;color: #e49207;"><svg width="15px" height="15px"
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-                            <path fill="#e49207"
-                              d="M480-504.309q-61.749 0-103.874-42.124-42.125-42.125-42.125-103.874 0-61.75 42.125-103.874Q418.251-796.306 480-796.306q61.749 0 103.874 42.125 42.125 42.124 42.125 103.874 0 61.749-42.125 103.874Q541.749-504.309 480-504.309ZM182.001-158.694v-103.922q0-25.384 13.149-46.776 13.149-21.393 36.466-36.146 56.308-33.077 120.062-50.615 63.753-17.538 128.23-17.538 64.476 0 128.322 17.538 63.846 17.538 120.154 50.615 23.317 13.753 36.466 35.646 13.149 21.892 13.149 47.276v103.922H182.001Z">
-                            </path>
-                          </svg> </div>
-                        <p
-                          style="font-family:Montserrat;color: #ffffff;flex-shrink: 1;min-width: 0;word-wrap: break-word;">
-                          22 ans </p>
-                      </li>
-                      <li
-                        style="display:none;font-weight: initial;text-transform: initial;color: #e49207;align-items: start;gap: 10px;margin-bottom: 8px;">
-                        <div style="padding-top: 4px;color: #e49207;"><svg width="15px" height="15px"
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="none">
-                            <path fill="#e49207"
-                              d="M211.231-242v64q0 3.4-3.15 5.7-3.15 2.3-7.147 2.3h-22.637q-3.997 0-7.147-2.3-3.15-2.3-3.15-5.7v-297.846L245.384-665q4.566-14.339 17.673-21.669Q276.164-694 292.231-694h378.615q14.918 0 27.088 7.6 12.171 7.6 16.682 21.4L792-475.846V-178q0 3.4-3.15 5.7-3.15 2.3-7.147 2.3h-22.637q-3.997 0-7.147-2.3-3.15-2.3-3.15-5.7v-64H211.231Zm12.384-251.846h512.77L673.462-652H286.538l-62.923 158.154Zm83.489 161.538q14.665 0 25.55-11.065 10.885-11.066 10.885-25.731 0-14.665-11.066-25.55-11.066-10.885-25.731-10.885-14.665 0-25.55 11.066-10.884 11.066-10.884 25.731 0 14.665 11.065 25.55 11.066 10.884 25.731 10.884Zm346.154 0q14.665 0 25.55-11.065 10.884-11.066 10.884-25.731 0-14.665-11.065-25.55-11.066-10.885-25.731-10.885-14.665 0-25.55 11.066-10.885 11.066-10.885 25.731 0 14.665 11.066 25.55 11.066 10.884 25.731 10.884Z">
-                            </path>
-                          </svg> </div>
-                        <p
-                          style="font-family:Montserrat;color: #ffffff;flex-shrink: 1;min-width: 0;word-wrap: break-word;">
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div style="text-transform: uppercase; font-weight: bolder;">
-                  <section style="margin-top: 20px;margin-right: 20px;margin-bottom: 10px;">
-                    <article
-                      style="color: #e49207; display: flex;flex-direction: column; text-transform: uppercase;font-family:Montserrat;letter-spacing: 3px;font-size:16px;">
-                      <span
-                        style="height: 1px;background: #ffffff;width: 80px;display: inline-block; margin-bottom: 5px;"></span>LANGUES
-                    </article>
-                    <article></article>
-                  </section>
-                  <div>
-                    <div id="praga"
-                      style="color: #ffffff; text-transform: none;margin-right: 10px;font-weight: initial;font-family:Montserrat;overflow-wrap: break-word">
-                      <div style="width: 100%;">
-                        <p style="color: #ffffff;margin-top: 0;"><span>Français</span> | Langue maternelle</p>
-                      </div>
-                    </div>
-                    <div id="praga"
-                      style="color: #ffffff; text-transform: none;margin-right: 10px;font-weight: initial;font-family:Montserrat;overflow-wrap: break-word">
-                      <div style="width: 100%;">
-                        <p style="color: #ffffff;margin-top: 0;"><span>Anglais</span> | Courant</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div style="text-transform: uppercase; font-weight: bolder;">
-                  <section style="margin-top: 20px;margin-right: 20px;margin-bottom: 10px;">
-                    <article
-                      style="color: #e49207; display: flex;flex-direction: column; text-transform: uppercase;font-family:Montserrat;letter-spacing: 3px;font-size:16px;">
-                      <span
-                        style="height: 1px;background: #ffffff;width: 80px;display: inline-block; margin-bottom: 5px;"></span>CENTRES
-                      D'INTÉRÊT
-                    </article>
-                    <article></article>
-                  </section>
-                  <div>
-                    <div
-                      style="color: #ffffff; text-transform: none;margin-right: 10px;font-weight: initial;font-family:Montserrat;overflow-wrap: break-word">
-                      <p style="text-align: left;">Intelligence émotionnelle<br>Lecture, foi, boxe, basketball</p>
-                    </div>
-                  </div>
-                </div>
-                <div style="text-transform: uppercase; font-weight: bolder;">
-                  <section style="margin-top: 20px;margin-right: 20px;margin-bottom: 10px;">
-                    <article
-                      style="color: #e49207; display: flex;flex-direction: column; text-transform: uppercase;font-family:Montserrat;letter-spacing: 3px;font-size:16px;">
-                      <span
-                        style="height: 1px;background: #ffffff;width: 80px;display: inline-block; margin-bottom: 5px;"></span>RÉSEAUX
-                      SOCIAUX
-                    </article>
-                    <article></article>
-                  </section>
-                  <div>
-                    <div id="praga" name="praga"
-                      style="color: #ffffff; text-transform: none;font-weight: initial;font-family:Montserrat;">
-                      <div>
-                        <div style="display: flex;align-items: center;gap: 10px;margin-top: 0;">
-                          <div style="padding-top: 4px;">
-                            <svg width="15px" height="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
-                              <path fill="#e49207"
-                                d="M9,25H4V10h5V25z M6.501,8C5.118,8,4,6.879,4,5.499S5.12,3,6.501,3C7.879,3,9,4.121,9,5.499C9,6.879,7.879,8,6.501,8z M27,25h-4.807v-7.3c0-1.741-0.033-3.98-2.499-3.98c-2.503,0-2.888,1.896-2.888,3.854V25H12V9.989h4.614v2.051h0.065 c0.642-1.18,2.211-2.424,4.551-2.424c4.87,0,5.77,3.109,5.77,7.151C27,16.767,27,25,27,25z">
-                              </path>
-                            </svg>
-                          </div>
-                          <p style="flex-shrink: 1;min-width: 0;word-wrap: break-word;padding-top: 3px; margin: 2px 0">
-                            https://www.linkedin.com/in/ruben-white22/</p>
-                        </div>
-                        <div style="display: flex;align-items: center;gap: 10px;margin-top: 0;">
-                          <div style="padding-top: 4px;">
-                            <svg fill="#e49207" width="15px" height="15px" viewBox="0 0 9.6 9.6" id="_x30_1"
-                              version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                              xmlns:xlink="http://www.w3.org/1999/xlink">
-                              <path
-                                d="M4.8 0C2.149 0 0 2.149 0 4.8s2.149 4.8 4.8 4.8 4.8 -2.149 4.8 -4.8S7.451 0 4.8 0zm3.043 2.737h-0.875c-0.101 -0.422 -0.231 -0.81 -0.386 -1.153 0.296 0.165 0.571 0.371 0.817 0.617A3.714 3.714 0 0 1 7.843 2.737zM8.475 4.8c0 0.321 -0.041 0.635 -0.12 0.938h-1.201c0.03 -0.303 0.046 -0.617 0.046 -0.938s-0.016 -0.634 -0.046 -0.938h1.201c0.079 0.302 0.12 0.617 0.12 0.938zM4.8 8.475c-0.098 0 -0.395 -0.192 -0.691 -0.784 -0.123 -0.245 -0.228 -0.525 -0.314 -0.829h2.01c-0.086 0.304 -0.191 0.583 -0.314 0.829C5.195 8.283 4.897 8.475 4.8 8.475zm-1.222 -2.737c-0.035 -0.305 -0.053 -0.619 -0.053 -0.938s0.018 -0.633 0.053 -0.938h2.445c0.035 0.305 0.053 0.619 0.053 0.938s-0.018 0.633 -0.053 0.938H3.578zM1.125 4.8c0 -0.321 0.041 -0.635 0.12 -0.938h1.201c-0.03 0.303 -0.046 0.617 -0.046 0.938s0.016 0.634 0.046 0.938H1.245C1.166 5.435 1.125 5.121 1.125 4.8zM4.8 1.125c0.098 0 0.395 0.192 0.691 0.784 0.123 0.245 0.228 0.525 0.314 0.829H3.795c0.086 -0.304 0.191 -0.583 0.314 -0.829C4.405 1.317 4.702 1.125 4.8 1.125zm-1.782 0.459c-0.155 0.343 -0.285 0.731 -0.386 1.153H1.757a3.715 3.715 0 0 1 0.444 -0.536c0.246 -0.246 0.521 -0.453 0.817 -0.617zM1.757 6.862h0.875c0.101 0.422 0.231 0.81 0.386 1.153 -0.296 -0.165 -0.571 -0.371 -0.817 -0.617A3.714 3.714 0 0 1 1.757 6.862zm4.824 1.153c0.155 -0.343 0.285 -0.731 0.386 -1.153h0.875a3.715 3.715 0 0 1 -0.444 0.536c-0.246 0.246 -0.521 0.453 -0.817 0.617z">
-                              </path>
-                            </svg>
-                          </div>
-                          <p style="flex-shrink: 1;min-width: 0;word-wrap: break-word;padding-top: 3px; margin: 2px 0">
-                            https://whitedev.vercel.app/fr</p>
-                        </div>
-                        <div style="display: flex;align-items: center;gap: 10px;margin-top: 0;">
-                          <div style="padding-top: 4px;">
-                            <svg width="15px" height="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
-                              <g id="Layer">
-                                <path id="Layer" fill="#e49207"
-                                  d="m33.5 20.8c-0.5-1.2-1.2-2.2-2.1-3.2-1-0.9-2-1.6-3.2-2.1l-1.4 1.4-0.9 1-1 1q-0.3 0.3-0.5 0.6c1.3 0.1 2.6 0.6 3.5 1.6 1 1 1.5 2.2 1.6 3.5q0.1 1.1-0.3 2.1c-0.2 0.8-0.6 1.5-1.2 2.2q0 0-0.1 0l-1.1 1.2-1.6 1.6-1.5 1.4-3.9 3.9c-1 1.1-2.4 1.6-3.9 1.6-1.5 0-2.9-0.5-3.9-1.6-1.1-1-1.6-2.4-1.6-3.9 0-1.5 0.5-2.9 1.6-3.9l3.9-3.9q-0.4-1-0.5-2.1-0.1-0.8-0.1-1.6 0-1.5 0.3-2.9l-7.1 7c-4 4.1-4 10.7 0 14.8 2.1 2 4.7 3 7.4 3 2.7 0 5.3-1 7.4-3l7-7.1 1.1-1q0.9-1 1.5-2 1-1.7 1.3-3.5 0.2-0.9 0.2-1.9 0-1.2-0.2-2.3-0.3-1-0.7-1.9z">
+                  <div style="text-transform: uppercase; font-weight: bolder;">
+                    <section style="margin-top: 20px;margin-right: 20px;margin-bottom: 10px;">
+                      <article
+                        style="color: #7C3AED; display: flex;flex-direction: column; text-transform: uppercase;font-family:'Open sans';letter-spacing: 3px;font-size:16px;">
+                        <span
+                          style="height: 1px;background: #111827;width: 80px;display: inline-block; margin-bottom: 5px;"></span>Social
+                        medias
+                      </article>
+                      <article></article>
+                    </section>
+                    <div>
+                      <div id="praga" name="praga"
+                        style="color: #111827; text-transform: none;font-weight: initial;font-family:'Open sans';">
+                        <div>
+                          <div style="display: flex;align-items: center;gap: 10px;margin-top: 0;">
+                            <div style="padding-top: 4px;">
+                              <svg width="15px" height="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                                <path fill="#7C3AED"
+                                  d="M9,25H4V10h5V25z M6.501,8C5.118,8,4,6.879,4,5.499S5.12,3,6.501,3C7.879,3,9,4.121,9,5.499C9,6.879,7.879,8,6.501,8z M27,25h-4.807v-7.3c0-1.741-0.033-3.98-2.499-3.98c-2.503,0-2.888,1.896-2.888,3.854V25H12V9.989h4.614v2.051h0.065 c0.642-1.18,2.211-2.424,4.551-2.424c4.87,0,5.77,3.109,5.77,7.151C27,16.767,27,25,27,25z">
                                 </path>
-                                <path id="Layer" fill="#e49207"
-                                  d="m43 6c-2.1-2-4.7-3-7.4-3-2.7 0-5.3 1-7.4 3l-7 7.1-1.1 1q-0.9 1-1.5 2-1 1.7-1.3 3.5-0.2 0.9-0.2 1.9 0 1.2 0.2 2.3 0.3 1 0.7 1.9c0.5 1.2 1.2 2.2 2.1 3.2 1 0.9 2 1.6 3.2 2.1l1.4-1.4 0.9-1 1-1q0.3-0.3 0.5-0.6c-1.3-0.1-2.6-0.6-3.5-1.6-1-1-1.5-2.2-1.6-3.5q-0.1-1.1 0.3-2.1c0.2-0.8 0.6-1.5 1.2-2.2q0 0 0.1 0l1.1-1.2 1.6-1.6 1.5-1.4 3.9-3.9c1-1.1 2.4-1.6 3.9-1.6 1.5 0 2.9 0.5 3.9 1.6 2.2 2.2 2.2 5.7 0 7.8l-3.9 3.9q0.4 1 0.5 2.1 0.1 0.8 0.1 1.6 0 1.5-0.3 2.9l7.1-7c4-4.1 4-10.7 0-14.8z">
-                                </path>
-                              </g>
-                            </svg>
+                              </svg>
+                            </div>
+                            <a href="https://www.linkedin.com/in/ruben-white22/"
+                              style="flex-shrink: 1;min-width: 0;word-wrap: break-word;padding-top: 3px; margin: 2px 0; text-decoration: none; color: inherit; ">
+                              linkedin.com/in/ruben-white22/</a>
                           </div>
-                          <p style="flex-shrink: 1;min-width: 0;word-wrap: break-word;padding-top: 1px; margin: 2px 0">
-                            Github:
-                            https://github.com/ruben-senpai11</p>
+                          <div style="display: flex;align-items: center;gap: 10px;margin-top: 0;">
+                            <div style="padding-top: 4px;">
+                              <svg fill="#7C3AED" width="15px" height="15px" viewBox="0 0 9.6 9.6" id="_x30_1"
+                                version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path
+                                  d="M4.8 0C2.149 0 0 2.149 0 4.8s2.149 4.8 4.8 4.8 4.8 -2.149 4.8 -4.8S7.451 0 4.8 0zm3.043 2.737h-0.875c-0.101 -0.422 -0.231 -0.81 -0.386 -1.153 0.296 0.165 0.571 0.371 0.817 0.617A3.714 3.714 0 0 1 7.843 2.737zM8.475 4.8c0 0.321 -0.041 0.635 -0.12 0.938h-1.201c0.03 -0.303 0.046 -0.617 0.046 -0.938s-0.016 -0.634 -0.046 -0.938h1.201c0.079 0.302 0.12 0.617 0.12 0.938zM4.8 8.475c-0.098 0 -0.395 -0.192 -0.691 -0.784 -0.123 -0.245 -0.228 -0.525 -0.314 -0.829h2.01c-0.086 0.304 -0.191 0.583 -0.314 0.829C5.195 8.283 4.897 8.475 4.8 8.475zm-1.222 -2.737c-0.035 -0.305 -0.053 -0.619 -0.053 -0.938s0.018 -0.633 0.053 -0.938h2.445c0.035 0.305 0.053 0.619 0.053 0.938s-0.018 0.633 -0.053 0.938H3.578zM1.125 4.8c0 -0.321 0.041 -0.635 0.12 -0.938h1.201c-0.03 0.303 -0.046 0.617 -0.046 0.938s0.016 0.634 0.046 0.938H1.245C1.166 5.435 1.125 5.121 1.125 4.8zM4.8 1.125c0.098 0 0.395 0.192 0.691 0.784 0.123 0.245 0.228 0.525 0.314 0.829H3.795c0.086 -0.304 0.191 -0.583 0.314 -0.829C4.405 1.317 4.702 1.125 4.8 1.125zm-1.782 0.459c-0.155 0.343 -0.285 0.731 -0.386 1.153H1.757a3.715 3.715 0 0 1 0.444 -0.536c0.246 -0.246 0.521 -0.453 0.817 -0.617zM1.757 6.862h0.875c0.101 0.422 0.231 0.81 0.386 1.153 -0.296 -0.165 -0.571 -0.371 -0.817 -0.617A3.714 3.714 0 0 1 1.757 6.862zm4.824 1.153c0.155 -0.343 0.285 -0.731 0.386 -1.153h0.875a3.715 3.715 0 0 1 -0.444 0.536c-0.246 0.246 -0.521 0.453 -0.817 0.617z">
+                                </path>
+                              </svg>
+                            </div>
+                            <a href="https://whitedev.vercel.app/fr"
+                              style="flex-shrink: 1;min-width: 0;word-wrap: break-word;padding-top: 3px; margin: 2px 0; text-decoration: none; color: inherit; ">
+                              whitedev.vercel.app/fr
+                            </a>
+                          </div>
+                          <div style="display: flex;align-items: center;gap: 10px;margin-top: 0;">
+                            <div style="padding-top: 4px;">
+                              <svg viewBox="0 0 98 96" width="15" height="15" preserveAspectRatio="xMidYMid meet"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fillRule="evenodd" clip-rule="evenodd"
+                                  d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+                                  fill="#7C3AED"></path>
+                              </svg>
+                            </div>
+                            <a href="https://github.com/ruben-senpai11"
+                              style="flex-shrink: 1;min-width: 0;word-wrap: break-word;padding-top: 3px; margin: 2px 0; text-decoration: none; color: inherit; ">
+                              github.com/ruben-senpai11
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="text-transform: uppercase; font-weight: bolder;">
+                    <section style="margin-top: 20px;margin-right: 20px;margin-bottom: 10px;">
+                      <article
+                        style="color: #7C3AED; display: flex;flex-direction: column; text-transform: uppercase;font-family:'Open sans';letter-spacing: 3px;font-size:16px;">
+                        <span
+                          style="height: 1px;background: #111827;width: 80px;display: inline-block; margin-bottom: 5px;"></span>
+                        QUALITIES
+                      </article>
+                      <article></article>
+                    </section>
+                    <div>
+                      <div
+                        style="color: #111827; text-transform: none;margin-right: 10px;font-weight: initial;font-family:'Open sans';overflow-wrap: break-word">
+                        <ul style="padding: 3px;margin: 0px;list-style-type: square;">
+                          <li style="margin-left: 15px; margin-bottom: 5px;">
+                            <span style="font-weight: 600;">
+                              Creative :
+                            </span>
+                            <span>
+                              Ready to innovate and think outside the box</span>
+                          </li>
+                          <li style="margin-left: 15px; margin-bottom: 5px;">
+                            <span style="font-weight: 600;">
+                              Meticulous :
+                            </span>
+                            <span>Strong attention to detail</span>
+                          </li>
+                          <li style="margin-left: 15px; margin-bottom: 5px;">
+                            <span style="font-weight: 600;">
+                              Proactive :
+                            </span>
+                            <span>Problem-solving mindset and adaptable in any situation</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </aside>
+              <main id="main"
+                style="margin: 0px; width: 100%; min-height: 1000px; padding-top: 20px; padding-left: 0px; padding-bottom: 10px; padding-right: 5px; font-size: 12px; color: #7C3AED; line-height: 1.35; background-color: rgb(255, 255, 255); border: 0px solid #7C3AED74; border-left: 0; box-shadow: 2px 0px 2px #7C3AED;">
+                <div style="text-transform: uppercase; font-weight: bolder;">
+                  <section style="margin: 10px 20px;">
+                    <article
+                      style="color: #7C3AED; display: flex;flex-direction: column; text-transform: uppercase;font-family:'Open sans';letter-spacing: 3px;font-size:16px;">
+                      <span
+                        style="height: 1px;background: black;width: 80px;display: inline-block; margin-bottom: 7px;"></span>Summary
+                    </article>
+                    <article></article>
+                  </section>
+                  <div style="margin-left: 20px;">
+                    <div
+                      style="color: #111827; text-transform: none;margin-right: 10px;font-weight: initial;font-family:'Open sans';overflow-wrap: break-word">
+                      <p style="margin-bottom: 5px;">
+                        I'm Ruben, a Frontend Developer with 4 years of experience, passionate about web interfaces and
+                        psychology.
+                        <br>
+                        Today, I'm looking to take a new step in my career by joining your team as a
+                        <span style="color: #7C3AED; font-weight: 500;">UIX Developer</span>
+                        (Frontend Developer with a
+                        focus on UX/UI).
+                        <br>
+                        With my expertise in implementing designs and creating themes across various technologies,
+                        I apply essential design and usability principles to optimize user experience and improve
+                        conversion rates.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div style="text-transform: uppercase; font-weight: bolder;">
+                  <section style="margin-top: 20px;margin-left: 20px;margin-right: 20px;margin-bottom: 10px;">
+                    <article
+                      style="color: #7C3AED; display: flex;flex-direction: column; text-transform: uppercase;font-family:'Open sans';letter-spacing: 3px;font-size:16px;">
+                      <span
+                        style="height: 1px;background: black;width: 80px;display: inline-block; margin-bottom: 7px;"></span>PROFESSIONAL
+                      EXPERIENCE
+                    </article>
+                    <article></article>
+                  </section>
+                  <div style="margin-left: 20px;">
+                    <div
+                      style="color: #111827; text-transform: none;margin-right: 10px;font-weight: initial;font-family:'Open sans';overflow-wrap: break-word;margin-bottom: 5px;">
+                      <div style="">
+                        <div style="width:100%;clear:both;display: flex; align-items: center;">
+                          <div style="width:15%; float:left;min-width: 140px;">
+                            Feb. 2022 – Present
+                          </div>
+                          <div style="width:85%; font-weight:bold;">
+                            Frontend Developer
+                          </div>
+                        </div>
+
+                        <div style="width:100%; clear:both;display: flex; align-items: center;">
+                          <div style="width:15%; float:left; color:gray; opacity:0.7;min-width: 140px;">
+                            Cotonou, Bénin
+                          </div>
+                          <div style="width:85%; float:right;color: #7C3AED;">
+                            White Devs
+                          </div>
+                        </div>
+
+                        <div style="width:100%; clear:both;display: flex; align-items: center;">
+                          <div style="width:15%; float:left;min-width: 140px;"></div>
+                          <div style="width:85%; float:right;">
+                            <ul style="list-style:disc; padding: 3px; padding: 3px;margin: 0px;">
+
+                              <li style="margin-left: 15px; margin-bottom: 5px;">
+                                Developed static (SPA) and server-side rendered (SSR) web applications using Next.js
+                              </li>
+                              <li style="margin-left: 15px; margin-bottom: 5px;">
+                                Built custom Shopify themes based on provided designs and specifications
+                              </li>
+                              <li style="margin-left: 15px; margin-bottom: 5px;">
+                                Developed Shopify apps for wholesale vendors using Remix, Polaris, TypeScript, Prisma,
+                                and more
+                              </li>
+                              <li style="margin-left: 15px; margin-bottom: 5px;">
+                                Optimized Shopify stores (loading speed, copywriting, product/cart pages, abandoned
+                                carts)
+                              </li>
+                              <li style="margin-left: 15px; margin-bottom: 5px;">
+                                Translated Figma mockups into functional interfaces using React, Vue.js, Next.js, and
+                                e-commerce platforms like Shopify and Prestashop
+                              </li>
+                              <li style="margin-left: 15px; margin-bottom: 5px;">
+                                Created open-source components for developer communities
+                              </li>
+                              <li style="margin-left: 15px; margin-bottom: 5px;">
+                                Contributed to Inbound & Outbound marketing strategies: copywriting, advertising
+                                campaigns, cold calling, email marketing
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      style="color: #111827; text-transform: none;margin-right: 10px;font-weight: initial;font-family:'Open sans';overflow-wrap: break-word;margin-bottom: 5px;">
+                      <div style="">
+                        <div style="width:100%;clear:both;display: flex; align-items: center;">
+                          <div style="width:15%; float:left;min-width: 140px;">
+                            Apr. 2023 – Oct. 2023
+                          </div>
+                          <div style="width:85%; font-weight:bold;">
+                            Frontend Developer
+                          </div>
+                        </div>
+
+                        <div style="width:100%; clear:both;display: flex; align-items: center;">
+                          <div style="width:15%; float:left; color:gray; opacity:0.7;min-width: 140px;">
+                            Abomey-Calavi, Benin
+                          </div>
+                          <div style="width:85%; float:right;color: #7C3AED;">
+                            Trois Ventes Services
+                          </div>
+                        </div>
+
+                        <div style="width:100%; clear:both;display: flex; align-items: center;">
+                          <div style="width:15%; float:left;min-width: 140px;"></div>
+                          <div style="width:85%; float:right;">
+                            <ul style="list-style:disc; padding: 3px; padding: 3px;margin: 0px;">
+                              <li style="margin-left: 15px; margin-bottom: 5px;">
+                                Integrated Figma & Adobe XD designs into Shopify, WordPress, and Prestashop platforms
+                              </li>
+                              <li style="margin-left: 15px; margin-bottom: 5px;">
+                                Implemented new features according to detailed specifications
+                              </li>
+                              <li style="margin-left: 15px; margin-bottom: 5px;">
+                                Debugged and optimized performance
+                              </li>
+                              <li style="margin-left: 15px; margin-bottom: 5px;">
+                                Built custom pages and features based on provided requirements
+                              </li>
+                              <li style="margin-left: 15px; margin-bottom: 5px;">
+                                Worked closely with the backend team
+                              </li>
+                              <li style="margin-left: 15px; margin-bottom: 5px;">
+                                Developed and redesigned Shopify applications and Prestashop plugins
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      style="color: #111827; text-transform: none;margin-right: 10px;font-weight: initial;font-family:'Open sans';overflow-wrap: break-word;margin-bottom: 5px;">
+                      <div style="">
+                        <div style="width:100%;clear:both;display: flex; align-items: center;">
+                          <div style="width:15%; float:left;min-width: 140px;">
+                            Feb. 2023 – Mar. 2023
+                          </div>
+                          <div style="width:85%; font-weight:bold;">
+                            Frontend Developer (Internship)
+                          </div>
+                        </div>
+
+                        <div style="width:100%; clear:both;display: flex; align-items: center;">
+                          <div style="width:15%; float:left; color:gray; opacity:0.7;min-width: 140px;">
+                            Abomey-Calavi, Benin
+                          </div>
+                          <div style="width:85%; float:right;color: #7C3AED;">
+                            IwajuTech
+                          </div>
+                        </div>
+
+                        <div style="width:100%; clear:both;display: flex; align-items: center;">
+                          <div style="width:15%; float:left;min-width: 140px;"></div>
+                          <div style="width:85%; float:right;">
+                            <ul style="list-style:disc; padding: 3px; padding: 3px;margin: 0px;">
+                              <li style="margin-left: 15px; margin-bottom: 5px;">
+                                Contributed to the development of the first version of Yemi Services
+                              </li>
+                              <li style="margin-left: 15px; margin-bottom: 5px;">
+                                Collaborated with design and backend teams
+                              </li>
+                              <li style="margin-left: 15px; margin-bottom: 5px;">
+                                Built a Progressive Web App (PWA)
+                              </li>
+                              <li style="margin-left: 15px; margin-bottom: 5px;">
+                                Wrote unit tests for ongoing projects
+                              </li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div style="text-transform: uppercase; font-weight: bolder;">
-                  <section style="margin-top: 20px;margin-right: 20px;margin-bottom: 10px;">
+                  <section style="margin-top: 20px;margin-left: 20px;margin-right: 20px;margin-bottom: 10px;">
                     <article
-                      style="color: #e49207; display: flex;flex-direction: column; text-transform: uppercase;font-family:Montserrat;letter-spacing: 3px;font-size:16px;">
+                      style="color: #7C3AED; display: flex;flex-direction: column; text-transform: uppercase;font-family:'Open sans';letter-spacing: 3px;font-size:16px;">
                       <span
-                        style="height: 1px;background: #ffffff;width: 80px;display: inline-block; margin-bottom: 5px;"></span>QUALITÉS
+                        style="height: 1px;background: black;width: 80px;display: inline-block; margin-bottom: 7px;"></span>
+                      EDUCATION
                     </article>
                     <article></article>
                   </section>
-                  <div>
+                  <div style="margin-left: 20px;">
                     <div
-                      style="color: #ffffff; text-transform: none;margin-right: 10px;font-weight: initial;font-family:Montserrat;overflow-wrap: break-word">
-                      <ul style="padding: 3px;margin: 0px;list-style-type: square;">
-                        <li style="margin-left: 15px; margin-bottom: 2px;">
-                          <span style="font-weight: 500;">
-                            Créatif :
-                          </span>
-                          <span>Prêt à innover et sortir des sentiers battus</span>
+                      style="color: #111827; text-transform: none;margin-right: 10px;font-weight: initial;font-family:'Open sans';overflow-wrap: break-word;margin-bottom: 5px;">
+                      <div style="margin:0px;">
+                        <div>
+                          <p>
+                            <span style="color:#111827;font-weight:bold;margin:0px">
+                              Bachelor's Degree in Computer Science & Telecommunications
+                            </span> <br>
+                            <span style="color:#777"> Oct. 2019 – Jul. 2022, Lokossa – Benin</span>
+                          </p>
+                        </div>
+                        <div style="margin:0px;">
+                          <p style="color: #7C3AED;margin-bottom: 0px;margin:0px">
+                            National Institute of Industrial Technology (INSTI)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div style="text-transform: uppercase; font-weight: bolder;">
+                  <section style="margin-top: 20px;margin-left: 20px;margin-right: 20px;margin-bottom: 25px;">
+                    <article
+                      style="color: #7C3AED; display: flex;flex-direction: column; text-transform: uppercase;font-family:'Open sans';letter-spacing: 3px;font-size:16px;">
+                      <span
+                        style="height: 1px;background: black;width: 80px;display: inline-block; margin-bottom: 7px;"></span>
+                        TECHNICAL SKILLS
+                    </article>
+                    <article></article>
+                  </section>
+                  <div style="margin-left: 20px;display: grid;grid-template-columns: repeat(3, 1fr);">
+                    <div id="bar"
+                      style="display: inline-flex; color: #111827; text-transform: none;margin-right: 10px;font-weight: initial;font-family:'Open sans';overflow-wrap: break-word">
+                      <div style="margin-top: 10px;margin-right: 10px;margin-bottom: 5px;margin-left:0;">
+                        <div>
+                          <div style="margin-right: 5px; margin-bottom: 2px;">HTML &amp; CSS</div>
+                          <div style="width: 100px; height: 10px; background-color: #ccc;border-radius: 6px;">
+                            <div style="width: 100%; height: 100%; background-color: #7C3AED;border-radius: 4px;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bar"
+                      style="display: inline-flex; color: #111827; text-transform: none;margin-right: 10px;font-weight: initial;font-family:'Open sans';overflow-wrap: break-word">
+                      <div style="margin-top: 10px;margin-right: 10px;margin-bottom: 5px;margin-left:0;">
+                        <div>
+                          <div style="margin-right: 5px; margin-bottom: 2px;">JavaScript, TypeScript</div>
+                          <div style="width: 100px; height: 10px; background-color: #ccc;border-radius: 6px;">
+                            <div style="width: 100%; height: 100%; background-color: #7C3AED;border-radius: 4px;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bar"
+                      style="display: inline-flex; color: #111827; text-transform: none;margin-right: 10px;font-weight: initial;font-family:'Open sans';overflow-wrap: break-word">
+                      <div style="margin-top: 10px;margin-right: 10px;margin-bottom: 5px;margin-left:0;">
+                        <div>
+                          <div style="margin-right: 5px; margin-bottom: 2px;">React, Next.js</div>
+                          <div style="width: 100px; height: 10px; background-color: #ccc;border-radius: 6px;">
+                            <div style="width: 90%; height: 100%; background-color: #7C3AED;border-radius: 4px;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bar"
+                      style="display: inline-flex; color: #111827; text-transform: none;margin-right: 10px;font-weight: initial;font-family:'Open sans';overflow-wrap: break-word">
+                      <div style="margin-top: 10px;margin-right: 10px;margin-bottom: 5px;margin-left:0;">
+                        <div>
+                          <div style="margin-right: 5px; margin-bottom: 2px;">Shopify, Webflow</div>
+                          <div style="width: 100px; height: 10px; background-color: #ccc;border-radius: 6px;">
+                            <div style="width: 90%; height: 100%; background-color: #7C3AED;border-radius: 4px;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bar"
+                      style="display: inline-flex; color: #111827; text-transform: none;margin-right: 10px;font-weight: initial;font-family:'Open sans';overflow-wrap: break-word">
+                      <div style="margin-top: 10px;margin-right: 10px;margin-bottom: 5px;margin-left:0;">
+                        <div>
+                          <div style="margin-right: 5px; margin-bottom: 2px;">Tailwind CSS</div>
+                          <div style="width: 100px; height: 10px; background-color: #ccc;border-radius: 6px;">
+                            <div style="width: 100%; height: 100%; background-color: #7C3AED;border-radius: 4px;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bar"
+                      style="display: inline-flex; color: #111827; text-transform: none;margin-right: 10px;font-weight: initial;font-family:'Open sans';overflow-wrap: break-word">
+                      <div style="margin-top: 10px;margin-right: 10px;margin-bottom: 5px;margin-left:0;">
+                        <div>
+                          <div style="margin-right: 5px; margin-bottom: 2px;">Figma</div>
+                          <div style="width: 100px; height: 10px; background-color: #ccc;border-radius: 6px;">
+                            <div style="width: 60%; height: 100%; background-color: #7C3AED;border-radius: 4px;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bar"
+                      style="display: inline-flex; color: #111827; text-transform: none;margin-right: 10px;font-weight: initial;font-family:'Open sans';overflow-wrap: break-word">
+                      <div style="margin-top: 10px;margin-right: 10px;margin-bottom: 5px;margin-left:0;">
+                        <div>
+                          <div style="margin-right: 5px; margin-bottom: 2px;">PHP, Laravel</div>
+                          <div style="width: 100px; height: 10px; background-color: #ccc;border-radius: 6px;">
+                            <div style="width: 40%; height: 100%; background-color: #7C3AED;border-radius: 4px;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bar"
+                      style="display: inline-flex; color: #111827; text-transform: none;margin-right: 10px;font-weight: initial;font-family:'Open sans';overflow-wrap: break-word">
+                      <div style="margin-top: 10px;margin-right: 10px;margin-bottom: 5px;margin-left:0;">
+                        <div>
+                          <div style="margin-right: 5px; margin-bottom: 2px;">REST-API, GraphQL</div>
+                          <div style="width: 100px; height: 10px; background-color: #ccc;border-radius: 6px;">
+                            <div style="width: 80%; height: 100%; background-color: #7C3AED;border-radius: 4px;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bar"
+                      style="display: inline-flex; color: #111827; text-transform: none;margin-right: 10px;font-weight: initial;font-family:'Open sans';overflow-wrap: break-word">
+                      <div style="margin-top: 10px;margin-right: 10px;margin-bottom: 5px;margin-left:0;">
+                        <div>
+                          <div style="margin-right: 5px; margin-bottom: 2px;">GSAP, Webpack</div>
+                          <div style="width: 100px; height: 10px; background-color: #ccc;border-radius: 6px;">
+                            <div style="width: 85%; height: 100%; background-color: #7C3AED;border-radius: 4px;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bar"
+                      style="display: inline-flex; color: #111827; text-transform: none;margin-right: 10px;font-weight: initial;font-family:'Open sans';overflow-wrap: break-word">
+                      <div style="margin-top: 10px;margin-right: 10px;margin-bottom: 5px;margin-left:0;">
+                        <div>
+                          <div style="margin-right: 5px; margin-bottom: 2px;">Make, n8n</div>
+                          <div style="width: 100px; height: 10px; background-color: #ccc;border-radius: 6px;">
+                            <div style="width: 75%; height: 100%; background-color: #7C3AED;border-radius: 4px;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bar"
+                      style="display: inline-flex; color: #111827; text-transform: none;margin-right: 10px;font-weight: initial;font-family:'Open sans';overflow-wrap: break-word">
+                      <div style="margin-top: 10px;margin-right: 10px;margin-bottom: 5px;margin-left:0;">
+                        <div>
+                          <div style="margin-right: 5px; margin-bottom: 2px;">Vue.js</div>
+                          <div style="width: 100px; height: 10px; background-color: #ccc;border-radius: 6px;">
+                            <div style="width: 55%; height: 100%; background-color: #7C3AED;border-radius: 4px;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div style="text-transform: uppercase; font-weight: bolder;">
+                  <section style="margin-top: 20px;margin-left: 20px;margin-right: 20px;margin-bottom: 10px;">
+                    <article
+                      style="color: #7C3AED; display: flex;flex-direction: column; text-transform: uppercase;font-family:'Open sans';letter-spacing: 3px;font-size:16px;">
+                      <span
+                        style="height: 1px;background: black;width: 80px;display: inline-block; margin-bottom: 7px;"></span>
+                        OVERVIEW
+                    </article>
+                    <article></article>
+                  </section>
+                  <div style="margin-left: 20px;">
+
+                    <canvas id="radarChart" width="500" height="350"></canvas>
+
+
+                  </div>
+                </div>
+
+                <div style="text-transform: uppercase; font-weight: bolder;">
+                  <section style="margin: 10px 20px;">
+                    <article
+                      style="color: #7C3AED; display: flex;flex-direction: column; text-transform: uppercase;font-family:'Open sans';letter-spacing: 3px;font-size:16px;">
+                      <span
+                        style="height: 1px;background: black;width: 80px;display: inline-block; margin-bottom: 7px;"></span>
+                        Additional Roles
+                    </article>
+                    <article></article>
+                  </section>
+                  <div style="margin-left: 20px;">
+                    <div
+                      style="color: #111827; text-transform: none;margin-right: 10px;font-weight: initial;font-family:'Open sans';overflow-wrap: break-word">
+                      <ul style="list-style:disc; padding: 3px; padding: 3px;margin: 0px;">
+                        <li style="margin-left: 15px; margin-bottom: 5px;">
+                          Coordinator of the Young Christian Workers (YCW) of Bakhita and Youth Leader of the Parish Youth Coordination
                         </li>
-                        <li style="margin-left: 15px; margin-bottom: 2px;">
-                          <span style="font-weight: 500;">
-                            Méticuleux :
-                          </span>
-                          <span>Grand sens du détail</span>
-                        </li>
-                        <li style="margin-left: 15px; margin-bottom: 2px;">
-                          <span style="font-weight: 500;">
-                            Proactif :
-                          </span>
-                          <span>Axé vers la résolution des problèmes et adaptatif en toutes circonstances</span>
+                        <li style="margin-left: 15px; margin-bottom: 5px;">
+                          Former professional basketball player and boxer
                         </li>
                       </ul>
                     </div>
                   </div>
                 </div>
-              </div>
-            </aside>
-            <main id="main"
-              style="margin: 0px; width: 100%; min-height: 1000px; padding-top: 20px; padding-left: 0px; font-size: 12px; color: rgb(228, 146, 7); line-height: 1.25; background-color: rgb(255, 255, 255); border: 1px solid rgb(40, 60, 74); border-left: 0;">
-              <div style="text-transform: uppercase; font-weight: bolder;">
-                <section style="margin: 10px 20px;">
-                  <article
-                    style="color: #e49207; display: flex;flex-direction: column; text-transform: uppercase;font-family:Montserrat;letter-spacing: 3px;font-size:16px;">
-                    <span
-                      style="height: 1px;background: black;width: 80px;display: inline-block; margin-bottom: 5px;"></span>PROFIL
-                    PROFESSIONNEL
-                  </article>
-                  <article></article>
-                </section>
-                <div style="margin-left: 20px;">
-                  <div
-                    style="color: #000000; text-transform: none;margin-right: 10px;font-weight: initial;font-family:Montserrat;overflow-wrap: break-word">
-                    <p style="margin-bottom: 5px;">Je suis Ruben, développeur web depuis 4 ans, partenaire Shopify et
-                      développeur de thèmes et d'applications Shopify.&nbsp;J'ai une expertise prouvée pour améliorer
-                      l'expérience des visiteurs et les résultats des boutiques e-commerces. Aussi, je crée des
-                      fonctionnalités innovantes en gardant le code le plus léger, compréhensible et maintenable
-                      possible.&nbsp;<br>Je souhaite aujourd'hui m'investir dans une agence créative et faire un pas de
-                      plus dans ma carrière</p>
-                  </div>
-                </div>
-              </div>
-              <div style="text-transform: uppercase; font-weight: bolder;">
-                <section style="margin-top: 20px;margin-left: 20px;margin-right: 20px;margin-bottom: 10px;">
-                  <article
-                    style="color: #e49207; display: flex;flex-direction: column; text-transform: uppercase;font-family:Montserrat;letter-spacing: 3px;font-size:16px;">
-                    <span
-                      style="height: 1px;background: black;width: 80px;display: inline-block; margin-bottom: 5px;"></span>EXPÉRIENCES
-                    PROFESSIONNELLES
-                  </article>
-                  <article></article>
-                </section>
-                <div style="margin-left: 20px;">
-                  <div 
-                    style="color: #000000; text-transform: none;margin-right: 10px;font-weight: initial;font-family:Montserrat;overflow-wrap: break-word;margin-bottom: 5px;">
-                    <div style="">
-                      <div style="width:100%;clear:both;display: flex; align-items: center;">
-                        <div style="width:15%; float:left;min-width: 150px;">
-                          Févr. 2022 - Nov. 2024
-                        </div>
-                        <div style="width:85%; font-weight:bold;">
-                          Développeur Front-end
-                        </div>
-                      </div>
-
-                      <div style="width:100%; clear:both;display: flex; align-items: center;">
-                        <div style="width:15%; float:left; color:gray; opacity:0.7;min-width: 150px;">
-                          Cotonou - Bénin
-                        </div>
-                        <div style="width:85%; float:right;color: #e49207;">
-                          Travailleur Indépendant
-                        </div>
-                      </div>
-
-                      <div style="width:100%; clear:both;display: flex; align-items: center;">
-                        <div style="width:15%; float:left;min-width: 150px;"></div>
-                        <div style="width:85%; float:right;">
-                          <ul style="list-style:disc; padding: 3px; padding: 3px;margin: 0px;">
-                            <li style="margin-left: 15px;margin-left: 15px;">Création de thèmes Shopify en accord avec
-                              une maquette et un cahier de charges fourni
-                              <ul style="list-style:circle; padding: 3px; padding: 3px;margin: 0px;">
-                                <li style="margin-left: 15px;margin-left: 15px;">Intégration de la maquette en HTML, CSS
-                                  JavaScript&nbsp;</li>
-                                <li style="margin-left: 15px;margin-left: 15px;">Implémentation dans le thème Shopify
-                                  avec les valeurs dynamiques en utilisant Liquid</li>
-                              </ul>
-                            </li>
-                            <li style="margin-left: 15px;margin-left: 15px;">Développement d'applications Shopify pour
-                              le compte de vendeurs grossistes avec Remix, Polaris, TypeScript, Prisma...</li>
-                            <li style="margin-left: 15px;margin-left: 15px;">Optimisation de boutiques (vitesse de
-                              chargement, copywriting, pages produit &amp; panier, panier abandonnés)</li>
-                            <li style="margin-left: 15px;margin-left: 15px;">Intégrations de maquettes Figma à des
-                              boutiques e-commerces Shopify et Prestashop</li>
-                            <li style="margin-left: 15px;margin-left: 15px;">Intégration de maquettes Figma à des
-                              projets React &amp; Next.js</li>
-                            <li style="margin-left: 15px;margin-left: 15px;">Création de composants Open Source au
-                              profit de développeurs</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    style="color: #000000; text-transform: none;margin-right: 10px;font-weight: initial;font-family:Montserrat;overflow-wrap: break-word;margin-bottom: 5px;">
-                    <div style="">
-                      <div style="width:100%;clear:both;display: flex; align-items: center;">
-                        <div style="width:15%; float:left;min-width: 150px;">
-                          Avr. 2023 - Oct. 2023
-                        </div>
-                        <div style="width:85%; font-weight:bold;">
-                          Développeur Front-end
-                        </div>
-                      </div>
-
-                      <div style="width:100%; clear:both;display: flex; align-items: center;">
-                        <div style="width:15%; float:left; color:gray; opacity:0.7;min-width: 150px;">
-                          Abomey-Calavi - Bénin
-                        </div>
-                        <div style="width:85%; float:right;color: #e49207;">
-                          Trois Ventes Services
-                        </div>
-                      </div>
-
-                      <div style="width:100%; clear:both;display: flex; align-items: center;">
-                        <div style="width:15%; float:left;min-width: 150px;"></div>
-                        <div style="width:85%; float:right;">
-                          <ul style="list-style:disc; padding: 3px; padding: 3px;margin: 0px;">
-                            <li style="margin-left: 15px;margin-left: 15px;">Intégration de maquettes Figma &amp; Adobe
-                              XD à des sites Shopify, WordPress et Prestashop&nbsp;</li>
-                            <li style="margin-left: 15px;margin-left: 15px;">Résolutions de bugs et Optimisation de la
-                              vitesse de chargement</li>
-                            <li style="margin-left: 15px;margin-left: 15px;">Création de pages et de fonctionnalités
-                              personnalisées en accord avec les cahiers de charges fournis</li>
-                            <li style="margin-left: 15px;margin-left: 15px;">Collaboration continue avec l'équipe
-                              backend</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    style="color: #000000; text-transform: none;margin-right: 10px;font-weight: initial;font-family:Montserrat;overflow-wrap: break-word;margin-bottom: 5px;">
-                    <div style="">
-                      <div style="width:100%;clear:both;display: flex; align-items: center;">
-                        <div style="width:15%; float:left;min-width: 150px;">
-                          Févr. 2023 - Mars. 2023
-                        </div>
-                        <div style="width:85%; font-weight:bold;">
-                          Stage Professionnel
-                        </div>
-                      </div>
-
-                      <div style="width:100%; clear:both;display: flex; align-items: center;">
-                        <div style="width:15%; float:left; color:gray; opacity:0.7;min-width: 150px;">
-                          Abomey-Calavi - Bénin
-                        </div>
-                        <div style="width:85%; float:right;color: #e49207;">
-                          IwajuTech
-                        </div>
-                      </div>
-
-                      <div style="width:100%; clear:both;display: flex; align-items: center;">
-                        <div style="width:15%; float:left;min-width: 150px;"></div>
-                        <div style="width:85%; float:right;">
-                          <ul style="list-style:disc; padding: 3px; padding: 3px;margin: 0px;">
-                            <li style="margin-left: 15px;margin-left: 15px;">Développement de l'interface de la 1ère
-                              version de Yemi Services</li>
-                            <li style="margin-left: 15px;margin-left: 15px;">Création d'une PWA</li>
-                            <li style="margin-left: 15px;margin-left: 15px;">Tests unitaires et d'intégrations sur les
-                              projets en cours</li>
-                            <li style="margin-left: 15px;margin-left: 15px;">Collaboration avec l'équipe design et
-                              l'équipe backend</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div style="text-transform: uppercase; font-weight: bolder;">
-                <section style="margin-top: 20px;margin-left: 20px;margin-right: 20px;margin-bottom: 10px;">
-                  <article
-                    style="color: #e49207; display: flex;flex-direction: column; text-transform: uppercase;font-family:Montserrat;letter-spacing: 3px;font-size:16px;">
-                    <span
-                      style="height: 1px;background: black;width: 80px;display: inline-block; margin-bottom: 5px;"></span>FORMATION
-                  </article>
-                  <article></article>
-                </section>
-                <div style="margin-left: 20px;">
-                  <div
-                    style="color: #000000; text-transform: none;margin-right: 10px;font-weight: initial;font-family:Montserrat;overflow-wrap: break-word;margin-bottom: 5px;">
-                    <div style="margin:0px;">
-                      <div>
-                        <p> <span style="color:#000000;font-weight:bold;margin:0px">Licence en Informatique et
-                            Télécommunications</span> |
-                          <span style="color:#9c9c9c"> Oct.2019 - Juil.2022, Lokossa - Bénin</span>
-                        </p>
-                      </div>
-                      <div style="margin:0px;">
-                        <p style="color: #e49207;margin-bottom: 0px;margin:0px">Institut National Supérieur de
-                          Technologie Industrielle</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div style="text-transform: uppercase; font-weight: bolder;">
-                <section style="margin-top: 20px;margin-left: 20px;margin-right: 20px;margin-bottom: 10px;">
-                  <article
-                    style="color: #e49207; display: flex;flex-direction: column; text-transform: uppercase;font-family:Montserrat;letter-spacing: 3px;font-size:16px;">
-                    <span
-                      style="height: 1px;background: black;width: 80px;display: inline-block; margin-bottom: 5px;"></span>COMPÉTENCES
-                  </article>
-                  <article></article>
-                </section>
-                <div style="margin-left: 20px;display: grid;grid-template-columns: repeat(3, 1fr);">
-                  <div id="bar"
-                    style="display: inline-flex; color: #000000; text-transform: none;margin-right: 10px;font-weight: initial;font-family:Montserrat;overflow-wrap: break-word">
-                    <div style="margin-top: 10px;margin-right: 10px;margin-bottom: 10px;margin-left:0;">
-                      <div>
-                        <div style="margin-right: 5px;">HTML &amp; CSS</div>
-                        <div style="width: 100px; height: 10px; background-color: #ccc;border-radius: 6px;">
-                          <div style="width: 100%; height: 100%; background-color: #e49207;border-radius: 4px;"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="bar"
-                    style="display: inline-flex; color: #000000; text-transform: none;margin-right: 10px;font-weight: initial;font-family:Montserrat;overflow-wrap: break-word">
-                    <div style="margin-top: 10px;margin-right: 10px;margin-bottom: 10px;margin-left:0;">
-                      <div>
-                        <div style="margin-right: 5px;">JavaScript, TypeScript</div>
-                        <div style="width: 100px; height: 10px; background-color: #ccc;border-radius: 6px;">
-                          <div style="width: 100%; height: 100%; background-color: #e49207;border-radius: 4px;"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="bar"
-                    style="display: inline-flex; color: #000000; text-transform: none;margin-right: 10px;font-weight: initial;font-family:Montserrat;overflow-wrap: break-word">
-                    <div style="margin-top: 10px;margin-right: 10px;margin-bottom: 10px;margin-left:0;">
-                      <div>
-                        <div style="margin-right: 5px;">Liquid</div>
-                        <div style="width: 100px; height: 10px; background-color: #ccc;border-radius: 6px;">
-                          <div style="width: 100%; height: 100%; background-color: #e49207;border-radius: 4px;"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="bar"
-                    style="display: inline-flex; color: #000000; text-transform: none;margin-right: 10px;font-weight: initial;font-family:Montserrat;overflow-wrap: break-word">
-                    <div style="margin-top: 10px;margin-right: 10px;margin-bottom: 10px;margin-left:0;">
-                      <div>
-                        <div style="margin-right: 5px;">React, Next.js</div>
-                        <div style="width: 100px; height: 10px; background-color: #ccc;border-radius: 6px;">
-                          <div style="width: 80%; height: 100%; background-color: #e49207;border-radius: 4px;"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="bar"
-                    style="display: inline-flex; color: #000000; text-transform: none;margin-right: 10px;font-weight: initial;font-family:Montserrat;overflow-wrap: break-word">
-                    <div style="margin-top: 10px;margin-right: 10px;margin-bottom: 10px;margin-left:0;">
-                      <div>
-                        <div style="margin-right: 5px;">Tailwind CSS</div>
-                        <div style="width: 100px; height: 10px; background-color: #ccc;border-radius: 6px;">
-                          <div style="width: 100%; height: 100%; background-color: #e49207;border-radius: 4px;"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="bar"
-                    style="display: inline-flex; color: #000000; text-transform: none;margin-right: 10px;font-weight: initial;font-family:Montserrat;overflow-wrap: break-word">
-                    <div style="margin-top: 10px;margin-right: 10px;margin-bottom: 10px;margin-left:0;">
-                      <div>
-                        <div style="margin-right: 5px;">Shopify</div>
-                        <div style="width: 100px; height: 10px; background-color: #ccc;border-radius: 6px;">
-                          <div style="width: 100%; height: 100%; background-color: #e49207;border-radius: 4px;"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="bar"
-                    style="display: inline-flex; color: #000000; text-transform: none;margin-right: 10px;font-weight: initial;font-family:Montserrat;overflow-wrap: break-word">
-                    <div style="margin-top: 10px;margin-right: 10px;margin-bottom: 10px;margin-left:0;">
-                      <div>
-                        <div style="margin-right: 5px;">Node-API, GraphQL</div>
-                        <div style="width: 100px; height: 10px; background-color: #ccc;border-radius: 6px;">
-                          <div style="width: 100%; height: 100%; background-color: #e49207;border-radius: 4px;"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="bar"
-                    style="display: inline-flex; color: #000000; text-transform: none;margin-right: 10px;font-weight: initial;font-family:Montserrat;overflow-wrap: break-word">
-                    <div style="margin-top: 10px;margin-right: 10px;margin-bottom: 10px;margin-left:0;">
-                      <div>
-                        <div style="margin-right: 5px;">GSAP, Webpack</div>
-                        <div style="width: 100px; height: 10px; background-color: #ccc;border-radius: 6px;">
-                          <div style="width: 75%; height: 100%; background-color: #e49207;border-radius: 4px;"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- <div style="text-transform: uppercase; font-weight: bolder;">
-                <section style="margin: 10px 20px;">
-                  <article
-                    style="color: #e49207; display: flex;flex-direction: column; text-transform: uppercase;font-family:Montserrat;letter-spacing: 3px;font-size:16px;">
-                    <span
-                      style="height: 1px;background: black;width: 80px;display: inline-block; margin-bottom: 5px;"></span>Autres
-                    profils
-                  </article>
-                  <article></article>
-                </section>
-                <div style="margin-left: 20px;">
-                  <div
-                    style="color: #000000; text-transform: none;margin-right: 10px;font-weight: initial;font-family:Montserrat;overflow-wrap: break-word">
-                    <ul style="list-style:disc; padding: 3px; padding: 3px;margin: 0px;">
-                      <li style="margin-left: 15px;margin-left: 15px;">Président de la Jeuneusse Ouvrière Catholique de Bakhita</li>
-                      <li style="margin-left: 15px;margin-left: 15px;">Commissaire aux comptes de la Coordination de la Jeunesse Paroissiale</li>
-                    </ul>
-                  </div>
-                </div>
-              </div> -->
-            </main>
+              </main>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>`;
+
+  <script>
+    const labels =
+      [
+        "Backend\n(JS, TS, Php) \n",
+        "SEO & Copywriting \n(Copywriting, Cold Call, \n Email Automation)",
+        "Automations\n \n",
+        "Creativity \n \n",
+        "Frontend (UI)\n (React, Next.js \n, Vue.js, Laravel, CMS)",
+        "UX \n (Maze, Hotjar, \n Principes de psychologies, \n Laws of UX)",
+      ];
+
+
+    const values = [65, 70, 80, 88, 96, 85]; // 0-100 scale
+
+    const canvas = document.getElementById("radarChart");
+    const ctx = canvas.getContext("2d");
+    const center = { x: canvas.width / 2, y: canvas.height / 2 };
+    const radius = 150;
+    const levels = 5;
+
+    function drawRadar() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Draw concentric polygons
+      for (let level = 1; level <= levels; level++) {
+        ctx.beginPath();
+        for (let i = 0; i < labels.length; i++) {
+          const angle = (2 * Math.PI / labels.length) * i;
+          const r = (radius / levels) * level;
+          const x = center.x + r * Math.cos(angle);
+          const y = center.y + r * Math.sin(angle);
+          ctx.lineTo(x, y);
+        }
+        ctx.closePath();
+        ctx.strokeStyle = "#d1d5db";
+        ctx.stroke();
+      }
+
+      // Draw axes
+      for (let i = 0; i < labels.length; i++) {
+        const angle = (2 * Math.PI / labels.length) * i;
+        const x = center.x + radius * Math.cos(angle);
+        const y = center.y + radius * Math.sin(angle);
+        ctx.beginPath();
+        ctx.moveTo(center.x, center.y);
+        ctx.lineTo(x, y);
+        ctx.strokeStyle = "#9ca3af";
+        ctx.stroke();
+
+
+        // Labels
+        const labelLines = labels[i].split("\n");
+
+        ctx.fillStyle = "#111827";
+        ctx.font = "14px sans-serif";
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        //ctx.fillText(labelLines[0], x, y + 0);
+
+        const labelX = center.x + (radius + 40) * Math.cos(angle);
+        const labelY = center.y + (radius + 20) * Math.sin(angle);
+        ctx.fillText(labelLines[0], labelX, labelY);
+      }
+
+      // Draw data
+      ctx.beginPath();
+      for (let i = 0; i < values.length; i++) {
+        const angle = (2 * Math.PI / labels.length) * i;
+        const valueRatio = values[i] / 100;
+        const x = center.x + radius * valueRatio * Math.cos(angle);
+        const y = center.y + radius * valueRatio * Math.sin(angle);
+        ctx.lineTo(x, y);
+      }
+      ctx.closePath();
+      ctx.strokeStyle = "#6366f1";
+      ctx.fillStyle = "rgba(99, 102, 241, 0.3)";
+      ctx.fill();
+      ctx.stroke();
+    }
+
+    drawRadar();
+  </script>
+</body>
+
+</html>
+
+  `;
   return (
     <>
-    <BBorder>
-      <div className="w-[100%]">
+    
+      <div className="p-1 relative">
         <div style={{ width: '100%', height: '100vh' }}>
-          <iframe
-            src={pdfUrl}
-            width="100%"
-            height="100%"
-            style={{ border: 'none' }}
-            allow="autoplay"
-            title="White dev's Resume "
-          />
+          <iframe src="/_resume_en.html" width="100%" height="100%" />
         </div>
-      </div >
+        <div className="absolute top-3 right-8 text-slate-700">
+          <a href={pdfUrl} download className="flex gap-2 items-center justify-center" >
+            <svg width={25} height={25} xmlns="http://www.w3.org/2000/svg" shapeRendering="geometricPrecision" textRendering="geometricPrecision" imageRendering="optimizeQuality" fillRule="evenodd" clipRule="evenodd" viewBox="0 0 512 437.242"><path fillRule="nonzero" d="M.723 313.756c-2.482-10.26 1.698-18.299 8.38-23.044a23.417 23.417 0 018.018-3.632c2.877-.7 5.88-.865 8.764-.452 8.127 1.166 15.534 6.417 18.013 16.677a632.525 632.525 0 014.317 19.091c1.566 7.418 2.52 12.234 3.418 16.772 4.445 22.443 7.732 36.512 16.021 43.526 8.775 7.423 25.366 9.985 57.167 9.985h268.042c29.359 0 44.674-2.807 52.736-10.093 7.768-7.023 10.805-20.735 14.735-41.777l.007-.043a1038.93 1038.93 0 013.426-17.758c1.298-6.427 2.722-13.029 4.34-19.703 2.484-10.256 9.886-15.503 18.008-16.677 2.861-.41 5.846-.242 8.722.449 2.905.699 5.679 1.935 8.068 3.633 6.672 4.741 10.843 12.762 8.38 22.997l-.011.044a494.136 494.136 0 00-3.958 17.974c-1.011 5.023-2.169 11.215-3.281 17.178l-.008.043c-5.792 31.052-10.544 52.357-26.462 67.319-15.681 14.741-40.245 20.977-84.699 20.977H124.823c-46.477 0-72.016-5.596-88.445-20.144-16.834-14.909-21.937-36.555-28.444-69.403-1.316-6.654-2.582-13.005-3.444-17.126-1.213-5.781-2.461-11.434-3.767-16.813zm165.549-143.439l65.092 68.466.204-160.91h47.595l-.204 160.791 66.774-70.174 34.53 32.848-125.184 131.556-123.336-129.729 34.529-32.848zm65.325-115.413l.028-22.041h47.594l-.028 22.041h-47.594zm.046-36.254L231.666 0h47.595l-.024 18.65h-47.594z"/></svg>
+            Download 
+          </a>
+        </div>
+      </div>
 
-
+      {/* <BBorder>
+         <div className="p-1">
+          <div style={{ width: '100%', height: '98vh' }}>
+            <iframe
+              src={pdfUrl}
+              width="100%"
+              height="100%"
+              style={{ border: 'none' }}
+              allow="autoplay"
+              title="White dev's Resume "
+            />
+          </div>
+        </div> 
+      </BBorder > */}
       {/* <div className="flex [w-100%] [h-100%] ">
-        <div className="flex justify-center items-center m-auto "dangerouslySetInnerHTML={{ __html: htmlContent }} />
+        <div className="flex justify-center items-center m-auto " dangerouslySetInnerHTML={{ __html: htmlContent }} />
       </div> */}
-
-
-
-    </BBorder >
     </>
   );
 };

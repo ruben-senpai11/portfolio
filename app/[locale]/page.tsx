@@ -9,14 +9,11 @@ import Skills from "./sections/skills";
 import Tech from "./sections/tech";
 import Works from "./sections/work";
 import Exceptionnal from './sections/exceptionnal';
-import SplashScreen from './sections/splashScreen';
 import Contact from './sections/contact';
 
 
 export default function HomePage() {
-  
-  const t = useTranslations('HomePage');
-  const c = useTranslations('Global.contactForm');
+
 
   return (
     <>
@@ -29,15 +26,6 @@ export default function HomePage() {
           {/* <Skills /> */}
           <Works />
           <Tech />
-          {/* <div className="main flex gap-4 my-0 mx-auto" > I'm a
-            <span>developer</span>
-            <span>baskettball player</span>
-            <span>pianist</span>
-            <span>electronician</span>
-            <span>boxer</span>
-            <span>photographer</span>
-            <span>human</span>
-          </div> */}
           <Contact />
         </div>
         <Footer />
