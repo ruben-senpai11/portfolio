@@ -236,6 +236,7 @@ iframe{
   height: 40px;
   padding: 5px 15px;
   border: 1px solid var(--primary);
+  border-radius: 4px;
   color: var(--foreground-color);
   background-color: transparent;
 }
