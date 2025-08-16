@@ -4,16 +4,14 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { notFound } from 'next/navigation';
-import BBorder from "./bborder";
-import Footer from "./navigation/footer";
-import Header from "./navigation/header";
 import "../globals.css";
+import Script from "next/script";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "UIX developer | Ruben Honfovou Portfolio",
-  description: "Hi, I'm the Frontend developer who combines UX, UI and Psychology to make your outcome better !",
+  title: "White dev Portfolio",
+  description: "Hi, I'm Rubene HONFOVOU, a UIX developer. Here is a chance to discover my work and know how helpful I can be to you !",
 };
 
 
@@ -22,27 +20,42 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>
+  params: { locale: string };
 }) {
 
-  // Await the params Promise to get the actual values
-  const { locale } = await params
+  const { locale } = await Promise.resolve(params); // Ensure params is awaited if required by Next.js
   const messages = await getMessages();
 
   return (
     <html lang={locale}>
       <head>
+        <Script
+          id="gtm-head"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id=GTM-T9MMWLWS'+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-T9MMWLWS');`,
+          }}
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Sora:wght@100..800&display=swap" rel="stylesheet" />
       </head>
-      <body className={inter.className}>
+      {/* <body className={inter.className}> */}
+      <body >
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-T9MMWLWS"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
         <NextIntlClientProvider messages={messages}>
-          <BBorder >
-            <Header title="UIX developer" />
-            {children}
-            <Footer />
-          </BBorder>
+          {children}
         </NextIntlClientProvider>
       </body>
     </html>
