@@ -139,7 +139,7 @@ function Header({ title }: Props) {
             </Link>
           </div>
           <div className={(mobileNav == true ? 'm-menu-container' : 'desktop-menu') + " "}>
-            <ul className="navlinks flex gap-12 navlinks justify-between align-center ">
+            <ul className="navlinks flex gap-10 navlinks justify-between align-center ">
               <li className={currentPage == "en" || currentPage == "fr" ? "active" : ""}>
                 <Link onClick={() => { handlePage("home") }} href="/">{t('home')}</Link>
               </li>

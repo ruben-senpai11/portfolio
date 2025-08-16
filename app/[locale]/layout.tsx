@@ -4,6 +4,9 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { notFound } from 'next/navigation';
+import BBorder from "./bborder";
+import Footer from "./navigation/footer";
+import Header from "./navigation/header";
 import "../globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -31,11 +34,15 @@ export default async function LocaleLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Sora:wght@100..800&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Sora:wght@100..800&display=swap" rel="stylesheet" />
       </head>
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <BBorder >
+            <Header title="UIX developer" />
+            {children}
+            <Footer />
+          </BBorder>
         </NextIntlClientProvider>
       </body>
     </html>
