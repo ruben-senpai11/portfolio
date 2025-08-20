@@ -8,6 +8,11 @@ import "../globals.css";
 import Script from "next/script";
 import { ReactNode } from "react";
 
+
+import BBorder from "./bborder";
+import Footer from "./navigation/footer";
+import Header from "./navigation/header";
+
 const inter = Inter({ subsets: ["latin"] });
 
 
