@@ -49,8 +49,13 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
       <body className={inter.className}>
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9MMWLWS"
           height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider messages={messages}>          
+      <BBorder >
+        <Header title="white_dev" />
           {children}
+        
+        <Footer />
+      </BBorder>
         </NextIntlClientProvider>
       </body>
     </html>
