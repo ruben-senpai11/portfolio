@@ -56,7 +56,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
           height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
         <NextIntlClientProvider messages={messages}>          
       <BBorder >
-        <Header title="white_dev" />
+        <Header title="UIX dev" />
           {children}
         
         <Footer />

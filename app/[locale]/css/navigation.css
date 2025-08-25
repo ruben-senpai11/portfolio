@@ -213,9 +213,9 @@ path[data-idx="3"] {
     overflow: visible;
   }
 
-  .desktopp,
+  .desktop,
   .desktop-menu,
-  .hire-me {
+  .navbar .hire-me {
     display: none;
   }
 

@@ -798,7 +798,7 @@ const Page = () => {
   return (
     <>
 
-      <div className="my-12 relative">
+      <div className="my-2 relative">
         <div style={{ width: '100%', height: '100vh' }}>
           <iframe src="/_resume_en.html" width="100%" height="100%" />
         </div>

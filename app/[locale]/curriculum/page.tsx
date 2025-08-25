@@ -6,7 +6,7 @@ const Page = () => {
   return (
     <>
       <div className="my-12 relative">
-        <div style={{ width: '100%', height: '120vh', boxShadow: "2px 2px 5px var(--foreground-color);" }}>
+        <div style={{ width: '100%', height: '120vh' }}>
           <iframe src="/_resume_fr.html" width="100%" height="100%" />
         </div>
         <div className="absolute top-3 right-8">
