@@ -45,9 +45,9 @@ export default function SplashScreen({ name, label, timer }: Props) {
       {showSplash &&
 
         <div className="splash-screen w-[100vw] h-[100vh] bg-gradientt">
-          <p className="flex flex-col gap-8 " >
+          <p className="flex flex-col gap-8 p-4 " >
             {/* <span className="text-6xl font-mono font-extrabold m-1 text-gradientt">UIX Developer <span className="font-sans bg-gradienft font-extrabold">{"</>"}</span> </span> */}
-            <span className="text-3xl font-normal text-nowrap">
+            <span className="text-3xl font-normal text-center text-wrap">
               {name}
               <span className="font-mono font-thin"> {label}</span>
             </span>

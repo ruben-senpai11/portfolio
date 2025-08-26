@@ -78,7 +78,7 @@ export default function BBorder({ children }: Props) {
     <>
       {/* <CustomCursor /> */}
       <div className="flex justify-center relative">
-        <SplashScreen name="Ruben Honfovou" label="Portfolio" timer={2500} />
+        <SplashScreen name="Ruben Honfovou" label="Portfolio" timer={25000} />
         <div ref={boxRef} className="bborder ">
           <div className="background">
             <div className="bborder-right">

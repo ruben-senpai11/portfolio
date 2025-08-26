@@ -394,7 +394,7 @@ a:not(.project-link):hover::after {
     font-weight: 400;
   }
 
-  .splash-screen p{
+  .splash-screen p span{
     font-size: 24px;
   }
 }
